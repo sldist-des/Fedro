@@ -2,22 +2,50 @@
 
 ## Documento 01 — Análise crítica inicial: hipótese, objeções, estado da arte, direções e primeiro experimento
 
-**Status:** rascunho de fundação, v0.1 (2026-10-29). Sem código. Sem arquitetura definitiva.
+**Status:** rascunho de fundação, **v0.2** (2026-10-29). A v0.1 é do mesmo dia (commit `9b194df`). Sem código. Sem arquitetura definitiva.
+
+A v0.2 resulta de uma auditoria epistemológica independente. As mudanças conceituais estão registradas na seção "Histórico de revisões" e, no corpo do texto, em blocos marcados **Revisão v0.2**. O texto da v0.1 foi preservado onde foi corrigido, para que a trajetória das conclusões seja auditável. Regra fundamental adotada na v0.2: **a primeira definição mensurável de aprendizagem deste programa (transições de eficiência) não é uma definição da natureza da inteligência nem da novidade conceitual.**
 
 **Sobre as referências:** nenhuma referência foi inventada. As referências de 2024–2026 foram verificadas online na data deste documento. As referências clássicas são citadas com os dados bibliográficos usuais e devem ser conferidas uma a uma antes de qualquer publicação. Onde um dado não pôde ser verificado, isso está dito no texto.
+
+### Histórico de revisões
+
+**v0.1 → v0.2 (auditoria epistemológica, 2026-10-29).** Tabela das mudanças conceituais. Cada linha aponta a seção em que o texto da v0.1 foi preservado e o bloco **Revisão v0.2** que o corrige.
+
+| # | Seção | A v0.1 afirmava | A v0.2 corrige para | Base da correção |
+|---|---|---|---|---|
+| 1 | 1.2 | Novidade conceitual = transição de eficiência (tratabilidade) | Quatro camadas distintas: L0 expressividade teórica; L1 expressividade efetiva sob recursos; L2 mudança qualitativa do sistema conceitual; L3 capacidades de generalização. Eficiência operacionaliza apenas L1 | Carey 2009, 2011, 2014, 2015; Rips et al. 2006, 2008, 2013; Beck 2017; Rey 2014; Pantsar 2021; Rule e Piantadosi 2025; Karmiloff-Smith 1992 |
+| 2 | 1.2, 1.3 | "Mais do que um fator constante" como critério de H-B | O teorema da invariância torna vazia qualquer afirmação assintótica sobre re-representação; o conteúdo de H-B está na magnitude das constantes em recursos finitos, na sua amortização sobre uma distribuição de tarefas e na sua seleção a partir de dados | Li e Vitányi 2008 [P]; Levin 1973 [P] |
+| 3 | 1.3 | H-B-fraca e H-B-forte | H-B1 (eficiência, L1), H-B2 (reorganização qualitativa, L2), H-B3 (capacidades de generalização, L3). H-B-fraca ≈ H-B1; H-B-forte foi dividida entre H-B1 (transferência) e H-B3 | Idem |
+| 4 | 2, Objeção 2 | "A distinção definição/primitiva não tem significado computacional além do custo" | Retirada como conclusão. É a posição de um lado do debate (Rule e Piantadosi); o outro (Carey, Beck) sustenta descontinuidade por papel inferencial. Marcada [A] | Idem |
+| 5 | 4.2 | Igualdade, detector de inconsistência e linguagem com ordenação de simplicidade são **primitivas inevitáveis** | Inevitáveis são **requisitos funcionais** (discriminabilidade, sinal de discrepância, plasticidade, ordenação de preferência, persistência), não operadores simbólicos; implementações contínuas e probabilísticas satisfazem os requisitos e podem adquirir resolução. Aberto: se o comparador de segunda ordem pode ser adquirido | Damper e Harnad 2000; Valle-Pérez, Camargo e Louis 2019; Rao e Ballard 1999; Yu e Dayan 2005; Xie et al. 2022; von Oswald et al. 2023; Akyürek et al. 2023 |
+| 6 | 4.4 | Critério 3: currículos diferentes devem produzir abstrações diferentes | Substituído por estrutura de pré-requisitos e sensibilidade de custo à ordem; invariância do ponto final não conta contra aquisição | Zhao, Lucas e Bramley 2024 |
+| 7 | 4.4 | Quatro critérios para "adquirido" | Os quatro valem para L1; acrescentados critérios candidatos para L2 e L3, com a ressalva de que L2 não tem operacionalização aceita [A] | — |
+| 8 | 8 | Protocolo do experimento de grades | Oito problemas identificados pela revisão; protocolo corrigido migrado para `docs/02-protocolo-experimental.md`; predições sobre o controle neural tornadas neutras; sucesso explicitamente não é prova de inteligência geral | Revisão independente |
+| 9 | 9 | Demarcação como primeira questão | Mantida, agora em três camadas (L1, L2, L3), com a regra de não confundir a primeira operacionalização com a definição | — |
+| 10 | Legenda | [C] cobria teoremas e sistemas | [P] para provas formais; [A] para questões abertas | — |
+
+**Afirmações da v0.1 reclassificadas como [P] na v0.2:** a tese de Church–Turing enquanto resultado sobre máquinas universais (a tese em si permanece [F]); Mitchell 1980 (um aprendiz sem viés não generaliza, no sentido formal do espaço de versões); Wolpert 1996 (ausência de almoço grátis); o teorema de Locatello et al. 2019 (os experimentos do mesmo artigo ficam [C]); Pearl 2009 (não identificabilidade da estrutura causal a partir de distribuições observacionais, em geral); Solomonoff 1964 (incomputabilidade do prior universal); Gold 1967; Valiant 1984; Angluin 1987; o teorema da invariância da complexidade de Kolmogorov; a otimalidade da busca de Levin até fator constante.
+
+**O que a v0.2 não muda:** as cinco objeções continuam de pé; a Objeção 1 e a Objeção 3 saem reforçadas (a v0.2 mostra que vieses implícitos e laços externos dados reaparecem nas instanciações contínuas); a prioridade da questão de demarcação; a rejeição do vocabulário de consciência.
 
 ### Como ler este documento
 
 Cada afirmação relevante leva um rótulo epistêmico, conforme pedido:
 
+- **[P]** prova formal: teorema, válido sob as hipóteses do teorema (acrescentado na v0.2)
 - **[E]** fato empírico com evidência publicada
 - **[F]** interpretação filosófica
-- **[C]** demonstrado computacionalmente (existe sistema ou resultado reproduzível)
+- **[C]** resultado computacional: existe sistema ou experimento reproduzível; não é prova
 - **[H]** hipótese (nossa ou da literatura)
 - **[R]** condição de refutação
+- **[A]** questão aberta: a literatura não permite conclusão (acrescentado na v0.2)
+
+Na v0.1, o rótulo [C] cobria teoremas e sistemas. Na v0.2, os teoremas passam a [P]; a lista das afirmações reclassificadas está no histórico de revisões. Rótulos do texto da v0.1 que não foram tocados devem ser lidos com essa ressalva.
 
 ### Sumário
 
+Histórico de revisões (v0.2)
 0. Resumo executivo
 1. Reformulação científica da hipótese
 2. As cinco objeções mais fortes
@@ -41,6 +69,8 @@ A reformulação central deste documento é a seguinte. Para qualquer sistema co
 As cinco objeções mais fortes são: (1) não existe aprendizagem sem viés, logo "sem princípios programados" é ininteligível; (2) nada é genuinamente novo em um sistema universal, logo "transformar os próprios princípios" precisa ser redefinido ou abandonado; (3) toda auto-revisão exige um critério de valor que não é revisado, logo a hierarquia tem um topo fixo; (4) o caso humano talvez não instancie a hipótese, porque depende de um prior evolutivo enorme e de tecnologias culturais transmitidas; (5) escala estatística talvez baste, e sem definições operacionais cada resultado pode ser lido dos dois modos, como aconteceu historicamente com o programa AM.
 
 A questão a resolver primeiro não é "qual arquitetura", e sim **o critério de demarcação entre capacidade adquirida e capacidade implícita no desenho**. Sem esse critério, nenhum experimento posterior é interpretável. O primeiro experimento proposto (seção 8) serve exatamente para calibrar esse critério em um micro-mundo de grades, com um aprendiz que constrói sua própria biblioteca de abstrações sob um protocolo de contraexemplos, comparado a controles de memorização, de regras fixas, de orçamento ampliado e de mudança de base.
+
+**Atualização v0.2.** A auditoria independente levou a três correções de fundo. Primeira: a redução de "novidade conceitual" a transições de eficiência era a adoção tácita de um lado do debate entre Piantadosi e Carey; a v0.2 distingue quatro camadas de novidade (expressividade teórica, expressividade efetiva, mudança qualitativa, capacidades de generalização), reconhece que o critério de eficiência operacionaliza só a segunda, e deixa a terceira como questão aberta. Segunda: o que é inevitável num aprendiz são requisitos funcionais, não operadores simbólicos; sistemas contínuos os satisfazem e podem adquirir resolução. Terceira: o critério de dependência de currículo foi corrigido, e o protocolo experimental foi refeito em documento próprio (`docs/02-protocolo-experimental.md`), com contabilização integral de custo, demonstração de equivalência de bases, definições formais dos conceitos, protocolo sem vazamento, testes de transferência real e hipóteses neutras sobre os controles neurais. Regra fundamental da v0.2: a primeira definição mensurável de aprendizagem não é uma definição da natureza da inteligência.
 
 ---
 
@@ -75,6 +105,30 @@ A resolução que propomos: um conceito é **novo para um sistema** se (a) não 
 
 Esta reformulação também dissolve computacionalmente o paradoxo do Mênon: não se procura o que não se pode representar; procura-se uma descrição mais curta ou mais barata do que já se pode representar. O ganho de compressão é real, converte intratável em tratável, e é limitado pela universalidade de E0. A reminiscência platônica seria o caso-limite em que o custo é zero, o que é empiricamente falso para humanos, que levam anos.
 
+### 1.2-bis Revisão v0.2 — Quatro camadas de novidade e o desafio de Carey
+
+**O que a auditoria encontrou.** A seção 1.2 reduziu "novidade conceitual" a tratabilidade. Isso coincide, sem o dizer, com a posição de um dos lados de um debate em curso: o de Piantadosi e colaboradores, contra Carey e Beck, e, por razões diferentes, contra Rips e Rey. A v0.2 não decide o debate. Separa quatro camadas que a v0.1 misturou e diz qual delas cada experimento pode tocar.
+
+**L0 — Expressividade teórica.** O que uma linguagem universal pode expressar com recursos ilimitados. Para E0 universal, tudo o que é computável **[P]**. Rule e Piantadosi (2025) chegam ao mesmo ponto: para uma mente idealizada com primitivas universais e recursos ilimitados, não há conceitos novos a adquirir. Nesta camada, a tese de Fodor é trivialmente verdadeira e sem interesse.
+
+**L1 — Expressividade efetiva.** Os recursos representacionais efetivamente disponíveis ao aprendiz: o que ele pode construir, armazenar e **usar de modo confiável** sob limites de tempo e memória. Rule e Piantadosi (2025) formalizam a posse de um conceito como um grau contínuo, T(c) − R(c), em que T(c) é o comprimento de descrição do conceito e R(c) a informação que o aprendiz ainda precisa extrair do ambiente para selecioná-lo; na formulação deles, qualquer mudança que diminua a informação necessária para representar um conceito é parte da aquisição, e chunking, abstração e aprendizagem de biblioteca aumentam a expressividade de uma mente com recursos limitados **[F/C]**. Uma medida formal nesta camada é a complexidade de Levin, Kt(x) = min sobre programas p de |p| + log t(p), que penaliza tempo além de comprimento (Levin 1973) **[P]**. Era aqui que a v0.1 estava. O critério de transição de eficiência é a operacionalização de L1, e só dela.
+
+**L2 — Mudança conceitual qualitativa.** A tese de Carey (2009): um sistema conceitual CS2 tem mais poder expressivo que CS1 quando conceitos de CS2 não são definíveis nos termos de CS1; os casos são o número natural a partir dos sistemas nucleares, o número racional, e matéria, peso e densidade na física intuitiva. O mecanismo proposto, o bootstrapping quineano, tem duas fases: uma estrutura de marcadores vazios é aprendida como estrutura (a lista de contagem recitada sem significado) e depois "processos de modelagem", analogia, inferência indutiva, abdução e experimento mental, dão conteúdo aos marcadores pelas relações entre eles. O conteúdo vem do **papel inferencial**, não de uma definição. A evidência empírica é aceita por todos os lados: os níveis de conhecedor de número (Le Corre e Carey 2007; Sarnecka e Carey 2008) **[E]**. A interpretação é disputada **[A]**.
+
+**L3 — Capacidades de generalização.** Mudanças em *como* o sistema generaliza, não em *o que* representa: os "learning sets" de Harlow (1949), o viés de forma treinável (Smith et al. 2002), as sobre-hipóteses (Kemp, Perfors e Tenenbaum 2007) e a redescrição representacional de Karmiloff-Smith (1992), em que conhecimento procedimental implícito é redescrito em formatos explícitos que permitem novas generalizações **[E/F]**. Não são conceitos; são disposições indutivas de segunda ordem.
+
+**Em que sentido exato Carey desafia a formulação da v0.1.** Três sentidos, de força diferente.
+
+1. **Nível de descrição.** O "poder expressivo" de Carey é relativo ao sistema conceitual disponível, definido por papéis inferenciais, e não à linguagem de hipóteses do substrato. Traduzido para os nossos termos: "não definível em CS1" não é "não expressável em E0". A tradução caridosa é: CS1 é o conjunto de representações que o aprendiz consegue instanciar e usar em inferência no instante t, uma noção de L1; "CS2 não definível em CS1" vira "conceitos de CS2 não são composições de conceitos de CS1", o que é compatível com serem expressáveis em E0 se E0 tem combinadores (recursão, ponto fixo) que CS1 não usa. Nessa leitura, o desafio de Carey à v0.1 é **parcial**: ela acrescenta uma condição estrutural que o custo não captura. Um conceito constituído por papel não é uma definição sobre conceitos antigos; dois sistemas podem ter custos idênticos e diferir em se o conceito novo é definido ou constituído por relações. Consequência direta para o programa: **um aprendiz por síntese de programas, em que toda abstração é uma definição, só pode produzir novidade de L1, por construção**. O experimento de grades não pode testar L2. Isso é uma limitação de desenho, não um resultado.
+
+2. **Circularidade e interpretação desviante.** Rips, Asmuth e Bloomfield (2006; 2008) argumentam que o bootstrap não consegue selecionar a sequência dos números naturais entre sequências não equivalentes compatíveis com a evidência, e que propostas de indução empírica pressupõem os conceitos matemáticos que deveriam explicar. Piantadosi, Tenenbaum e Goodman (2012) mostraram uma rota não circular, em que a hipótese do conhecedor de cardinalidade é selecionada por inferência bayesiana sobre uma linguagem de primitivas; Rips, Asmuth e Bloomfield (2013) respondem que o modelo recombina primitivas escolhidas à mão e não exibe a descontinuidade que o bootstrapping exige. Beck (2017) distingue aprendizagem modesta, em que o conceito novo é expressável nos antigos (por composição não óbvia ou por seleção de conceitos "à espera"), de aprendizagem radical, em que não é, e argumenta que o desafio da interpretação desviante atinge toda aprendizagem indutiva, não só o bootstrap. Pantsar (2021) contesta essa generalização e propõe enculturação como solução. Rey (2014) sustenta que evidência sobre a manifestação de conceitos em crianças não decide questões lógico-semânticas de poder expressivo, e que analogia e bootstrapping pressupõem o poder expressivo que pretendem explicar; Carey respondeu (2014; 2015). Rule e Piantadosi (2025) dissolvem a dicotomia inato/aprendido em posse graduada sob recursos limitados. Este conjunto é um debate vivo **[A]**. O que é consenso: os fatos desenvolvimentais. O que é disputado: se "descontinuidade" nomeia algo além de L1.
+
+3. **Consequência metodológica.** A seção 2, Objeção 2, escreveu que "a distinção entre definição e primitiva não tem significado computacional além do custo". Isso é a tese de Rule e Piantadosi, não um fato. A v0.2 retira a frase como conclusão e a reclassifica como uma das posições em disputa. O programa mantém L1 como primeira camada mensurável, declara que o experimento 1 só a testa, e registra em 4.4-bis os critérios candidatos para L2, com a ressalva de que nenhum sistema computacional conhecido os satisfaz de modo demonstrado **[A]**.
+
+**O teorema da invariância e a frase "mais do que um fator constante".** Para máquinas universais U e V existe uma constante c, dependente apenas do par de máquinas, tal que o comprimento de descrição de qualquer objeto x difere entre U e V por no máximo c (Li e Vitányi 2008) **[P]**. Logo qualquer re-representação fixa, uma biblioteca aprendida inclusive, altera o comprimento de descrição de todo alvo por no máximo uma constante aditiva; sob busca enumerativa, uma constante aditiva no comprimento é um fator multiplicativo exponencial nessa constante no tempo. Assintoticamente, portanto, **toda** vantagem de re-representação é "fator constante", e a frase da v0.1 era mal posta. O conteúdo científico de H-B1 está em outro lugar: (a) na magnitude da constante em relação ao orçamento finito, que pode ser a diferença entre tratável e intratável; (b) na amortização da constante sobre uma distribuição de tarefas, que é o que torna uma biblioteca útil e não um truque para uma tarefa; (c) em que o aprendiz **encontre** a partir dos dados a biblioteca cuja constante é pequena para a distribuição **futura**, o que é uma afirmação estatística, não de complexidade. A otimalidade da busca de Levin até fator constante (Levin 1973) **[P]** mostra o mesmo ponto do lado do procedimento. Consequência para o protocolo: o experimento reporta tamanhos de efeito em recursos finitos e nunca afirma separação assintótica.
+
+**Revisão da "dissolução" do Mênon.** A v0.1 disse que o paradoxo se dissolve em termos computacionais. A v0.2 mantém isso para L0 e L1, e registra que, para L2, o paradoxo é exatamente o que está em disputa entre Carey e seus críticos: se há aquisição que não é seleção em um espaço prévio, o Mênon não está dissolvido, está reaberto **[A]**.
+
 ### 1.3 A hipótese reformulada em três partes testáveis
 
 **H-A (realizabilidade):** a organização funcional suficiente para inteligência geral é implementável em substrato não biológico. Status: **[F]**, pressuposto de trabalho. **[R]:** demonstração de dependência de propriedade física não reproduzível. Não é objeto de experimento neste programa; é assumida.
@@ -84,6 +138,18 @@ Esta reformulação também dissolve computacionalmente o paradoxo do Mênon: n�
 **H-B-forte (conceitualidade):** além disso, as representações construídas são conceituais no sentido de serem invariantes a mudanças de superfície e transferíveis a domínios estruturalmente análogos, e sua aquisição depende da história de experiência (efeitos de ordem e de currículo). Status: **[H]**. **[R]:** as abstrações construídas não transferem, ou transferem igualmente a partir de qualquer currículo.
 
 **H-C (construtivismo de método, ou meta-nível):** o próprio procedimento de aprendizagem (estratégia de busca, representação do erro, critério de parada) é revisado em função de falhas, com ganho de eficiência em famílias de tarefas novas que não se explica por transferência de representações. Status: **[H]**, com demonstrações parciais que mantêm um laço externo fixo: meta-aprendizagem (Schmidhuber 1987; Hochreiter, Younger e Conwell 2001; Finn, Abbeel e Levine 2017), aprendizagem de regras de atualização (Metz et al. 2019; Kirsch e Schmidhuber 2021) e evolução de algoritmos de aprendizagem a partir de operações elementares (Real et al. 2020). A forma ilimitada ("revisar todos os níveis") é incoerente por regressão; o caso-limite teórico é a máquina de Gödel de Schmidhuber (2003), que exige provas formais de melhoria e nunca foi instanciada de modo útil. Só formas **limitadas** de H-C são testáveis.
+
+### 1.3-bis Revisão v0.2 — H-B em três partes
+
+A seção 1.3 tinha H-B-fraca e H-B-forte. A v0.2 as substitui por três hipóteses alinhadas às camadas, mantendo H-A e H-C. O texto da v0.1 fica acima como registro.
+
+**H-B1 (eficiência, camada L1).** Existe E0 de descrição curta e um regime de experiência X tais que o sistema constrói representações intermediárias que reduzem o custo de aprendizagem de tarefas novas da mesma distribuição, em recursos finitos, por um fator grande em relação ao orçamento e amortizado sobre a família de tarefas; a vantagem persiste sob mudança de fatoração de E0 e transfere a famílias estruturalmente análogas, não a distratoras. Corresponde à H-B-fraca mais a parte de transferência da H-B-forte, com a frase "mais do que um fator constante" substituída conforme 1.2-bis. Status: **[C]** em domínios estreitos (Ellis et al. 2021; Piantadosi et al. 2012; Lake e Baroni 2023) e **[E]** em humanos (Zhao, Lucas e Bramley 2024). **[R]:** vantagem igualada por orçamento ampliado dentro do mesmo regime finito, ou desaparece sob mudança de base, ou é indiscriminada entre famílias.
+
+**H-B2 (reorganização qualitativa, camada L2).** Além de H-B1, o sistema passa a usar representações cujo conteúdo é constituído por papel inferencial e não por definição sobre representações anteriores, com mudança do conjunto de inferências licenciadas e perda em qualquer tradução para o sistema anterior. Status: **[H]** e sem operacionalização aceita **[A]**; a evidência humana é disputada (1.2-bis). **[R]:** por enquanto, só a formulação negativa é segura: se toda representação construída por um sistema é uma definição substituível sem alterar as inferências a jusante, o sistema não exibe H-B2.
+
+**H-B3 (capacidades de generalização, camada L3).** A experiência em uma família de tarefas muda a política de generalização do sistema em famílias novas: a distribuição de primeiras hipóteses em tarefas ambíguas de uma só amostra desloca-se de modo previsível pela estrutura compartilhada. Status: **[E]** em humanos e animais (Harlow 1949; Smith et al. 2002); **[C]** em modelos hierárquicos (Kemp et al. 2007) e meta-aprendizes (Lake e Baroni 2023). **[R]:** a política de generalização não muda, ou muda igualmente após qualquer família.
+
+Relação com a definição de trabalho (Chollet 2019): eficiência de aquisição é uma medida de L1 e L3 combinadas. A v0.2 acrescenta a regra: **esta é a primeira definição mensurável de aprendizagem do programa, não uma definição da natureza da inteligência.** O programa deve manter aberta a possibilidade de que a inteligência envolva L2 e de que L2 não seja redutível a L1 e L3.
 
 ### 1.4 As variáveis que a hipótese original deixa indefinidas
 
@@ -116,6 +182,8 @@ Hume formulou o problema da indução; Goodman (1955) mostrou com o predicado "g
 Esta é a objeção de Fodor (1975; 1980), desenvolvida na seção 1.2. Sua versão mais incômoda: mesmo "transições de eficiência" podem ser descritas como mero *caching*. Uma abstração aprendida é uma **definição** sobre primitivas, não uma nova primitiva; chamá-la de "novo princípio de raciocínio" seria retórica.
 
 **Resposta parcial:** a distinção entre "definição" e "primitiva" não tem significado computacional além do custo, e o custo é exatamente o que separa o que um sistema finito pode e não pode fazer. Mas a objeção obriga a hipótese a **abandonar a linguagem romântica** ("transformar os próprios princípios") e a manter apenas a linguagem mensurável (descontinuidades de custo, invariância de base, transferência). Se, depois disso, você sentir que a hipótese perdeu o que a tornava interessante, é um sinal de que o interesse estava na retórica.
+
+**Revisão v0.2 da Objeção 2.** A "resposta parcial" acima adota a tese de Rule e Piantadosi (2025) como se fosse um fato. Não é. A v0.2 reclassifica: a questão de se "definição" e "constituição por papel inferencial" diferem além do custo é **aberta [A]**, e a seção 1.2-bis descreve os dois lados. O que permanece da objeção: um aprendiz cujas abstrações são, por construção, definições não pode alegar H-B2, e deve limitar suas alegações a H-B1 e H-B3. O que permanece da resposta: a linguagem romântica continua inadmissível, porque não há hoje critério operacional de L2 que não colapse em L1.
 
 ### Objeção 3 — Regressão normativa: toda auto-revisão exige um critério não revisado
 
@@ -206,6 +274,23 @@ Para cada item, o argumento de inevitabilidade:
 - **Memória e ordem temporal.** Sem elas, não há "experiência", apenas estímulo.
 - **Ação, se o alvo incluir causalidade.** Pearl (2009) mostra que distribuições observacionais em geral não identificam a estrutura causal **[C]**. O agente que aprende causalidade ou intervém, ou herda assunções (mecanismos independentes, mudanças esparsas: Schölkopf et al. 2021). A própria ação do agente é um operador "do" natural, o que Gopnik et al. (2004) exploraram para crianças **[E]**.
 
+### 4.2-bis Revisão v0.2 — Requisitos funcionais, não primitivas
+
+A lista de 4.2 confundiu dois níveis: o **requisito funcional** que qualquer aprendiz deve satisfazer e a **implementação particular** que a v0.1 nomeou (um operador de igualdade, um detector de inconsistência, uma linguagem com ordenação de simplicidade). Só o primeiro nível é inevitável. Reescrita:
+
+| Requisito funcional | Implementação simbólica | Implementação contínua ou probabilística | O que é dado e o que pode ser adquirido |
+|---|---|---|---|
+| **R1 Discriminabilidade**: entradas distintas podem levar a estados distintos | Operador de igualdade sobre primitivas | Métrica do espaço de estados mais uma não linearidade; capacidade de canal finita sob ruído | Dada pela física do substrato: alguma topologia. Adquirida: a resolução e quais diferenças importam (aprendizagem perceptual, E. Gibson 1969 [E]; a percepção categórica emerge em redes genéricas, Damper e Harnad 2000 [C]; Liberman et al. 1957 [E]) |
+| **R2 Sinal de discrepância**: comparação entre expectativa e resultado | Contradição lógica: h implica x e observa-se não-x | Erro de predição (Rao e Ballard 1999); surpresa como log-probabilidade negativa | Dado: algum comparador de primeira ordem. Adquirido ou não: o comparador de **segunda ordem** que distingue erro de parâmetro de erro de classe de modelo (incerteza inesperada, Yu e Dayan 2005; detecção de pontos de mudança; comparação bayesiana de modelos). Se um sistema contínuo pode adquirir o de segunda ordem sem um laço externo desenhado para isso: **[A]** |
+| **R3 Plasticidade dirigida pelo sinal** | Revisão de hipótese | Atualização de parâmetros | Dada como regra; a forma da regra pode ser meta-aprendida (seção 5, linha 5) |
+| **R4 Ordenação de preferência** (viés) | Prior de simplicidade explícito (MDL) | Viés implícito do mapa parâmetro-função (Valle-Pérez, Camargo e Louis 2019 [C]), que pode ser prejudicial (Shah et al. 2020 [C]) | Inevitável como **viés** (Objeção 1 intacta), não como operador |
+| **R5 Persistência** | Memória explícita | Mudança de pesos; estados recorrentes | Toda plasticidade é memória; o formato é implementação |
+| **R6 Ação** (condicional) | Operador de intervenção | Comandos motores com consequências | Necessária se o alvo inclui causalidade no sentido de Pearl [P] |
+
+**Evidência de que sistemas contínuos implementam revisão sem operadores explícitos [C]:** a aprendizagem em contexto de transformadores implementa atualização de tipo bayesiano (Xie et al. 2022) e até descida de gradiente dentro da passagem direta (von Oswald et al. 2023; Akyürek et al. 2023); estruturas de tipo simbólico emergem em dinâmicas contínuas de redes recorrentes (Tani 2016) e em comunicação emergente entre agentes (Lazaridou e Baroni 2020). A hipótese dinamicista (van Gelder 1998; Spivey 2007) vai além e nega operadores em qualquer nível **[F]**. O princípio da energia livre de Friston (2010) pretende unificar R2 a R4 em um único funcional; sua base formal é contestada (Bruineberg et al. 2022) **[F]**.
+
+**Duas ressalvas que a evidência não remove.** Primeira: em todos os casos citados há um laço externo (descida de gradiente, evolução) que foi dado, e a regressão da Objeção 3 reaparece nele. Segunda: vieses implícitos continuam sendo vieses; a Objeção 1 não é tocada. O que muda em relação à v0.1 é isto: **o programa não deve colocar operadores simbólicos em E0 por omissão**. Instanciações simbólicas e contínuas de R1 a R6 são candidatas legítimas, e o experimento 2 do protocolo é onde as contínuas são testadas. A frase da v0.1 "um aprendiz precisa de um detector de inconsistência que ele não pode aprender" fica restrita ao comparador de primeira ordem; para o de segunda ordem, a questão está aberta.
+
 ### 4.3 O que pode ser derivado, segundo a evidência disponível
 
 - **Espaço.** Philipona, O'Regan e Nadal (2003) mostraram que um agente com sensores e motores **não interpretados** pode inferir a dimensionalidade do espaço externo a partir da estrutura algébrica das contingências sensório-motoras **[C]**. Pierce e Kuipers (1997) mostraram aprendizagem de mapas a partir de sensores não interpretados **[C]**. Isso é a demonstração mais limpa de que uma categoria kantiana (espaço) pode ser derivada em vez de programada, com a ressalva de que o agente precisa de ação e de um operador de comparação.
@@ -224,6 +309,18 @@ Esta é a questão metodológica central do programa. Propomos quatro critérios
 4. **Critério de transferência estrutural.** A competência deve reduzir o custo em tarefas estruturalmente análogas com superfície nova, e **não** reduzir em tarefas não análogas (controle de distrator). Ganho indiscriminado indica melhoria genérica de busca, não conceito.
 
 Acrescentamos o aviso histórico: além do caso AM, o caso "Clever Hans" e a contaminação de benchmarks em modelos de linguagem mostram que o pesquisador é a fonte mais provável de erro. O experimento da seção 8 é desenhado para forçar esses quatro critérios.
+
+### 4.4-bis Revisão v0.2 — Critérios por camada
+
+**Para L1 (eficiência), os critérios 1, 2 e 4 da seção 4.4 permanecem. O critério 3 é substituído.** A v0.1 exigia que "currículos diferentes produzam abstrações diferentes". Isso é errado em dois sentidos: um aprendiz forte pode convergir ao mesmo ponto final a partir de qualquer ordem, e isso é robustez, não indício de que a capacidade estava no desenho; e dependência de ponto final pode ser produzida por compressão gulosa trivial, que não é conceitual. O critério 3' passa a ser **estrutura de pré-requisitos e sensibilidade de custo à ordem**: há conceitos inalcançáveis dentro do orçamento antes que outros sejam adquiridos, com um grafo de pré-requisitos previsto pela estrutura composicional dos conceitos e não pela superfície; e o custo, não necessariamente o ponto final, depende da ordem. A evidência humana apoia esta forma: Zhao, Lucas e Bramley (2024), em quatro experimentos com 570 participantes, encontram efeitos de ordem de currículo e de "caminho de jardim" na aprendizagem de conceitos causais composicionais, explicados por um modelo com biblioteca de conceitos reutilizados, e não por modelos simbólicos ou subsimbólicos sem biblioteca **[E/C]**.
+
+**Para L2 (reorganização qualitativa), critérios candidatos, nenhum validado [A]:**
+
+- *Constituição por papel*: substituir o corpo de uma representação construída por outro extensionalmente equivalente, mas estruturalmente diferente, não altera as inferências a jusante, porque elas dependem das relações da representação e não do seu corpo. Em aprendizes por síntese de programas isso falha por construção; o critério só se aplica a sistemas em que o conteúdo é relacional (semântica de papel conceitual, como em Piantadosi 2021, ou representações distribuídas).
+- *Mudança do conjunto de inferências licenciadas*: antes e depois, o sistema afirma implicações diferentes entre os mesmos itens, e a mudança não é explicável por acréscimo monotônico de regras.
+- *Perda em tradução*: um sistema restrito ao estado anterior não reproduz os julgamentos do estado posterior nem com dados ilimitados no mesmo orçamento. Ressalva: isto colapsa em L1 a menos que o orçamento seja infinito, o que mostra o tamanho do problema.
+
+**Para L3 (capacidades de generalização):** medir a política de generalização, não o desempenho. Em tarefas ambíguas de uma só amostra numa família nova, a distribuição de primeiras hipóteses do sistema antes e depois do treino numa família relacionada deve deslocar-se na direção prevista pela estrutura compartilhada e não se deslocar após uma família distratora. É o desenho de sobre-hipóteses de Kemp, Perfors e Tenenbaum (2007) convertido em teste.
 
 ### 4.5 Indução, fundamentação de símbolos e generalização sem pressupostos
 
@@ -367,6 +464,19 @@ Testar os sistemas estatísticos existentes, grandes e pequenos, exatamente nas 
 
 ## 8. Questão E — O primeiro experimento decisivo
 
+**Revisão v0.2.** A revisão independente identificou oito problemas no protocolo abaixo. O texto da v0.1 fica preservado nesta seção como registro; o protocolo corrigido está em `docs/02-protocolo-experimental.md`, que também especifica um segundo experimento e a ordem de execução. Os oito problemas e o que mudou:
+
+1. **Custo computacional contabilizado parcialmente.** A v0.1 comparava orçamentos por tarefa e ignorava o custo da compressão da biblioteca e da aprendizagem anterior. A v0.2 compara custo cumulativo total, incluindo busca em todas as tarefas, compressão, consultas ao oráculo e avaliação, com o aprendiz de base fixa recebendo o mesmo total.
+2. **Finito versus assintótico.** Pelo teorema da invariância (1.2-bis), nenhuma afirmação assintótica é admissível; o protocolo reporta tamanhos de efeito a orçamentos declarados e a forma da curva de vantagem em função do orçamento.
+3. **Dependência de currículo.** Critério substituído por pré-requisitos e sensibilidade de custo (4.4-bis).
+4. **Equivalência expressiva de E0 e E0'.** A v0.1 afirmava a equivalência sem demonstrá-la. A v0.2 exige compilações mútuas explícitas com limites de tamanho, publicadas antes das execuções.
+5. **Definição dos conceitos-alvo.** Cada conceito recebe definição formal, duas implementações de referência independentes e a distribuição de amostragem de grades.
+6. **Vazamento.** Partições com hashes publicados, oráculo restrito a um reservatório disjunto do teste, hiperparâmetros fixados em validação, e uma família de conceitos adversarial escrita por terceiro após o congelamento de E0.
+7. **Transferência real versus heurísticas do ambiente.** Testes de invariância a transformações, transferência entre portadores (grades, sequências, grafos), controle de transferência negativa e contagem de reuso.
+8. **Hipóteses sobre o controle neural.** A v0.1 previa que a rede falharia em extrapolação. Isso não é neutro e a evidência é mista. A v0.2 formula as duas saídas como resultados informativos e acrescenta um controle neural por compressão em tempo de teste.
+
+Regra: **sucesso no experimento 1 é evidência para H-B1 em um micro-mundo simbólico. Não é evidência de inteligência geral, nem de H-B2, nem de fundamentação de símbolos.**
+
 ### 8.1 Pergunta que o experimento responde
 
 Em um micro-mundo com dotação inicial declarada e pequena, **a construção de abstrações a partir das próprias soluções, sob um protocolo de contraexemplos, produz transições de eficiência que (i) não são fator constante, (ii) sobrevivem à mudança de base, (iii) dependem do currículo e (iv) transferem apenas para estrutura análoga?**
@@ -487,6 +597,8 @@ Razões:
 A segunda questão, imediatamente a seguir, é a definição do regime de experiência (passivo, ativo, dialético), porque é a variável independente que a hipótese original deixa implícita e que mais muda o que é derivável (seção 4.2, item sobre ação).
 
 Em ordem de prioridade: demarcação → regime de experiência → mecanismos de re-representação (Direção 2) → derivação sensório-motora (Direção 1) → revisão de método (Direção 3). O que fica explicitamente fora, por ora: arquitetura definitiva, escala, e qualquer afirmação sobre consciência.
+
+**Revisão v0.2.** A prioridade não muda: demarcação primeiro. O que muda é que a demarcação tem agora três camadas. Para L1 há critérios e um experimento. Para L3 há um critério e um teste derivável do mesmo experimento. Para L2 há apenas candidatos, e a honestidade exige dizer que, se L2 for real e irredutível, o programa ainda não tem instrumento para detectá-lo **[A]**. A segunda questão permanece o regime de experiência, e a seção 4.2-bis acrescenta uma terceira: se os requisitos funcionais R1 a R6 podem ser instanciados de modo contínuo sem que o comparador de segunda ordem seja dado. Essa terceira questão é a que o experimento 2 do protocolo começa a tocar.
 
 ---
 
@@ -673,3 +785,69 @@ Organizadas por área. As de 2024–2026 foram verificadas online em 2026-10-29;
 - Iten, R., Metger, T., Wilming, H., del Rio, L. e Renner, R. (2020). "Discovering physical concepts with neural networks". *Physical Review Letters* 124: 010508.
 - Chen, B., Huang, K., Raghupathi, S., Chandratreya, I., Du, Q. e Lipson, H. (2022). "Automated discovery of fundamental variables hidden in experimental data". *Nature Computational Science* 2: 433–442.
 - Cranmer, M. et al. (2020). "Discovering symbolic models from deep learning with inductive biases". *NeurIPS 2020*.
+
+
+### Referências acrescentadas na v0.2
+
+Verificadas online em 2026-10-29, salvo indicação.
+
+**Debate sobre bootstrapping e nativismo de conceitos**
+
+- Carey, S. (2011). "Précis of *The Origin of Concepts*" e "Concept innateness, concept continuity, and bootstrapping" (resposta aos comentários). *Behavioral and Brain Sciences* 34(3).
+- Carey, S. (2014). "On learning new primitives in the language of thought: reply to Rey". *Mind & Language* 29(2). (Existência verificada online; paginação não verificada.)
+- Carey, S. (2015). "Why theories of concepts should not ignore the problem of acquisition". *Disputatio* 7(41): 113–163. Também em Margolis, E. e Laurence, S. (eds.), *The Conceptual Mind*, MIT Press, 415–454.
+- Rips, L. J., Asmuth, J. e Bloomfield, A. (2006). "Giving the boot to the bootstrap: how not to learn the natural numbers". *Cognition* 101: B51–B60.
+- Rips, L. J., Bloomfield, A. e Asmuth, J. (2008). "From numerical concepts to concepts of number". *Behavioral and Brain Sciences* 31: 623–642 (com comentários até p. 687).
+- Rips, L. J. e Hespos, S. J. (2011). "Rebooting the bootstrap argument: two puzzles for bootstrap theories of concept development". *Behavioral and Brain Sciences* 34(3).
+- Rips, L. J., Asmuth, J. e Bloomfield, A. (2013). "Can statistical learning bootstrap the integers?". *Cognition* 128: 320–330.
+- Margolis, E. e Laurence, S. (2008). "How to learn the natural numbers: inductive inference and the acquisition of number concepts". *Cognition* 106: 924–939. (Não verificada online nesta data.)
+- Margolis, E. e Laurence, S. (2011). "Beyond the building blocks model". *Behavioral and Brain Sciences* 34(3).
+- Shea, N. (2011). "Acquiring a new concept is not explicable-by-content". *Behavioral and Brain Sciences* 34(3).
+- Beck, J. (2017). "Can bootstrapping explain concept learning?". *Cognition* 158: 110–121.
+- Pantsar, M. (2021). "Bootstrapping of integer concepts: the stronger deviant-interpretation challenge (and how to solve it)". *Synthese* 199: 5791–5814.
+- Rey, G. (2014). "Innate and learned: Carey, Mad Dog Nativism, and the poverty of stimuli and analogies (yet again)". *Mind & Language* 29(2): 109–132.
+- Rule, J. S. e Piantadosi, S. T. (2025). "The end of radical concept nativism". arXiv:2505.18277.
+- Fodor, J. A. (2008). *LOT 2: The Language of Thought Revisited*. Oxford University Press. (Não verificada online nesta data.)
+- Le Corre, M. e Carey, S. (2007). "One, two, three, four, nothing more: an investigation of the conceptual sources of the verbal counting principles". *Cognition* 105: 395–438. (Não verificada online nesta data.)
+- Sarnecka, B. W. e Carey, S. (2008). "How counting represents number: what children must learn and when they learn it". *Cognition* 108: 662–674. (Não verificada online nesta data.)
+- Zhao, B., Lucas, C. G. e Bramley, N. R. (2024). "A model of conceptual bootstrapping in human cognition". *Nature Human Behaviour* 8: 125–136.
+
+**Mudança conceitual e capacidades de generalização**
+
+- Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
+- Chi, M. T. H. (1992). "Conceptual change within and across ontological categories: examples from learning and discovery in science". In Giere, R. (ed.), *Cognitive Models of Science*. University of Minnesota Press.
+- Thagard, P. (1992). *Conceptual Revolutions*. Princeton University Press.
+- Nersessian, N. J. (2008). *Creating Scientific Concepts*. MIT Press.
+- Karmiloff-Smith, A. (1992). *Beyond Modularity: A Developmental Perspective on Cognitive Science*. MIT Press.
+- Clark, A. e Karmiloff-Smith, A. (1993). "The cognizer's innards: a psychological and philosophical perspective on the development of thought". *Mind & Language* 8(4): 487–519.
+- Harlow, H. F. (1949). "The formation of learning sets". *Psychological Review* 56: 51–65.
+
+**Complexidade com recursos limitados**
+
+- Levin, L. A. (1973). "Universal sequential search problems". *Problems of Information Transmission* 9(3): 265–266.
+- Li, M. e Vitányi, P. (2008). *An Introduction to Kolmogorov Complexity and Its Applications*, 3ª ed. Springer.
+- Grünwald, P. D. (2007). *The Minimum Description Length Principle*. MIT Press.
+- Bennett, C. H. (1988). "Logical depth and physical complexity". In Herken, R. (ed.), *The Universal Turing Machine: A Half-Century Survey*. Oxford University Press.
+- Schmidhuber, J. (2002). "The speed prior: a new simplicity measure yielding near-optimal computable predictions". *COLT 2002*.
+- Lieder, F. e Griffiths, T. L. (2020). "Resource-rational analysis: understanding human cognition as the optimal use of limited computational resources". *Behavioral and Brain Sciences* 43: e1.
+- Marr, D. (1982). *Vision*. W. H. Freeman.
+
+**Implementações contínuas dos requisitos funcionais**
+
+- Liberman, A. M., Harris, K. S., Hoffman, H. S. e Griffith, B. C. (1957). "The discrimination of speech sounds within and across phoneme boundaries". *Journal of Experimental Psychology* 54: 358–368.
+- Gibson, E. J. (1969). *Principles of Perceptual Learning and Development*. Appleton-Century-Crofts.
+- Damper, R. I. e Harnad, S. R. (2000). "Neural network models of categorical perception". *Perception & Psychophysics* 62(4): 843–867.
+- Rao, R. P. N. e Ballard, D. H. (1999). "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects". *Nature Neuroscience* 2: 79–87.
+- Yu, A. J. e Dayan, P. (2005). "Uncertainty, neuromodulation, and attention". *Neuron* 46: 681–692.
+- Valle-Pérez, G., Camargo, C. Q. e Louis, A. A. (2019). "Deep learning generalizes because the parameter-function map is biased towards simple functions". *ICLR 2019*.
+- Shah, H., Tamuly, K., Raghunathan, A., Jain, P. e Netrapalli, P. (2020). "The pitfalls of simplicity bias in neural networks". *NeurIPS 2020*.
+- Xie, S. M., Raghunathan, A., Liang, P. e Ma, T. (2022). "An explanation of in-context learning as implicit Bayesian inference". *ICLR 2022*.
+- von Oswald, J. et al. (2023). "Transformers learn in-context by gradient descent". *ICML 2023*.
+- Akyürek, E., Schuurmans, D., Andreas, J., Ma, T. e Zhou, D. (2023). "What learning algorithm is in-context learning? Investigations with linear models". *ICLR 2023*.
+- Tani, J. (2016). *Exploring Robotic Minds: Actions, Symbols, and Consciousness as Self-Organizing Dynamic Phenomena*. Oxford University Press.
+- Lazaridou, A. e Baroni, M. (2020). "Emergent multi-agent communication in the deep learning era". arXiv:2006.02419.
+- van Gelder, T. (1998). "The dynamical hypothesis in cognitive science". *Behavioral and Brain Sciences* 21: 615–665.
+- Spivey, M. (2007). *The Continuity of Mind*. Oxford University Press.
+- Bruineberg, J., Dołęga, K., Dewhurst, J. e Baltieri, M. (2022). "The Emperor's new Markov blankets". *Behavioral and Brain Sciences* 45: e183.
+- Wiskott, L. e Sejnowski, T. J. (2002). "Slow feature analysis: unsupervised learning of invariances". *Neural Computation* 14: 715–770.
+- Xu, F. e Spelke, E. S. (2000). "Large number discrimination in 6-month-old infants". *Cognition* 74: B1–B11.
