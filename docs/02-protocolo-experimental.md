@@ -2,18 +2,50 @@
 
 ## Documento 02 — Dois experimentos, comparação e ordem de execução
 
-**Status:** v0.1 (2026-10-29). Pré-registro em rascunho. Sem código. Sem arquitetura definitiva. Depende do documento 01 na versão v0.2, em particular das camadas L0–L3 (1.2-bis), das hipóteses H-B1, H-B2, H-B3 (1.3-bis), dos requisitos funcionais R1–R6 (4.2-bis) e dos critérios por camada (4.4-bis).
+**Status:** **v0.2** (2026-10-29). Pré-registro em rascunho. Sem código do experimento. Sem arquitetura definitiva. Depende do documento 01 (v0.2, com a nota v0.3 em 1.2-bis). A v0.1 deste documento está no histórico do repositório (commit `48d616d`).
 
 **Rótulos epistêmicos:** [P] prova formal; [E] evidência empírica; [C] resultado computacional; [F] interpretação filosófica; [H] hipótese; [R] condição de refutação; [A] questão aberta.
+
+### Histórico de revisões
+
+**v0.1 → v0.2 (segunda auditoria independente).**
+
+| # | Seção | A v0.1 dizia | A v0.2 corrige para |
+|---|---|---|---|
+| 1 | 0.5, 2.6 | "Pelo teorema da invariância, nenhuma afirmação assintótica é admissível" | O teorema da invariância vale para máquinas universais; E0 não é universal, tem combustível e domínio finito. O argumento é substituído pelo **lema de inlining** para linguagens tipadas finitas e pela observação de que não há parâmetro assintótico num domínio finito. A regra "finito, nunca assintótico" permanece, com outra justificativa (seção 2.0) |
+| 2 | 2.3 | Equivalência de E0 e E0' "demonstrada" por compilações mais testes amostrais, rotulada [P] | Equivalência delimitada formalmente: traduções composicionais com lemas por primitiva, provados por indução estrutural sobre uma semântica finita truncada e comum. Testes amostrais são testes da implementação dos tradutores, nunca prova (seção 2.3) |
+| 3 | 2.2 | Mistura de Bernoulli com rejeição até balancear | Auditoria numérica das frequências (seção 2.2.2, `analysis/`): `LinhasIguais` em 9×9 tem frequência da ordem de 2 × 10⁻⁵; `ComponentesVsVazias` é degenerado (2 × 10⁻⁴) e foi retirado; vários conceitos têm positivos concentrados em um único valor de p, o que cria um **confundidor de densidade**. Geradores construtivos, negativos emparelhados em densidade e avaliação natural separada (seção 2.2.3) |
+| 4 | 2.2 | Três conceitos por família | Potência do teste de sinal com três conceitos é zero. Famílias geradas por **esquemas** com pelo menos 20 conceitos-alvo no desfecho primário, análise pareada por conceito (seção 2.2.4) |
+| 5 | 2.8 | Currículo F1 → F2 → F3 | **Bloqueio de bootstrapping** identificado: os primeiros programas de componente conexo e de comparação de cardinalidade têm degraus de 13 a 16 nós (folhas mais abstrações) sem subtarefa natural abaixo deles. Currículo refeito com escada de tarefas-degrau, incluindo tarefas de função por exemplos de entrada e saída; regra de decisão pré-registrada para a variante E0+ (seção 2.8) |
+| 6 | 2.11 | Transferência entre grades, sequências e grafos para todos os conceitos | Auditoria por conceito e portador: a família de componentes transfere para sequências e grafos; a de comparação de cardinalidade transfere parcialmente para sequências e não para grafos; `MaiorTocaBorda`, `LinhasIguais` e `PrimeiraUltimaIguais` degeneram em sequências. Critério de não-vazamento do adaptador e controle "só adaptador" (seção 2.11) |
+| 7 | 2.7 | F4 adversarial "escrita por terceiro após congelamento" | F4 com dificuldade comparável por faixas de tamanho medidas no piloto, classes de abstração exigidas, geradores auditados, e **oráculo oculto** que responde rótulos e contraexemplos sem revelar definições (seção 2.7.2) |
+| 8 | 3.4, 3.5 | Violação de expectativa como medida de objeto; "capacidade que some com a ablação do viés estava no viés" | Separação operacional entre detecção de anomalia, aprendizagem de regularidade, representação de objeto e causalidade (seção 3.4); controles de intervenção fortalecidos e sondas contrafactuais (seção 3.4, E-6); desenho fatorial viés × dados com quatro leituras, substituindo a inferência "dependente de viés = programado" (seção 3.5); critérios funcionais sem pressupor representação simbólica (seção 3.0) |
+| 9 | 2.13 | Matriz de resultados | Acrescentadas saídas F-h (bloqueio de currículo) e F-i (confundidor de densidade), e a regra de que nenhum resultado positivo isolado demonstra a hipótese |
 
 ### Sumário
 
 0. Regras do protocolo
 1. O que cada experimento pode e não pode testar
-2. Experimento 1 — Abstração sob dialética em micro-mundo de grades (versão corrigida)
-3. Experimento 2 — Agente sensório-motor em micro-mundo sem definições (desenho preliminar)
+2. Experimento 1 — Abstração sob dialética em micro-mundo de grades
+   - 2.0 Fundamentos formais corrigidos
+   - 2.1 Pergunta e hipóteses
+   - 2.2 Ambiente, conceitos, auditoria de frequências, geradores, famílias e potência
+   - 2.3 E0, E0' e a equivalência delimitada
+   - 2.4 Aprendizes
+   - 2.5 Contabilização integral de custo
+   - 2.6 Finito versus assintótico
+   - 2.7 Protocolo de dados sem vazamento e F4 com oráculo oculto
+   - 2.8 Currículo, escada de tarefas e bloqueio de bootstrapping
+   - 2.9 Protocolo dialético
+   - 2.10 Medidas
+   - 2.11 Auditoria de transferência
+   - 2.12 Controles
+   - 2.13 Hipóteses neutras para controles neurais
+   - 2.14 Matriz de resultados e critérios de decisão
+   - 2.15 Limitações
+3. Experimento 2 — Agente sensório-motor em micro-mundo sem definições
 4. Comparação dos dois experimentos
-5. Ordem de execução e justificativa
+5. Ordem de execução
 6. Status epistêmico das afirmações deste protocolo
 7. Questões abertas preservadas
 8. Referências
@@ -22,13 +54,14 @@
 
 ## 0. Regras do protocolo
 
-1. **Regra fundamental.** A definição mensurável de aprendizagem usada aqui (transições de eficiência em recursos finitos, camada L1, mais testes de política de generalização, camada L3) é a primeira operacionalização do programa. Não é uma definição da natureza da inteligência. Nenhum resultado deste protocolo será descrito como evidência de inteligência geral.
-2. **Pré-registro integral.** Antes de qualquer execução, ficam publicados com hash: a dotação inicial E0 e sua variante E0' com a demonstração de equivalência; as definições formais e as implementações de referência de todos os conceitos; as distribuições de amostragem; as partições de dados; os orçamentos; as tolerâncias; a matriz de resultados. Qualquer mudança posterior é uma nova versão do protocolo, não uma correção.
-3. **Nenhum critério de sucesso depende de leitura humana de programas ou de pesos.** Toda medida é comportamental, de custo ou de invariância.
-4. **Resultados negativos são resultados.** A matriz de resultados (2.13 e 3.6) diz o que cada saída significa antes de ela ocorrer.
-5. **Finito, nunca assintótico.** Pelo teorema da invariância (documento 01, 1.2-bis) [P], nenhuma afirmação de separação assintótica é admissível. Reportam-se tamanhos de efeito a orçamentos declarados e a forma da curva de vantagem em função do orçamento.
-6. **Custo integral.** Toda comparação entre aprendizes é feita a custo cumulativo total igual, incluindo aprendizagem anterior, construção de biblioteca, consultas ao oráculo e avaliação.
-7. **Hipóteses neutras.** Para cada controle, as duas saídas possíveis têm leitura pré-registrada. Nenhum controle é desenhado para falhar.
+1. **Regra fundamental.** A definição mensurável de aprendizagem usada aqui (transições de eficiência em recursos finitos, camada L1, mais testes de política de generalização, camada L3) é a primeira operacionalização do programa. Não é uma definição da natureza da inteligência. Nenhum resultado será descrito como evidência de inteligência geral.
+2. **Nenhum resultado positivo isolado demonstra a hipótese.** H-B1 só é considerada apoiada por um conjunto de desfechos pré-registrados (2.14) sobre famílias de conceitos, com controles, em duas bases, e com replicação por sementes. Um conceito aceito, um controle favorável, ou uma execução são observações, não demonstrações.
+3. **Pré-registro integral.** Antes de qualquer execução confirmatória ficam publicados com hash: E0 e E0' com as traduções e os lemas; definições formais, implementações de referência e geradores de todos os conceitos; distribuições; partições; orçamentos; tolerâncias; a matriz de resultados; a escada de currículo. Qualquer mudança posterior é uma nova versão, não uma correção.
+4. **Nenhum critério de sucesso depende de leitura humana de programas ou de pesos.** Toda medida é comportamental, de custo ou de invariância.
+5. **Finito, nunca assintótico.** O domínio é finito (grades de 1 a 9) e as linguagens não são universais; não existe parâmetro assintótico. Reportam-se razões finitas de custo a orçamentos declarados (2.0, 2.6).
+6. **Custo integral.** Toda comparação é a custo cumulativo total igual, incluindo aprendizagem anterior, construção de biblioteca, consultas ao oráculo e avaliação, e incluindo o aumento do fator de ramificação que uma biblioteca maior impõe à busca.
+7. **Hipóteses neutras.** Para cada controle, as saídas possíveis têm leitura pré-registrada. Nenhum controle é desenhado para falhar.
+8. **Piloto e confirmatório separados.** O piloto (documento 03) usa sementes, grades e instâncias de conceito próprias. Nada que o piloto tenha exposto entra no desfecho primário confirmatório.
 
 ---
 
@@ -36,309 +69,391 @@
 
 | Alvo | Experimento 1 (grades) | Experimento 2 (agente) |
 |---|---|---|
-| L0 expressividade teórica | Trivial, não testada | Trivial, não testada |
-| L1 expressividade efetiva (H-B1) | **Sim**, alvo principal | Sim, para espaço, objeto, identidade, quantidade e causa |
-| L2 mudança qualitativa (H-B2) | **Não, por construção**: toda abstração é uma definição | Candidato apenas: só se a instanciação for relacional ou contínua; sem critério validado [A] |
-| L3 capacidades de generalização (H-B3) | Parcial: teste de política de generalização entre famílias | Parcial: transferência de corpo e de mundo |
-| Fundamentação (R1–R6 contínuos) | Não: símbolos dados | **Sim**, alvo principal |
-| Regime de experiência | Dialético (oráculo de contraexemplos) | Ativo (ação com consequências), sem oráculo |
-| H-C revisão de método | Não: procedimento de busca fixo | Não: regra de plasticidade fixa |
+| L0 expressividade teórica | Não se aplica: E0 não é universal | Não se aplica |
+| L1 expressividade efetiva (H-B1) | **Sim**, alvo principal | Sim, para espaço, si/mundo, objeto, identidade, quantidade e causa |
+| L2 mudança qualitativa (H-B2) | **Não, por construção**: toda abstração é uma definição | Candidato apenas; sem critério validado [A] |
+| L3 capacidades de generalização (H-B3) | Parcial: política de generalização entre famílias | Parcial: transferência de corpo e de mundo |
+| Fundamentação (R1–R6 contínuos) | Não | **Sim**, alvo principal |
+| Regime de experiência | Dialético, com oráculo | Ativo, sem oráculo |
+| H-C revisão de método | Não | Não |
 | Inteligência geral | Não | Não |
 
 ---
 
-## 2. Experimento 1 — Abstração sob dialética em micro-mundo de grades (versão corrigida)
+## 2. Experimento 1 — Abstração sob dialética em micro-mundo de grades
+
+### 2.0 Fundamentos formais corrigidos
+
+**O que a v0.1 fez de errado.** Usou o teorema da invariância da complexidade de Kolmogorov, que diz que para máquinas universais U e V existe uma constante dependente apenas do par tal que o comprimento mínimo de descrição de qualquer objeto difere entre U e V por no máximo essa constante, para concluir que "toda vantagem de re-representação é fator constante" e que afirmações assintóticas são vazias. O teorema é verdadeiro **[P]**, mas não se aplica aos aprendizes deste experimento, por três razões: (i) E0 não é universal: tem combustível de recursão, listas truncadas e domínio finito; (ii) a quantidade relevante para um enumerador não é o comprimento de descrição mínimo, e sim o número de candidatos avaliados até encontrar uma solução, que depende da fatoração da linguagem de modo que o teorema não governa; (iii) num domínio finito não há parâmetro que cresça, logo "assintótico" não designa nada. A regra "finito, nunca assintótico" sobrevive por (iii), não por invariância.
+
+**Quatro quantidades que não podem ser confundidas.**
+
+| Quantidade | Definição neste experimento | O que uma biblioteca aprendida muda |
+|---|---|---|
+| Comprimento de descrição, s_L(f) | Menor tamanho (folhas mais abstrações, seção 2.3) de um termo de L que denota f | Diminui ou mantém (lema de inlining, abaixo) |
+| Custo de avaliação, t(p, x) | Passos da semântica operacional de p sobre a entrada x, limitados por combustível | **Não muda**: inlining preserva passos; só memoização mudaria |
+| Custo de busca, C_L(f, B) | Soma, sobre os candidatos enumerados até a solução dentro do orçamento B, de (custo de avaliação sobre os exemplos) | Pode diminuir muito, pode aumentar: menos profundidade, mas mais ramificação |
+| Recursos limitados | Orçamento B de candidatos avaliados por tarefa; combustível F(n) por recursão; truncamento de listas em F(n) | Não muda; é o que torna a diferença entre s_L e s_{L+ℓ} decisiva |
+
+**Lema de inlining (versão finita do que a v0.1 queria dizer).** Seja L uma linguagem tipada com termos fechados e tamanho |t| = número de folhas mais número de abstrações. Seja ℓ um termo fechado de L e L+ℓ a linguagem que acrescenta a constante c_ℓ com [[c_ℓ]] = [[ℓ]] e |c_ℓ| = 1. Então, para todo f denotável: (a) s_{L+ℓ}(f) ≤ s_L(f), porque todo termo de L é termo de L+ℓ; (b) s_L(f) ≤ s_{L+ℓ}(f) + k·(|ℓ| − 1), em que k é o número de ocorrências de c_ℓ num termo mínimo de L+ℓ, porque substituir cada ocorrência pelo corpo de ℓ dá um termo de L com a mesma denotação (por beta-redução, com a mesma semântica de combustível, já que inlining não altera a contagem de passos de `fix`); logo (c) s_L(f) ≤ |ℓ|·s_{L+ℓ}(f). Para uma biblioteca de m entradas, aplica-se o lema m vezes **[P, trivial e exato para esta classe de linguagens]**.
+
+**O que o lema implica e o que não implica.** Implica que uma biblioteca encurta descrições por um fator limitado por |ℓ| por ocorrência, isto é, uma quantidade finita e específica ao alvo. Não implica nada sobre custo de busca, que depende de (i) quantos candidatos de tamanho até s existem em cada linguagem, uma função que cresce exponencialmente em s com base que **aumenta** quando a biblioteca cresce, e (ii) da poda por tipos e por equivalência observacional. A razão C_L(f, B)/C_{L+ℓ}(f, B) é portanto uma quantidade empírica, finita, que pode ser maior ou menor que 1. **É exatamente isso que o experimento mede.** Nenhuma afirmação de "fator constante" ou "mais que constante" é feita: afirma-se uma razão medida a orçamentos declarados.
+
+**Complexidade de Levin e busca universal.** Também são noções sobre máquinas universais; o análogo finito aqui é o livro-razão de custo da seção 2.5. A nota v0.3 do documento 01 registra a correção.
 
 ### 2.1 Pergunta e hipóteses
 
-**Pergunta.** Em um micro-mundo com dotação inicial declarada e pequena, a construção de abstrações a partir das próprias soluções, sob um protocolo de contraexemplos, produz, a custo cumulativo total igual, (i) vantagem de eficiência em recursos finitos sobre o mesmo aprendiz sem construção, (ii) que sobrevive à mudança de fatoração da base, (iii) que exibe estrutura de pré-requisitos e (iv) que transfere apenas a estrutura análoga e a portadores novos?
+**Pergunta.** Em um micro-mundo com dotação inicial declarada e pequena, a construção de abstrações a partir das próprias soluções, sob um protocolo de contraexemplos e um currículo com degraus, produz, a custo cumulativo total igual, (i) vantagem de custo em recursos finitos sobre o mesmo aprendiz sem construção, (ii) que persiste sob mudança de fatoração da base, (iii) que exibe estrutura de pré-requisitos e (iv) que transfere apenas a estrutura análoga e a portadores em que a transferência é legítima?
 
-**Hipóteses testadas.** H-B1 integralmente; H-B3 pelo teste de política de generalização (2.9, medida M9). H-B2 não é testada (seção 1).
+**Hipóteses testadas.** H-B1 integralmente; H-B3 pelo teste de política de generalização (2.10, M9). H-B2 não é testada.
 
-### 2.2 Ambiente e definições formais dos conceitos
+### 2.2 Ambiente, conceitos, auditoria de frequências, geradores, famílias e potência
 
-**Instâncias.** Uma grade de tamanho n é uma função g de {1..n} × {1..n} em {0, 1}; o valor 1 é "preto". Tamanhos de treino: n em {3, 4, 5, 6}. Tamanhos de extrapolação: n em {7, 8, 9}.
+#### 2.2.1 Instâncias e definições auxiliares
 
-**Definições auxiliares (só para o ambiente e o oráculo; o aprendiz não as recebe).** Duas células são vizinhas se diferem em exatamente uma coordenada por exatamente uma unidade (vizinhança de 4). Um componente é um conjunto maximal de células pretas conexo por vizinhança. Uma célula toca a borda se alguma coordenada é 1 ou n. A metade esquerda são as colunas 1 até piso(n/2); a direita, as colunas n − piso(n/2) + 1 até n; a coluna central, se n é ímpar, não pertence a nenhuma.
+Uma grade de tamanho n é uma função g de {1..n}² em {0, 1}; 1 é "preto". Tamanhos de treino: 3 a 6. Extrapolação: 7 a 9. Vizinhança de 4. Componente: conjunto maximal de células pretas conexo por vizinhança. Borda: alguma coordenada igual a 1 ou a n. Metades: colunas 1 a piso(n/2) e n − piso(n/2) + 1 a n; a coluna central, se n é ímpar, não pertence a nenhuma. Toda definição de conceito é um predicado sobre grades de qualquer tamanho; as definições formais e as duas implementações de referência independentes (busca em largura explícita; formulação declarativa) ficam no pré-registro, com concordância exaustiva para n até 4 e por 10⁵ amostras por tamanho de 5 a 9. Discordância bloqueia o pré-registro.
 
-**Conceitos-alvo, com definição formal.** Cada conceito é um predicado sobre grades de qualquer tamanho.
+#### 2.2.2 Auditoria de frequências sob a distribuição natural
 
-| Família | Nome | Definição formal | Invariâncias declaradas |
+Distribuição natural: Bernoulli(p) independente por célula, p uniforme em {0,20; 0,35; 0,50; 0,65}. Fórmulas exatas onde existem; Monte Carlo com 20 000 amostras por célula para conceitos de componentes. O script e a saída completa estão em `analysis/audit_frequencias.py` e `analysis/audit_frequencias_saida.md` **[C]**. Resumo (frequência de positivos sob a mistura):
+
+| Conceito | n = 3 | n = 6 | n = 9 | Diagnóstico |
+|---|---|---|---|---|
+| TopoCheio | 0,113 | 0,023 | 0,006 | Positivos em 9×9 vêm quase só de p = 0,65 |
+| ParDireita | 0,59 | 0,91 | 0,98 | Negativos raros em n ≥ 6, só com p = 0,20 |
+| LinhaOcupada | 0,51 | 0,67 | 0,77 | Negativos concentrados em p = 0,20 |
+| UmComponente | 0,47 | 0,061 | 0,018 | Em 9×9, 99% dos positivos vêm de p = 0,65 |
+| DoisSeparados | 0,36 | 0,105 | 0,039 | Idem, dominado por p = 0,65 |
+| MaiorTocaBorda | 0,95 | 0,92 | 0,85 | Negativos raros e esparsos |
+| LinhasIguais | 0,136 | 0,002 | **1,7 × 10⁻⁵** | Um positivo a cada ~60 000 grades em 9×9; 4,2 × 10⁻⁵ com p = 0,20 e 6,8 × 10⁻⁶ com p = 0,50 |
+| MetadesIguais | 0,35 | 0,14 | 0,10 | Aceitável |
+| ComponentesVsVazias (v0.1) | 0,11 | 0,018 | **2,1 × 10⁻⁴** | Degenerado; retirado |
+| LinhaIgualColuna (candidato) | 0,21 | 0,003 | 2,5 × 10⁻⁵ | Só com gerador construtivo |
+| PrimeiraUltimaIguais (novo) | 0,35 | 0,25 | 0,20 | Bom |
+| TodosMesmoTamanho (novo, F2×F3) | 0,65 | 0,106 | 0,022 | Bimodal em p (0,20 e 0,65) |
+| NenhumaIsolada (novo) | 0,42 | 0,165 | 0,070 | Dominado por p = 0,65 em n grande |
+| TresComponentes (novo) | 0,115 | 0,151 | 0,053 | Dominado por p = 0,65 em n grande |
+| ExisteComponenteReto (novo) | 0,25 | 0,55 | 0,74 | Negativos concentrados em p = 0,65 |
+| ComponentesIgualLinha1 (novo) | 0,28 | 0,086 | 0,043 | Aceitável |
+
+**Duas consequências.** Primeira: rejeição simples é inviável ou enviesada para vários conceitos; `LinhasIguais` exige da ordem de 6 × 10⁴ sorteios por positivo em 9×9 e os positivos obtidos são extremos. Segunda, e mais grave: para a maioria dos conceitos, os positivos e os negativos sob a mistura diferem sistematicamente em **densidade** (fração de células pretas). Um classificador por limiar de densidade obteria acurácia balanceada alta em conjuntos "balanceados por rejeição", sem representar o conceito. A v0.1 não controlava isto. É a saída F-i da matriz 2.14.
+
+#### 2.2.3 Geradores: distribuição de desenho e distribuição natural
+
+Dois regimes de avaliação, sempre reportados separadamente.
+
+**Distribuição de desenho (treino, oráculo, teste principal).** Para cada conceito c e tamanho n:
+
+- **Positivos construtivos.** Um gerador específico por esquema (abaixo), que produz um positivo diretamente, seguido de verificação pelas duas implementações de referência; rejeição apenas se a verificação falhar (por exemplo, fusão acidental de componentes). Os geradores são publicados e auditados: para cada (c, n) reporta-se a taxa de aceitação e a distribuição de densidade dos positivos.
+- **Negativos emparelhados em densidade.** Para cada positivo, um negativo com **o mesmo número de células pretas**, obtido por: (a) permutação aleatória das células, verificada negativa; ou (b) **quase-acerto por troca**: aplicação do menor número de trocas (uma célula preta e uma branca trocam de lugar) que inverte o rótulo, encontrado por busca local com reinícios. Metade dos negativos de cada tipo. Trocas, não inversões, para preservar densidade.
+- **Verificação do confundidor.** Em cada conjunto de desenho, a acurácia balanceada de um classificador por limiar de densidade, ajustado no próprio conjunto, deve ser ≤ 0,55. Caso contrário o conjunto é rejeitado e o gerador revisto.
+
+**Esquemas de geradores construtivos.**
+
+| Esquema | Geração de positivos |
+|---|---|
+| Cardinalidade de A igual à de B (regiões disjuntas) | Sortear k; escolher k células de A e k de B uniformemente; preencher o resto por Bernoulli(p) com p sorteado |
+| Para toda linha, cardinalidade igual à da linha 1 | Sortear k; cada linha recebe um k-subconjunto uniforme de colunas |
+| Cardinalidade de A no máximo a de B | Sortear k_A ≤ k_B; preencher como acima |
+| Número de componentes igual a m | Semear m passeios aleatórios de comprimento sorteado, com faixa de separação de uma célula; verificar contagem; rejeitar fusões |
+| Todos os componentes com propriedade P | Semear componentes gerados sob P (retos, de tamanho fixo, tocando a borda); verificar |
+| Existe componente com P | Um componente sob P mais ruído esparso verificado |
+| Conceitos rasos F1 e F1' | Construção direta mais preenchimento por Bernoulli |
+
+**Distribuição natural (avaliação independente, obrigatória).** Conjuntos de teste sorteados da mistura de Bernoulli sem balanceamento, 10⁵ grades por tamanho, com hash publicado. Reportam-se taxa-base, precisão, revocação, coeficiente de correlação de Matthews, e o desempenho do classificador trivial de maioria. Para conceitos com taxa-base abaixo de 10⁻³ num tamanho, a avaliação natural mede apenas especificidade, e isso é dito. A avaliação natural é a resposta à pergunta "o programa aprendido funciona no mundo de onde os exemplos não vieram".
+
+**Contraexemplos difíceis para o oráculo.** Dado uma hipótese h e o conceito c, o oráculo procura a menor grade em que h e c discordam, com ordem de minimalidade (n, número de pretas, ordem lexicográfica linha a linha): exaustivamente para n de 1 a 4; para n de 5 a 6, num reservatório fixo por semente de positivos construtivos, negativos emparelhados e quase-acertos, seguido de busca local por trocas que maximiza a discordância mantendo o número de pretas mínimo. O caso difícil, c raro e h "sempre falso", é coberto pelos positivos construtivos.
+
+#### 2.2.4 Famílias por esquema, tarefas independentes e potência
+
+**Por que três conceitos não bastam.** O desfecho primário é pareado por conceito (L-lib contra L-fix a custo igual). Com k conceitos, o teste de sinal unilateral a α = 0,05 tem potência (auditoria em `analysis/`, [C]):
+
+| k conceitos | π = 0,7 | π = 0,8 | π = 0,9 |
 |---|---|---|---|
-| F1 | TopoCheio | Para todo j, g(1, j) = 1 | Reflexão horizontal |
-| F1 | ParDireita | Existe (i, j) com j < n, g(i, j) = 1 e g(i, j+1) = 1 | Reflexão horizontal, reflexão vertical |
-| F1 | LinhaOcupada | Para todo i existe j com g(i, j) = 1 | Reflexão horizontal, reflexão vertical |
-| F2 | UmComponente | O número de componentes é exatamente 1 | Rotações, reflexões, transposição |
-| F2 | DoisSeparados | O número de componentes é exatamente 2 | Rotações, reflexões, transposição |
-| F2 | MaiorTocaBorda | Existe um componente de cardinalidade máxima que contém uma célula de borda | Rotações, reflexões, transposição |
-| F3 | LinhasIguais | Para todo i, a cardinalidade de {j : g(i, j) = 1} é igual à de {j : g(1, j) = 1} | Reflexão horizontal |
-| F3 | MetadesIguais | A cardinalidade das células pretas na metade esquerda é igual à da metade direita | Reflexão horizontal |
-| F3 | ComponentesVsVazias | O número de componentes é igual ao número de linhas i sem célula preta | Reflexão horizontal |
-| F1' | CantoSupEsq | g(1, 1) = 1 | Nenhuma |
-| F1' | Diagonal | Para todo i, g(i, i) = 1 | Transposição |
-| F1' | ColunaDoisVazia | Para todo i, g(i, 2) = 0 | Reflexão vertical |
-| F4 | (adversarial) | Três conceitos escritos por um revisor independente após o congelamento de E0, com definições formais seladas; revelados só após as execuções principais | Declaradas pelo revisor |
+| 3 | 0,00 | 0,00 | 0,00 |
+| 10 | 0,15 | 0,38 | 0,74 |
+| 20 | 0,42 | 0,80 | 0,99 |
+| 30 | 0,73 | 0,97 | 1,00 |
 
-A família F1' é o distrator: conceitos rasos sem componente conexo e sem comparação de cardinalidades. Os conceitos de F2 exigem a noção de componente; os de F3, a de igualdade de cardinalidades, sem contagem dada; ComponentesVsVazias exige ambas.
+em que π é a probabilidade de vantagem por conceito. Sementes não são unidades independentes para uma afirmação sobre famílias; agregam-se por maioria dentro de cada conceito. **Exigência: pelo menos 20 conceitos-alvo no desfecho primário**, idealmente 30.
 
-**Implementações de referência.** Cada conceito recebe duas implementações independentes: uma por busca em largura explícita sobre a grade, outra por uma formulação declarativa (por exemplo, uma consulta em lógica de primeira ordem finita ou em uma biblioteca de grafos). As duas devem concordar em todas as grades de n até 4 (enumeração exaustiva) e em 10^5 grades aleatórias por tamanho de 5 a 9. Qualquer discordância bloqueia o pré-registro. Testes de propriedade verificam as invariâncias declaradas.
+**Famílias geradas por esquemas.** Os esquemas vivem no ambiente; o aprendiz só recebe exemplos e contraexemplos.
 
-**Distribuição de amostragem.** Para cada conceito e tamanho, as grades são geradas por uma mistura de distribuições de Bernoulli independentes por célula com parâmetro p em {0,20; 0,35; 0,50; 0,65}, com rejeição até obter classes balanceadas. Metade dos negativos são "quase-acertos": obtidos de um positivo pela inversão de uma única célula que muda o rótulo, quando tal célula existe. A geração é determinística por semente. A razão: sob Bernoulli puro com p = 0,5, grades 6 × 6 quase sempre têm um único componente grande, e o conceito UmComponente seria trivialmente desequilibrado.
+- **F2 (componentes):** número de componentes em S, para S em {= 1, = 2, = 3, ≥ 2, ≤ 2}; existe componente com P, para P em {toca a borda, contém um canto, é reto, tem pelo menos 3 células}; todos os componentes têm P, para P em {reto, pelo menos 2 células, toca a borda}. Doze conceitos.
+- **F3 (comparação de cardinalidades):** cardinalidade de A igual à de B, para pares de regiões em {linha 1, linha n, coluna 1, coluna n, metade esquerda, metade direita}, excluindo pares que se sobrepõem; cardinalidade de A no máximo a de B para os mesmos pares; para toda linha, cardinalidade igual à da linha 1; para toda coluna, idem. Cerca de vinte conceitos, dos quais os de metades são mais difíceis (2.8).
+- **F2×F3:** todos os componentes têm o mesmo tamanho; número de componentes igual à cardinalidade da linha 1; idem coluna 1; o maior componente tem pelo menos tantas células quanto a linha 1. Quatro conceitos.
+- **F1 e F1':** como na v0.1, com `ParDireita` substituído por `ParAdjacente` (existe célula preta com vizinha preta), por razão de tamanho de programa (2.8).
+- **F4:** adversarial (2.7.2).
 
-### 2.3 Dotação inicial E0 e variante E0'
+**Tarefas independentes sem conhecimento do alvo.** Além dos conceitos-alvo, o currículo inclui **tarefas de função** especificadas por pares entrada-saída, do tipo `Grade → Lista Pos` ou `Lista Pos → Lista Pos → Bool`, como "as vizinhas pretas de p", "as células pretas da linha r", "o conjunto alcançável a partir de p". Elas são degraus (2.8) e são dadas a **todos** os aprendizes, inclusive L-fix. O que o aprendiz recebe de uma tarefa de função são exemplos e contraexemplos, nunca programas. O que o ambiente sabe, e o aprendiz não, é que as soluções dessas tarefas são subtermos das soluções dos alvos.
 
-**E0.** Uma linguagem funcional tipada, com tipos Bool, Pos, Grade, Lista(a), e as primitivas:
+**Análise pré-registrada.** Desfecho primário: diferença pareada de aceitação a custo igual sobre os conceitos de F2 ∪ F3 ∪ F2×F3 não expostos no piloto, teste de sinal unilateral, α = 0,05. Secundário: diferença pareada do logaritmo do custo até aceitação, teste de Wilcoxon. Tamanhos de efeito e intervalos por conceito, todos reportados.
 
-- sobre grades: `celula : Grade → Pos → Bool`; `posicoes : Grade → Lista(Pos)`; `linhas : Grade → Lista(Lista(Bool))`; `colunas : Grade → Lista(Lista(Bool))`; `vizinhos : Grade → Pos → Lista(Pos)`;
-- booleanas: `e`, `ou`, `nao`, `igualB : Bool → Bool → Bool`; `igualP : Pos → Pos → Bool`;
-- sobre listas: `vazia?`, `cabeca`, `cauda`, `mapear`, `filtrar`, `algum`, `todos`, `concatenar`;
-- recursão: `fix` com combustível igual a n² passos, que devolve `falso` ao esgotar.
+### 2.3 E0, E0' e a equivalência delimitada
 
-Não há: aritmética, contagem, comparação de comprimentos, componente conexo, simetria, coordenadas numéricas acessíveis ao programa. Com esta base, "mesmo comprimento" de duas listas é derivável por recursão simultânea (uma dezena de nós) e "componente conexo" por iteração até ponto fixo sobre vizinhos (algumas dezenas de nós). O combustível torna toda função total sobre o domínio finito, o que restringe a expressividade a uma classe primitiva-recursiva limitada e declarada.
+#### 2.3.1 Núcleo comum
 
-**E0'.** Expressivamente equivalente, fatorada de outro modo: `linhas`, `colunas` e `posicoes` são substituídas por uma única `dobra : (Pos → a → a) → a → Grade → a` sobre as posições em ordem fixa, mais `sucessorLinha` e `sucessorColuna` parciais; `algum` e `todos` não são primitivas; listas são substituídas por conjuntos com `membro?`, `inserir`, `escolher` e `vazio?`.
+Cálculo lambda simplesmente tipado com constantes. Tipos: Bool, Pos, Grade, Lista a, e setas. Termos: variáveis, abstrações, aplicações, constantes, e `fix`. **Tamanho** |t| = número de folhas (constantes e variáveis) mais número de abstrações. **Semântica finita truncada Sem_n**, comum às duas linguagens: para cada n de 1 a 9, Pos = {1..n}², Grade = funções de Pos em Bool, listas têm comprimento no máximo F(n) = n⁴ (operações que produziriam listas maiores truncam), e `fix f` denota f aplicada F(n) vezes ao valor padrão do tipo (falso, vazio, (1,1)). Toda função é total. Nenhuma das duas linguagens é universal, e nenhuma afirmação sobre máquinas universais é usada.
 
-**Demonstração de equivalência (exigida pela revisão).** A equivalência é demonstrada por exibição, antes das execuções, de duas tabelas de compilação:
+#### 2.3.2 Primitivas de E0 (29)
 
-- para cada primitiva de E0, um termo de E0' com o mesmo comportamento sobre todas as grades de n até 9, com seu tamanho em nós, e o maior tamanho é a constante c(E0 → E0');
-- o inverso, com a constante c(E0' → E0).
+- Grade: `celula`, `posicoes` (ordem linha a linha), `pretas` (células pretas em ordem), `linhas` (lista de listas de posições), `colunas`, `vizinhos` (vizinhas de 4 dentro da grade, ordem fixa).
+- Bool: `verdadeiro`, `falso`, `e`, `ou`, `nao`, `se`.
+- Pos: `igualP`.
+- Lista: `vazio`, `cons`, `vazia?`, `cabeca`, `cauda`, `mapear`, `filtrar`, `algum`, `todos`, `concatenar`, `juntar`, `reverter`, `pertence`, `uniao`, `diferenca`.
+- Recursão: `fix`.
 
-A verificação é por teste exaustivo para n até 4 e por amostragem para n de 5 a 9. Com as duas compilações, toda função definível em uma linguagem é definível na outra com acréscimo de tamanho no máximo linear no número de ocorrências de primitivas, o que é a equivalência relevante [P, dado o domínio finito e as compilações exibidas]. As constantes c são publicadas, e também a menor descrição conhecida de cada conceito-alvo em cada linguagem, obtida por busca com orçamento grande, declarada como limite superior.
+Não há aritmética, contagem, comparação de comprimentos, componente conexo, simetria, nem coordenadas acessíveis. `pertence`, `uniao` e `diferenca` são utilidades de conjunto sobre listas de posições; `pretas` é uma conveniência igual a `filtrar (celula g) (posicoes g)`. Ambas as escolhas são declaradas e estão nas duas bases, logo não afetam o controle C3.
 
-O que esta demonstração garante: qualquer diferença de desempenho entre E0 e E0' é efeito de fatoração, não de expressividade. O que não garante: que os custos de busca sejam iguais, porque o ponto do controle C3 é justamente que não são.
+#### 2.3.3 Primitivas de E0' (20)
+
+- Grade: `celula`, `posicoes`, `pretas`, `linhaDe` (posições da linha que contém p), `colunaDe`, `vizinhos`.
+- Bool: as seis de E0. Pos: `igualP`.
+- Lista: `vazio`, `cons`, `vazia?`, `cabeca`, `cauda`, `dobraR` (dobra à direita).
+- Recursão: `fix`.
+
+Em E0', `mapear`, `filtrar`, `algum`, `todos`, `concatenar`, `juntar`, `reverter`, `pertence`, `uniao`, `diferenca`, `linhas` e `colunas` são termos derivados.
+
+#### 2.3.4 O que é provado, como, e o que não é
+
+**Afirmação delimitada.** Existem traduções composicionais τ: E0 → E0' e τ': E0' → E0, que são homomorfismos sobre a estrutura dos termos (comutam com abstração e aplicação, fixam variáveis e `fix`, e levam cada constante a um termo fechado), tais que para todo termo fechado t e todo n de 1 a 9, Sem_n[[τ(t)]] = Sem_n[[t]] e Sem_n[[τ'(t)]] = Sem_n[[t]]; e |τ(t)| ≤ c·|t|, |τ'(t)| ≤ c'·|t|, com c = máximo de |τ(p)| sobre as primitivas p de E0 e c' análogo.
+
+**Prova.** Por indução estrutural sobre t, dado que as traduções são homomorfismos e que a semântica é composicional, basta provar um lema por primitiva: Sem_n[[τ(p)]] = Sem_n[[p]]. Os lemas das primitivas de lista são identidades de dobra (por exemplo, `mapear f` é igual a `dobraR (λx acc. cons (f x) acc) vazio`), provadas por indução sobre listas de comprimento no máximo F(n); como `dobraR` em E0' é definida com o mesmo combustível F(n) que `fix` em E0, e as listas estão truncadas em F(n), as duas definições coincidem em todo o domínio, inclusive nos casos de truncamento. Os lemas das primitivas de grade (`linhas` em termos de `linhaDe` e vice-versa) são verificações diretas das definições sobre Pos finito. As provas são feitas à mão no pré-registro e, se possível, mecanizadas; **[P, condicional à publicação das provas por primitiva]**.
+
+**Constantes estimadas** (a serem publicadas exatamente): c ≈ 35, dominada por `linhas` e `colunas`; c' = 15, dominada por `dobraR` traduzida por `fix`. A assimetria importa: em E0' a recursão simultânea sobre duas listas custa 9 folhas e abstrações; em E0, 15. A equivalência de expressividade não iguala custos, e é por isso que C3 é um controle e não uma redundância.
+
+**O que os testes amostrais são.** Os tradutores são implementados; a implementação é testada contra a semântica por enumeração exaustiva para n até 4 e por amostragem para n de 5 a 9. Isso testa a implementação. Não é a prova, e não substitui a prova.
+
+**O que não é afirmado.** Não se afirma que E0 ou E0' sejam universais, nem que toda função sobre grades seja denotável, nem nada sobre complexidade de Kolmogorov. Afirma-se apenas: mesmo conjunto de funções denotáveis sob Sem_n, com distorção de tamanho limitada por c e c'.
 
 ### 2.4 Aprendizes
 
-Todos usam o mesmo procedimento de busca quando aplicável: enumeração tipada por tamanho crescente, ordenada por comprimento de descrição, com poda por tipo, sob orçamento medido em nós avaliados.
+Procedimento de busca comum: enumeração tipada por tamanho crescente, com poda por tipo e por equivalência observacional calculada **apenas sobre grades do reservatório de treino e do oráculo**, sob orçamento B em candidatos avaliados.
 
-- **L-mem**: tabela de instâncias vistas, com vizinho mais próximo por distância de Hamming para instâncias novas e rejeição para tamanhos novos.
-- **L-fix**: busca em E0 fixa.
-- **L-lib**: busca em E0 mais um passo de compressão após cada conceito aceito: os programas das soluções são refatorados e os fragmentos recorrentes viram primitivas nomeadas, no espírito de DreamCoder (Ellis et al. 2021) e Stitch (Bowers et al. 2023), com um único hiperparâmetro de compressão fixado em validação.
-- **L-nn-conv**: rede convolucional pequena com agregação global, treinada com os mesmos exemplos e contraexemplos. Viés declarado: equivariância a translação.
-- **L-nn-seq**: rede sequencial sem convolução, sobre a grade linearizada. Viés declarado: nenhum espacial.
-- **L-mdl**: um modelo neural pequeno ajustado por minimização de comprimento de descrição em tempo de teste, por tarefa, no espírito de Liao e Gu (2025). Viés declarado: o da arquitetura.
-- **L-teto**: E0 acrescida de `componentes` e `mesmoComprimento` como primitivas. Limite superior.
-
-Para os aprendizes neurais, são reportadas duas condições: sem aumento de dados, e com aumento de dados pelas invariâncias declaradas de cada conceito. O aumento é uma adição explícita a E0 e é tratado como tal.
+- **L-mem**: tabela com vizinho mais próximo por distância de Hamming; rejeita tamanhos novos.
+- **L-fix**: busca em E0 fixa; recebe o mesmo currículo, inclusive as tarefas de função.
+- **L-lib**: L-fix mais compressão após cada tarefa aceita: subtermos recorrentes das soluções viram constantes nomeadas (anti-unificação de fragmentos, no espírito de Ellis et al. 2021 e Bowers et al. 2023), com um hiperparâmetro de compressão fixado no piloto.
+- **L-nn-conv**, **L-nn-seq**, **L-mdl**: como na v0.1, com vieses declarados; duas condições, sem e com aumento de dados pelas invariâncias declaradas.
+- **L-teto**: E0 mais `componentes` e `mesmoNumero` como primitivas.
+- **L-adapt** (só em transferência, 2.11): E0 mais o adaptador de portador, sem biblioteca.
 
 ### 2.5 Contabilização integral de custo
 
-**Unidade de custo.** Para aprendizes simbólicos, número de nós de programa avaliados sobre grades, mais o número de avaliações de grades. Para aprendizes neurais, número de operações de ponto flutuante. Para comparação entre os dois, tempo de parede em hardware fixo com semente fixa, reportado ao lado da unidade nativa. As duas escalas são reportadas; não se afirma comparabilidade exata entre elas.
-
-**Livro-razão.** Para cada aprendiz e cada execução, registram-se separadamente: custo de busca por conceito; custo de compressão de biblioteca por passo; número de consultas ao oráculo e custo de cada busca por contraexemplo (que é custo do ambiente, não do aprendiz, mas é reportado); custo de avaliação em teste. O custo cumulativo total é a soma, e é o que se compara.
-
-**Comparação a custo igual.** L-fix recebe, em cada ponto do currículo, orçamento tal que seu custo cumulativo total iguale o de L-lib até aquele ponto, incluindo a compressão de L-lib. O mesmo para L-teto e para os neurais, na escala nativa.
-
-**Curvas de amortização.** Para cada aprendiz: conceitos aceitos em função do custo cumulativo. O ponto de cruzamento entre L-lib e L-fix, se existir, é um resultado primário. Custo de aprendizagem anterior nunca é tratado como afundado: ele entra no eixo.
+Unidade nativa simbólica: candidatos avaliados mais passos de avaliação (passos da semântica operacional somados sobre exemplos). Unidade neural: operações de ponto flutuante. Tempo de parede em hardware fixo reportado ao lado. Livro-razão por aprendiz e execução: busca por tarefa; compressão por passo; consultas ao oráculo (contadas) e custo da busca por contraexemplo (custo do ambiente, reportado à parte); avaliação em teste. **O custo de busca sob biblioteca maior inclui o aumento de ramificação**: um candidato avaliado conta um, qualquer que seja a linguagem. Comparação a custo cumulativo total igual em cada ponto do currículo; curvas de aceitação por custo cumulativo; ponto de cruzamento como resultado primário. Custo de aprendizagem anterior nunca é afundado.
 
 ### 2.6 Finito versus assintótico
 
-Orçamentos por conceito de B, 3B, 10B e 30B, com B fixado em validação de modo que L-fix resolva toda a família F1 em B. Para cada orçamento, reporta-se a vantagem de L-lib sobre L-fix em conceitos aceitos e em custo. A forma esperada, se H-B1 vale neste regime, é uma vantagem que diminui com o orçamento, porque L-fix eventualmente alcança os conceitos profundos. A forma da curva é o resultado; nenhuma afirmação de separação assintótica é feita, por 1.2-bis do documento 01 [P].
+Orçamentos por tarefa B, 3B, 10B e 30B, com B fixado no piloto de modo que L-fix resolva toda a família F1 em B. Para cada orçamento, reporta-se a razão de custo e a diferença de aceitação. A forma da curva é o resultado. Nenhuma separação assintótica é afirmada (2.0).
 
-### 2.7 Protocolo de dados sem vazamento
+### 2.7 Protocolo de dados sem vazamento e F4 com oráculo oculto
 
-- **Reservatórios.** P_oráculo: grades de n de 1 a 5, de onde o oráculo retira contraexemplos. D_val: grades de n de 3 a 6, usadas só para fixar hiperparâmetros com a família F1. D_teste_int: grades de n de 3 a 6. D_teste_ext: grades de n de 7 a 9. D_teste_remap: grades de D_teste_int e D_teste_ext com codificação de superfície alterada (três cores, das quais só uma conta como "preta"). D_teste_port: instâncias de outros portadores (2.11).
-- **Disjunção.** Toda grade é serializada e seu hash registrado; os reservatórios são disjuntos por construção e a disjunção é verificada antes da execução.
-- **Publicação.** O hash de cada reservatório serializado é publicado no pré-registro; as grades só são reveladas após as execuções.
-- **Hiperparâmetros.** Orçamento B, número máximo de rodadas K, parâmetro de compressão de L-lib, taxa de aprendizagem e número de épocas dos neurais: fixados em D_val com a família F1 e nunca mais tocados. As famílias F2, F3, F1' e F4 não são usadas em nenhuma etapa de ajuste.
-- **Família adversarial F4.** Escrita por um revisor independente depois do congelamento de E0 e do pré-registro, com hash selado publicado antes das execuções e definições reveladas depois. Seu papel é controlar o risco de que E0 tenha sido desenhada, mesmo sem intenção, para as famílias F2 e F3. É a defesa contra o caso AM.
+#### 2.7.1 Partições
 
-### 2.8 Protocolo dialético
+Reservatórios P_oráculo (n de 1 a 6, por semente), D_treino (3 a 6), D_val (3 a 6, só família F1 e tarefas de função para fixar hiperparâmetros), D_teste_int (3 a 6), D_teste_ext (7 a 9), D_teste_remap, D_teste_port (portadores), D_teste_nat (distribuição natural). Disjunção por hash de grade serializada, verificada antes de cada execução; hashes dos conjuntos publicados. Sementes confirmatórias a partir de 20 000; as do piloto, de 10 000 a 19 999 (documento 03). Instâncias de conceito usadas no piloto são marcadas "expostas" e excluídas do desfecho primário.
 
-Para cada conceito c, em ordem de currículo F1, depois F2, depois F3, com F1' e F4 em braços próprios:
+#### 2.7.2 Família adversarial F4 com oráculo oculto
 
-1. O oráculo fornece 2 positivos e 2 negativos de D_treino (n de 3 a 6).
-2. O aprendiz produz uma hipótese h consistente com os dados, dentro do orçamento.
-3. O oráculo busca um contraexemplo mínimo em P_oráculo: exaustivamente para n de 1 a 4, em ordem de tamanho e depois de ordem lexicográfica do vetor linha a linha; para n = 5, em um reservatório fixo de 10^5 grades por semente. Se não há contraexemplo, o conceito é aceito provisoriamente.
-4. O aprendiz revisa h. Repete até K = 12 rodadas. Todas as hipóteses são registradas.
-5. Avaliação em D_teste_int, D_teste_ext, D_teste_remap e D_teste_port.
+- **Autor independente**, após o congelamento de E0 e do pré-registro. Recebe: a especificação de E0 e E0'; o vocabulário dos esquemas (componentes, cardinalidades, linhas, colunas, bordas); as **faixas de tamanho mínimo** medidas no piloto para F2 e F3 (por exemplo, "entre 10 e 16 folhas com as abstrações da escada"), sem os programas; e o script de auditoria de frequências.
+- **Conteúdo:** seis conceitos, dois por classe de abstração exigida (fecho; comparação de cardinalidade; ambas), um dos quais fora do alcance das abstrações da escada por desenho, para medir transferência negativa e sobreajuste da biblioteca. Cada conceito vem com definição formal, duas implementações de referência, gerador construtivo auditado e verificação do confundidor de densidade.
+- **Oráculo oculto:** os aprendizes interagem com F4 só por um serviço que responde rótulo(grade) e contraexemplo(h), executando h contra as referências seladas; os experimentadores não veem as definições até o fim das execuções. O serviço registra todas as consultas.
+- **Dificuldade comparável, verificada depois:** após a revelação, os tamanhos mínimos de F4 são medidos pelo mesmo procedimento do piloto. Conceitos fora das faixas de F2 e F3 são reportados mas excluídos da comparação primária.
 
-### 2.9 Medidas
+### 2.8 Currículo, escada de tarefas e bloqueio de bootstrapping
 
-- **M1** Conceito aceito dentro do orçamento (sim/não), por orçamento.
-- **M2** Número de rodadas dialéticas até aceitação.
-- **M3** Custo cumulativo total até aceitação (2.5).
-- **M4** Acurácia em D_teste_int, D_teste_ext, D_teste_remap, D_teste_port.
-- **M5** Taxa de falsos positivos em negativos quase-acertos.
-- **M6** Localidade da revisão: distância de edição entre hipóteses sucessivas, e se a nova hipótese reutiliza ou cria uma abstração.
-- **M7** Regressão: acurácia nos conceitos anteriores após cada novo conceito.
-- **M8** Identidade comportamental das abstrações construídas: concordância entre cada primitiva inventada por L-lib e os predicados auxiliares de referência (componentes, mesmo comprimento) em grades aleatórias uniformes de todos os tamanhos.
-- **M9** Política de generalização (H-B3): para cada família nova, após 1 positivo e 1 negativo, a distribuição das cinco primeiras hipóteses do aprendiz, antes e depois do treino numa família relacionada e, separadamente, numa família distratora; reporta-se a divergência de Jensen–Shannon entre as distribuições e a fração de massa em hipóteses que usam abstrações estruturais.
+#### 2.8.1 O bloqueio
 
-### 2.10 Controles
+Programas de referência em E0, escritos à mão como limites superiores de tamanho (folhas mais abstrações), verificados contra as implementações de referência no piloto:
 
-- **C1 Orçamento.** L-fix a custo cumulativo igual ao de L-lib (2.5) e aos múltiplos de 2.6.
-- **C2 Ordem.** L-lib com F2 antes de F1; com F3 primeiro; com ordem aleatória. Mede pré-requisitos e sensibilidade de custo (critério 3' do documento 01, 4.4-bis), não diferença de ponto final.
-- **C3 Base.** Tudo repetido em E0' (2.3). A vantagem de L-lib deve existir nas duas bases; sua magnitude é reportada ao lado das constantes de compilação.
-- **C4 Oráculo.** Contraexemplos mínimos substituídos por exemplos aleatórios em número igual.
-- **C5 Lesão.** Abstrações de L-lib removidas antes de F3.
-- **C6 Distrator.** L-lib treinado em F1' em vez de F1 antes de F2 e F3.
-- **C7 Superfície.** Avaliação em D_teste_remap.
-- **C8 Biblioteca de programas aleatórios.** L-lib cuja biblioteca é construída por compressão de programas aleatórios de tamanho comparável, sem tarefas. Testa se o conteúdo da biblioteca importa, e não apenas o fato de haver uma.
+| Degrau | Programa (esboço) | Tamanho com os degraus anteriores | Tamanho bruto |
+|---|---|---|---|
+| ExistePreta (F1) | `λg. nao (vazia? (pretas g))` | 5 | 5 |
+| vizPretos (função) | `λg p. filtrar (celula g) (vizinhos g p)` | 8 | 8 |
+| ParAdjacente (F1) | `λg. algum (λp. nao (vazia? (vizPretos g p))) (pretas g)` | 10 | 15 |
+| NenhumaIsolada (F2) | `λg. todos (λp. nao (vazia? (vizPretos g p))) (pretas g)` | 10 | 15 |
+| passo (função) | `λg S. uniao S (juntar (mapear (vizPretos g) S))` | 9 | 14 |
+| **fecho** (função) | `λg. fix (λrec S. se (vazia? (diferenca (passo g S) S)) S (rec (passo g S)))` | **16** | ≈ 38 |
+| componenteDe (função) | `λg p. fecho g (cons p vazio)` | 7 | ≈ 44 |
+| UmComponente (F2) | `λg. e (nao (vazia? (pretas g))) (todos (λq. pertence q (componenteDe g (cabeca (pretas g)))) (pretas g))` | 17 | ≈ 60 |
+| pretasDe (função) | `λg r. filtrar (celula g) r` | 6 | 6 |
+| **descartar** (função) | `fix (λrec A B. se (vazia? A) B (rec (cauda A) (cauda B)))` | **13** | 13 |
+| noMaximo (função) | `λA B. vazia? (descartar B A)` | 6 | ≈ 18 |
+| mesmoNumero (função) | `λA B. e (noMaximo A B) (noMaximo B A)` | 7 | ≈ 35 |
+| PrimeiraUltimaIguais (F3) | `λg. mesmoNumero (pretasDe g (cabeca (linhas g))) (pretasDe g (cabeca (reverter (linhas g))))` | 13 | ≈ 45 |
+| LinhasIguais (F3) | `λg. todos (λr. mesmoNumero (pretasDe g r) (pretasDe g (cabeca (linhas g)))) (linhas g)` | 14 | ≈ 45 |
 
-### 2.11 Transferência real versus heurísticas do ambiente
+Em E0', `descartar` é `λA B. dobraR (λx acc. cauda acc) B A`, com 9 (contra 13 em E0); `fecho` continua a exigir `fix` e fica em torno de 16 nas duas bases.
 
-Uma abstração construída pode ser um atalho específico das grades (por exemplo, "n = 3 e canto preto") em vez de estrutura. Os testes:
+**Diagnóstico.** O currículo F1 → F2 → F3 da v0.1 tinha, entre F1 e o primeiro conceito de F2, um salto de cerca de 60 folhas brutas, e nenhuma solução de F1 contém subtermos de `fecho`. Isso é um bloqueio de bootstrapping: não há degrau. Mesmo com a escada acima, restam dois degraus de 13 a 16 (`descartar` e `fecho`), que são os laços de recursão, e que não têm subtarefa natural abaixo deles. Enumeradores puros, mesmo com poda por tipo e equivalência observacional, costumam alcançar tamanhos de 8 a 12 em contextos de tipo estreitos; 16 é incerto **[H, a medir no piloto]**.
 
-- **T1 Invariância.** Para cada conceito, acurácia sob as transformações declaradas em 2.2 deve ser igual à acurácia sem transformação, dentro da tolerância.
-- **T2 Portadores.** Os mesmos conceitos abstratos em portadores novos: sequências binárias, onde "componente" é uma corrida de uns e "metades" são as duas metades da sequência; e grafos explícitos dados por listas de adjacência, onde "componente" é componente conexo. A mudança de portador é feita trocando apenas as primitivas de portador (`posicoes`, `vizinhos`, `linhas`, `colunas`) por equivalentes publicados; a biblioteca construída em grades é mantida. Mede-se M3 e M4 no portador novo contra L-fix no portador novo.
-- **T3 Transferência negativa.** Após F1', nenhuma redução de custo em F2 e F3 além da variância entre sementes.
-- **T4 Reuso.** Cada abstração é anotada com o número de conceitos distintos em que aparece. Abstrações de uso único são reportadas separadamente e contam como indício de heurística, não de conceito.
-- **T5 Identidade comportamental.** M8 com limiares pré-registrados: concordância de pelo menos 99% para n até 6 e de pelo menos 95% para n de 7 a 9.
+#### 2.8.2 O currículo corrigido
 
-### 2.12 Hipóteses neutras para os controles neurais
+- **Escada F2:** ExistePreta → vizPretos → ParAdjacente, NenhumaIsolada → passo → fecho → componenteDe → conceitos de F2 por esquema.
+- **Escada F3:** pretasDe → descartar → noMaximo → família "no máximo" por esquema → mesmoNumero → família "igual" por esquema → LinhasIguais, ColunasIguais.
+- **F2×F3** após as duas escadas.
+- **Currículo distrator (C6):** mesmo número de tarefas de função e de predicados, com tamanhos de programa emparelhados, mas sem subtermos de `fecho` nem de `descartar` (por exemplo, "as células da primeira coluna", "a lista das linhas invertida", "existe célula preta no canto").
+- **Ordem embaralhada (C2):** mesmas tarefas em ordem aleatória, e em ordem inversa, para medir pré-requisitos e sensibilidade de custo.
 
-A v0.1 previa que a rede convolucional falharia em extrapolação. Isso não é neutro e a evidência é mista: há arquiteturas com viés adequado que extrapolam em tamanho para alguns predicados, e resultados como o de Liao e Gu (2025) mostram generalização sem pré-treino por compressão. As saídas e suas leituras:
+A escolha dos degraus usa conhecimento do experimentador sobre as soluções. Isso é legítimo porque (i) o aprendiz recebe só exemplos e contraexemplos; (ii) todos os aprendizes recebem o mesmo currículo; (iii) o distrator controla "qualquer escada ajuda". O que não é legítimo, e não é feito, é dar as abstrações como primitivas.
 
-| Saída | Leitura pré-registrada |
-|---|---|
-| L-nn-conv generaliza em D_teste_int e falha em D_teste_ext | Generalização estatística com viés de translação, sem extrapolação de tamanho neste regime de dados |
-| L-nn-conv generaliza em ambos | O viés convolucional mais o regime de dados bastam para estes conceitos; a comparação relevante passa a ser de custo e de M9, e a Alternativa 2 do documento 01 ganha apoio neste domínio |
-| L-nn-conv falha mesmo em D_teste_int | Lacuna de eficiência de amostra neste regime; não diz nada sobre capacidade com mais dados |
-| L-nn-seq se comporta como L-nn-conv | O viés espacial não é o fator decisivo |
-| L-mdl generaliza em ambos | Compressão em tempo de teste basta neste domínio; apoio ao princípio de compressão sem biblioteca explícita |
-| L-mdl falha onde L-lib acerta | A biblioteca, não só a compressão, é o fator |
+#### 2.8.3 Regra de decisão pré-registrada sobre E0+
 
-Nenhuma dessas saídas é "fracasso" do programa; cada uma muda o desenho do experimento 2.
+Se o piloto mostrar que os degraus de 13 a 16 não são alcançáveis em E0 sob o orçamento máximo B_max, a execução confirmatória usa **E0+**, igual a E0 mais dois combinadores genéricos e não específicos de grade: `ateFixo : (Lista a → Lista a) → Lista a → Lista a` (itera até não mudar, com combustível F(n)) e `dobraR`. Com E0+, `fecho` cai para 4 e `descartar` para 9. A consequência para a alegação é declarada: parte do que seria "construir fecho" passa a ser "aplicar iteração genérica à vizinhança preta", e o custo C0 de cada conceito-alvo em E0+ é publicado. E0'+ recebe os mesmos dois combinadores para manter a equivalência.
 
-### 2.13 Matriz de resultados pré-registrados
+### 2.9 Protocolo dialético
 
-Os resultados referem-se a famílias, com múltiplas sementes e intervalos reportados. Nenhum conceito isolado conta.
+Para cada tarefa (predicado ou função), na ordem do currículo: 2 positivos e 2 negativos (para funções, 4 pares entrada-saída) de D_treino; hipótese dentro do orçamento; contraexemplo mínimo conforme 2.2.3; revisão; até K = 12 rodadas; todas as hipóteses registradas; avaliação em todos os conjuntos de teste.
+
+### 2.10 Medidas
+
+M1 aceitação por orçamento; M2 rodadas; M3 custo cumulativo (2.5); M4 acurácia em D_teste_int, _ext, _remap, _port; **M4n** métricas na distribuição natural (2.2.3); M5 falsos positivos em quase-acertos por troca; M6 localidade da revisão; M7 regressão; M8 identidade comportamental das abstrações contra os predicados auxiliares de referência; M9 política de generalização (H-B3), como na v0.1; **M10** confundidor de densidade: acurácia balanceada do classificador por densidade em cada conjunto, reportada ao lado de M4.
+
+### 2.11 Auditoria de transferência
+
+#### 2.11.1 Adaptadores de portador
+
+Um adaptador substitui apenas as primitivas de portador (`celula`, `posicoes`, `pretas`, `linhas`, `colunas`, `vizinhos`; em E0', `linhaDe`, `colunaDe`) por equivalentes publicados; a biblioteca aprendida em grades é mantida sem alteração; o programa aprendido é avaliado sem modificação.
+
+| Primitiva | Sequências binárias de comprimento m | Grafos rotulados (nó preto ou branco) |
+|---|---|---|
+| `posicoes` | índices 1..m | nós em ordem fixa |
+| `celula` | valor no índice | rótulo do nó |
+| `pretas` | índices com valor 1 | nós pretos |
+| `vizinhos` | {i−1, i+1} dentro dos limites | adjacência |
+| `linhas` | lista com uma única lista: todos os índices | **não definida** |
+| `colunas` | lista de singletons | **não definida** |
+
+**Critério de não-vazamento.** Um adaptador é legítimo se cada primitiva é definida por uma relação do portador que (i) não menciona nenhum predicado-alvo nem nenhuma abstração da escada e (ii) tem complexidade de definição não maior que a versão em grades. Adjacência em grafos é legítima: componente é o fecho da adjacência, e o fecho é o que o aprendiz teve de construir. Uma "partição em metades" para grafos **não** é legítima: introduziria estrutura que o conceito pressupõe. **Controle "só adaptador" (L-adapt):** E0 mais adaptador, sem biblioteca, no portador novo; se resolve o conceito dentro do orçamento, o adaptador vazou ou o conceito é trivial no portador, e a transferência desse conceito é anulada.
+
+#### 2.11.2 Veredito por conceito
+
+| Conceito ou família | Sequências | Grafos | Razão |
+|---|---|---|---|
+| ExistePreta, ParAdjacente, NenhumaIsolada | Legítima | Legítima | Só `pretas` e `vizinhos` |
+| Número de componentes em S | Legítima (corridas de uns) | Legítima | Fecho da adjacência |
+| TodosMesmoTamanho, todos os componentes com pelo menos 2 células | Legítima | Legítima | Idem |
+| Existe componente reto | Degenera (toda corrida é reta) | Não definida (sem linhas) | Usa `linhas`/`colunas` |
+| MaiorTocaBorda | **Degenera**: borda em grades é "no máximo 3 vizinhas", em sequências é sempre verdadeira | **Não transferível**: sem borda | A noção de borda é derivada do grau de vizinhança |
+| PrimeiraUltimaIguais, LinhasIguais, ColunasIguais | **Degenera**: uma única linha | Não transferível | `linhas` |
+| Cardinalidade de A igual à de B com A, B metades | Legítima (metades da sequência via `colunas`) | Não transferível | Partição não definível sem vazamento |
+| Cardinalidade de coluna 1 igual à de coluna n | Degenera (singletons) | Não transferível | — |
+| ComponentesIgualLinha1 | Legítima mas pouco natural (corridas igual a uns) | Não transferível | `linhas` |
+
+**Consequência.** A transferência legítima é o teste T2 só para a família de componentes (sequências e grafos) e para os conceitos de metades (sequências). Para o resto, T2 não se aplica e isso é dito; nenhum resultado de transferência é computado para conceitos degenerados.
+
+#### 2.11.3 Demais testes
+
+T1 invariância por conceito; T3 transferência negativa sob o distrator; T4 reuso de abstrações (uso único é indício de heurística); T5 identidade comportamental com limiares pré-registrados (99% para n até 6; 95% para 7 a 9).
+
+### 2.12 Controles
+
+C1 orçamento a custo igual e múltiplos; C2 ordem; C3 base E0'; C4 oráculo com exemplos aleatórios; C5 lesão da biblioteca; C6 distrator com escada emparelhada; C7 superfície remapeada; C8 biblioteca de programas aleatórios; **C9** só adaptador (2.11); **C10** classificador por densidade em todo conjunto (M10).
+
+### 2.13 Hipóteses neutras para controles neurais
+
+Como na v0.1, com uma adição: cada controle neural é avaliado também em D_teste_nat e em M10, de modo que uma rede que aprenda densidade seja identificada como tal, e isso seja reportado como "aprendeu o confundidor", não como fracasso nem como sucesso.
+
+### 2.14 Matriz de resultados e critérios de decisão
+
+Os resultados referem-se a famílias com k ≥ 20 conceitos, sementes múltiplas, e a análise pré-registrada de 2.2.4.
 
 **Se H-B1 vale neste regime:**
 
-- **S1** A custo cumulativo igual, L-lib aceita a maioria de F2 e F3; L-fix não, em B nem em 3B.
-- **S2** S1 persiste em E0' (C3).
-- **S3** O custo de F3 após F2 é menor do que após F1' (C6); a lesão C5 elimina o ganho; C8 não o produz.
-- **S4** T1 a T5 satisfeitos; em T2, a biblioteca reduz custo também no portador novo.
-- **S5** Em C2, há conceitos de F3 não aceitos antes de F2 em nenhuma ordem, e o custo total depende da ordem.
-- **S6** Em M9, a política de generalização desloca-se após família relacionada e não após distratora.
+- S1 L-lib aceita significativamente mais conceitos de F2 ∪ F3 ∪ F2×F3 que L-fix a custo cumulativo igual, em B e em 3B.
+- S2 S1 persiste em E0'.
+- S3 O custo após a escada é menor que após o distrator (C6); a lesão (C5) elimina o ganho; C8 não o produz.
+- S4 T1, T3, T4, T5 satisfeitos; T2 satisfeito nos conceitos em que a transferência é legítima, com L-adapt falhando.
+- S5 Em C2, há conceitos não aceitos antes dos degraus de recursão (13 a 16) em nenhuma ordem, e o custo total depende da ordem.
+- S6 Em M9, a política de generalização desloca-se após família relacionada e não após o distrator.
+- S7 M10 ≤ 0,55 em todos os conjuntos de desenho, e M4n coerente com M4.
 
-**Saídas que enfraquecem ou refutam:**
+**Saídas que enfraquecem ou refutam, e a decisão que cada uma dispara:**
 
-- **F-a** L-fix a custo igual, ou a 3B, iguala L-lib. Leitura: a vantagem é pequena em relação ao orçamento; H-B1 não confirmada neste regime.
-- **F-b** A vantagem desaparece em E0'. Leitura: artefato de fatoração; o critério 2 de demarcação fica validado como necessário; a E0 original é suspeita.
-- **F-c** C4 iguala a dialética. Leitura: contraexemplos mínimos não importam neste regime; a correspondência com o elenchus é fraca aqui.
-- **F-d** L-lib aceita F3 com abstrações que não passam em T5. Leitura: compressão sem identidade conceitual; é a saída mais informativa para a teoria, porque separa L1 de qualquer noção de conceito.
-- **F-e** S1 e S2 valem, S3 ou T2 falham. Leitura: ganho de busca genérico, sem transferência estrutural.
-- **F-f** F4 (adversarial) não é aceita por L-lib enquanto F2 e F3 são. Leitura: E0 estava ajustada, mesmo sem intenção, às famílias planejadas; o resultado principal é desvalorizado.
-- **F-g** S1 a S6 valem. Leitura: H-B1 e parte de H-B3 demonstradas em micro-mundo simbólico. Nada sobre H-B2, fundamentação, revisão de método ou inteligência geral.
+- F-a L-fix a custo igual, ou a 3B, iguala L-lib. Decisão: H-B1 não apoiada neste regime; reportar e passar ao experimento 2.
+- F-b A vantagem some em E0'. Decisão: artefato de fatoração; E0 suspeita; repetir com uma terceira fatoração antes de qualquer alegação.
+- F-c C4 iguala a dialética. Decisão: reportar que contraexemplos mínimos não importam neste regime.
+- F-d Abstrações aceitas sem identidade comportamental (T5). Decisão: separar compressão de conceito no relato; é a saída mais informativa.
+- F-e S1 e S2 com S3 ou T2 falhando. Decisão: ganho de busca genérico; H-B1 sem transferência.
+- F-f F4 não aceita enquanto F2 e F3 são. Decisão: E0 ou escada ajustadas às famílias planejadas; resultado principal desvalorizado.
+- **F-h** Nenhum aprendiz alcança os degraus de recursão em E0 nem em E0+. Decisão: bloqueio de currículo; o experimento não testa H-B1 e é redesenhado (busca guiada, ou tarefas de função mais finas); nada é alegado.
+- **F-i** M10 > 0,55 em algum conjunto, ou um aprendiz atinge M4 alto com M4n incoerente. Decisão: confundidor; o conjunto e os resultados nele são invalidados e regenerados.
+- F-g S1 a S7 valem. Decisão: H-B1 e parte de H-B3 apoiadas em micro-mundo simbólico, **nesta E0, nesta escada, nestas famílias**. Nada sobre H-B2, fundamentação, revisão de método ou inteligência geral. Nenhuma alegação é feita antes da replicação em E0' (S2) e da família F4.
 
-### 2.14 O que o experimento 1 não mostra
+### 2.15 Limitações
 
-Não mostra L2 (toda abstração é uma definição), fundamentação de símbolos (as grades são simbólicas), instanciações contínuas dos requisitos R1–R6, revisão de método (H-C), abertura, nem inteligência geral. Mostra, no melhor caso, H-B1 e um sinal de H-B3 em um domínio onde a verdade de base é exata.
-
-### 2.15 Recursos
-
-CPU, Python, horas de computação por configuração, código na ordem de uma a duas mil linhas, tudo determinístico por semente. O custo humano principal é o pré-registro: definições formais, implementações duplas, compilações E0/E0' e a família F4 por terceiro.
+Não testa L2 (toda abstração é definição), fundamentação, instanciações contínuas, H-C, abertura, inteligência geral. A escada é desenhada pelo experimentador, o que limita a alegação a "dado um currículo com degraus, a construção de biblioteca produz as transições"; a versão com currículo autogerado é um experimento posterior. A busca é enumerativa pura; resultados com busca guiada por rede podem diferir. As famílias são geradas por esquemas que o experimentador conhece; F4 é a única defesa contra o ajuste inadvertido de E0 às famílias.
 
 ---
 
-## 3. Experimento 2 — Agente sensório-motor em micro-mundo sem definições (desenho preliminar)
+## 3. Experimento 2 — Agente sensório-motor em micro-mundo sem definições
+
+### 3.0 Vocabulário e compromissos (v0.2)
+
+"Conceito emergente", neste experimento, designa um **aglomerado de capacidades funcionais** medidas comportamentalmente (persistência, ligação de propriedades, contagem, uso de intervenção), **não** um símbolo, um slot, nem uma variável discreta no estado interno. Representações contínuas, distribuídas ou atratoras contam, desde que passem os testes. Análises do estado interno (decodificação linear, dimensionalidade do manifold de estados) são descritivas e nunca critério.
 
 ### 3.1 Pergunta
 
-Um agente com sensores e motores não interpretados, dotado apenas de instanciações contínuas dos requisitos funcionais R1–R6, adquire capacidades da camada L1 para espaço, distinção entre si e mundo, objeto persistente, identidade ao longo do tempo, quantidade e causa própria, sem que nenhuma dessas noções seja dada? E as capacidades adquiridas são sobre o mundo, e não sobre a fiação dos sensores ou sobre os vieses declarados?
+Como na v0.1, com a adição: as capacidades adquiridas são distinguíveis de detecção de anomalia e de aprendizagem de regularidades temporais?
 
-Este experimento é onde as alternativas construtivista-contínua (documento 01, 4.2-bis) e "a arquitetura fez tudo" se enfrentam diretamente.
+### 3.2 Capacidades iniciais e instanciação
 
-### 3.2 Capacidades iniciais inevitáveis e sua instanciação
-
-| Requisito | Instanciação neste experimento | Declarado como dado |
-|---|---|---|
-| R1 Discriminabilidade | Vetor sensorial contínuo s_t com k canais; topologia dada pela métrica euclidiana do espaço de ativações | Sim |
-| R2 Sinal de discrepância | Erro de predição de s_{t+1} a partir de (s_t, a_t) e estado interno; só o comparador de **primeira ordem** é dado | Sim, primeira ordem; segunda ordem **não** é dada |
-| R3 Plasticidade | Regra de atualização de parâmetros por gradiente do erro de predição; regra fixa | Sim |
-| R4 Ordenação de preferência | Implícita na arquitetura e na regra; mais um bônus de exploração por progresso de aprendizagem (Oudeyer, Kaplan e Hafner 2007) | Sim, declarado e ablacionável |
-| R5 Persistência | Estado recorrente de dimensão fixa | Sim |
-| R6 Ação | Vetor motor a_t com m canais, efeitos desconhecidos | Sim |
-| Vieses adicionais, opcionais e ablacionáveis | Prior de lentidão (Wiskott e Sejnowski 2002); gargalo de baixa dimensão | Sim, cada um em braço próprio |
-| **Não dados** | Segmentação, coordenadas, identificadores de objeto, slots, contagem, operador de intervenção, detector de mudança de classe de modelo | — |
-
-A ausência do comparador de segunda ordem é deliberada: a questão aberta de 4.2-bis é se ele emerge. Se não emergir e o agente mesmo assim adquirir as capacidades, aprendemos que ele não é necessário para L1 neste regime; se o agente estagnar em um ponto previsível pela ausência desse comparador, aprendemos onde ele é necessário.
+Como na v0.1 (R1–R6 contínuos; comparador de segunda ordem não dado; vieses opcionais ablacionáveis: lentidão, gargalo, bônus de exploração).
 
 ### 3.3 Representação de observações e ações
 
-- **Mundo.** Arena bidimensional limitada, tempo discreto, com objetos: discos persistentes, alguns empurráveis por contato, alguns fixos; oclusores opacos; em algumas condições, um "vento" exógeno que desloca objetos. Física determinística com uma pequena componente estocástica declarada.
-- **Sensores.** Uma janela local em torno do agente é projetada por uma matriz fixa aleatória em k canais (por exemplo, k = 64), com permutação e sinal aleatórios por semente. O agente nunca recebe a geometria da janela, a permutação ou a matriz. Nada é rotulado.
-- **Motores.** m canais (por exemplo, m = 4) mapeados por uma matriz fixa aleatória em deslocamento (dx, dy), com dois canais nulos. O agente não recebe a matriz. A existência de canais nulos é um teste: a dimensionalidade motora efetiva (2) deve ser recuperada, não a nominal (4).
-- **Ações.** Escolhidas pelo agente: inicialmente balbucio motor aleatório; depois, exploração dirigida por progresso de aprendizagem. Um braço de controle usa política aleatória durante todo o treino.
-- **Observações.** Apenas s_t. Nenhum canal de recompensa externa.
+Como na v0.1, com uma adição: o ambiente mantém um **programador de intervenções forçadas** que, em um braço, move o agente e executa um empurrão em instantes aleatórios independentes da política, para produzir dados interventivos aleatorizados (3.4, E-6).
 
-### 3.4 Como detectar a emergência de conceitos elementares
+### 3.4 Quatro coisas que a surpresa não distingue, e como separá-las
 
-Todos os testes são comportamentais ou preditivos; nenhum inspeciona o estado interno. Os limiares são pré-registrados.
+| Nível | O que é | Como um sistema sem o nível seguinte passaria | Controle que o separa do nível seguinte |
+|---|---|---|---|
+| **AD** Detecção de anomalia | Surpresa proporcional à novidade estatística da entrada | Um preditor de estatísticas de pixel sem memória é surpreendido por qualquer evento raro | **Aparência nova:** objetos nunca vistos (forma, cor) em eventos possíveis não devem produzir surpresa de nível "impossível"; e a diferença impossível − possível deve persistir para aparências novas |
+| **RL** Aprendizagem de regularidade | Surpresa quando uma regularidade temporal aprendida é violada (por exemplo, reaparição após k passos) | Um modelo que memoriza "atrás do oclusor, k passos, reaparece à direita" passa no teste padrão de permanência | **Variação paramétrica:** velocidade do objeto e largura do oclusor variam no teste; a predição de tempo e lugar de reaparição deve escalar fisicamente; um aprendiz de regularidade treinado numa velocidade falha nas outras |
+| **OR** Representação de objeto | Entidade persistente, contável, à qual propriedades estão ligadas | — | **Ligação:** evento "entra vermelho, sai azul" produz surpresa; **contagem:** E-5 com área e densidade emparelhadas; **identidade:** E-4 com dinâmicas distintas |
+| **CA** Causalidade | Distinção entre ver e fazer; predição interventiva e contrafactual | Um modelo associativo prediz co-movimento por correlação | **Intervenção** (E-6) e **sonda contrafactual** (abaixo) |
 
-- **Espaço (E-1).** Replicação de Philipona, O'Regan e Nadal (2003): a dimensionalidade do conjunto de comandos motores compensáveis por mudanças sensoriais, estimada a partir do modelo aprendido, deve ser 2 na arena bidimensional e 1 em um corredor unidimensional, independentemente de k, de m e da permutação sensorial.
-- **Si e mundo (E-2).** Reaferência: com vento exógeno presente, o erro de predição sob ação própria deve decompor-se em uma parte explicada pela ação e outra não; a surpresa do agente quando as consequências da própria ação são perturbadas deve diferir, em magnitude e em curso temporal, da surpresa quando um objeto externo se move. Critério: separação das duas distribuições de surpresa com área sob a curva pré-registrada.
-- **Objeto e permanência (E-3).** Protocolo de violação de expectativa, no formato de Riochet et al. (2022): surpresa em eventos impossíveis (um objeto entra atrás do oclusor e não sai; atravessa uma parede) contra eventos possíveis emparelhados em estatística de baixo nível. Critério: área sob a curva de um classificador de surpresa acima do limiar, e **não** alcançada por um preditor de estatísticas de pixel sem memória (piso).
-- **Identidade (E-4).** Dois objetos de dinâmica diferente (velocidades distintas) entram atrás de um oclusor e saem; eventos impossíveis: saída em tempo ou lugar incompatível com continuidade; o número de objetos que saem difere do número que entrou. Critério como em E-3.
-- **Quantidade (E-5).** Análogo de desabituação (Xu e Spelke 2000): após exposição a cenas com dois objetos variando em tamanho, espaçamento e posição, surpresa para cenas com três objetos contra cenas novas com dois, com área total e densidade emparelhadas. Critério: surpresa à mudança de número maior que à mudança não numérica emparelhada, com curva de sensibilidade a razão (2 contra 3, 2 contra 4).
-- **Causalidade (E-6, teste decisivo).** Fase de treino passiva em que os objetos A e B se movem juntos por causa comum (vento). Teste: o agente empurra A. Um modelo causal prevê que B fica; um modelo associativo prevê que B se move. Mede-se a predição do agente, ou sua surpresa quando B fica contra quando B se move. Braço adicional: agentes que puderam agir durante o treino contra agentes "acorrentados" que receberam a mesma sequência sensorial passivamente, no espírito de Gopnik et al. (2004). Isto testa diretamente o papel de R6.
+A hierarquia é cumulativa: OR só é alegada se os controles de AD e RL são passados; CA só se os de OR são.
 
-### 3.5 Como distinguir abstração genuína de regularidades programadas
+**E-6 fortalecido (causalidade).**
 
-- **A-1 Permutação sensorial.** Dois agentes com permutações e matrizes sensoriais diferentes, no mesmo mundo, devem produzir as mesmas medidas E-1 a E-6, dentro da tolerância. Se as medidas rastreiam a fiação, não há conceito.
-- **A-2 Transferência de corpo.** Após o treino, a matriz motora é trocada. O tempo de recuperação de E-1 e E-2 deve ser muito menor que o tempo de aprendizagem inicial, e E-3 a E-6 devem permanecer. Isso indica que o modelo separa mundo e corpo. Se tudo precisa ser reaprendido, a representação era do laço, não do mundo.
-- **A-3 Mudança de mundo.** Corredor unidimensional; física de oclusão diferente. As medidas devem seguir o mundo.
-- **A-4 Mundo sem objetos.** Um agente treinado numa arena sem objetos persistentes não deve exibir as assinaturas E-3 a E-5. Se exibir, a assinatura vem da arquitetura, não dos dados.
-- **A-5 Ablação dos vieses declarados.** Cada viés opcional (lentidão, gargalo, bônus de exploração) é removido em um braço. Para cada capacidade, reporta-se de quais vieses depende. Uma capacidade que desaparece com a remoção de um viés estava no viés; isto é a forma do caso AM neste experimento, e é reportada como tal, não escondida.
-- **A-6 Teto e piso arquiteturais.** Teto: modelo com slots de objeto explícitos. Piso: preditor autorregressivo de pixels sem estado recorrente. Os resultados do agente são posicionados entre os dois.
-- **A-7 Política.** Agente curioso contra agente de política aleatória, com o mesmo número de passos. Mede se o currículo autogerado importa.
+- Treino passivo com causa comum (vento move A e B juntos). Teste: o agente empurra A; mede-se a predição ou a surpresa sobre B. Predição causal: B fica. Predição associativa: B se move.
+- **Três estruturas**, cada uma com predição interventiva distinta: causa comum (A e B movidos pelo vento), cadeia (vento move A, A empurra B), causa direta (A empurra B sem vento). Um sistema causal distingue as três sob intervenção; um associativo não.
+- **Intervenções aleatorizadas** pelo programador forçado, para que os dados interventivos não dependam da política do agente; braço "acorrentado" com a mesma sequência sensorial sem ação; braço curioso; braço aleatório.
+- **Sonda contrafactual**, aplicável a agentes com modelo preditivo utilizável como simulador: a partir do mesmo estado e histórico, o modelo é executado sob "empurrar A" e sob "não empurrar"; a diferença predita na trajetória de B deve ser próxima de zero na causa comum e positiva na causa direta. É uso generativo do modelo, não inspeção do estado. Para agentes sem modelo, a sonda não se aplica, e isso é declarado.
+
+### 3.5 Viés, dados e a leitura correta de uma ablação
+
+A v0.1 escreveu que "uma capacidade que desaparece com a remoção de um viés estava no viés". Isso confunde condição necessária com conteúdo. Um prior de lentidão não contém permanência de objeto; pode ser o que torna a aquisição possível, como qualquer viés indutivo (documento 01, Objeção 1). A leitura correta é fatorial:
+
+| | Dados com objetos | Dados sem objetos (A-4) |
+|---|---|---|
+| **Com o viés** | Capacidade presente: **adquirida sob viés habilitador** | Capacidade presente: **estava no viés** (regularidade programada) |
+| **Sem o viés** | Capacidade presente: **adquirida sem esse viés** | Capacidade presente: artefato de medida |
+
+Para cada capacidade e cada viés declarado reporta-se a célula em que ela aparece, e a curva de quantidade de dados necessária com e sem o viés. "Regularidade programada" é o rótulo apenas da célula superior direita. A célula superior esquerda é o caso normal de qualquer aprendiz, inclusive biológico, e é o que o experimento espera encontrar.
 
 ### 3.6 Resultados que refutariam a hipótese neste regime
 
-- Nada além de E-1 emerge, em qualquer braço: o construtivismo sensório-motor contínuo não passa de espaço neste regime, como na literatura anterior.
-- E-3 a E-5 só aparecem no teto com slots: "objeto" é arquitetura.
-- As assinaturas de E-3 a E-5 são reproduzidas pelo piso de estatísticas de pixel: a violação de expectativa não mede objeto.
-- E-6 falha em todos os braços, inclusive nos agentes ativos: o agente não usa a própria ação como intervenção; a causalidade no sentido de Pearl não é adquirida por este caminho.
-- A-1 ou A-2 falham: a representação é da fiação ou do laço, não do mundo.
-- A-5 mostra correspondência um a um entre capacidades e vieses declarados: regularidades programadas.
+Como na v0.1, com as substituições: a assinatura de OR reproduzida por um preditor de pixel (AD) ou por um aprendiz de regularidade sem escalonamento físico (RL); E-6 falhando nas três estruturas inclusive com intervenções aleatorizadas; capacidades presentes na célula "viés sem dados".
 
-E o resultado positivo mais forte possível: E-1 a E-6 satisfeitos, A-1 a A-5 satisfeitos, com o agente entre piso e teto e sem o comparador de segunda ordem. Leitura pré-registrada: H-B1 para conceitos elementares fundamentados, com instanciação contínua de R1–R6, neste micro-mundo. Nada sobre H-B2, H-C ou inteligência geral.
+### 3.7 Riscos, custo e limitações
 
-### 3.7 Riscos e custo
-
-Mais parâmetros livres que o experimento 1, resultados anteriores da literatura estagnados em espaço e objetos simples (documento 01, seção 5, linha 4), risco maior de que a arquitetura explique o resultado, e verdade de base menos exata para E-3 a E-5. Custo computacional baixo a moderado: horas de CPU ou GPU por braço. Custo humano maior no desenho dos eventos emparelhados.
-
-### 3.8 O que o experimento 2 não mostra
-
-Não mostra L2 com critério validado, nem H-C, nem abstração simbólica (número exato, lógica), nem inteligência geral. É o primeiro passo da Direção 1 do documento 01, e o único dos dois experimentos que toca fundamentação e instanciações contínuas.
+Como na v0.1. Acrescenta-se: a bateria de eventos emparelhados é o maior custo humano; a sonda contrafactual restringe a classe de agentes.
 
 ---
 
 ## 4. Comparação dos dois experimentos
 
-| Dimensão | Experimento 1 (grades) | Experimento 2 (agente) |
-|---|---|---|
-| Pergunta | Re-representação sob dialética produz eficiência não trivial? | Requisitos funcionais contínuos mais ação produzem conceitos elementares fundamentados? |
-| Camadas | L1 integral; L3 parcial | L1 para conceitos elementares; L3 parcial; L2 candidato sem critério |
-| Hipóteses | H-B1, H-B3 | H-B1 (fundamentada), H-B3; toca a questão aberta de 4.2-bis |
-| E0 declarada | Linguagem tipada pequena, simbólica | R1–R6 contínuos mais vieses opcionais ablacionáveis |
-| Regime de experiência | Dialético, com oráculo | Ativo, sem oráculo |
-| Verdade de base | Exata | Exata para E-1, E-6; aproximada para E-3 a E-5 |
-| Força dos controles | Alta: equivalência de bases demonstrável, custo exato, F4 adversarial | Média: permutação, transferência de corpo e ablações; verdade de base parcial |
-| Risco de autoengano | Baixo a médio (caso AM mitigado por C3 e F4) | Médio a alto ("a arquitetura fez") |
-| Custo | Baixo | Baixo a moderado |
-| Reprodutibilidade | Determinística | Determinística por semente, mais sensível a hiperparâmetros |
-| O que o sucesso significa | H-B1 em micro-mundo simbólico | H-B1 fundamentada, com instanciação contínua |
-| O que o fracasso significa | Diagnosticável pela matriz 2.13 | Menos diagnosticável; depende das ablações |
-| Dependência | Nenhuma | Beneficia-se da calibração dos critérios de demarcação pelo experimento 1 |
+Como na v0.1, com duas linhas alteradas: **Força dos controles** do experimento 1 passa a "alta, condicionada ao piloto (reach dos degraus de recursão)"; **Risco de autoengano** do experimento 1 passa a "baixo a médio, com dois confundidores identificados e controlados: densidade (C10) e ajuste de E0 às famílias (F4)".
 
 ---
 
-## 5. Ordem de execução e justificativa
+## 5. Ordem de execução
 
-**Executar primeiro o experimento 1.** Razões:
-
-1. **Calibração do instrumento.** A questão prioritária do programa é a demarcação entre adquirido e implícito (documento 01, seção 9). O experimento 1 calibra os quatro critérios de L1 num caso em que a verdade de base é exata, o custo é contável sem ambiguidade e a equivalência de bases é demonstrável. Os mesmos critérios são depois aplicados ao experimento 2, onde cada um deles é mais difícil: a permutação sensorial é o análogo da mudança de base, a ablação de vieses é o análogo do critério de custo, a transferência de corpo é o análogo da transferência estrutural.
-2. **Diagnosticabilidade.** A matriz 2.13 dá leitura para cada saída. O experimento 2 tem mais caminhos para um resultado ambíguo.
-3. **Custo e tempo.** Semanas de trabalho humano, horas de computação.
-4. **Independência das conclusões.** Os dois experimentos testam coisas diferentes; o experimento 2 é executado **em qualquer caso** após o experimento 1. O resultado do primeiro muda o desenho do segundo em pontos específicos: se F-b (artefato de base), as ablações A-5 do experimento 2 ganham peso e um braço adicional com vieses alternativos é acrescentado; se F-d (compressão sem identidade), a medida M8 é transposta para o experimento 2 como critério de identidade comportamental dos estados internos; se S1 a S6, a aprendizagem de biblioteca entra como variante simbólica do modelo do agente para comparação com a variante contínua.
-
-**Preparação paralela permitida.** A replicação de Philipona, O'Regan e Nadal (2003) (E-1 isolada) pode ser executada em paralelo como validação de infraestrutura, porque é replicação de resultado publicado e não produz alegação nova.
-
-**O que não deve acontecer.** O programa não deve parar no experimento 1, qualquer que seja o resultado, porque ele não toca fundamentação, instanciações contínuas, nem L2.
+1. **Piloto do experimento 1** (documento 03): viabilidade e calibração; sem alegações.
+2. **Decisão GO / E0+ / NO-GO** pela regra de 2.8.3 e pelos critérios de aceitação do piloto.
+3. **Experimento 1 confirmatório**, pré-registrado, com dados e instâncias de conceito não expostos no piloto.
+4. **Experimento 2**, em qualquer caso, com os ajustes de desenho que o resultado do experimento 1 dispara (seção 5 da v0.1).
+5. A replicação de Philipona, O'Regan e Nadal (2003) pode correr em paralelo como validação de infraestrutura.
 
 ---
 
@@ -346,53 +461,30 @@ Não mostra L2 com critério validado, nem H-C, nem abstração simbólica (núm
 
 | Afirmação | Status |
 |---|---|
-| Para E0 universal, toda função computável é expressável | [P] |
-| Qualquer re-representação fixa altera o comprimento de descrição por no máximo uma constante aditiva (teorema da invariância) | [P] |
-| A busca de Levin é ótima até fator constante | [P] |
-| Com as compilações exibidas, E0 e E0' definem as mesmas funções sobre o domínio finito | [P], condicional à exibição e à verificação |
-| Distribuições observacionais não identificam, em geral, a estrutura causal | [P] |
-| Aprendizagem de biblioteca reduz custo de busca em domínios estreitos | [C] (Ellis et al. 2021; Bowers et al. 2023) |
-| Compressão por tarefa em tempo de teste resolve parte do ARC-AGI-1 sem pré-treino | [C] (Liao e Gu 2025; valor reportado pelos autores) |
-| Humanos exibem efeitos de ordem de currículo e caminho de jardim explicados por biblioteca de conceitos | [E/C] (Zhao, Lucas e Bramley 2024) |
-| Bebês de 6 meses discriminam numerosidades grandes por razão | [E] (Xu e Spelke 2000) |
-| A dimensionalidade do espaço é inferível de contingências sensório-motoras com sensores não interpretados | [C] (Philipona, O'Regan e Nadal 2003) |
+| Teorema da invariância para máquinas universais | [P], **não aplicável** a E0 |
+| Lema de inlining para linguagens tipadas finitas | [P], trivial |
+| Equivalência de E0 e E0' sob Sem_n | [P], condicional à publicação das provas por primitiva; testes amostrais testam a implementação |
+| Frequências de positivos (fórmulas exatas) | [P] para as fórmulas; [C] para os valores calculados |
+| Frequências de positivos (Monte Carlo) | [C], 20 000 amostras por célula, semente publicada |
+| Potência do teste de sinal | [P] para a fórmula binomial; [C] para a tabela |
+| Confundidor de densidade existe nos conjuntos balanceados por rejeição | [C], inferido das frequências por valor de p; medido diretamente por M10 |
+| Degraus de 13 a 16 são o bloqueio | [C] para os tamanhos dos programas de referência (limites superiores); [H] sobre alcançabilidade, a medir no piloto |
+| Aprendizagem de biblioteca reduz custo em domínios estreitos | [C] (Ellis et al. 2021; Bowers et al. 2023) |
+| Efeitos de ordem de currículo em humanos | [E/C] (Zhao, Lucas e Bramley 2024) |
+| Dimensionalidade do espaço inferível de contingências sensório-motoras | [C] (Philipona et al. 2003) |
 | Crianças aprendem estrutura causal por intervenção | [E] (Gopnik et al. 2004) |
-| A percepção categórica emerge em redes genéricas | [C] (Damper e Harnad 2000) |
-| O mapa parâmetro-função de redes profundas tem viés de simplicidade | [C] (Valle-Pérez, Camargo e Louis 2019) |
-| Violação de expectativa mede representação de objeto | [F], interpretação da literatura desenvolvimental; o protocolo trata como hipótese operacional com piso de controle |
-| A vantagem de L-lib, se existir, diminuirá com o orçamento | [H] |
-| O comparador de segunda ordem pode emergir sem ser dado | [A] |
-| L2 tem critério operacional distinto de L1 | [A] |
-| Sucesso em qualquer dos experimentos é evidência de inteligência geral | Negado por regra do protocolo |
+| Violação de expectativa mede objeto | [F]; tratada como hipótese operacional com os controles AD e RL |
+| Capacidade dependente de viés foi programada | **Rejeitada** como inferência; substituída pelo desenho fatorial |
+| Sucesso em qualquer experimento é evidência de inteligência geral | Negado por regra |
 
 ---
 
 ## 7. Questões abertas preservadas
 
-1. Se existe critério operacional para L2 que não colapse em L1 (documento 01, 4.4-bis). Nenhum dos dois experimentos o fornece.
-2. Se o comparador de segunda ordem (erro de classe de modelo) pode ser adquirido por um sistema contínuo sem laço externo desenhado para isso. O experimento 2 observa, não decide.
-3. Se a vantagem de re-representação em recursos finitos é grande o bastante para importar fora de micro-mundos. O experimento 1 mede em um micro-mundo.
-4. Se sistemas estatísticos em escala exibem H-B3 sem mecanismo construtivo. O programa de controle do documento 01 (seção 7) permanece obrigatório e não está coberto por este protocolo.
-5. Se a unidade de análise correta é o indivíduo ou uma população com transmissão (Objeção 4). Nenhum dos experimentos toca isso.
-6. Se o regime dialético com oráculo tem análogo natural sem professor. O experimento 2 é o primeiro passo, com ambiente e sem oráculo.
+As seis da v0.1, mais: (7) se um enumerador puro alcança degraus de 13 a 16 folhas em contextos de tipo estreitos, ou se a construção de abstrações depende de busca guiada; (8) se um currículo autogerado por progresso de aprendizagem produz a escada sem desenho do experimentador; (9) se a separação AD/RL/OR/CA é exaustiva, ou se há níveis intermediários que os controles não capturam.
 
 ---
 
 ## 8. Referências
 
-As referências gerais estão no documento 01 (seções 10 e "Referências acrescentadas na v0.2"). Específicas deste protocolo:
-
-- Bowers, M., Olausson, T. X., Wong, L., Grand, G., Tenenbaum, J. B., Ellis, K. e Solar-Lezama, A. (2023). "Top-down synthesis for library learning". *Proceedings of the ACM on Programming Languages* 7 (POPL).
-- Ellis, K. et al. (2021). "DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning". *PLDI 2021*.
-- Gopnik, A. et al. (2004). "A theory of causal learning in children: causal maps and Bayes nets". *Psychological Review* 111(1): 3–32.
-- Liao, I. e Gu, A. (2025). "ARC-AGI without pretraining". arXiv:2512.06104.
-- Oudeyer, P.-Y., Kaplan, F. e Hafner, V. V. (2007). "Intrinsic motivation systems for autonomous mental development". *IEEE Transactions on Evolutionary Computation* 11(2): 265–286.
-- Philipona, D., O'Regan, J. K. e Nadal, J.-P. (2003). "Is there something out there? Inferring space from sensorimotor dependencies". *Neural Computation* 15(9): 2029–2049.
-- Riochet, R. et al. (2022). "IntPhys 2019: a benchmark for visual intuitive physics understanding". *IEEE Transactions on Pattern Analysis and Machine Intelligence* 44(9).
-- Wiskott, L. e Sejnowski, T. J. (2002). "Slow feature analysis: unsupervised learning of invariances". *Neural Computation* 14: 715–770.
-- Xu, F. e Spelke, E. S. (2000). "Large number discrimination in 6-month-old infants". *Cognition* 74: B1–B11.
-- Zhao, B., Lucas, C. G. e Bramley, N. R. (2024). "A model of conceptual bootstrapping in human cognition". *Nature Human Behaviour* 8: 125–136.
-- Li, M. e Vitányi, P. (2008). *An Introduction to Kolmogorov Complexity and Its Applications*, 3ª ed. Springer.
-- Levin, L. A. (1973). "Universal sequential search problems". *Problems of Information Transmission* 9(3): 265–266.
-- Damper, R. I. e Harnad, S. R. (2000). "Neural network models of categorical perception". *Perception & Psychophysics* 62(4): 843–867.
-- Valle-Pérez, G., Camargo, C. Q. e Louis, A. A. (2019). "Deep learning generalizes because the parameter-function map is biased towards simple functions". *ICLR 2019*.
+As da v0.1 permanecem. Acrescentadas: `analysis/audit_frequencias.py` e `analysis/audit_frequencias_saida.md` (este repositório), que são a fonte das tabelas de 2.2.2 e 2.2.4.
