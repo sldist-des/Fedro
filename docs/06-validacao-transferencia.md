@@ -118,16 +118,16 @@ Os seletores correm com dois aprendizes (L-lib+f e L-fix), semente de dados 1000
 
 ### 3.2 Resultados **[E]**
 
-`runs/ca-s10002-tamanho` (política de tamanho; 1 122 s de parede, 2 processos). Dez braços: 3 seletores × 2 aprendizes, com 3 sementes para o aleatório. Cada braço parou quando o seletor não tinha mais nada a tentar (nenhum esgotou G = 240 000).
+`runs/ca-s10002-tamanho` (política de tamanho; 1 122 s de parede, 2 processos; seletor autodirigido na versão 1, cuja escada parava em 16 000 — ver §3.4 para a versão corrigida). Dez braços: 3 seletores × 2 aprendizes, com 3 sementes para o aleatório. Cada braço parou quando o seletor não tinha mais nada a tentar (nenhum esgotou G = 240 000).
 
 | seletor / aprendiz | tarefas aceitas | ordem de aceitação | tentativas (falhas) | repetições após mudança de biblioteca | gasto global (candidatos) | custo total (passos) | custo das falhas | cadeia de reutilização |
 |---|---|---|---|---|---|---|---|---|
-| autodirigido / L-lib+f | 5 | pretasColuna1 → vizPretos → semLinha1 → expandir → ParAdjacente | 25 (20) | 19 | 78 905 | **186,7 M** | 158,0 M | expandir←abs2 (=vizPretos), ParAdjacente←abs4 (=expandir) |
+| autodirigido (v1) / L-lib+f | 5 | pretasColuna1 → vizPretos → semLinha1 → expandir → ParAdjacente | 25 (20) | 19 | 78 905 | **186,7 M** | 158,0 M | expandir←abs2 (=vizPretos), ParAdjacente←abs4 (=expandir) |
 | manual / L-lib+f | 5 | vizPretos → expandir → ParAdjacente → pretasColuna1 → semLinha1 | 8 (3) | 2 | 70 162 | 306,2 M | 274,7 M | expandir←abs1, ParAdjacente←abs2 |
 | aleatório#1 / L-lib+f | 5 | vizPretos → pretasColuna1 → expandir → semLinha1 → ParAdjacente | 8 (3) | 2 | 70 756 | 289,9 M | 258,3 M | expandir←abs1, ParAdjacente←abs3 |
 | aleatório#2 / L-lib+f | 5 | pretasColuna1 → semLinha1 → vizPretos → expandir → ParAdjacente | 12 (7) | 6 | 150 899 | 596,0 M | 567,1 M | expandir←abs3, ParAdjacente←abs4 |
 | aleatório#3 / L-lib+f | 5 | vizPretos → expandir → semLinha1 → ParAdjacente → pretasColuna1 | 10 (5) | 4 | 109 823 | 598,5 M | 567,8 M | expandir←abs1, ParAdjacente←abs2 |
-| autodirigido / L-fix | 3 | pretasColuna1 → vizPretos → semLinha1 | 16 (13) | 10 | 96 941 | 327,7 M | 310,7 M | — |
+| autodirigido (v1) / L-fix | 3 | pretasColuna1 → vizPretos → semLinha1 | 16 (13) | 10 | 96 941 | 327,7 M | 310,7 M | — |
 | manual / L-fix | 3 | vizPretos → pretasColuna1 → semLinha1 | 6 (3) | 0 | 64 931 | 357,3 M | 340,3 M | — |
 | aleatório#1–3 / L-fix | 3 | (três ordens) | 6 (3) | 0 | 64 931 | 357,3 M | 340,3 M | — |
 
