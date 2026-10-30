@@ -143,9 +143,46 @@ Leitura:
 
 Política unigrama: `runs/ca-s10002-unigrama` (mesma configuração) — resultados em §3.3.
 
-### 3.3 Política unigrama
+### 3.3 Política unigrama **[E]**
 
-(preenchido a partir de `runs/ca-s10002-unigrama/deterministico.json`)
+`runs/ca-s10002-unigrama` (2 927 s de parede, 2 processos; mesma configuração de §3.2, seletor autodirigido na versão 1, ver §3.4).
+
+| seletor / aprendiz | tarefas aceitas | ordem de aceitação | tentativas (falhas) | gasto global | custo total (passos) | cadeia de reutilização |
+|---|---|---|---|---|---|---|
+| autodirigido (v1) / L-lib+f | 5 | pretasColuna1 → semLinha1 → vizPretos → expandir → ParAdjacente | 23 (18) | 74 013 | **493,5 M** | expandir←abs3 (=vizPretos), ParAdjacente←abs4 (=expandir) |
+| manual / L-lib+f | 5 | vizPretos → expandir → ParAdjacente → pretasColuna1 → semLinha1 | 8 (3) | 67 881 | 923,8 M | expandir←abs1, ParAdjacente←abs2 |
+| aleatório#1 / L-lib+f | 5 | vizPretos → pretasColuna1 → expandir → semLinha1 → ParAdjacente | 8 (3) | 69 345 | 730,5 M | expandir←abs1, ParAdjacente←abs3 |
+| aleatório#2 / L-lib+f | 5 | pretasColuna1 → semLinha1 → vizPretos → expandir → ParAdjacente | 12 (7) | 150 002 | 2 053,2 M | expandir←abs3, ParAdjacente←abs4 |
+| aleatório#3 / L-lib+f | 5 | vizPretos → expandir → semLinha1 → ParAdjacente → pretasColuna1 | 10 (5) | 108 611 | 1 546,3 M | expandir←abs1, ParAdjacente←abs2 |
+| autodirigido (v1) / L-fix | **3** | pretasColuna1 → semLinha1 → vizPretos | 15 (12) | 92 985 | 1 296,9 M | — |
+| manual / L-fix | **5** | vizPretos → expandir → ParAdjacente → pretasColuna1 → semLinha1 | 6 (1) | 35 808 | 730,5 M | — |
+| aleatório#1 / L-fix | **5** | vizPretos → pretasColuna1 → expandir → semLinha1 → ParAdjacente | 6 (1) | 42 657 | 840,8 M | — |
+| aleatório#2 / L-fix | **3** | pretasColuna1 → semLinha1 → vizPretos | 6 (3) | 62 976 | 1 326,9 M | — |
+| aleatório#3 / L-fix | **4** | vizPretos → ParAdjacente → pretasColuna1 → semLinha1 | 6 (2) | 58 354 | 770,4 M | — |
+
+Leitura:
+
+1. Com L-lib+f, o resultado de §3.2 repete-se: a cadeia emerge em todas as cinco ordens, com reutilização verificável; o autodirigido é o mais barato (493,5 M contra 730–2 053 M). Os custos são 2–4× os da política de tamanho porque, na unigrama, as tarefas fora do alcance custam mais por candidato (a busca por custo ponderado carrega termos maiores a orçamento igual).
+2. **Com L-fix, a política unigrama torna o resultado dependente da ordem**: o prior de constantes é construído a partir das soluções já aceitas pelo próprio aprendiz, logo é uma aquisição *path-dependent*. Se vizPretos é resolvida primeiro, `filtrar`, `celula` e `vizinhos` ficam baratas e expandir (10 folhas brutas) e ParAdjacente (10) entram no alcance a 20 000 (manual, aleatório#1: 5 tarefas; aleatório#3: 4). Se pretasColuna1 e semLinha1 são resolvidas primeiro, as constantes baratas são `cabeca`, `colunas`, `linhas`, `diferenca` e `vizinhos` continua cara: expandir fica fora do alcance (aleatório#2: 3 tarefas). Isto é o mesmo fenómeno de transferência negativa do prior visto no controlo de currículo não relacionado (documento 05, §4.2), agora como função da ordem. L-lib+f é insensível a isto porque a biblioteca encurta os programas independentemente do prior.
+3. **O seletor autodirigido na versão 1 ficou limitado por um erro de desenho**: a escada de orçamentos 2 000 → 4 000 → 8 000 → 16 000 nunca chegava a B_max = 20 000 (o degrau seguinte, 32 000, excedia o limite e a tarefa era abandonada). Na política de tamanho isso não alterou nenhuma aceitação (nenhuma tarefa é resolvida entre 16 000 e 20 000 candidatos), mas na unigrama com L-fix custou 2 tarefas: expandir e ParAdjacente são resolvidas por L-fix a 20 000 (manual) e não a 16 000. O seletor foi corrigido (último degrau exatamente B_max) e só os braços autodirigidos foram reexecutados, nas duas políticas: §3.4. Os braços manual e aleatório não dependem da escada e não foram repetidos.
+
+### 3.4 Seletor autodirigido, versão 2 (escada até B_max) **[E]**
+
+`runs/ca2-s10002-tamanho` (443 s) e `runs/ca2-s10002-unigrama` (1 447 s): só os braços autodirigidos, com a escada 2 000 → 4 000 → 8 000 → 16 000 → **20 000**. Os braços manual e aleatório de §3.2–3.3 são a comparação (não dependem da escada).
+
+| política | aprendiz | tarefas aceitas | ordem de aceitação | tentativas (falhas) | gasto global | custo total (passos) | v1 (§3.2–3.3) | manual | aleatório (3) |
+|---|---|---|---|---|---|---|---|---|---|
+| tamanho | L-lib+f | 5 | pretasColuna1 → vizPretos → semLinha1 → expandir → ParAdjacente | 26 (21) | 98 906 | **270,3 M** | 186,7 M | 306,2 M | 289,9 / 596,0 / 598,5 M |
+| tamanho | L-fix | 3 | pretasColuna1 → vizPretos → semLinha1 | 19 (16) | 156 944 | 668,0 M | 327,7 M | 357,3 M | 357,3 M (×3) |
+| unigrama | L-lib+f | 5 | pretasColuna1 → semLinha1 → vizPretos → expandir → ParAdjacente | 24 (19) | 94 014 | **693,9 M** | 493,5 M | 923,8 M | 730,5 / 2 053,2 / 1 546,3 M |
+| unigrama | L-fix | **3** | pretasColuna1 → semLinha1 → vizPretos | 18 (15) | 152 988 | 2 495,6 M | 1 296,9 M | 730,5 M (5 tarefas) | 840,8 (5) / 1 326,9 (3) / 770,4 M (4) |
+
+Leitura:
+
+1. **Com L-lib+f a conclusão de §3.2 mantém-se com a escada completa**: a cadeia emerge (mesmas hipóteses e reutilizações) e o autodirigido continua o mais barato nas duas políticas, por uma margem menor (270,3 M contra 289,9–598,5 M; 693,9 M contra 730,5–2 053,2 M). O custo adicional em relação à v1 é inteiramente a última tentativa de NenhumaIsolada a 20 000 (83,7 M e 200,4 M), que falha como em todos os outros braços.
+2. **Com L-fix o aprofundamento iterativo é o seletor mais caro** (668,0 M contra 357,3 M; 2 495,6 M contra 730–1 327 M): para uma tarefa sem solução ao alcance, a escada paga 2 000 + 4 000 + 8 000 + 16 000 + 20 000 candidatos em vez de 20 000. A vantagem do autodirigido depende, portanto, de haver aquisições que tornem baratas as tarefas sondadas; sem mecanismo de aquisição, sondar é desperdício.
+3. **Na política unigrama, L-fix autodirigido continua a não resolver expandir nem ParAdjacente a 20 000** (372,4 M e 346,8 M gastos em vão), enquanto o manual as resolve à primeira. A diferença é a **seletividade do prior**: no manual, quando expandir é tentada, só as constantes de vizPretos (`filtrar`, `celula`, `vizinhos`) estão baratas; no autodirigido, pretasColuna1 e semLinha1 foram resolvidas antes (cabem em 2 000 candidatos) e `cabeca`, `colunas`, `linhas`, `diferenca` também estão baratas, o que multiplica os candidatos por custo e empurra o programa de 10 folhas para fora do alcance. O prior unigrama é uma aquisição dependente do caminho e **pode piorar com mais aprendizagem**; a biblioteca (L-lib+f) não tem este problema porque atua no tamanho dos programas, não na ordenação dos candidatos. Este é o resultado mais claro deste documento sobre a diferença entre os dois mecanismos.
+4. Todas as hipóteses aceitas nos quatro braços foram verificadas (§7.1).
 
 
 ## 4. Transferência estrutural
@@ -249,13 +286,14 @@ Pré-requisito para avançar (documento 03, §D, mantido): o experimento sensór
 2. O veredito do critério central, agora com cinco condições (reutilização em tarefa inédita, procedência certificada, livro-razão fechado, controlos piores na tarefa posterior à intervenção, mais tarefas que L-fix a custo cumulativo igual), é verdadeiro nas 2 execuções do documento 05 e nas 8 execuções de replicação (4 sementes novas × 2 políticas), com as mesmas hipóteses e variação de custo abaixo de 3 % entre sementes.
 3. As operações adquiridas (abs1 ≡ vizinhas pretas de uma posição; abs2 ≡ vizinhas pretas de um conjunto) transferem para **5 tarefas de uma família congelada por hash antes da execução**, em composições inéditas (abs2∘abs2, abs2 com `diferenca`, abs1 com `cauda`, abs1 com `e`/`celula`, abs2 com `pretas`), em ambas as políticas, sempre com reutilização; L-fix não resolve nenhuma (tamanho) ou resolve 3 a custo 8–500× maior (unigrama).
 4. A transferência tem um preço mensurável: nas 4 tarefas onde as operações são inúteis, L-lib+f paga 1,33–1,77× o custo de L-fix, sem perder nenhuma solução.
-5. A cadeia de aquisições emerge **sem ordem prescrita** quando o ambiente oferece as seis tarefas sem ordem: em todas as cinco ordens testadas (autodirigida, manual e três aleatórias) com L-lib+f, usando apenas o histórico de tentativas e a versão da biblioteca; o seletor autodirigido por aprofundamento iterativo completa-a com o menor custo (186,7 M contra 290–599 M).
+5. A cadeia de aquisições emerge **sem ordem prescrita** quando o ambiente oferece as seis tarefas sem ordem: em todas as cinco ordens testadas (autodirigida, manual e três aleatórias) com L-lib+f, nas duas políticas, usando apenas o histórico de tentativas e a versão da biblioteca; o seletor autodirigido por aprofundamento iterativo (versão 2, escada até B_max) completa-a com o menor custo (270,3 M contra 290–599 M na política de tamanho; 693,9 M contra 730–2 053 M na unigrama).
 
 ### 6.2 Falhou **[F]**
 
 1. T4 NenhumaIsolada não é resolvida por nenhum braço em nenhuma execução (0 de 50 tentativas de braço nos registros deste documento, mais as 9 tentativas escalonadas do seletor autodirigido): a composição ∀p ¬isoladaP, com 9 folhas usando abs2 segundo o documento 05, não é encontrada a B = 20 000, nem com o orçamento escalonado até 16 000 candidatos. O documento 05 previa 9 folhas com abs2; isoladaP (10 folhas com abs1) só foi encontrada na transferência a um custo próximo do de uma falha. O alcance efetivo da busca com biblioteca continua a ser ≈ 8–9 folhas a este orçamento.
-2. A seleção autodirigida não produz uma ordem informada: o seletor só descobre custos tentando; a sua vantagem é inteiramente devida ao aprofundamento iterativo (sondas baratas), não a uma previsão.
-3. A replicação não mede robustez a mudanças do currículo, da DSL ou do orçamento: a variabilidade entre sementes é pequena porque a busca é determinística; o teste sensível (famílias congeladas) só foi feito com uma semente.
+2. A seleção autodirigida não produz uma ordem informada: o seletor só descobre custos tentando; a sua vantagem é inteiramente devida ao aprofundamento iterativo (sondas baratas), não a uma previsão, e inverte-se sem mecanismo de aquisição (com L-fix é o seletor mais caro: 668 M contra 357 M). A primeira versão da escada não chegava a B_max e foi corrigida e reexecutada (§3.4, §7.3).
+3. Na política unigrama, o prior de constantes de L-fix é dependente do caminho e piora com aquisições não relacionadas: L-fix resolve expandir e ParAdjacente na ordem manual e falha-as, a orçamento igual, depois de resolver pretasColuna1 e semLinha1 primeiro (§3.3–3.4).
+4. A replicação não mede robustez a mudanças do currículo, da DSL ou do orçamento: a variabilidade entre sementes é pequena porque a busca é determinística; o teste sensível (famílias congeladas) só foi feito com uma semente.
 
 ### 6.3 Inconclusivo **[A]**
 
@@ -279,7 +317,8 @@ O ponto mais fraco da evidência é o item 1 de §6.3: as famílias de transfer�
 | `runs/rep-1/` | replicação: 8 subpastas `s<semente>-<política>` com os registros completos do experimento mínimo; `resumo.json`, `resumo.md` (§2) | 3 934 s |
 | `runs/tr-s10002/` | transferência estrutural: cadeia + 9 tarefas × 2 aprendizes × 2 políticas; `verificacao.json` (§4) | 1 198 s |
 | `runs/ca-s10002-tamanho/` | currículo autodirigido, política de tamanho: 10 braços; `verificacao.json` (§3.2) | 1 122 s |
-| `runs/ca-s10002-unigrama/` | currículo autodirigido, política unigrama (§3.3) | ver §3.3 |
+| `runs/ca-s10002-unigrama/` | currículo autodirigido, política unigrama: 10 braços; `verificacao.json` (§3.3) | 2 927 s |
+| `runs/ca2-s10002-{tamanho,unigrama}/` | seletor autodirigido versão 2 (escada até B_max), 2 braços cada; `verificacao.json` (§3.4) | 443 s, 1 447 s |
 
 Verificação das hipóteses dos registros novos (regimes de §1.1):
 
@@ -287,7 +326,9 @@ Verificação das hipóteses dos registros novos (regimes de §1.1):
 |---|---|---|---|---|---|---|---|
 | `tr-s10002` | 29 | 14 171 770 | 0 | 14 200 | 0 | 1 484 | 0 |
 | `ca-s10002-tamanho` | 40 | 34 260 230 | 0 | 29 000 | 0 | 775 | 0 |
-| `ca-s10002-unigrama` | ver §3.3 | | | | | | |
+| `ca-s10002-unigrama` | 45 | 36 173 748 | 0 | 31 200 | 0 | 1 240 | 0 |
+| `ca2-s10002-tamanho` | 8 | (§7.1, nota) | 0 | | 0 | | 0 |
+| `ca2-s10002-unigrama` | 8 | (§7.1, nota) | 0 | | 0 | | 0 |
 
 Todos os registros têm `hashes.json`/`fontes` com o hash das fontes do pacote no momento da execução, contadores determinísticos separados das medições de tempo e memória, e os certificados de procedência das entradas de biblioteca. Semente de dados única nos registros de transferência e currículo: 10002 (a do documento 05, para comparação direta); sementes da replicação: 10003–10006. Sementes exploratórias usadas até agora: 10001–10006. Buckets 50–99: intocados.
 
@@ -318,3 +359,4 @@ for r in ('em-s10002-tamanho','em-s10002-unigrama'):
 3. A condição 4 do veredito foi corrigida depois de se ter observado que a sua primeira versão avaliava tarefas anteriores à intervenção de controlo (§1.2). A correção é de aplicabilidade, não de limiar, e está registada aqui para que não seja confundida com um ajuste a posteriori do critério: a versão anterior dava veredito falso por artefacto; a atual exige os mesmos controlos, na tarefa certa.
 4. As execuções de replicação, currículo e transferência correram em paralelo na mesma máquina (4 núcleos); os tempos de parede não são comparáveis entre registros, e só os contadores determinísticos devem ser usados em comparações.
 5. A política unigrama do currículo autodirigido (§3.3) foi executada por completude; o seu custo (≈ 50 min de parede) é o maior gasto adicional deste documento. Nenhum orçamento por tarefa foi aumentado além do B = 20 000 do documento 05.
+6. A primeira versão da escada do seletor autodirigido (2 000 → 16 000) não chegava a B_max; ao ler os resultados da política unigrama (§3.3) ficou claro que isso o fazia tentar menos do que os outros seletores. A escada foi corrigida (último degrau = B_max) e só os braços autodirigidos foram reexecutados em registros novos (`ca2-*`, §3.4); os registros `ca-*` ficam como estão, com a versão 1 identificada. A correção foi feita depois de ver resultados, e por isso está declarada aqui: ela não altera nenhuma conclusão a favor do seletor (torna-o mais caro) e corrige uma desvantagem injusta.

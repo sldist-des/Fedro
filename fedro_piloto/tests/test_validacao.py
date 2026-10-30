@@ -109,8 +109,15 @@ class TestCurriculoAutodirigido(unittest.TestCase):
         self.assertEqual((tid, B), ("a", 100))              # empate: id
         h = next(x for x in hist if x.id == tid)
         h.tentativas, h.ultimo_B, h.versao_bib_ultima = 1, 100, 0
-        sel.apos(h, 0)
+        sel.apos(h, 0, 1_000)
         self.assertEqual(h.orcamento_proximo, 200)
+        # o último degrau é exatamente B_max; depois de falhar a B_max a tarefa fica esgotada
+        h2 = C.HistoricoTarefa("z", "τ", tentativas=1, ultimo_B=700)
+        sel.apos(h2, 0, 1_000)
+        self.assertEqual(h2.orcamento_proximo, 1_000)
+        h2.ultimo_B = 1_000
+        sel.apos(h2, 0, 1_000)
+        self.assertGreater(h2.orcamento_proximo, 1_000)
         # as outras ainda estão em b0: escolhe-as antes de dobrar "a"
         self.assertEqual(sel.escolher(hist, 0, rng, 1_000), ("b", 100))
         for x in hist:

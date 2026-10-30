@@ -1,0 +1,17 @@
+{
+ "bracos": {
+  "autodirigido/L-fix": {
+   "cpu_s": 1380.581549561,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 672952,
+   "tempo_parede_s": 1447.087358068
+  },
+  "autodirigido/L-lib+f": {
+   "cpu_s": 419.56953315299995,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 547400,
+   "tempo_parede_s": 474.1784019450006
+  }
+ },
+ "parede_total_s": 1447.1563415527344
+}

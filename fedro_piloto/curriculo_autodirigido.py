@@ -12,10 +12,10 @@ Seletores:
                 uma tarefa só se a biblioteca mudou desde a sua última tentativa;
   aleatorio     ordem uniforme ao acaso entre as elegíveis (semente própria do seletor), mesma regra;
   autodirigido  aprofundamento iterativo com progresso: cada tarefa tem um orçamento próximo (começa em
-                b0 e dobra a cada falha sem mudança de biblioteca; se a biblioteca mudou desde a última
-                tentativa, repete-se o mesmo orçamento primeiro — "progresso de aprendizagem" = a tarefa
-                pode ter ficado mais barata). Escolhe a tarefa de menor orçamento próximo; empate: a que
-                tem biblioteca nova desde a última tentativa, depois menos tentativas, depois id.
+                b0 e dobra a cada falha, com último degrau exatamente B_max; se a biblioteca mudou desde a
+                última tentativa, repete-se o mesmo orçamento primeiro — "progresso de aprendizagem" = a
+                tarefa pode ter ficado mais barata). Escolhe a tarefa de menor orçamento próximo; empate: a
+                que tem biblioteca nova desde a última tentativa, depois menos tentativas, depois id.
 Todos os braços têm o MESMO orçamento global G (candidatos de enumeração acumulados) e o mesmo limite
 por tentativa B_max; o custo das sondas do seletor autodirigido conta.
 Pergunta: a cadeia vizPretos → expandir → ParAdjacente aparece sem ser prescrita?
@@ -68,7 +68,7 @@ class Seletor:
         """Devolve (id, B) ou None quando não há mais nada a tentar."""
         raise NotImplementedError
 
-    def apos(self, h: HistoricoTarefa, versao_bib: int) -> None:
+    def apos(self, h: HistoricoTarefa, versao_bib: int, B_max: int) -> None:
         pass
 
 
@@ -130,9 +130,12 @@ class SeletorAutodirigido(Seletor):
         cand.sort(key=lambda c: c[:4])
         return cand[0][4].id, cand[0][0]
 
-    def apos(self, h: HistoricoTarefa, versao_bib: int) -> None:
+    def apos(self, h: HistoricoTarefa, versao_bib: int, B_max: int) -> None:
+        """Dobra o orçamento após uma falha; o último degrau da escada é exatamente B_max (versão 2:
+        a versão 1 parava em 16 000 < B_max = 20 000, e por isso tentava menos do que os outros
+        seletores; documento 06, §7.3). Depois de falhar a B_max, a tarefa fica esgotada (> B_max)."""
         if not h.aceita:
-            h.orcamento_proximo = h.ultimo_B * 2
+            h.orcamento_proximo = min(h.ultimo_B * 2, B_max) if h.ultimo_B < B_max else B_max + 1
 
 
 SELETORES = {"manual": lambda rng: SeletorManual(ORDEM_MANUAL), "aleatorio": lambda rng: SeletorAleatorio(),
@@ -201,7 +204,7 @@ def _job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: in
             h.ultimo_tamanho_max = r.contador_busca.get("tamanho_max_carregado", 0)
             h.exemplos_finais = r.exemplos_finais
             versao = _versao_biblioteca(ap)
-            sel.apos(h, versao)
+            sel.apos(h, versao, B_max)
             h.versao_bib_ultima = versao
             passos.append({"passo": len(passos) + 1, "tarefa": tid, "B": int(B), "aceita": r.aceita,
                            "motivo": r.motivo_fim, "custo": custo, "enumeracao": enum, "gasto_global": gasto,
