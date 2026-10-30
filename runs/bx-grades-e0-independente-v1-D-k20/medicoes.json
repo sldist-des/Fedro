@@ -1,0 +1,17 @@
+{
+ "bracos": {
+  "zero/tamanho/L-fix": {
+   "cpu_s": 849.347073139,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 544020,
+   "tempo_parede_s": 858.6622658589995
+  },
+  "zero/tamanho/L-lib+f": {
+   "cpu_s": 541.61998088,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 856964,
+   "tempo_parede_s": 547.796485074
+  }
+ },
+ "parede_total_s": 863.300929069519
+}
