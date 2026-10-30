@@ -44,13 +44,45 @@ def expandir_entradas(t: Termo, corpos: Dict[str, Termo]) -> Termo:
     return t
 
 
-def corpos_do_braco(braco: dict) -> Dict[str, Termo]:
-    """Corpos das entradas de biblioteca do braço, incluindo entradas removidas por lesão (eventos)."""
-    corpos = {a["nome"]: parse(a["corpo"]) for a in braco.get("abstracoes", [])}
-    for ev in braco.get("eventos", []):
-        for a in ev.get("lesao", []) or []:
+def corpos_do_braco(braco: dict, tarefa_id: Optional[str] = None) -> Dict[str, Termo]:
+    """Corpos das entradas de biblioteca do braço, resolvidos NO TEMPO da tarefa `tarefa_id`.
+
+    Depois de uma lesão a biblioteca recomeça a numerar as entradas (abs1, abs2, …), logo o mesmo nome
+    pode designar corpos diferentes antes e depois da lesão. Para uma hipótese aceita ANTES da lesão
+    (tarefa anterior a `antes_de` na ordem do braço) valem as entradas removidas pela lesão; para as
+    posteriores valem as entradas finais. Sem `tarefa_id` (ou sem lesão), as finais prevalecem e as
+    lesionadas só preenchem nomes ausentes (comportamento anterior; achado de revisão do documento 08)."""
+    finais = {a["nome"]: parse(a["corpo"]) for a in braco.get("abstracoes", [])}
+    lesoes = [ev for ev in braco.get("eventos", []) if ev.get("lesao")]
+    if tarefa_id is not None and lesoes:
+        ordem = _ordem_tarefas(braco)
+        for ev in lesoes:
+            antes = ev.get("antes_de")
+            if antes in ordem and tarefa_id in ordem and ordem.index(tarefa_id) < ordem.index(antes):
+                corpos = {a["nome"]: parse(a["corpo"]) for a in ev["lesao"]}
+                for k, v in finais.items():
+                    corpos.setdefault(k, v)
+                return corpos
+    corpos = dict(finais)
+    for ev in lesoes:
+        for a in ev["lesao"]:
             corpos.setdefault(a["nome"], parse(a["corpo"]))
     return corpos
+
+
+def _ordem_tarefas(braco: dict) -> List[str]:
+    """Ordem das tarefas do braço nos três formatos de registro (ids internos quando existem)."""
+    if braco.get("curva"):
+        return [p.get("interno") or p.get("tarefa") for p in braco["curva"]]
+    if braco.get("relatorio", {}).get("resultados"):
+        return [x["tarefa_id"] for x in braco["relatorio"]["resultados"]]
+    if braco.get("passos"):
+        out = []
+        for p in braco["passos"]:
+            if p["tarefa"] not in out:
+                out.append(p["tarefa"])
+        return out
+    return []
 
 
 def tarefa_por_id(tid: str) -> A.Tarefa:
@@ -202,8 +234,8 @@ def verificar_execucao(pasta: str, ns_amostral: Sequence[int] = (5, 6, 7, 8, 9),
                                                                  "particao": PARTICAO_NOVAS_DIMENSOES,
                                                                  "semente": semente}}
     for nome, b in d["bracos"].items():
-        corpos = corpos_do_braco(b)
         for tid, hip in hipoteses_aceitas(b):
+            corpos = corpos_do_braco(b, tid)
             t = expandir_entradas(parse(hip), corpos)
             tarefa = tarefa_por_id(tid)
             item = {"braco": nome, "tarefa": tid, "hipotese": hip,

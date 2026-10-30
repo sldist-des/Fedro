@@ -43,6 +43,19 @@ class TestVerificacao(unittest.TestCase):
         self.assertEqual(r["por_n"][5]["grades_naturais"], 8)
 
 
+class TestCorposNoTempo(unittest.TestCase):
+    def test_nome_reutilizado_apos_lesao_resolve_pelo_tempo(self):
+        braco = {"curva": [{"interno": "t1"}, {"interno": "t2"}, {"interno": "t3"}],
+                 "abstracoes": [{"nome": "abs1", "corpo": "(\\ (g Grade) (pretas g))"}],           # criada DEPOIS da lesão
+                 "eventos": [{"antes_de": "t3", "lesao": [{"nome": "abs1", "corpo": "(\\ (g Grade) (posicoes g))"}]}]}
+        from fedro_piloto.dsl import imprimir
+        antes = V.corpos_do_braco(braco, "t1")
+        depois = V.corpos_do_braco(braco, "t3")
+        self.assertIn("posicoes", imprimir(antes["abs1"]))
+        self.assertIn("pretas", imprimir(depois["abs1"]))
+        self.assertIn("pretas", imprimir(V.corpos_do_braco(braco)["abs1"]))      # sem tarefa: finais prevalecem
+
+
 class TestReplicacao(unittest.TestCase):
     def test_guarda_de_sementes(self):
         for sem in (10_001, 10_002):

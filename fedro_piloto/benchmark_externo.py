@@ -562,7 +562,7 @@ def verificar_benchmark(pasta_run: str, ns_amostral: Sequence[int] = (5, 6, 7, 8
         if not grades:
             continue
         b = d["bracos"][h["braco"]]
-        t = V.expandir_entradas(parse(h["hipotese"]), V.corpos_do_braco(b))
+        t = V.expandir_entradas(parse(h["hipotese"]), V.corpos_do_braco(b, tid))
         ev = compilar(t)
         tarefa = TAREFAS_EXTERNAS[tid]
         pares = []
