@@ -135,6 +135,7 @@ def job_braco(nome: str, cfg: ConfigEM, B_por_tarefa: Optional[Dict[str, int]] =
         curr = list(so_tarefas)
     ap = _aprendiz(nome, cfg, livro, rotulo=f"{cfg.base}/{nome}")
     eventos: List[dict] = []
+    erro = None
     c0 = time.process_time()
     with medir_isolado(nome) as m:
         for tid in curr:
@@ -145,9 +146,16 @@ def job_braco(nome: str, cfg: ConfigEM, B_por_tarefa: Optional[Dict[str, int]] =
             if B_por_tarefa and tid in B_por_tarefa:
                 ap.B = int(B_por_tarefa[tid])
                 eventos.append({"antes_de": tid, "B": ap.B})
-            ap.resolver(TAREFAS[tid], amb)
+            try:
+                ap.resolver(TAREFAS[tid], amb)
+            except Exception as e:      # uma falha interna num braço não apaga os outros: fica registrada
+                import traceback
+                erro = {"tarefa": tid, "excecao": repr(e), "traceback": traceback.format_exc()}
+                eventos.append({"antes_de": None, "falha": erro})
+                break
     rel = ap.relatorio()
-    det = {"braco": nome, "curriculo": curr, "relatorio": rel, "abstracoes": A.abstracoes(ap),
+    rel["falha"] = erro
+    det = {"braco": nome, "curriculo": curr, "relatorio": rel, "falha": erro, "abstracoes": A.abstracoes(ap),
            "curva": _curva(ap), "eventos": eventos, "livro": livro.deterministico_dict(incluir_diario=True),
            "dependente_de_recurso": any(r.inconclusivo_recurso for r in ap.resultados),
            "preparos": [amb.preparar(TAREFAS[t]).como_dict() for t in curr]}

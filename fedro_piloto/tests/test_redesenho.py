@@ -173,3 +173,18 @@ class TestAuditoriaOE(unittest.TestCase):
         self.assertTrue(r["presente"])
         self.assertLessEqual(r["custo_do_alvo"], 5)
         self.assertEqual(r["entradas_independentes"], 48)
+
+
+class TestPromocaoParametroNaoUsado(unittest.TestCase):
+    def test_promocao_descarta_parametros_nao_usados(self):
+        """Uma solução de Grade → Pos → L Pos que ignora p (controle pretasColuna1) é promovida como
+        função só de g; uma solução constante não é promovida (registrado)."""
+        from fedro_piloto.dsl import LAMS, variaveis_livres, parse
+        t = parse("(\\ (g Grade) (p Pos) (filtrar@P (celula g) (cabeca@LP (colunas g))))")
+        u = t
+        binders = []
+        while u[0] == "lam":
+            binders.append((u[1], u[2])); u = u[3]
+        usados = [b for b in binders if b[0] in set(variaveis_livres(u))]
+        self.assertEqual([n for n, _ in usados], ["g"])
+        self.assertEqual(LAMS(usados, u)[1], "g")

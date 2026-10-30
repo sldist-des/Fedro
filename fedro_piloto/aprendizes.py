@@ -940,24 +940,39 @@ class LLib(AprendizBase):
         reuso = bib.registrar_reuso(sol, tarefa.id)
         novas = bib.comprimir([sol], self.limiar, self.max_novas)
         if self.promover_funcoes and tarefa.natureza == "funcao":
-            novas.append(self._promover(tarefa))
+            p = self._promover(tarefa)
+            if p is not None:
+                novas.append(p)
         custo = bib.contador.menos(antes).subtermos_examinados
         self._custo_compressao_ultima = custo
         self.livro.registrar(tarefa.id, self.aprendiz_id, "compressao_subtermos", custo, "compressao")
         return reuso, [_desc_entrada(bib, p.nome) for p in novas]
 
     def _promover(self, tarefa: Tarefa):
+        """Promove a solução certificada da tarefa de função a entrada da biblioteca. Parâmetros que
+        não ocorrem no corpo são retirados (uma solução que ignora um argumento, p. ex. a do controle
+        `pretasColuna1`, é promovida como função dos argumentos que usa); sem nenhum parâmetro restante
+        (solução constante) não há promoção, e isso fica registrado."""
+        from .dsl import LAMS, variaveis_livres
         bib = self.biblioteca
         corpus = next(s for s in bib.solucoes if s.tarefa_id == tarefa.id)
         t = canonizar(corpus.termo)
-        k = 0
+        binders = []
         u = t
         while u[0] == "lam":
-            k += 1
+            binders.append((u[1], u[2]))
             u = u[3]
+        livres = set(variaveis_livres(u))
+        usados = [(n, tp) for n, tp in binders if n in livres]
+        if not usados:
+            self.promocoes_recusadas = getattr(self, "promocoes_recusadas", []) + [
+                {"tarefa": tarefa.id, "motivo": "solução constante (nenhum parâmetro usado)"}]
+            return None
         if not descoberta_valida(corpus.certificado, tarefa_id=tarefa.id):
             raise ErroProveniencia(f"{tarefa.id}: promoção exige solução certificada")
-        # rótulo de origem conferido por Biblioteca._verificar_no_corpus (o fragmento é a solução certificada)
+        t = canonizar(LAMS(usados, u))
+        k = len(usados)
+        # rótulo de origem conferido por Biblioteca._verificar_no_corpus (o fragmento ocorre na solução certificada)
         frag = Fragmento(t, tipo_de(t, {}, bib.tabela), 1, 0, (tarefa.id,), k, 0, "promocao-solucao",
                          frozenset({"descoberta"}))
         return bib.adicionar(frag, "descoberta")
