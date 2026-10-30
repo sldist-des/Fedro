@@ -282,7 +282,7 @@ Pré-requisito para avançar (documento 03, §D, mantido): o experimento sensór
 
 ### 6.1 Demonstrado **[E]**
 
-1. As 25 hipóteses do documento 05 e as 29 da transferência são corretas em todas as grades com n ≤ 4 (na bateria de argumentos do ambiente) e em todas as grades amostradas em n = 5..9 de uma partição nunca vista (0 erros em 32,1 milhões de entradas exaustivas e 29,5 mil amostrais).
+1. As 155 hipóteses aceitas em todos os registros deste documento e do documento 05 (25 do experimento mínimo, 29 da transferência, 101 do currículo autodirigido) são corretas em todas as grades com n ≤ 4 (na bateria de argumentos do ambiente) e em todas as grades amostradas em n = 5..9 de uma partição nunca vista: 0 erros em 116,2 milhões de entradas exaustivas, 101,8 mil amostrais e 4,9 mil de desenho (§7.1).
 2. O veredito do critério central, agora com cinco condições (reutilização em tarefa inédita, procedência certificada, livro-razão fechado, controlos piores na tarefa posterior à intervenção, mais tarefas que L-fix a custo cumulativo igual), é verdadeiro nas 2 execuções do documento 05 e nas 8 execuções de replicação (4 sementes novas × 2 políticas), com as mesmas hipóteses e variação de custo abaixo de 3 % entre sementes.
 3. As operações adquiridas (abs1 ≡ vizinhas pretas de uma posição; abs2 ≡ vizinhas pretas de um conjunto) transferem para **5 tarefas de uma família congelada por hash antes da execução**, em composições inéditas (abs2∘abs2, abs2 com `diferenca`, abs1 com `cauda`, abs1 com `e`/`celula`, abs2 com `pretas`), em ambas as políticas, sempre com reutilização; L-fix não resolve nenhuma (tamanho) ou resolve 3 a custo 8–500× maior (unigrama).
 4. A transferência tem um preço mensurável: nas 4 tarefas onde as operações são inúteis, L-lib+f paga 1,33–1,77× o custo de L-fix, sem perder nenhuma solução.
@@ -327,8 +327,9 @@ Verificação das hipóteses dos registros novos (regimes de §1.1):
 | `tr-s10002` | 29 | 14 171 770 | 0 | 14 200 | 0 | 1 484 | 0 |
 | `ca-s10002-tamanho` | 40 | 34 260 230 | 0 | 29 000 | 0 | 775 | 0 |
 | `ca-s10002-unigrama` | 45 | 36 173 748 | 0 | 31 200 | 0 | 1 240 | 0 |
-| `ca2-s10002-tamanho` | 8 | (§7.1, nota) | 0 | | 0 | | 0 |
-| `ca2-s10002-unigrama` | 8 | (§7.1, nota) | 0 | | 0 | | 0 |
+| `ca2-s10002-tamanho` | 8 | 6 852 046 | 0 | 5 800 | 0 | 155 | 0 |
+| `ca2-s10002-unigrama` | 8 | 6 852 046 | 0 | 5 800 | 0 | 155 | 0 |
+| **total (com §1.1)** | **155** | **116 166 082** | **0** | **101 800** | **0** | **4 894** | **0** |
 
 Todos os registros têm `hashes.json`/`fontes` com o hash das fontes do pacote no momento da execução, contadores determinísticos separados das medições de tempo e memória, e os certificados de procedência das entradas de biblioteca. Semente de dados única nos registros de transferência e currículo: 10002 (a do documento 05, para comparação direta); sementes da replicação: 10003–10006. Sementes exploratórias usadas até agora: 10001–10006. Buckets 50–99: intocados.
 
