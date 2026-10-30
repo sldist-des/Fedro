@@ -72,8 +72,9 @@ def corpos_do_braco(braco: dict, tarefa_id: Optional[str] = None) -> Dict[str, T
 
 def _ordem_tarefas(braco: dict) -> List[str]:
     """Ordem das tarefas do braço nos três formatos de registro (ids internos quando existem)."""
+    previo = [p.get("interno") or p.get("tarefa") for p in braco.get("previo", [])]   # fase prévia (modo "previo")
     if braco.get("curva"):
-        return [p.get("interno") or p.get("tarefa") for p in braco["curva"]]
+        return previo + [p.get("interno") or p.get("tarefa") for p in braco["curva"]]
     if braco.get("relatorio", {}).get("resultados"):
         return [x["tarefa_id"] for x in braco["relatorio"]["resultados"]]
     if braco.get("passos"):

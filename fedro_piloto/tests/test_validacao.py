@@ -54,6 +54,12 @@ class TestCorposNoTempo(unittest.TestCase):
         self.assertIn("posicoes", imprimir(antes["abs1"]))
         self.assertIn("pretas", imprimir(depois["abs1"]))
         self.assertIn("pretas", imprimir(V.corpos_do_braco(braco)["abs1"]))      # sem tarefa: finais prevalecem
+        # fase prévia (modo "previo"): tarefas da cadeia vêm antes da primeira tarefa externa, logo antes da lesão
+        braco2 = {"previo": [{"tarefa": "expandir"}], "curva": [{"interno": "t1"}],
+                  "abstracoes": [{"nome": "abs1", "corpo": "(\\ (g Grade) (pretas g))"}],
+                  "eventos": [{"antes_de": "t1", "lesao": [{"nome": "abs1", "corpo": "(\\ (g Grade) (posicoes g))"}]}]}
+        self.assertIn("posicoes", imprimir(V.corpos_do_braco(braco2, "expandir")["abs1"]))
+        self.assertIn("pretas", imprimir(V.corpos_do_braco(braco2, "t1")["abs1"]))
 
 
 class TestReplicacao(unittest.TestCase):
