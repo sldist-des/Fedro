@@ -1,0 +1,53 @@
+{
+ "bracos": {
+  "zero/tamanho/L-fix": {
+   "cpu_s": 840.469290455,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 544080,
+   "tempo_parede_s": 849.697074147
+  },
+  "zero/tamanho/L-lib": {
+   "cpu_s": 721.530572465,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 499100,
+   "tempo_parede_s": 729.747923647
+  },
+  "zero/tamanho/L-lib+f": {
+   "cpu_s": 565.400240965,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 857428,
+   "tempo_parede_s": 571.6835801640001
+  },
+  "zero/tamanho/L-lib+f/lesao": {
+   "cpu_s": 807.462621246,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 674620,
+   "tempo_parede_s": 819.209879355
+  },
+  "zero/unigrama/L-fix": {
+   "cpu_s": 872.622320541,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 516472,
+   "tempo_parede_s": 884.086047001
+  },
+  "zero/unigrama/L-lib": {
+   "cpu_s": 669.399215358,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 576840,
+   "tempo_parede_s": 677.97137111
+  },
+  "zero/unigrama/L-lib+f": {
+   "cpu_s": 833.4065051790001,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1283588,
+   "tempo_parede_s": 845.588636593
+  },
+  "zero/unigrama/L-lib+f/lesao": {
+   "cpu_s": 1123.3989155460001,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 816400,
+   "tempo_parede_s": 1137.090692034
+  }
+ },
+ "parede_total_s": 1998.205022573471
+}

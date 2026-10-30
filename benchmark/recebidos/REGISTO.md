@@ -2,6 +2,7 @@
 
 | data | nome | versão | hash do pacote | validação | erros de integridade comunicados | registros de execução |
 |---|---|---|---|---|---|---|
+| 2026-10-30 17:38 UTC | grades-e0-independente (28 tarefas, 8 tipos; autor: sessão `session_01Cs7W3uj1L2HYX9rKqMuDc4`, Opus 5.5) | 1 | `9e600a4155844bc44f5c815d451a209954b5b6194bf8e4b21ecf66dd658729f8` (congelado pelo autor às 17:29:27 UTC; recebido pela mensagem final da sessão; os 5 ficheiros coincidem byte a byte com os SHA-256 do MANIFESTO do autor) | `benchmark_externo validar`: ok, 0 erros, 3 avisos (pretasEmDomino com classe única em grades naturais n = 6, há gerador POSITIVOS; dois avisos de `->` nas testemunhas com `fix`, falso positivo do validador) | nenhum | `runs/bx-grades-e0-independente-v1-A-s10007` e `-B-s10007`: lançados às 17:39 UTC; o contentor foi reciclado às 17:47 UTC antes de qualquer tarefa terminar e os blocos foram relançados do zero às 17:48 UTC (nenhum resultado parcial aproveitado); A terminou às 18:21 UTC |
 
 ## Envios ao autor externo
 
