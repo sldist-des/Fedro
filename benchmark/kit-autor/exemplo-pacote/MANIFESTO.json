@@ -1,0 +1,15 @@
+{
+ "algoritmo": "sha256 das linhas '<caminho>  <sha256 do ficheiro>' ordenadas, excluindo MANIFESTO.json",
+ "arquivos": {
+  "referencias.py": "074becaf4b7939db3bab07fd20ae9fc6535384339b74431f4a1a59ef3991e2d6",
+  "tarefas.json": "debb17f382d6122be2e5670a46d0118a0c59c9cd1ea6abbbba96235b190ec1e3",
+  "testemunhas.json": "a38a9c13638b4e05290617a3f2312287dc26ebb7a4bae5b9710c453303a36508",
+  "testes_ocultos.json": "08235aefcda1a9794ecf18d545fdd7d5e81acc48e688f2f96793a2da2c1c1155"
+ },
+ "autor": "kit (ilustração de formato; tarefas triviais por desenho)",
+ "congelado_em": "2026-10-30T17:01:40+00:00",
+ "hash_pacote": "bd1571f89707c39fbfb21547e09d6081b17175185c3a0a29ea1a6c40b6c0d64e",
+ "nome": "exemplo-formato",
+ "num_tarefas": 3,
+ "versao": "1"
+}

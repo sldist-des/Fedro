@@ -1,0 +1,13 @@
+{
+ "nome": "exemplo-formato",
+ "versao": "1",
+ "autor": "kit (ilustração de formato; tarefas triviais por desenho)",
+ "tarefas": [
+  {"id": "primeiraCelulaPreta", "tipo": "Grade -> Bool", "natureza": "predicado", "comparacao": "exata",
+   "descricao": "Verdadeiro se a célula (1,1) da grade é preta."},
+  {"id": "ehCanto", "tipo": "Grade -> Pos -> Bool", "natureza": "funcao", "comparacao": "exata",
+   "descricao": "Verdadeiro se a posição p é um dos quatro cantos da grade."},
+  {"id": "identidade", "tipo": "Grade -> L Pos -> L Pos", "natureza": "funcao", "comparacao": "conjunto",
+   "descricao": "Devolve a própria lista S (ignora a grade)."}
+ ]
+}

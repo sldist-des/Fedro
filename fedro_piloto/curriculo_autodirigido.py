@@ -147,9 +147,12 @@ def _versao_biblioteca(ap) -> int:
 
 
 def job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int, B_max: int,
-              semente_seletor: int, pool: Sequence[str] = POOL) -> dict:
+              semente_seletor: int, pool: Sequence[str] = POOL, tarefas: Optional[Dict[str, A.Tarefa]] = None,
+              ordem_manual: Optional[Sequence[str]] = None) -> dict:
+    """tarefas: conjunto de tarefas (id → Tarefa; por omissão as do experimento mínimo); ordem_manual: a
+    ordem do seletor manual (por omissão ORDEM_MANUAL). Permite usar o módulo com tarefas externas."""
     try:
-        return _job_braco(seletor_nome, aprendiz_nome, cfg, G_total, B_max, semente_seletor, pool)
+        return _job_braco(seletor_nome, aprendiz_nome, cfg, G_total, B_max, semente_seletor, pool, tarefas, ordem_manual)
     except Exception as e:      # registada, não derruba os outros braços do Pool
         import traceback
         return {"deterministico": {"braco": f"{seletor_nome}/{aprendiz_nome}", "seletor": seletor_nome,
@@ -161,7 +164,9 @@ def job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int
 
 
 def _job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int, B_max: int,
-               semente_seletor: int, pool: Sequence[str] = POOL) -> dict:
+               semente_seletor: int, pool: Sequence[str] = POOL, tarefas: Optional[Dict[str, A.Tarefa]] = None,
+               ordem_manual: Optional[Sequence[str]] = None) -> dict:
+    tarefas = TAREFAS if tarefas is None else tarefas
     from .medidas import medir_isolado
     from .piloto import limitar_memoria
     limitar_memoria(cfg.memoria_trabalhador_gb)
@@ -171,8 +176,8 @@ def _job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: in
     ap = _aprendiz(aprendiz_nome, cfg, livro, rotulo=f"{cfg.base}/{rotulo}")
     # semente PRÓPRIA do seletor (não é semente de dados: não passa por geradores.rng_derivado)
     rng = random.Random(f"curriculo|{seletor_nome}|{semente_seletor}")
-    sel = SELETORES[seletor_nome](rng)
-    hist = {tid: HistoricoTarefa(tid, tipo_str(TAREFAS[tid].tipo)) for tid in pool}
+    sel = SeletorManual(list(ordem_manual)) if (seletor_nome == "manual" and ordem_manual is not None) else SELETORES[seletor_nome](rng)
+    hist = {tid: HistoricoTarefa(tid, tipo_str(tarefas[tid].tipo)) for tid in pool}
     passos: List[dict] = []
     gasto = 0
     versao = _versao_biblioteca(ap)
@@ -190,7 +195,7 @@ def _job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: in
             ap.B = int(B)
             antes = livro.entrada(tid, ap.aprendiz_id).total_aprendiz()
             antes_e = livro.entrada(tid, ap.aprendiz_id).enumeracao_candidatos
-            r = ap.resolver(TAREFAS[tid], amb)
+            r = ap.resolver(tarefas[tid], amb)
             e = livro.entrada(tid, ap.aprendiz_id)
             custo = e.total_aprendiz() - antes
             enum = e.enumeracao_candidatos - antes_e

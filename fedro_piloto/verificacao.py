@@ -57,6 +57,9 @@ def tarefa_por_id(tid: str) -> A.Tarefa:
     from .experimento_minimo import TAREFAS
     if tid in TAREFAS:
         return TAREFAS[tid]
+    if tid.startswith("bx:"):            # tarefa de benchmark externo (benchmark_externo.carregar_pacote)
+        from .benchmark_externo import TAREFAS_EXTERNAS
+        return TAREFAS_EXTERNAS[tid]
     try:
         from .familias_transferencia import TAREFAS as TT
         if tid in TT:
@@ -178,13 +181,21 @@ def hipoteses_aceitas(braco: dict) -> List[tuple]:
     for x in braco.get("passos", []):
         if x.get("aceita") and x.get("hipotese_bruta"):
             out.append((x["tarefa"], x["hipotese_bruta"]))
-    return out
+    vistos, unicos = set(), []
+    for par in out:                      # um registro pode ter a mesma hipótese em dois formatos
+        if par not in vistos:
+            vistos.add(par)
+            unicos.append(par)
+    return unicos
 
 
 def verificar_execucao(pasta: str, ns_amostral: Sequence[int] = (5, 6, 7, 8, 9), k: int = 40,
                        exaustivo: bool = True) -> dict:
     with open(os.path.join(pasta, "deterministico.json"), encoding="utf-8") as f:
         d = json.load(f)
+    if d.get("pacote"):                  # registro de benchmark externo: carrega (e confere) o pacote congelado
+        from .benchmark_externo import RAIZ, carregar_pacote
+        carregar_pacote(os.path.join(RAIZ, d["pacote"]["caminho"]), hash_esperado=d["pacote"]["hash"])
     semente = int(d.get("config", {}).get("semente", 10_002))
     tabela = BASES[d.get("config", {}).get("base", "E0")].para_aprendiz()
     res = {"execucao": pasta, "hipoteses": [], "parametros": {"ns_amostral": list(ns_amostral), "k": k,
