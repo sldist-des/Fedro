@@ -1,0 +1,41 @@
+{
+ "bracos": {
+  "previo/tamanho/L-fix": {
+   "cpu_s": 991.9949349340001,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 709620,
+   "tempo_parede_s": 1332.5926720479997
+  },
+  "previo/tamanho/L-lib+f": {
+   "cpu_s": 568.7816983829999,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1153700,
+   "tempo_parede_s": 771.5462516289999
+  },
+  "previo/tamanho/L-lib+f/lesao": {
+   "cpu_s": 575.122376459,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1023632,
+   "tempo_parede_s": 769.693513879
+  },
+  "previo/unigrama/L-fix": {
+   "cpu_s": 1238.3559760849998,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 753728,
+   "tempo_parede_s": 1565.8183369909998
+  },
+  "previo/unigrama/L-lib+f": {
+   "cpu_s": 684.66324663,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1247252,
+   "tempo_parede_s": 834.4694533819998
+  },
+  "previo/unigrama/L-lib+f/lesao": {
+   "cpu_s": 703.2246310490001,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 997188,
+   "tempo_parede_s": 854.7189666600002
+  }
+ },
+ "parede_total_s": 1639.3387887477875
+}
