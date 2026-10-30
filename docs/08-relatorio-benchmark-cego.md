@@ -307,7 +307,11 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 64 | 0 / 0 | 40,400 / 0 | 1,776 / 0 | 32,611 / 0 | 169 |
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:C8 -->
 
 <!-- TABELAS:C9 -->
@@ -369,7 +373,11 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 65 | 0 / 0 | 40,585 / 0 | 1,951 / 0 | 32,621 / 0 | 169 |
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:C9 -->
 
 **Leitura (C).** As sementes 10008 e 10009 reproduzem o bloco A quase exatamente: as mesmas tarefas aceitas por L-fix (15 e 17) e por L-lib+f (15 e 17; na semente 10009, L-lib+f na política de tamanho aceita também `colunaVazia`, 16), os mesmos quatro pares de transferência positiva e as mesmas contagens de negativas e inconclusivas (4 / 13 / 11 e 4 / 14 / 10 nas três sementes), com custos cumulativos que variam menos de 2 % (L-fix 1 871–1 882 M; L-lib+f 1 541–1 550 M na política de tamanho; 2 515–2 554 M na unigrama). Duas hipóteses aceitas diferem sintaticamente entre sementes (`linhaTemPretaEm`, `tocaPreta`, política de tamanho), sem alterar as classes. Como no documento 06, a semente só muda a amostra OE, os exemplos e os contraexemplos; o padrão misto do bloco A é **estável às sementes**, pelo critério pré-registado 5.
@@ -431,7 +439,11 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 30 | 0 / 0 | 18,594 / 0 | 900 / 0 | 13,742 / 0 | 81 |
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:D -->
 
 **Leitura (D).** Com o reservatório do oráculo reduzido de 40 para 20 grades (n = 5 e 6 para predicados; n = 4 para funções), os dois braços produzem **exatamente** as mesmas aceitações, as mesmas hipóteses e os mesmos custos do bloco A (1 882,3 M e 1 540,8 M): nenhuma hipótese aceita dependeu de um contraexemplo das grades do reservatório removidas. A variação do ambiente pré-registada não tem efeito mensurável neste conjunto; isto diz que o alcance da busca, e não o oráculo, é o que limita o desempenho.
@@ -439,8 +451,37 @@ Verificação pós-execução:
 ### 5.3 Bloco E — ordens do autor, aleatórias e autodirigida (política de tamanho; L-lib+f e L-fix)
 
 <!-- TABELAS:E -->
+### Registro `bx-grades-e0-independente-v1-E-ordens`
 
-<!-- LEITURA:E -->
+| braço | aceitas | ordem de aceitação | passos | custo total | gasto global | cadeia de reuso |
+|---|---|---|---|---|---|---|
+| aleatorio#1/L-fix | 15: algumaLinhaCheia, brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, naBorda, pretasPorColunas, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | ultimaLinha → juntarSemRepetir → contidoEm → contemTodasPretas → vizinhosPretos → complementoDe → brancasDaLista → intersecaoOrdenada → naBorda → colunaVazia → todaLinhaTemPreta → tocaPreta → pretasPorColunas → linhaDaPosicao → algumaLinhaCheia | 28 | 1882.3 M | 311,565 | [] |
+| aleatorio#1/L-lib+f | 17: brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, linhaTemPretaEm, mesmoConjunto, naBorda, pretasPorColunas, semPretasAdjacentes, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | ultimaLinha → todaLinhaTemPreta → juntarSemRepetir → contidoEm → contemTodasPretas → complementoDe → mesmoConjunto → vizinhosPretos → tocaPreta → intersecaoOrdenada → pretasPorColunas → linhaDaPosicao → brancasDaLista → semPretasAdjacentes → naBorda → linhaTemPretaEm → colunaVazia | 70 | 5651.7 M | 1,120,001 | [['bx:contemTodasPretas', ['abs3']], ['bx:mesmoConjunto', ['abs3']], ['bx:tocaPreta', ['abs8']], ['bx:brancasDaLista', ['abs11', 'abs5']], ['bx:semPretasAdjacentes', ['abs9']], ['bx:linhaTemPretaEm', ['abs14']], ['bx:colunaVazia', ['abs19']]] |
+| aleatorio#2/L-fix | 15: algumaLinhaCheia, brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, naBorda, pretasPorColunas, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | juntarSemRepetir → contemTodasPretas → pretasPorColunas → complementoDe → algumaLinhaCheia → tocaPreta → ultimaLinha → naBorda → vizinhosPretos → intersecaoOrdenada → contidoEm → todaLinhaTemPreta → brancasDaLista → linhaDaPosicao → colunaVazia | 28 | 1882.3 M | 311,565 | [] |
+| aleatorio#2/L-lib+f | 18: brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, linhaTemPretaEm, mesmoConjunto, naBorda, pretasPorColunas, semPretaIsolada, semPretasAdjacentes, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | juntarSemRepetir → contemTodasPretas → pretasPorColunas → colunaVazia → semPretaIsolada → vizinhosPretos → linhaDaPosicao → contidoEm → naBorda → mesmoConjunto → brancasDaLista → complementoDe → ultimaLinha → semPretasAdjacentes → tocaPreta → todaLinhaTemPreta → intersecaoOrdenada → linhaTemPretaEm | 49 | 3853.6 M | 713,738 | [['bx:semPretaIsolada', ['abs2']], ['bx:mesmoConjunto', ['abs7']], ['bx:semPretasAdjacentes', ['abs4']], ['bx:tocaPreta', ['abs4']], ['bx:linhaTemPretaEm', ['abs14', 'abs5']]] |
+| aleatorio#3/L-fix | 15: algumaLinhaCheia, brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, naBorda, pretasPorColunas, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | brancasDaLista → contemTodasPretas → colunaVazia → pretasPorColunas → complementoDe → todaLinhaTemPreta → vizinhosPretos → tocaPreta → ultimaLinha → intersecaoOrdenada → juntarSemRepetir → contidoEm → algumaLinhaCheia → linhaDaPosicao → naBorda | 28 | 1882.3 M | 311,565 | [] |
+| aleatorio#3/L-lib+f | 17: brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, linhaTemPretaEm, mesmoConjunto, naBorda, pretasPorColunas, semPretasAdjacentes, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | brancasDaLista → contemTodasPretas → colunaVazia → pretasPorColunas → complementoDe → ultimaLinha → todaLinhaTemPreta → juntarSemRepetir → contidoEm → naBorda → linhaDaPosicao → mesmoConjunto → intersecaoOrdenada → vizinhosPretos → tocaPreta → semPretasAdjacentes → linhaTemPretaEm | 67 | 5163.3 M | 1,071,334 | [['bx:mesmoConjunto', ['abs9']], ['bx:tocaPreta', ['abs15']], ['bx:semPretasAdjacentes', ['abs17']], ['bx:linhaTemPretaEm', ['abs11']]] |
+| autodirigido/L-fix | 15: algumaLinhaCheia, brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, naBorda, pretasPorColunas, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | brancasDaLista → complementoDe → contemTodasPretas → contidoEm → intersecaoOrdenada → linhaDaPosicao → pretasPorColunas → todaLinhaTemPreta → ultimaLinha → vizinhosPretos → juntarSemRepetir → naBorda → tocaPreta → algumaLinhaCheia → colunaVazia | 92 | 3779.1 M | 747,629 | [] |
+| autodirigido/L-lib+f | 15: brancasDaLista, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, linhaTemPretaEm, naBorda, pretasPorColunas, semPretasAdjacentes, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | brancasDaLista → complementoDe → contemTodasPretas → contidoEm → intersecaoOrdenada → linhaDaPosicao → linhaTemPretaEm → todaLinhaTemPreta → ultimaLinha → vizinhosPretos → pretasPorColunas → tocaPreta → semPretasAdjacentes → juntarSemRepetir → naBorda | 221 | 5094.6 M | 1,120,001 | [['bx:linhaTemPretaEm', ['abs6']], ['bx:todaLinhaTemPreta', ['abs7']], ['bx:tocaPreta', ['abs9']], ['bx:semPretasAdjacentes', ['abs13']]] |
+| manual/L-fix | 15: algumaLinhaCheia, brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, naBorda, pretasPorColunas, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | ultimaLinha → contidoEm → vizinhosPretos → todaLinhaTemPreta → complementoDe → pretasPorColunas → intersecaoOrdenada → contemTodasPretas → colunaVazia → naBorda → linhaDaPosicao → juntarSemRepetir → brancasDaLista → algumaLinhaCheia → tocaPreta | 28 | 1882.3 M | 311,565 | [] |
+| manual/L-lib+f | 16: brancasDaLista, colunaVazia, complementoDe, contemTodasPretas, contidoEm, intersecaoOrdenada, juntarSemRepetir, linhaDaPosicao, linhaTemPretaEm, naBorda, pretasPorColunas, semPretasAdjacentes, tocaPreta, todaLinhaTemPreta, ultimaLinha, vizinhosPretos | ultimaLinha → contidoEm → vizinhosPretos → todaLinhaTemPreta → complementoDe → pretasPorColunas → intersecaoOrdenada → contemTodasPretas → naBorda → linhaDaPosicao → juntarSemRepetir → brancasDaLista → linhaTemPretaEm → colunaVazia → tocaPreta → semPretasAdjacentes | 50 | 3349.3 M | 725,665 | [['bx:contemTodasPretas', ['abs2']], ['bx:brancasDaLista', ['abs4', 'abs7']], ['bx:linhaTemPretaEm', ['abs10']], ['bx:colunaVazia', ['abs15']], ['bx:tocaPreta', ['abs15']], ['bx:semPretasAdjacentes', ['abs19']]] |
+
+Parede total: 4525 s.
+<!-- /TABELAS:E -->
+
+**Leitura (E).** Dez braços, política de tamanho, modo zero, semente de dados 10007, orçamento global G = 1 120 000 candidatos (dois passes de 20 000 por tarefa), B_max = 20 000; seletores "manual" (= ordem do autor), aleatório (três sementes do seletor) e autodirigido (versão 2 do documento 06, com repetição após mudança de biblioteca).
+
+| seletor | L-fix: aceitas / custo | L-lib+f: aceitas / custo / tentativas |
+|---|---|---|
+| ordem do autor | 15 / 1 882 M (28 tentativas) | **16** / 3 349 M (50) |
+| aleatório #1 | 15 / 1 882 M | 17 / 5 652 M (70; G esgotado) |
+| aleatório #2 | 15 / 1 882 M | **18** / 3 854 M (49) |
+| aleatório #3 | 15 / 1 882 M | 17 / 5 163 M (67) |
+| autodirigido | 15 / 3 779 M (92) | 15 / 5 095 M (221; G esgotado) |
+
+1. Para L-fix a ordem é irrelevante (sem estado, as mesmas 15 tarefas ao mesmo custo), e o aprofundamento iterativo só desperdiça (dobro do custo), como no documento 06.
+2. Para L-lib+f **a ordem importa, e a ordem do autor não é a melhor**: as três ordens aleatórias aceitam 17–18 tarefas contra 16 na ordem do autor e 15 no bloco A (ordem do autor, uma passagem). O ganho vem de duas fontes: a repetição de tarefas falhadas depois de uma mudança de biblioteca (que o bloco A não faz) e a composição da biblioteca no momento em que cada tarefa é tentada — com menos entradas inúteis acumuladas, `colunaVazia`, `mesmoConjunto` e `semPretaIsolada` entram no alcance. O preço é o custo: 1,8–3,0× o da ordem do autor em uma passagem.
+3. **O seletor autodirigido falha neste conjunto**: com 13 tarefas fora do alcance, a escada de orçamentos (2 000 → … → 20 000 por tarefa, repetida a cada mudança de biblioteca) esgota o orçamento global (221 tentativas, 206 falhas) antes de chegar com B_max às tarefas que a biblioteca tornaria acessíveis; aceita 15 tarefas, menos do que qualquer outra ordem, ao custo mais alto com L-lib+f. A conclusão favorável do documento 06 (§3.4) dependia de um conjunto pequeno com poucas tarefas insolúveis; não se generaliza a um conjunto com metade das tarefas fora do alcance. Um seletor que desista de tarefas repetidamente falhadas (ou que limite as repetições por mudança de biblioteca) é a correção óbvia; fica para depois desta avaliação.
 
 ## 6. Verificação pós-execução **[E]**
 
@@ -480,5 +521,7 @@ Protocolo §7, bloco A (modo zero, semente 10007), por política: V = 28 tarefas
 ## 9. Desvios do pré-registro
 
 1. O contentor foi reciclado às 17:47 UTC durante o primeiro lançamento dos blocos A e B; ambos foram relançados do zero às 17:48 UTC. Nenhum resultado parcial existia nem foi usado. Registado em `benchmark/recebidos/REGISTO.md`.
-2. Os blocos C, D e E, condicionais no protocolo, foram executados (§5) porque o bloco A demorou 33 min de parede.
-3. Nenhuma alteração ao código, à DSL, à biblioteca ou às tarefas entre a receção e o fim da avaliação. O defeito da compressão (§3.2) foi identificado e **não** corrigido durante a avaliação.
+2. Os blocos C, D e E, condicionais no protocolo, foram executados (§5) porque o bloco A demorou 33 min de parede. As verificações de C, D e E foram feitas só nos regimes amostral e de testes ocultos do autor (sem o exaustivo em n ≤ 4, que demora ≈ 70 min por bloco), porque as hipóteses aceitas coincidem quase todas com as de A e B.
+3. Nenhuma alteração ao código do ambiente, da DSL, dos aprendizes, da biblioteca ou das tarefas entre a receção e o fim da avaliação. O defeito da compressão (§3.2) e o do seletor autodirigido (§5.3) foram identificados e **não** corrigidos durante a avaliação.
+4. **Correção na ferramenta de verificação pós-execução**, depois de ver os primeiros resultados da verificação do bloco A (§6): `verificacao.corpos_do_braco` resolvia os nomes das entradas de biblioteca pela biblioteca **final** do braço; nos braços com lesão a numeração recomeça (abs1, abs2, …) e um nome designa corpos diferentes antes e depois da lesão, o que expandia hipóteses pré-lesão com corpos pós-lesão (uma "aceitação indevida" espúria em `contemTodasPretas` no braço lesionado unigrama, e um erro de tipo na verificação do bloco B). A resolução passou a ser feita pela posição da tarefa relativamente ao evento de lesão (incluindo a fase prévia). A correção afeta só a verificação, não os registros nem os resultados; as verificações de A e B foram refeitas do zero com a ferramenta corrigida (commits d4e1f38, dde0bb7).
+5. Bloco E: o orçamento global G = 1 120 000 (dois passes) foi fixado por nós antes da execução do bloco, não no protocolo (que só previa o bloco); dois braços esgotaram-no (§5.3).
