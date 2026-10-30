@@ -165,6 +165,22 @@ def validar_amostral(termo: Termo, tarefa: A.Tarefa, ns: Sequence[int] = (5, 6, 
             "por_n": out}
 
 
+def hipoteses_aceitas(braco: dict) -> List[tuple]:
+    """(tarefa_id, hipótese bruta) aceitas num braço, nos três formatos de registro: experimento mínimo
+    (relatorio.resultados), transferência (resultados por tarefa) e currículo autodirigido (passos)."""
+    out = []
+    for x in braco.get("relatorio", {}).get("resultados", []):
+        if x.get("aceita") and x.get("hipotese"):
+            out.append((x["tarefa_id"], x["hipotese"]))
+    for tid, x in (braco.get("resultados") or {}).items():
+        if isinstance(x, dict) and x.get("aceita") and x.get("hipotese_bruta"):
+            out.append((tid, x["hipotese_bruta"]))
+    for x in braco.get("passos", []):
+        if x.get("aceita") and x.get("hipotese_bruta"):
+            out.append((x["tarefa"], x["hipotese_bruta"]))
+    return out
+
+
 def verificar_execucao(pasta: str, ns_amostral: Sequence[int] = (5, 6, 7, 8, 9), k: int = 40,
                        exaustivo: bool = True) -> dict:
     with open(os.path.join(pasta, "deterministico.json"), encoding="utf-8") as f:
@@ -176,19 +192,16 @@ def verificar_execucao(pasta: str, ns_amostral: Sequence[int] = (5, 6, 7, 8, 9),
                                                                  "semente": semente}}
     for nome, b in d["bracos"].items():
         corpos = corpos_do_braco(b)
-        rel = b.get("relatorio", {})
-        for x in rel.get("resultados", []):
-            if not x.get("aceita"):
-                continue
-            t = expandir_entradas(parse(x["hipotese"]), corpos)
-            tarefa = tarefa_por_id(x["tarefa_id"])
-            item = {"braco": nome, "tarefa": x["tarefa_id"], "hipotese": x["hipotese"],
-                    "entradas_expandidas": sorted(c for c in corpos if c in x["hipotese"])}
+        for tid, hip in hipoteses_aceitas(b):
+            t = expandir_entradas(parse(hip), corpos)
+            tarefa = tarefa_por_id(tid)
+            item = {"braco": nome, "tarefa": tid, "hipotese": hip,
+                    "entradas_expandidas": sorted(c for c in corpos if c in hip)}
             if exaustivo:
                 item["exaustivo"] = verificar_exaustivo(t, tarefa, tabela=tabela)
             item["amostral"] = validar_amostral(t, tarefa, ns_amostral, k, semente, tabela=tabela)
             res["hipoteses"].append(item)
-            print(nome, x["tarefa_id"], "| exaustivo erros:", item.get("exaustivo", {}).get("erros"),
+            print(nome, tid, "| exaustivo erros:", item.get("exaustivo", {}).get("erros"),
                   "| amostral:", {n: (r["natural"]["erros"], r.get("desenho", {}).get("erros"))
                                   for n, r in item["amostral"]["por_n"].items()}, flush=True)
     caminho = os.path.join(pasta, "verificacao.json")

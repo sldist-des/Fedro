@@ -1,0 +1,6037 @@
+{
+ "execucao": "runs/tr-s10002",
+ "hipoteses": [
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 23,
+         "total": 23
+        },
+        "True": {
+         "acertos": 17,
+         "total": 17
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 34,
+       "negativos_emparelhados": 14,
+       "por_classe": {
+        "False": {
+         "acertos": 14,
+         "total": 14
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 28,
+         "total": 28
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 36,
+       "negativos_emparelhados": 16,
+       "por_classe": {
+        "False": {
+         "acertos": 16,
+         "total": 16
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 7,
+         "total": 7
+        },
+        "True": {
+         "acertos": 33,
+         "total": 33
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 32,
+       "negativos_emparelhados": 12,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 29,
+       "negativos_emparelhados": 9,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 7,
+        "total": 7
+       },
+       "True": {
+        "acertos": 9,
+        "total": 9
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 169,
+        "total": 169
+       },
+       "True": {
+        "acertos": 343,
+        "total": 343
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 14911,
+        "total": 14911
+       },
+       "True": {
+        "acertos": 50625,
+        "total": 50625
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+   "tarefa": "LinhaOcupada"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 39,
+         "total": 39
+        },
+        "True": {
+         "acertos": 1,
+         "total": 1
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 38,
+         "total": 38
+        },
+        "True": {
+         "acertos": 2,
+         "total": 2
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 12,
+        "total": 12
+       },
+       "True": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 448,
+        "total": 448
+       },
+       "True": {
+        "acertos": 64,
+        "total": 64
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 61440,
+        "total": 61440
+       },
+       "True": {
+        "acertos": 4096,
+        "total": 4096
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+   "tarefa": "TopoCheio"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+   "tarefa": "pretasUltimaColuna"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+   "tarefa": "semColuna1"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 23,
+         "total": 23
+        },
+        "True": {
+         "acertos": 17,
+         "total": 17
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 34,
+       "negativos_emparelhados": 14,
+       "por_classe": {
+        "False": {
+         "acertos": 14,
+         "total": 14
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 28,
+         "total": 28
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 36,
+       "negativos_emparelhados": 16,
+       "por_classe": {
+        "False": {
+         "acertos": 16,
+         "total": 16
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 7,
+         "total": 7
+        },
+        "True": {
+         "acertos": 33,
+         "total": 33
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 32,
+       "negativos_emparelhados": 12,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 29,
+       "negativos_emparelhados": 9,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 7,
+        "total": 7
+       },
+       "True": {
+        "acertos": 9,
+        "total": 9
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 169,
+        "total": 169
+       },
+       "True": {
+        "acertos": 343,
+        "total": 343
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 14911,
+        "total": 14911
+       },
+       "True": {
+        "acertos": 50625,
+        "total": 50625
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+   "tarefa": "LinhaOcupada"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 39,
+         "total": 39
+        },
+        "True": {
+         "acertos": 1,
+         "total": 1
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 38,
+         "total": 38
+        },
+        "True": {
+         "acertos": 2,
+         "total": 2
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 12,
+        "total": 12
+       },
+       "True": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 448,
+        "total": 448
+       },
+       "True": {
+        "acertos": 64,
+        "total": 64
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 61440,
+        "total": 61440
+       },
+       "True": {
+        "acertos": 4096,
+        "total": 4096
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+   "tarefa": "TopoCheio"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 101,
+         "total": 101
+        },
+        "True": {
+         "acertos": 59,
+         "total": 59
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 81,
+         "total": 81
+        },
+        "True": {
+         "acertos": 79,
+         "total": 79
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 95,
+         "total": 95
+        },
+        "True": {
+         "acertos": 65,
+         "total": 65
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 84,
+         "total": 84
+        },
+        "True": {
+         "acertos": 76,
+         "total": 76
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 77,
+         "total": 77
+        },
+        "True": {
+         "acertos": 83,
+         "total": 83
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [
+    "abs1"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 48,
+        "total": 48
+       },
+       "True": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 2720,
+        "total": 2720
+       },
+       "True": {
+        "acertos": 1888,
+        "total": 1888
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 540672,
+        "total": 540672
+       },
+       "True": {
+        "acertos": 507904,
+        "total": 507904
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (nao (vazia?@P (cauda@P (abs1 x0 x1)))))",
+   "tarefa": "duasVizinhas"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (abs2 x0 (abs2 x0 x1)))",
+   "tarefa": "expandir2"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca (abs2 x0 x1) x1))",
+   "tarefa": "fronteira"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 154,
+         "total": 154
+        },
+        "True": {
+         "acertos": 6,
+         "total": 6
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 145,
+         "total": 145
+        },
+        "True": {
+         "acertos": 15,
+         "total": 15
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 146,
+         "total": 146
+        },
+        "True": {
+         "acertos": 14,
+         "total": 14
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [
+    "abs1"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 56,
+        "total": 56
+       },
+       "True": {
+        "acertos": 8,
+        "total": 8
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 4208,
+        "total": 4208
+       },
+       "True": {
+        "acertos": 400,
+        "total": 400
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 974848,
+        "total": 974848
+       },
+       "True": {
+        "acertos": 73728,
+        "total": 73728
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (e (celula x0 x1) (vazia?@P (abs1 x0 x1))))",
+   "tarefa": "isoladaP"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (abs2 x0 (pretas x0)))",
+   "tarefa": "pretasComVizinha"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+   "tarefa": "pretasUltimaColuna"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "tamanho/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+   "tarefa": "semColuna1"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 23,
+         "total": 23
+        },
+        "True": {
+         "acertos": 17,
+         "total": 17
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 34,
+       "negativos_emparelhados": 14,
+       "por_classe": {
+        "False": {
+         "acertos": 14,
+         "total": 14
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 28,
+         "total": 28
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 36,
+       "negativos_emparelhados": 16,
+       "por_classe": {
+        "False": {
+         "acertos": 16,
+         "total": 16
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 7,
+         "total": 7
+        },
+        "True": {
+         "acertos": 33,
+         "total": 33
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 32,
+       "negativos_emparelhados": 12,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 29,
+       "negativos_emparelhados": 9,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 7,
+        "total": 7
+       },
+       "True": {
+        "acertos": 9,
+        "total": 9
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 169,
+        "total": 169
+       },
+       "True": {
+        "acertos": 343,
+        "total": 343
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 14911,
+        "total": 14911
+       },
+       "True": {
+        "acertos": 50625,
+        "total": 50625
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+   "tarefa": "LinhaOcupada"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 39,
+         "total": 39
+        },
+        "True": {
+         "acertos": 1,
+         "total": 1
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 38,
+         "total": 38
+        },
+        "True": {
+         "acertos": 2,
+         "total": 2
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 12,
+        "total": 12
+       },
+       "True": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 448,
+        "total": 448
+       },
+       "True": {
+        "acertos": 64,
+        "total": 64
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 61440,
+        "total": 61440
+       },
+       "True": {
+        "acertos": 4096,
+        "total": 4096
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+   "tarefa": "TopoCheio"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 101,
+         "total": 101
+        },
+        "True": {
+         "acertos": 59,
+         "total": 59
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 81,
+         "total": 81
+        },
+        "True": {
+         "acertos": 79,
+         "total": 79
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 95,
+         "total": 95
+        },
+        "True": {
+         "acertos": 65,
+         "total": 65
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 84,
+         "total": 84
+        },
+        "True": {
+         "acertos": 76,
+         "total": 76
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 77,
+         "total": 77
+        },
+        "True": {
+         "acertos": 83,
+         "total": 83
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 48,
+        "total": 48
+       },
+       "True": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 2720,
+        "total": 2720
+       },
+       "True": {
+        "acertos": 1888,
+        "total": 1888
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 540672,
+        "total": 540672
+       },
+       "True": {
+        "acertos": 507904,
+        "total": 507904
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (algum@P (celula x0) (cauda@P (filtrar@P (celula x0) (vizinhos x0 x1)))))",
+   "tarefa": "duasVizinhas"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 154,
+         "total": 154
+        },
+        "True": {
+         "acertos": 6,
+         "total": 6
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 145,
+         "total": 145
+        },
+        "True": {
+         "acertos": 15,
+         "total": 15
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 146,
+         "total": 146
+        },
+        "True": {
+         "acertos": 14,
+         "total": 14
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 56,
+        "total": 56
+       },
+       "True": {
+        "acertos": 8,
+        "total": 8
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 4208,
+        "total": 4208
+       },
+       "True": {
+        "acertos": 400,
+        "total": 400
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 974848,
+        "total": 974848
+       },
+       "True": {
+        "acertos": 73728,
+        "total": 73728
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (pertence x1 (diferenca (pretas x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0))))))",
+   "tarefa": "isoladaP"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))))",
+   "tarefa": "pretasComVizinha"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+   "tarefa": "pretasUltimaColuna"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-fix",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+   "tarefa": "semColuna1"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 23,
+         "total": 23
+        },
+        "True": {
+         "acertos": 17,
+         "total": 17
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 34,
+       "negativos_emparelhados": 14,
+       "por_classe": {
+        "False": {
+         "acertos": 14,
+         "total": 14
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 28,
+         "total": 28
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 36,
+       "negativos_emparelhados": 16,
+       "por_classe": {
+        "False": {
+         "acertos": 16,
+         "total": 16
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 7,
+         "total": 7
+        },
+        "True": {
+         "acertos": 33,
+         "total": 33
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 32,
+       "negativos_emparelhados": 12,
+       "por_classe": {
+        "False": {
+         "acertos": 12,
+         "total": 12
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 29,
+       "negativos_emparelhados": 9,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 9,
+         "total": 9
+        },
+        "True": {
+         "acertos": 31,
+         "total": 31
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 7,
+        "total": 7
+       },
+       "True": {
+        "acertos": 9,
+        "total": 9
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 169,
+        "total": 169
+       },
+       "True": {
+        "acertos": 343,
+        "total": 343
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 14911,
+        "total": 14911
+       },
+       "True": {
+        "acertos": 50625,
+        "total": 50625
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+   "tarefa": "LinhaOcupada"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 39,
+         "total": 39
+        },
+        "True": {
+         "acertos": 1,
+         "total": 1
+        }
+       }
+      }
+     },
+     "6": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 38,
+         "total": 38
+        },
+        "True": {
+         "acertos": 2,
+         "total": 2
+        }
+       }
+      }
+     },
+     "7": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "desenho": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "negativos_emparelhados": 20,
+       "por_classe": {
+        "False": {
+         "acertos": 20,
+         "total": 20
+        },
+        "True": {
+         "acertos": 20,
+         "total": 20
+        }
+       },
+       "positivos_construtivos": 20
+      },
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "False": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": false,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "False": {
+        "acertos": 12,
+        "total": 12
+       },
+       "True": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "False": {
+        "acertos": 448,
+        "total": 448
+       },
+       "True": {
+        "acertos": 64,
+        "total": 64
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "False": {
+        "acertos": 61440,
+        "total": 61440
+       },
+       "True": {
+        "acertos": 4096,
+        "total": 4096
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4)"
+   },
+   "hipotese": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+   "tarefa": "TopoCheio"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 101,
+         "total": 101
+        },
+        "True": {
+         "acertos": 59,
+         "total": 59
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 81,
+         "total": 81
+        },
+        "True": {
+         "acertos": 79,
+         "total": 79
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 95,
+         "total": 95
+        },
+        "True": {
+         "acertos": 65,
+         "total": 65
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 84,
+         "total": 84
+        },
+        "True": {
+         "acertos": 76,
+         "total": 76
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 77,
+         "total": 77
+        },
+        "True": {
+         "acertos": 83,
+         "total": 83
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [
+    "abs1"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 48,
+        "total": 48
+       },
+       "True": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 2720,
+        "total": 2720
+       },
+       "True": {
+        "acertos": 1888,
+        "total": 1888
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 540672,
+        "total": 540672
+       },
+       "True": {
+        "acertos": 507904,
+        "total": 507904
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (algum@P (celula x0) (cauda@P (abs1 x0 x1))))",
+   "tarefa": "duasVizinhas"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (abs2 x0 (abs2 x0 x1)))",
+   "tarefa": "expandir2"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca (abs2 x0 x1) x1))",
+   "tarefa": "fronteira"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 154,
+         "total": 154
+        },
+        "True": {
+         "acertos": 6,
+         "total": 6
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 145,
+         "total": 145
+        },
+        "True": {
+         "acertos": 15,
+         "total": 15
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 146,
+         "total": 146
+        },
+        "True": {
+         "acertos": 14,
+         "total": 14
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
+       "degenerado": false,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "False": {
+         "acertos": 151,
+         "total": 151
+        },
+        "True": {
+         "acertos": 9,
+         "total": 9
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [
+    "abs1"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 1053250,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "False": {
+        "acertos": 1,
+        "total": 1
+       },
+       "True": {
+        "acertos": 1,
+        "total": 1
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 64,
+      "por_classe": {
+       "False": {
+        "acertos": 56,
+        "total": 56
+       },
+       "True": {
+        "acertos": 8,
+        "total": 8
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 4608,
+      "por_classe": {
+       "False": {
+        "acertos": 4208,
+        "total": 4208
+       },
+       "True": {
+        "acertos": 400,
+        "total": 400
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "degenerado": false,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 1048576,
+      "por_classe": {
+       "False": {
+        "acertos": 974848,
+        "total": 974848
+       },
+       "True": {
+        "acertos": 73728,
+        "total": 73728
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 Pos) (e (celula x0 x1) (vazia?@P (abs1 x0 x1))))",
+   "tarefa": "isoladaP"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [
+    "abs2"
+   ],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (abs2 x0 (pretas x0)))",
+   "tarefa": "pretasComVizinha"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 40,
+       "por_classe": {
+        "saida": {
+         "acertos": 40,
+         "total": 40
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 66066,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 2,
+      "por_classe": {
+       "saida": {
+        "acertos": 2,
+        "total": 2
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 16,
+      "por_classe": {
+       "saida": {
+        "acertos": 16,
+        "total": 16
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 512,
+      "por_classe": {
+       "saida": {
+        "acertos": 512,
+        "total": 512
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 65536,
+      "por_classe": {
+       "saida": {
+        "acertos": 65536,
+        "total": 65536
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+   "tarefa": "pretasUltimaColuna"
+  },
+  {
+   "amostral": {
+    "por_n": {
+     "5": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "6": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "7": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "8": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     },
+     "9": {
+      "grades_naturais": 40,
+      "natural": {
+       "acuracia": 1.0,
+       "acuracia_balanceada": null,
+       "degenerado": true,
+       "erros": 0,
+       "indefinidas_por_orcamento": 0,
+       "n": 160,
+       "por_classe": {
+        "saida": {
+         "acertos": 160,
+         "total": 160
+        }
+       }
+      }
+     }
+    },
+    "regime": "amostral em dimensões novas (n = 5..9), partição teste_ext"
+   },
+   "braco": "unigrama/L-lib+f",
+   "entradas_expandidas": [],
+   "exaustivo": {
+    "bateria_argumentos": true,
+    "entradas": 857660,
+    "erros": 0,
+    "por_n": {
+     "1": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 2,
+      "indefinidas_por_orcamento": 0,
+      "n": 4,
+      "por_classe": {
+       "saida": {
+        "acertos": 4,
+        "total": 4
+       }
+      }
+     },
+     "2": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 16,
+      "indefinidas_por_orcamento": 0,
+      "n": 128,
+      "por_classe": {
+       "saida": {
+        "acertos": 128,
+        "total": 128
+       }
+      }
+     },
+     "3": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 512,
+      "indefinidas_por_orcamento": 0,
+      "n": 5604,
+      "por_classe": {
+       "saida": {
+        "acertos": 5604,
+        "total": 5604
+       }
+      }
+     },
+     "4": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": null,
+      "degenerado": true,
+      "erros": 0,
+      "grades": 65536,
+      "indefinidas_por_orcamento": 0,
+      "n": 851924,
+      "por_classe": {
+       "saida": {
+        "acertos": 851924,
+        "total": 851924
+       }
+      }
+     }
+    },
+    "regime": "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"
+   },
+   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+   "tarefa": "semColuna1"
+  }
+ ],
+ "parametros": {
+  "k": 40,
+  "ns_amostral": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "particao": "teste_ext",
+  "semente": 10002
+ }
+}

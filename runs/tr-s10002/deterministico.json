@@ -1,0 +1,3483 @@
+{
+ "analise": {
+  "tamanho": {
+   "F-comp": {
+    "aceitas_L-fix": 0,
+    "aceitas_L-lib+f": 5,
+    "com_reuso": 5,
+    "custo_L-fix": 632756719,
+    "custo_L-lib+f": 168901834,
+    "negativas": 0,
+    "positivas": 5,
+    "tarefas": 5
+   },
+   "F-neg": {
+    "aceitas_L-fix": 4,
+    "aceitas_L-lib+f": 4,
+    "com_reuso": 0,
+    "custo_L-fix": 18544017,
+    "custo_L-lib+f": 29000753,
+    "negativas": 4,
+    "positivas": 0,
+    "tarefas": 4
+   },
+   "abstracoes_L-lib+f": [
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "vizPretos"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+     "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs1",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "expandir": 1
+     },
+     "reutilizacoes_indiretas": {
+      "ParAdjacente": 1
+     },
+     "reutilizada": true,
+     "tamanho": 8,
+     "tarefas_origem": [
+      "vizPretos"
+     ],
+     "tipo": "Grade → Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    },
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "expandir"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (l2 (L Pos)) (juntar (mapear@P>LP (abs1 g1) l2)))",
+     "legivel": "λg1 l2. juntar (mapear@P>LP (abs1 g1) l2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs2",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "ParAdjacente": 1
+     },
+     "reutilizacoes_indiretas": {},
+     "reutilizada": true,
+     "tamanho": 7,
+     "tarefas_origem": [
+      "expandir"
+     ],
+     "tipo": "Grade → L Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    }
+   ],
+   "custo_cadeia": {
+    "L-fix": 207790419,
+    "L-lib+f": 14620489
+   },
+   "por_tarefa": {
+    "LinhaOcupada": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 2130868,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 3766313,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.7675017880037618,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "TopoCheio": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 2131330,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 3768432,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.768112868490567,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "duasVizinhas": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 165444042,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 9696119,
+      "reuso": [
+       "abs1"
+      ],
+      "tamanho": 8
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.058606637524003434,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "expandir2": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 115058716,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 7651476,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 7
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.06650062043105018,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "fronteira": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 112372147,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 7508343,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 7
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.0668167619864022,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "isoladaP": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 161484096,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 143960780,
+      "reuso": [
+       "abs1"
+      ],
+      "tamanho": 10
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.8914858092279254,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "pretasComVizinha": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 78397718,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 85116,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 5
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.0010856948667817092,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "pretasUltimaColuna": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 9736727,
+      "tamanho": 8
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 13807042,
+      "reuso": [],
+      "tamanho": 8
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.4180372932300556,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "semColuna1": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 4545092,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 7658966,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.6851069241282686,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    }
+   }
+  },
+  "unigrama": {
+   "F-comp": {
+    "aceitas_L-fix": 3,
+    "aceitas_L-lib+f": 5,
+    "com_reuso": 5,
+    "custo_L-fix": 1374230424,
+    "custo_L-lib+f": 76246106,
+    "negativas": 0,
+    "positivas": 5,
+    "tarefas": 5
+   },
+   "F-neg": {
+    "aceitas_L-fix": 4,
+    "aceitas_L-lib+f": 4,
+    "com_reuso": 0,
+    "custo_L-fix": 116020608,
+    "custo_L-lib+f": 168153626,
+    "negativas": 4,
+    "positivas": 0,
+    "tarefas": 4
+   },
+   "abstracoes_L-lib+f": [
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "vizPretos"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+     "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs1",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "expandir": 1
+     },
+     "reutilizacoes_indiretas": {
+      "ParAdjacente": 1
+     },
+     "reutilizada": true,
+     "tamanho": 8,
+     "tarefas_origem": [
+      "vizPretos"
+     ],
+     "tipo": "Grade → Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    },
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "expandir"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (l2 (L Pos)) (juntar (mapear@P>LP (abs1 g1) l2)))",
+     "legivel": "λg1 l2. juntar (mapear@P>LP (abs1 g1) l2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs2",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "ParAdjacente": 1
+     },
+     "reutilizacoes_indiretas": {},
+     "reutilizada": true,
+     "tamanho": 7,
+     "tarefas_origem": [
+      "expandir"
+     ],
+     "tipo": "Grade → L Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    }
+   ],
+   "custo_cadeia": {
+    "L-fix": 263976001,
+    "L-lib+f": 28326647
+   },
+   "por_tarefa": {
+    "LinhaOcupada": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 5656178,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 8504843,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.503637792162835,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "TopoCheio": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 13091327,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 17460400,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.3337379778230274,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "duasVizinhas": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 104760691,
+      "tamanho": 12
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 13017905,
+      "reuso": [
+       "abs1"
+      ],
+      "tamanho": 9
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.12426326015738098,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva"
+    },
+    "expandir2": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 320094336,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 3679835,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 7
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.011496095326097867,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "fronteira": {
+     "L-fix": {
+      "aceita": false,
+      "custo": 311232082,
+      "tamanho": null
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 6361185,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 7
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.02043871878221089,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva (só L-lib+f aceita)"
+    },
+    "isoladaP": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 620788343,
+      "tamanho": 13
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 53149130,
+      "reuso": [
+       "abs1"
+      ],
+      "tamanho": 10
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.08561554126991718,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva"
+    },
+    "pretasComVizinha": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 17354972,
+      "tamanho": 10
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 38051,
+      "reuso": [
+       "abs2"
+      ],
+      "tamanho": 5
+     },
+     "familia": "F-comp",
+     "razao_custo": 0.0021925129006258263,
+     "reuso_em_L-lib+f": true,
+     "transferencia": "positiva"
+    },
+    "pretasUltimaColuna": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 63954577,
+      "tamanho": 8
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 95390682,
+      "reuso": [],
+      "tamanho": 8
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.4915380020416678,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    },
+    "semColuna1": {
+     "L-fix": {
+      "aceita": true,
+      "custo": 33318526,
+      "tamanho": 7
+     },
+     "L-lib+f": {
+      "aceita": true,
+      "custo": 46797701,
+      "reuso": [],
+      "tamanho": 7
+     },
+     "familia": "F-neg",
+     "razao_custo": 1.4045549614049553,
+     "reuso_em_L-lib+f": false,
+     "transferencia": "negativa"
+    }
+   }
+  }
+ },
+ "bracos": {
+  "tamanho/L-fix": {
+   "abstracoes": [],
+   "aprendiz": "L-fix",
+   "braco": "tamanho/L-fix",
+   "cadeia": [
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 6307717,
+     "hipotese": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)",
+     "motivo": "aceita",
+     "tarefa": "vizPretos"
+    },
+    {
+     "aceita": false,
+     "biblioteca_usada": [],
+     "custo": 109655765,
+     "hipotese": null,
+     "motivo": "orcamento_enumeracao",
+     "tarefa": "expandir"
+    },
+    {
+     "aceita": false,
+     "biblioteca_usada": [],
+     "custo": 91826937,
+     "hipotese": null,
+     "motivo": "orcamento_enumeracao",
+     "tarefa": "ParAdjacente"
+    }
+   ],
+   "custo_cadeia": 207790419,
+   "livro_cadeia": {
+    "deterministico": {
+     "campos": [
+      "busca_candidatos",
+      "enumeracao_candidatos",
+      "busca_passos",
+      "enumeracao_passos",
+      "compressao_subtermos",
+      "oraculo_consultas",
+      "oraculo_custo_ambiente",
+      "oraculo_passos_hipotese",
+      "avaliacao_passos",
+      "geracao_grades",
+      "geracao_rotulos"
+     ],
+     "entradas": [
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "avaliacao_passos": 1642,
+       "busca_candidatos": 148,
+       "busca_passos": 2351,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 1281,
+       "enumeracao_passos": 6303936,
+       "geracao_grades": 525,
+       "geracao_rotulos": 1651,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1651,
+       "oraculo_passos_hipotese": 29373,
+       "tarefa_id": "vizPretos",
+       "total": 6342559,
+       "total_ambiente": 33200,
+       "total_aprendiz": 6307717,
+       "total_avaliacao": 1642
+      },
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "avaliacao_passos": 0,
+       "busca_candidatos": 996,
+       "busca_passos": 24029,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 20001,
+       "enumeracao_passos": 109610739,
+       "geracao_grades": 536,
+       "geracao_rotulos": 0,
+       "oraculo_consultas": 0,
+       "oraculo_custo_ambiente": 0,
+       "oraculo_passos_hipotese": 0,
+       "tarefa_id": "expandir",
+       "total": 109656301,
+       "total_ambiente": 536,
+       "total_aprendiz": 109655765,
+       "total_avaliacao": 0
+      },
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "avaliacao_passos": 0,
+       "busca_candidatos": 117,
+       "busca_passos": 5764,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 20001,
+       "enumeracao_passos": 91801052,
+       "geracao_grades": 643,
+       "geracao_rotulos": 99339,
+       "oraculo_consultas": 3,
+       "oraculo_custo_ambiente": 7,
+       "oraculo_passos_hipotese": 157,
+       "tarefa_id": "ParAdjacente",
+       "total": 91927083,
+       "total_ambiente": 100146,
+       "total_aprendiz": 91826937,
+       "total_avaliacao": 0
+      }
+     ],
+     "hash_diario": "68c12332e10043cf9bf319083df9d636af7083f1271aee6918ceed761e2990eb",
+     "metadados": {
+      "braco": "tamanho/L-fix",
+      "experimento": "transferencia"
+     },
+     "num_lancamentos": 37,
+     "semente": 10002,
+     "total": 207925943,
+     "total_por_campo": {
+      "avaliacao_passos": 1642,
+      "busca_candidatos": 1261,
+      "busca_passos": 32144,
+      "compressao_subtermos": 0,
+      "enumeracao_candidatos": 41283,
+      "enumeracao_passos": 207715727,
+      "geracao_grades": 1704,
+      "geracao_rotulos": 100990,
+      "oraculo_consultas": 4,
+      "oraculo_custo_ambiente": 1658,
+      "oraculo_passos_hipotese": 29530
+     }
+    },
+    "medicoes": {
+     "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+     "por_entrada": [
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 63272,
+       "tarefa_id": "vizPretos",
+       "tempo_parede_s": 4.447094112000059
+      },
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 423092,
+       "tarefa_id": "expandir",
+       "tempo_parede_s": 80.11839065799995
+      },
+      {
+       "aprendiz_id": "L-fix@E0/tamanho/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 423092,
+       "tarefa_id": "ParAdjacente",
+       "tempo_parede_s": 70.42844135400014
+      }
+     ]
+    }
+   },
+   "politica": "tamanho",
+   "resultados": {
+    "LinhaOcupada": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 25,
+      "candidatos_avaliados": 15,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 2126,
+      "enumeracao_candidatos_avaliados": 1647,
+      "enumeracao_passos": 2127093,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2111,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 2130868,
+     "custos_folha": {},
+     "enumeracao_candidatos": 1647,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@LP (algum@P (celula x0)) (linhas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 2,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 10,
+        "total": 10
+       },
+       "True": {
+        "acertos": 20,
+        "total": 20
+       }
+      },
+      "degenerado": false,
+      "negativos": 10,
+      "num": 30,
+      "positivos": 20
+     }
+    },
+    "TopoCheio": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 30,
+      "candidatos_avaliados": 19,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2234,
+      "enumeracao_candidatos_avaliados": 1647,
+      "enumeracao_passos": 2127448,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2215,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 2131330,
+     "custos_folha": {},
+     "enumeracao_candidatos": 1647,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@P (celula x0) (cabeca@LP (linhas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 27,
+        "total": 27
+       },
+       "True": {
+        "acertos": 3,
+        "total": 3
+       }
+      },
+      "degenerado": false,
+      "negativos": 27,
+      "num": 30,
+      "positivos": 3
+     }
+    },
+    "duasVizinhas": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1122,
+      "candidatos_avaliados": 447,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 4,
+      "custo": 25927,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 165398111,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 25480,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 165444042,
+     "custos_folha": {},
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 3,
+     "tamanho": null,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {}
+    },
+    "expandir2": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 998,
+      "candidatos_avaliados": 996,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 18833,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 115019882,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 17837,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 115058716,
+     "custos_folha": {},
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 0,
+     "tamanho": null,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {}
+    },
+    "fronteira": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1004,
+      "candidatos_avaliados": 996,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 18718,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 112333428,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 17722,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 112372147,
+     "custos_folha": {},
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 0,
+     "tamanho": null,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {}
+    },
+    "isoladaP": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1112,
+      "candidatos_avaliados": 449,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 8,
+      "custo": 25676,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 161438412,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 25227,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 161484096,
+     "custos_folha": {},
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 7,
+     "tamanho": null,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {}
+    },
+    "pretasComVizinha": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1401,
+      "candidatos_avaliados": 1380,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 74354,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 78303363,
+      "grades_extra_oe": 2,
+      "passos_avaliacao": 72974,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 9
+     },
+     "custo": 78397718,
+     "custos_folha": {},
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 0,
+     "tamanho": null,
+     "tamanho_max_carregado": 9,
+     "teste_resumo": {}
+    },
+    "pretasUltimaColuna": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 308,
+      "candidatos_avaliados": 301,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 5820,
+      "enumeracao_candidatos_avaliados": 5052,
+      "enumeracao_passos": 9725854,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 5519,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 9736727,
+     "custos_folha": {},
+     "enumeracao_candidatos": 5052,
+     "familia": "F-neg",
+     "hipotese": "λx0. filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 8,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "semColuna1": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 293,
+      "candidatos_avaliados": 288,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 4586,
+      "enumeracao_candidatos_avaliados": 2366,
+      "enumeracao_passos": 4538139,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 4298,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 4545092,
+     "custos_folha": {},
+     "enumeracao_candidatos": 2366,
+     "familia": "F-neg",
+     "hipotese": "λx0 x1. diferenca x1 (cabeca@LP (colunas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 36,
+      "degenerado": false,
+      "num": 90
+     }
+    }
+   }
+  },
+  "tamanho/L-lib+f": {
+   "abstracoes": [
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "vizPretos"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+     "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs1",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "expandir": 1
+     },
+     "reutilizacoes_indiretas": {
+      "ParAdjacente": 1
+     },
+     "reutilizada": true,
+     "tamanho": 8,
+     "tarefas_origem": [
+      "vizPretos"
+     ],
+     "tipo": "Grade → Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    },
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "expandir"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (l2 (L Pos)) (juntar (mapear@P>LP (abs1 g1) l2)))",
+     "legivel": "λg1 l2. juntar (mapear@P>LP (abs1 g1) l2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs2",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "ParAdjacente": 1
+     },
+     "reutilizacoes_indiretas": {},
+     "reutilizada": true,
+     "tamanho": 7,
+     "tarefas_origem": [
+      "expandir"
+     ],
+     "tipo": "Grade → L Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    }
+   ],
+   "aprendiz": "L-lib+f",
+   "braco": "tamanho/L-lib+f",
+   "cadeia": [
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 6307825,
+     "hipotese": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)",
+     "motivo": "aceita",
+     "tarefa": "vizPretos"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "custo": 4550621,
+     "hipotese": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+     "motivo": "aceita",
+     "tarefa": "expandir"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "custo": 3762043,
+     "hipotese": "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))",
+     "motivo": "aceita",
+     "tarefa": "ParAdjacente"
+    }
+   ],
+   "custo_cadeia": 14620489,
+   "livro_cadeia": {
+    "deterministico": {
+     "campos": [
+      "busca_candidatos",
+      "enumeracao_candidatos",
+      "busca_passos",
+      "enumeracao_passos",
+      "compressao_subtermos",
+      "oraculo_consultas",
+      "oraculo_custo_ambiente",
+      "oraculo_passos_hipotese",
+      "avaliacao_passos",
+      "geracao_grades",
+      "geracao_rotulos"
+     ],
+     "entradas": [
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "avaliacao_passos": 1642,
+       "busca_candidatos": 148,
+       "busca_passos": 2351,
+       "compressao_subtermos": 108,
+       "enumeracao_candidatos": 1281,
+       "enumeracao_passos": 6303936,
+       "geracao_grades": 525,
+       "geracao_rotulos": 1651,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1651,
+       "oraculo_passos_hipotese": 29373,
+       "tarefa_id": "vizPretos",
+       "total": 6342667,
+       "total_ambiente": 33200,
+       "total_aprendiz": 6307825,
+       "total_avaliacao": 1642
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "avaliacao_passos": 10474,
+       "busca_candidatos": 253,
+       "busca_passos": 4826,
+       "compressao_subtermos": 147,
+       "enumeracao_candidatos": 2448,
+       "enumeracao_passos": 4542946,
+       "geracao_grades": 536,
+       "geracao_rotulos": 1754,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1754,
+       "oraculo_passos_hipotese": 121592,
+       "tarefa_id": "expandir",
+       "total": 4686731,
+       "total_ambiente": 125636,
+       "total_aprendiz": 4550621,
+       "total_avaliacao": 10474
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "avaliacao_passos": 7017,
+       "busca_candidatos": 29,
+       "busca_passos": 3246,
+       "compressao_subtermos": 183,
+       "enumeracao_candidatos": 1736,
+       "enumeracao_passos": 3756848,
+       "geracao_grades": 643,
+       "geracao_rotulos": 113437,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 14242,
+       "oraculo_passos_hipotese": 2217479,
+       "tarefa_id": "ParAdjacente",
+       "total": 6114861,
+       "total_ambiente": 2345801,
+       "total_aprendiz": 3762043,
+       "total_avaliacao": 7017
+      }
+     ],
+     "hash_diario": "9dcc48ce9091cb5345ecb3cdd0ed64925decf268d8c1d23e8e7fa02e58e5129d",
+     "metadados": {
+      "braco": "tamanho/L-lib+f",
+      "experimento": "transferencia"
+     },
+     "num_lancamentos": 39,
+     "semente": 10002,
+     "total": 17144259,
+     "total_por_campo": {
+      "avaliacao_passos": 19133,
+      "busca_candidatos": 430,
+      "busca_passos": 10423,
+      "compressao_subtermos": 438,
+      "enumeracao_candidatos": 5465,
+      "enumeracao_passos": 14603730,
+      "geracao_grades": 1704,
+      "geracao_rotulos": 116842,
+      "oraculo_consultas": 3,
+      "oraculo_custo_ambiente": 17647,
+      "oraculo_passos_hipotese": 2368444
+     }
+    },
+    "medicoes": {
+     "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+     "por_entrada": [
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 63648,
+       "tarefa_id": "vizPretos",
+       "tempo_parede_s": 3.939295995000066
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 85408,
+       "tarefa_id": "expandir",
+       "tempo_parede_s": 3.1744054400001005
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/tamanho/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 234216,
+       "tarefa_id": "ParAdjacente",
+       "tempo_parede_s": 4.892823288000045
+      }
+     ]
+    }
+   },
+   "politica": "tamanho",
+   "resultados": {
+    "LinhaOcupada": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 27,
+      "candidatos_avaliados": 17,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 2344,
+      "enumeracao_candidatos_avaliados": 1736,
+      "enumeracao_passos": 3761948,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2327,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 3766313,
+     "custos_folha": {},
+     "enumeracao_candidatos": 1736,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@LP (algum@P (celula x0)) (linhas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 2,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 10,
+        "total": 10
+       },
+       "True": {
+        "acertos": 20,
+        "total": 20
+       }
+      },
+      "degenerado": false,
+      "negativos": 10,
+      "num": 30,
+      "positivos": 20
+     }
+    },
+    "TopoCheio": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 36,
+      "candidatos_avaliados": 25,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2753,
+      "enumeracao_candidatos_avaliados": 1736,
+      "enumeracao_passos": 3763663,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2728,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 3768432,
+     "custos_folha": {},
+     "enumeracao_candidatos": 1736,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@P (celula x0) (cabeca@LP (linhas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 27,
+        "total": 27
+       },
+       "True": {
+        "acertos": 3,
+        "total": 3
+       }
+      },
+      "degenerado": false,
+      "negativos": 27,
+      "num": 30,
+      "positivos": 3
+     }
+    },
+    "duasVizinhas": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 212,
+      "candidatos_avaliados": 84,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 8072,
+      "enumeracao_candidatos_avaliados": 1704,
+      "enumeracao_passos": 9685592,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 7988,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 9696119,
+     "custos_folha": {},
+     "enumeracao_candidatos": 1704,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. nao (vazia?@P (cauda@P (abs1 x0 x1)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (nao (vazia?@P (cauda@P (abs1 x0 x1)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs1": 1
+     },
+     "rodadas": 2,
+     "tamanho": 8,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "expandir2": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 375,
+      "candidatos_avaliados": 358,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 12540,
+      "enumeracao_candidatos_avaliados": 2632,
+      "enumeracao_passos": 7635907,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 12182,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 7651476,
+     "custos_folha": {},
+     "enumeracao_candidatos": 2632,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. abs2 x0 (abs2 x0 x1)",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (abs2 x0 (abs2 x0 x1)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 2
+     },
+     "rodadas": 2,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 53,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "fronteira": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 413,
+      "candidatos_avaliados": 384,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 12027,
+      "enumeracao_candidatos_avaliados": 2632,
+      "enumeracao_passos": 7493322,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 11643,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 7508343,
+     "custos_folha": {},
+     "enumeracao_candidatos": 2632,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. diferenca (abs2 x0 x1) x1",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca (abs2 x0 x1) x1))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 1
+     },
+     "rodadas": 2,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 57,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "isoladaP": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1677,
+      "candidatos_avaliados": 663,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 8,
+      "custo": 87964,
+      "enumeracao_candidatos_avaliados": 14891,
+      "enumeracao_passos": 143857491,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 87301,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 143960780,
+     "custos_folha": {},
+     "enumeracao_candidatos": 14891,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. e (celula x0 x1) (vazia?@P (abs1 x0 x1))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (e (celula x0 x1) (vazia?@P (abs1 x0 x1))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs1": 1
+     },
+     "rodadas": 8,
+     "tamanho": 10,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "pretasComVizinha": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 27,
+      "candidatos_avaliados": 23,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 866,
+      "enumeracao_candidatos_avaliados": 234,
+      "enumeracao_passos": 83524,
+      "grades_extra_oe": 2,
+      "passos_avaliacao": 843,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 5
+     },
+     "custo": 85116,
+     "custos_folha": {},
+     "enumeracao_candidatos": 234,
+     "familia": "F-comp",
+     "hipotese": "λx0. abs2 x0 (pretas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (abs2 x0 (pretas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 1
+     },
+     "rodadas": 1,
+     "tamanho": 5,
+     "tamanho_max_carregado": 5,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "pretasUltimaColuna": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 431,
+      "candidatos_avaliados": 421,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 21208,
+      "enumeracao_candidatos_avaliados": 5799,
+      "enumeracao_passos": 13779678,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 20787,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 13807042,
+     "custos_folha": {},
+     "enumeracao_candidatos": 5799,
+     "familia": "F-neg",
+     "hipotese": "λx0. filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 8,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "semColuna1": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 350,
+      "candidatos_avaliados": 345,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 11140,
+      "enumeracao_candidatos_avaliados": 2632,
+      "enumeracao_passos": 7644846,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 10795,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 7658966,
+     "custos_folha": {},
+     "enumeracao_candidatos": 2632,
+     "familia": "F-neg",
+     "hipotese": "λx0 x1. diferenca x1 (cabeca@LP (colunas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 36,
+      "degenerado": false,
+      "num": 90
+     }
+    }
+   }
+  },
+  "unigrama/L-fix": {
+   "abstracoes": [],
+   "aprendiz": "L-fix",
+   "braco": "unigrama/L-fix",
+   "cadeia": [
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 6307717,
+     "hipotese": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)",
+     "motivo": "aceita",
+     "tarefa": "vizPretos"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 173271908,
+     "hipotese": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+     "motivo": "aceita",
+     "tarefa": "expandir"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 84396376,
+     "hipotese": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+     "motivo": "aceita",
+     "tarefa": "ParAdjacente"
+    }
+   ],
+   "custo_cadeia": 263976001,
+   "livro_cadeia": {
+    "deterministico": {
+     "campos": [
+      "busca_candidatos",
+      "enumeracao_candidatos",
+      "busca_passos",
+      "enumeracao_passos",
+      "compressao_subtermos",
+      "oraculo_consultas",
+      "oraculo_custo_ambiente",
+      "oraculo_passos_hipotese",
+      "avaliacao_passos",
+      "geracao_grades",
+      "geracao_rotulos"
+     ],
+     "entradas": [
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "avaliacao_passos": 1642,
+       "busca_candidatos": 148,
+       "busca_passos": 2351,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 1281,
+       "enumeracao_passos": 6303936,
+       "geracao_grades": 525,
+       "geracao_rotulos": 1651,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1651,
+       "oraculo_passos_hipotese": 29373,
+       "tarefa_id": "vizPretos",
+       "total": 6342559,
+       "total_ambiente": 33200,
+       "total_aprendiz": 6307717,
+       "total_avaliacao": 1642
+      },
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "avaliacao_passos": 4156,
+       "busca_candidatos": 621,
+       "busca_passos": 72818,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 7380,
+       "enumeracao_passos": 173191088,
+       "geracao_grades": 536,
+       "geracao_rotulos": 1754,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1754,
+       "oraculo_passos_hipotese": 57870,
+       "tarefa_id": "expandir",
+       "total": 173337978,
+       "total_ambiente": 61914,
+       "total_aprendiz": 173271908,
+       "total_avaliacao": 4156
+      },
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "avaliacao_passos": 1144,
+       "busca_candidatos": 42,
+       "busca_passos": 6497,
+       "compressao_subtermos": 0,
+       "enumeracao_candidatos": 4770,
+       "enumeracao_passos": 84385066,
+       "geracao_grades": 643,
+       "geracao_rotulos": 113437,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 14242,
+       "oraculo_passos_hipotese": 474435,
+       "tarefa_id": "ParAdjacente",
+       "total": 85000277,
+       "total_ambiente": 602757,
+       "total_aprendiz": 84396376,
+       "total_avaliacao": 1144
+      }
+     ],
+     "hash_diario": "dbced6a80c09cea45c26289741503dd601b0d38e35ece9e920ab42b8caf77916",
+     "metadados": {
+      "braco": "unigrama/L-fix",
+      "experimento": "transferencia"
+     },
+     "num_lancamentos": 36,
+     "semente": 10002,
+     "total": 264680814,
+     "total_por_campo": {
+      "avaliacao_passos": 6942,
+      "busca_candidatos": 811,
+      "busca_passos": 81666,
+      "compressao_subtermos": 0,
+      "enumeracao_candidatos": 13431,
+      "enumeracao_passos": 263880090,
+      "geracao_grades": 1704,
+      "geracao_rotulos": 116842,
+      "oraculo_consultas": 3,
+      "oraculo_custo_ambiente": 17647,
+      "oraculo_passos_hipotese": 561678
+     }
+    },
+    "medicoes": {
+     "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+     "por_entrada": [
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 63900,
+       "tarefa_id": "vizPretos",
+       "tempo_parede_s": 2.7866179099999044
+      },
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 184884,
+       "tarefa_id": "expandir",
+       "tempo_parede_s": 87.7806205899999
+      },
+      {
+       "aprendiz_id": "L-fix@E0/unigrama/L-fix",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 290392,
+       "tarefa_id": "ParAdjacente",
+       "tempo_parede_s": 43.932973028000106
+      }
+     ]
+    }
+   },
+   "politica": "unigrama",
+   "resultados": {
+    "LinhaOcupada": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 16,
+      "candidatos_avaliados": 10,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2001,
+      "enumeracao_candidatos_avaliados": 1067,
+      "enumeracao_passos": 5653109,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 1991,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 9
+     },
+     "custo": 5656178,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 1067,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@LP (algum@P (celula x0)) (linhas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 9,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 10,
+        "total": 10
+       },
+       "True": {
+        "acertos": 20,
+        "total": 20
+       }
+      },
+      "degenerado": false,
+      "negativos": 10,
+      "num": 30,
+      "positivos": 20
+     }
+    },
+    "TopoCheio": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 40,
+      "candidatos_avaliados": 23,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2476,
+      "enumeracao_candidatos_avaliados": 1838,
+      "enumeracao_passos": 13087012,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2453,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 13091327,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 1838,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@P (celula x0) (cabeca@LP (linhas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 27,
+        "total": 27
+       },
+       "True": {
+        "acertos": 3,
+        "total": 3
+       }
+      },
+      "degenerado": false,
+      "negativos": 27,
+      "num": 30,
+      "positivos": 3
+     }
+    },
+    "duasVizinhas": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 316,
+      "candidatos_avaliados": 124,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 4,
+      "custo": 7136,
+      "enumeracao_candidatos_avaliados": 4026,
+      "enumeracao_passos": 104749525,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 7012,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 13
+     },
+     "custo": 104760691,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 4026,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. algum@P (celula x0) (cauda@P (filtrar@P (celula x0) (vizinhos x0 x1)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (algum@P (celula x0) (cauda@P (filtrar@P (celula x0) (vizinhos x0 x1)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 4,
+     "tamanho": 12,
+     "tamanho_max_carregado": 13,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "expandir2": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1621,
+      "candidatos_avaliados": 1584,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 108716,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 319965619,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 107132,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 12
+     },
+     "custo": 320094336,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 0,
+     "tamanho": null,
+     "tamanho_max_carregado": 12,
+     "teste_resumo": {}
+    },
+    "fronteira": {
+     "aceita": false,
+     "acuracia_teste": null,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1613,
+      "candidatos_avaliados": 1585,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 87294,
+      "enumeracao_candidatos_avaliados": 20001,
+      "enumeracao_passos": 311124786,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 85709,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 12
+     },
+     "custo": 311232082,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 20001,
+     "familia": "F-comp",
+     "hipotese": null,
+     "hipotese_bruta": null,
+     "inconclusivo_recurso": false,
+     "motivo": "orcamento_enumeracao",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": null,
+     "tamanho_max_carregado": 12,
+     "teste_resumo": {}
+    },
+    "isoladaP": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 1194,
+      "candidatos_avaliados": 487,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 8,
+      "custo": 59987,
+      "enumeracao_candidatos_avaliados": 17448,
+      "enumeracao_passos": 620710900,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 59500,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 15
+     },
+     "custo": 620788343,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 17448,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. pertence x1 (diferenca (pretas x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0))))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (pertence x1 (diferenca (pretas x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0))))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 8,
+     "tamanho": 13,
+     "tamanho_max_carregado": 15,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "pretasComVizinha": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 116,
+      "candidatos_avaliados": 110,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 5212,
+      "enumeracao_candidatos_avaliados": 2479,
+      "enumeracao_passos": 17347280,
+      "grades_extra_oe": 2,
+      "passos_avaliacao": 5102,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 17354972,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 2479,
+     "familia": "F-comp",
+     "hipotese": "λx0. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 10,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "pretasUltimaColuna": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 228,
+      "candidatos_avaliados": 222,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 8850,
+      "enumeracao_candidatos_avaliados": 5068,
+      "enumeracao_passos": 63940658,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 8628,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 11
+     },
+     "custo": 63954577,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 5068,
+     "familia": "F-neg",
+     "hipotese": "λx0. filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 8,
+     "tamanho_max_carregado": 11,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "semColuna1": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 265,
+      "candidatos_avaliados": 260,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 6585,
+      "enumeracao_candidatos_avaliados": 2744,
+      "enumeracao_passos": 33309196,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 6325,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 33318526,
+     "custos_folha": {
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 2744,
+     "familia": "F-neg",
+     "hipotese": "λx0 x1. diferenca x1 (cabeca@LP (colunas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 36,
+      "degenerado": false,
+      "num": 90
+     }
+    }
+   }
+  },
+  "unigrama/L-lib+f": {
+   "abstracoes": [
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "vizPretos"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+     "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs1",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "expandir": 1
+     },
+     "reutilizacoes_indiretas": {
+      "ParAdjacente": 1
+     },
+     "reutilizada": true,
+     "tamanho": 8,
+     "tarefas_origem": [
+      "vizPretos"
+     ],
+     "tipo": "Grade → Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    },
+    {
+     "categoria": "promocao-solucao-reutilizada",
+     "coincide_com_solucao_de_tarefa": [
+      "expandir"
+     ],
+     "copia_de_solucao": true,
+     "corpo": "(\\ (g1 Grade) (l2 (L Pos)) (juntar (mapear@P>LP (abs1 g1) l2)))",
+     "legivel": "λg1 l2. juntar (mapear@P>LP (abs1 g1) l2)",
+     "metodo": "promocao-solucao",
+     "nome": "abs2",
+     "num_buracos": 0,
+     "num_parametros": 2,
+     "ocorrencias": 1,
+     "pontuacao": 0,
+     "proveniencia": "descoberta",
+     "reutilizacoes": {
+      "ParAdjacente": 1
+     },
+     "reutilizacoes_indiretas": {},
+     "reutilizada": true,
+     "tamanho": 7,
+     "tarefas_origem": [
+      "expandir"
+     ],
+     "tipo": "Grade → L Pos → L Pos",
+     "usos_em_origem_posteriores": {},
+     "usos_na_origem": 1
+    }
+   ],
+   "aprendiz": "L-lib+f",
+   "braco": "unigrama/L-lib+f",
+   "cadeia": [
+    {
+     "aceita": true,
+     "biblioteca_usada": [],
+     "custo": 6307825,
+     "hipotese": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)",
+     "motivo": "aceita",
+     "tarefa": "vizPretos"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "custo": 8328388,
+     "hipotese": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+     "motivo": "aceita",
+     "tarefa": "expandir"
+    },
+    {
+     "aceita": true,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "custo": 13690434,
+     "hipotese": "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))",
+     "motivo": "aceita",
+     "tarefa": "ParAdjacente"
+    }
+   ],
+   "custo_cadeia": 28326647,
+   "livro_cadeia": {
+    "deterministico": {
+     "campos": [
+      "busca_candidatos",
+      "enumeracao_candidatos",
+      "busca_passos",
+      "enumeracao_passos",
+      "compressao_subtermos",
+      "oraculo_consultas",
+      "oraculo_custo_ambiente",
+      "oraculo_passos_hipotese",
+      "avaliacao_passos",
+      "geracao_grades",
+      "geracao_rotulos"
+     ],
+     "entradas": [
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "avaliacao_passos": 1642,
+       "busca_candidatos": 148,
+       "busca_passos": 2351,
+       "compressao_subtermos": 108,
+       "enumeracao_candidatos": 1281,
+       "enumeracao_passos": 6303936,
+       "geracao_grades": 525,
+       "geracao_rotulos": 1651,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1651,
+       "oraculo_passos_hipotese": 29373,
+       "tarefa_id": "vizPretos",
+       "total": 6342667,
+       "total_ambiente": 33200,
+       "total_aprendiz": 6307825,
+       "total_avaliacao": 1642
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "avaliacao_passos": 10474,
+       "busca_candidatos": 74,
+       "busca_passos": 1505,
+       "compressao_subtermos": 147,
+       "enumeracao_candidatos": 1055,
+       "enumeracao_passos": 8325606,
+       "geracao_grades": 536,
+       "geracao_rotulos": 1754,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 1754,
+       "oraculo_passos_hipotese": 121592,
+       "tarefa_id": "expandir",
+       "total": 8464498,
+       "total_ambiente": 125636,
+       "total_aprendiz": 8328388,
+       "total_avaliacao": 10474
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "avaliacao_passos": 7074,
+       "busca_candidatos": 22,
+       "busca_passos": 3082,
+       "compressao_subtermos": 184,
+       "enumeracao_candidatos": 1773,
+       "enumeracao_passos": 13685372,
+       "geracao_grades": 643,
+       "geracao_rotulos": 113437,
+       "oraculo_consultas": 1,
+       "oraculo_custo_ambiente": 14242,
+       "oraculo_passos_hipotese": 2245289,
+       "tarefa_id": "ParAdjacente",
+       "total": 16071119,
+       "total_ambiente": 2373611,
+       "total_aprendiz": 13690434,
+       "total_avaliacao": 7074
+      }
+     ],
+     "hash_diario": "a8585314bd678c7f0313d37d744d74a5e5bc4010d2d860e6acb16f93f68dfa86",
+     "metadados": {
+      "braco": "unigrama/L-lib+f",
+      "experimento": "transferencia"
+     },
+     "num_lancamentos": 39,
+     "semente": 10002,
+     "total": 30878284,
+     "total_por_campo": {
+      "avaliacao_passos": 19190,
+      "busca_candidatos": 244,
+      "busca_passos": 6938,
+      "compressao_subtermos": 439,
+      "enumeracao_candidatos": 4109,
+      "enumeracao_passos": 28314914,
+      "geracao_grades": 1704,
+      "geracao_rotulos": 116842,
+      "oraculo_consultas": 3,
+      "oraculo_custo_ambiente": 17647,
+      "oraculo_passos_hipotese": 2396254
+     }
+    },
+    "medicoes": {
+     "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+     "por_entrada": [
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 63968,
+       "tarefa_id": "vizPretos",
+       "tempo_parede_s": 4.708930689999761
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 66632,
+       "tarefa_id": "expandir",
+       "tempo_parede_s": 7.60648120299993
+      },
+      {
+       "aprendiz_id": "L-lib+f@E0/unigrama/L-lib+f",
+       "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+       "memoria_pico_kb": 242796,
+       "tarefa_id": "ParAdjacente",
+       "tempo_parede_s": 11.169137615000182
+      }
+     ]
+    }
+   },
+   "politica": "unigrama",
+   "resultados": {
+    "LinhaOcupada": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 19,
+      "candidatos_avaliados": 12,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2572,
+      "enumeracao_candidatos_avaliados": 1192,
+      "enumeracao_passos": 8500497,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2560,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 9
+     },
+     "custo": 8504843,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 1192,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@LP (algum@P (celula x0)) (linhas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@LP (algum@P (celula x0)) (linhas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 9,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 10,
+        "total": 10
+       },
+       "True": {
+        "acertos": 20,
+        "total": 20
+       }
+      },
+      "degenerado": false,
+      "negativos": 10,
+      "num": 30,
+      "positivos": 20
+     }
+    },
+    "TopoCheio": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 47,
+      "candidatos_avaliados": 29,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 3853,
+      "enumeracao_candidatos_avaliados": 2109,
+      "enumeracao_passos": 17454151,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 3824,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 17460400,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 2109,
+     "familia": "F-neg",
+     "hipotese": "λx0. todos@P (celula x0) (cabeca@LP (linhas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (todos@P (celula x0) (cabeca@LP (linhas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": {
+       "False": {
+        "acertos": 27,
+        "total": 27
+       },
+       "True": {
+        "acertos": 3,
+        "total": 3
+       }
+      },
+      "degenerado": false,
+      "negativos": 27,
+      "num": 30,
+      "positivos": 3
+     }
+    },
+    "duasVizinhas": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 81,
+      "candidatos_avaliados": 33,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 3549,
+      "enumeracao_candidatos_avaliados": 707,
+      "enumeracao_passos": 13012861,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 3516,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 13017905,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 707,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. algum@P (celula x0) (cauda@P (abs1 x0 x1))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (algum@P (celula x0) (cauda@P (abs1 x0 x1))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs1": 1
+     },
+     "rodadas": 2,
+     "tamanho": 9,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "expandir2": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 45,
+      "candidatos_avaliados": 35,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 2170,
+      "enumeracao_candidatos_avaliados": 465,
+      "enumeracao_passos": 3676799,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 2135,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 7
+     },
+     "custo": 3679835,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 465,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. abs2 x0 (abs2 x0 x1)",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (abs2 x0 (abs2 x0 x1)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 2
+     },
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 7,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 53,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "fronteira": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 106,
+      "candidatos_avaliados": 88,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 2,
+      "custo": 3870,
+      "enumeracao_candidatos_avaliados": 889,
+      "enumeracao_passos": 6356059,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 3782,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 8
+     },
+     "custo": 6361185,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 889,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. diferenca (abs2 x0 x1) x1",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca (abs2 x0 x1) x1))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 1
+     },
+     "rodadas": 2,
+     "tamanho": 7,
+     "tamanho_max_carregado": 8,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 57,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "isoladaP": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs1"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 304,
+      "candidatos_avaliados": 141,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 5,
+      "custo": 15190,
+      "enumeracao_candidatos_avaliados": 2805,
+      "enumeracao_passos": 53130712,
+      "grades_extra_oe": 3,
+      "passos_avaliacao": 15049,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 12
+     },
+     "custo": 53149130,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 2805,
+     "familia": "F-comp",
+     "hipotese": "λx0 x1. e (celula x0 x1) (vazia?@P (abs1 x0 x1))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 Pos) (e (celula x0 x1) (vazia?@P (abs1 x0 x1))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs1": 1
+     },
+     "rodadas": 5,
+     "tamanho": 10,
+     "tamanho_max_carregado": 12,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 2,
+      "degenerado": false,
+      "num": 90
+     }
+    },
+    "pretasComVizinha": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [
+      "abs2"
+     ],
+     "contador_busca": {
+      "avaliacoes_exemplo": 10,
+      "candidatos_avaliados": 6,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 517,
+      "enumeracao_candidatos_avaliados": 86,
+      "enumeracao_passos": 36938,
+      "grades_extra_oe": 2,
+      "passos_avaliacao": 511,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 5
+     },
+     "custo": 38051,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 86,
+     "familia": "F-comp",
+     "hipotese": "λx0. abs2 x0 (pretas x0)",
+     "hipotese_bruta": "(\\ (x0 Grade) (abs2 x0 (pretas x0)))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {
+      "abs2": 1
+     },
+     "rodadas": 1,
+     "tamanho": 5,
+     "tamanho_max_carregado": 5,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "pretasUltimaColuna": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 423,
+      "candidatos_avaliados": 415,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 48397,
+      "enumeracao_candidatos_avaliados": 7284,
+      "enumeracao_passos": 95334637,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 47982,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 11
+     },
+     "custo": 95390682,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 7284,
+     "familia": "F-neg",
+     "hipotese": "λx0. filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))",
+     "hipotese_bruta": "(\\ (x0 Grade) (filtrar@P (celula x0) (cabeca@LP (reverter@LP (colunas x0)))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 8,
+     "tamanho_max_carregado": 11,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 25,
+      "degenerado": false,
+      "num": 30
+     }
+    },
+    "semColuna1": {
+     "aceita": true,
+     "acuracia_teste": 1.0,
+     "biblioteca_usada": [],
+     "contador_busca": {
+      "avaliacoes_exemplo": 435,
+      "candidatos_avaliados": 430,
+      "candidatos_esgotados_passos": 0,
+      "chamadas": 1,
+      "custo": 39751,
+      "enumeracao_candidatos_avaliados": 3711,
+      "enumeracao_passos": 46753886,
+      "grades_extra_oe": 4,
+      "passos_avaliacao": 39321,
+      "refinamentos_oe": 0,
+      "tamanho_max_carregado": 10
+     },
+     "custo": 46797701,
+     "custos_folha": {
+      "abs1": 1,
+      "abs2": 1,
+      "algum@P": 1,
+      "cabeca@LP": 2,
+      "cabeca@P": 2,
+      "cauda@LP": 2,
+      "cauda@P": 2,
+      "celula": 1,
+      "colunas": 2,
+      "concatenar@P": 2,
+      "cons@LP": 2,
+      "cons@P": 2,
+      "diferenca": 2,
+      "e": 2,
+      "falso": 2,
+      "filtrar@LP": 2,
+      "filtrar@P": 1,
+      "igualP": 2,
+      "juntar": 1,
+      "linhas": 2,
+      "mapear@P>LP": 1,
+      "nao": 2,
+      "ou": 2,
+      "pertence": 2,
+      "posicoes": 2,
+      "pretas": 1,
+      "reverter@LP": 2,
+      "se@B": 2,
+      "se@LLP": 2,
+      "se@LP": 2,
+      "todos@LP": 2,
+      "todos@P": 2,
+      "uniao": 2,
+      "vazia?@LP": 2,
+      "vazia?@P": 2,
+      "vazio@LP": 2,
+      "vazio@P": 2,
+      "verdadeiro": 2,
+      "vizinhos": 1
+     },
+     "enumeracao_candidatos": 3711,
+     "familia": "F-neg",
+     "hipotese": "λx0 x1. diferenca x1 (cabeca@LP (colunas x0))",
+     "hipotese_bruta": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (colunas x0))))",
+     "inconclusivo_recurso": false,
+     "motivo": "aceita",
+     "reutilizacoes": {},
+     "rodadas": 1,
+     "tamanho": 7,
+     "tamanho_max_carregado": 10,
+     "teste_resumo": {
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
+      "aviso": "",
+      "classes": 36,
+      "degenerado": false,
+      "num": 90
+     }
+    }
+   }
+  }
+ },
+ "config": {
+  "B": 20000,
+  "K": 12,
+  "auditoria_oe_orcamento": 0,
+  "auditoria_oe_s_max": 8,
+  "base": "E0",
+  "bracos": [
+   "L-fix",
+   "L-lib",
+   "L-lib+f",
+   "L-lib+f/lesao",
+   "L-lib+f/controle"
+  ],
+  "escala": "exploratoria-minima",
+  "limiar": 3,
+  "memoria_trabalhador_gb": 6.0,
+  "num_teste": 30,
+  "orcamento_passos": 100000,
+  "politica_busca": "tamanho",
+  "semente": 10002,
+  "sondas": false
+ },
+ "fontes": {
+  "arquivos": {
+   "__init__.py": "8b4b24aee2c5e5fe872edbc32296c689504c1fc427d24c06bd6314f2194c6183",
+   "adaptadores.py": "49ce5042308e67eb69d8cb8bb0a510f81595c2292eb969493b839dd97403c438",
+   "aprendizes.py": "6aa54b43002437edeb227d215fb455b1389026bc562e255b2909faead252249b",
+   "avaliador.py": "44ae052c13317dfa1fba4f8bf7f8767ded0e190857d334dcb512c3800d70f7c5",
+   "biblioteca.py": "1ed0a69a01ee23667cfa06c141ed70928a9ad14bfa03db66bcb3c221edf45bb7",
+   "certificados.py": "8643758e8b4fc66a371a37e1a902c53875f087a001c5a1bb915f4b5398d30a79",
+   "curriculo_autodirigido.py": "ae9c1107564a85fd2aeb0b5b30fbf1c6928bff46feb159f48fdd81bfd2aba0c0",
+   "dsl.py": "9b171a936e10da1e2c52452cfe3dfdc36079621c2e3a5691475c572cb3a6fc3c",
+   "enumerador.py": "96f20b99b8a291d4f3383d627a1a8899a9d7615c11dd6af8def5de7c4fab4fdd",
+   "experimento_minimo.py": "f8a178e92a5b17a970e60bda8bdf8dc70cb689726d7d49c890ed2e130d8a92b8",
+   "familias_transferencia.py": "4a4a5ccc9a9b108cac7a06507dd369cf1f2c007c19e6b5fd4ad88c3fbf6f477f",
+   "geradores.py": "9b450da46a9b3298b0e3880fd2a81a09578d6aec1c3ce7e7dc945129243fb264",
+   "grade.py": "fadab8dc3d0961185a580e5fae6163fadbe8c7a3103e9261fa1c25af10d5cfa4",
+   "medidas.py": "bccb15fe592c26ac1227348d1710807fb7c55503fafed3ae071a989392a6d16d",
+   "oraculo.py": "533bcdbf7380ba26304bc764366aa939943a2b4b8963846a7378d7325d7f3627",
+   "piloto.py": "9bc0fd22f1fcae0526f904952293d8174a863046660ea6e2674a525fb4900d91",
+   "programas_referencia.py": "7a7de40276fc0f290f8d028dafcebe2530dc7cddc0d593b6fc719a011f8a905e",
+   "razao.py": "f0081c8c0ea1e39d35710b51562d75b86ef7ee2d3da66243fcdae6d76f249ac3",
+   "referencias.py": "e75e8276cca84f947af15d9f940f8bf506bae340ebf77ca4cfa344bda01b5672",
+   "replicacao.py": "3c0ace3765f432b114d75e0157be3b6eed3bf921c6556ae9345bbd7cbac9421a",
+   "tradutores.py": "4ac5302836b9dc1934b38249b1e631382b770724f0c72480919d879d348bfbad",
+   "transferencia.py": "29a3da67fea618591c3ebc702078b853483b2004c3f5a9049135cf9c3c44c37b",
+   "verificacao.py": "bd9f13d27a3ad655c1bf3c52d9ac45d1a3840f7289a9ef3e5b93c25b09b683ec"
+  },
+  "python": "3.13.17",
+  "sha256_total": "46f002d50b1e886a510a0230d8c3f1af10a33c04614828121652a18ee4b6492e"
+ },
+ "hash_congelado": "3b6646466e4545926d2c0cd990c792d7a3775e7da294ea059a4eb1e2a1d74aca",
+ "hash_familias": "3b6646466e4545926d2c0cd990c792d7a3775e7da294ea059a4eb1e2a1d74aca",
+ "politicas": [
+  "tamanho",
+  "unigrama"
+ ],
+ "tarefas": [
+  "expandir2",
+  "fronteira",
+  "isoladaP",
+  "duasVizinhas",
+  "pretasComVizinha",
+  "TopoCheio",
+  "LinhaOcupada",
+  "pretasUltimaColuna",
+  "semColuna1"
+ ]
+}

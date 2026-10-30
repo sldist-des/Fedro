@@ -1,0 +1,200 @@
+{
+ "bracos": {
+  "L-fix": {
+   "cpu_s": 368.491952375,
+   "livro": {
+    "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+    "por_entrada": [
+     {
+      "aprendiz_id": "L-fix@E0/L-fix",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 65020,
+      "tarefa_id": "vizPretos",
+      "tempo_parede_s": 4.537182868999935
+     },
+     {
+      "aprendiz_id": "L-fix@E0/L-fix",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 189052,
+      "tarefa_id": "expandir",
+      "tempo_parede_s": 113.34150544699969
+     },
+     {
+      "aprendiz_id": "L-fix@E0/L-fix",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 279516,
+      "tarefa_id": "ParAdjacente",
+      "tempo_parede_s": 45.90335078900034
+     },
+     {
+      "aprendiz_id": "L-fix@E0/L-fix",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 442864,
+      "tarefa_id": "NenhumaIsolada",
+      "tempo_parede_s": 446.67635690099996
+     }
+    ]
+   },
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 442864,
+   "tempo_parede_s": 615.5198026759999
+  },
+  "L-lib": {
+   "cpu_s": 332.94661419199997,
+   "livro": {
+    "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+    "por_entrada": [
+     {
+      "aprendiz_id": "L-lib@E0/L-lib",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 65124,
+      "tarefa_id": "vizPretos",
+      "tempo_parede_s": 3.9567860180000025
+     },
+     {
+      "aprendiz_id": "L-lib@E0/L-lib",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 189276,
+      "tarefa_id": "expandir",
+      "tempo_parede_s": 113.04219042600016
+     },
+     {
+      "aprendiz_id": "L-lib@E0/L-lib",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 280128,
+      "tarefa_id": "ParAdjacente",
+      "tempo_parede_s": 44.455659612999625
+     },
+     {
+      "aprendiz_id": "L-lib@E0/L-lib",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 562256,
+      "tarefa_id": "NenhumaIsolada",
+      "tempo_parede_s": 400.60723752999957
+     }
+    ]
+   },
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 562256,
+   "tempo_parede_s": 566.6906142350003
+  },
+  "L-lib+f": {
+   "cpu_s": 206.617879105,
+   "livro": {
+    "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+    "por_entrada": [
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 65188,
+      "tarefa_id": "vizPretos",
+      "tempo_parede_s": 3.6168883159998586
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 67776,
+      "tarefa_id": "expandir",
+      "tempo_parede_s": 6.291753667999728
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 224680,
+      "tarefa_id": "ParAdjacente",
+      "tempo_parede_s": 10.375399823999942
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 527932,
+      "tarefa_id": "NenhumaIsolada",
+      "tempo_parede_s": 237.78538224299973
+     }
+    ]
+   },
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 527932,
+   "tempo_parede_s": 265.0919588080001
+  },
+  "L-lib+f/controle": {
+   "cpu_s": 335.304097948,
+   "livro": {
+    "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+    "por_entrada": [
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/controle",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 65020,
+      "tarefa_id": "pretasColuna1",
+      "tempo_parede_s": 8.896305426000254
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/controle",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 74904,
+      "tarefa_id": "semLinha1",
+      "tempo_parede_s": 15.083628618999683
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/controle",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 391608,
+      "tarefa_id": "ParAdjacente",
+      "tempo_parede_s": 329.4476665350003
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/controle",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 501224,
+      "tarefa_id": "NenhumaIsolada",
+      "tempo_parede_s": 161.21934714799954
+     }
+    ]
+   },
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 501224,
+   "tempo_parede_s": 524.635506434
+  },
+  "L-lib+f/lesao": {
+   "cpu_s": 277.786995213,
+   "livro": {
+    "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+    "por_entrada": [
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/lesao",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 65036,
+      "tarefa_id": "vizPretos",
+      "tempo_parede_s": 4.281789006000054
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/lesao",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 67588,
+      "tarefa_id": "expandir",
+      "tempo_parede_s": 6.237057899999854
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/lesao",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 253772,
+      "tarefa_id": "ParAdjacente",
+      "tempo_parede_s": 59.096489616000326
+     },
+     {
+      "aprendiz_id": "L-lib+f@E0/L-lib+f/lesao",
+      "memoria_escopo": "pico do PROCESSO desde o início (monotônico; não isolável por tarefa)",
+      "memoria_pico_kb": 441680,
+      "tarefa_id": "NenhumaIsolada",
+      "tempo_parede_s": 374.30831226500004
+     }
+    ]
+   },
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 441680,
+   "tempo_parede_s": 449.45681354199996
+  }
+ },
+ "tempo_parede_total_s": 789.9689056873322
+}

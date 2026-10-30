@@ -31,7 +31,6 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence
 
 from . import aprendizes as A
-from . import geradores as G
 from .dsl import BASES, tipo_str
 from .experimento_minimo import TAREFAS, _aprendiz, ConfigEM
 from .razao import LivroRazao
@@ -146,6 +145,20 @@ def _versao_biblioteca(ap) -> int:
 
 def job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int, B_max: int,
               semente_seletor: int, pool: Sequence[str] = POOL) -> dict:
+    try:
+        return _job_braco(seletor_nome, aprendiz_nome, cfg, G_total, B_max, semente_seletor, pool)
+    except Exception as e:      # registada, não derruba os outros braços do Pool
+        import traceback
+        return {"deterministico": {"braco": f"{seletor_nome}/{aprendiz_nome}", "seletor": seletor_nome,
+                                   "aprendiz": aprendiz_nome, "falha": f"{type(e).__name__}: {e}",
+                                   "traceback": traceback.format_exc(), "passos": [], "historico": {},
+                                   "ordem_aceitacao": [], "aceitas": [], "gasto_global": 0, "custo_total": 0,
+                                   "abstracoes": [], "cadeia_reuso": []},
+                "medicoes": {"tempo_parede_s": 0.0, "cpu_s": 0.0, "memoria_pico_kib": None, "memoria_escopo": None}}
+
+
+def _job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int, B_max: int,
+               semente_seletor: int, pool: Sequence[str] = POOL) -> dict:
     from .medidas import medir_isolado
     from .piloto import limitar_memoria
     limitar_memoria(cfg.memoria_trabalhador_gb)
@@ -153,7 +166,8 @@ def job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int
     rotulo = f"{seletor_nome}/{aprendiz_nome}"
     livro = LivroRazao(cfg.semente, {"braco": rotulo, "experimento": "curriculo-autodirigido"})
     ap = _aprendiz(aprendiz_nome, cfg, livro, rotulo=f"{cfg.base}/{rotulo}")
-    rng = G.rng_derivado(semente_seletor, "curriculo", seletor_nome)
+    # semente PRÓPRIA do seletor (não é semente de dados: não passa por geradores.rng_derivado)
+    rng = random.Random(f"curriculo|{seletor_nome}|{semente_seletor}")
     sel = SELETORES[seletor_nome](rng)
     hist = {tid: HistoricoTarefa(tid, tipo_str(TAREFAS[tid].tipo)) for tid in pool}
     passos: List[dict] = []
@@ -191,7 +205,8 @@ def job_braco(seletor_nome: str, aprendiz_nome: str, cfg: ConfigEM, G_total: int
             h.versao_bib_ultima = versao
             passos.append({"passo": len(passos) + 1, "tarefa": tid, "B": int(B), "aceita": r.aceita,
                            "motivo": r.motivo_fim, "custo": custo, "enumeracao": enum, "gasto_global": gasto,
-                           "versao_biblioteca": versao, "hipotese": r.hipotese_legivel,
+                           "versao_biblioteca": versao, "hipotese": r.hipotese_legivel, "hipotese_bruta": r.hipotese,
+                           "tamanho_hipotese": r.tamanho,
                            "biblioteca_usada": list(r.constantes_biblioteca_usadas),
                            "reutilizacoes": dict(r.reutilizacoes), "tamanho_max": h.ultimo_tamanho_max})
     det = {"braco": rotulo, "seletor": seletor_nome, "aprendiz": aprendiz_nome, "G": G_total, "B_max": B_max,
@@ -227,7 +242,8 @@ def executar(pasta: str, cfg: ConfigEM, G_total: int, B_max: int, seletores: Seq
            "bracos": {k: v["deterministico"] for k, v in bracos.items()},
            "resumo": {k: {"aceitas": v["deterministico"]["aceitas"], "ordem": v["deterministico"]["ordem_aceitacao"],
                           "custo_total": v["deterministico"]["custo_total"], "gasto_global": v["deterministico"]["gasto_global"],
-                          "passos": len(v["deterministico"]["passos"]), "cadeia_reuso": v["deterministico"]["cadeia_reuso"]}
+                          "passos": len(v["deterministico"]["passos"]), "cadeia_reuso": v["deterministico"]["cadeia_reuso"],
+                          "falha": v["deterministico"].get("falha")}
                       for k, v in bracos.items()}}
     med = {"parede_total_s": time.time() - t0, "bracos": {k: v["medicoes"] for k, v in bracos.items()}}
     with open(os.path.join(pasta, "deterministico.json"), "w", encoding="utf-8") as f:

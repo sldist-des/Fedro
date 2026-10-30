@@ -1,0 +1,3370 @@
+{
+ "B": 20000,
+ "agregado": {
+  "por_politica_braco": {
+   "tamanho|L-fix": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 0,
+     "expandir": 0,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 261342020,
+     "mediana": 259456734.5,
+     "min": 211476680,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 399542920,
+     "mediana": 352800617.0,
+     "min": 309627600,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [],
+     "expandir": [],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 1,
+     "mediana": 1.0,
+     "min": 1,
+     "n": 4
+    }
+   },
+   "tamanho|L-lib": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 0,
+     "expandir": 0,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 261342113,
+     "mediana": 259456827.5,
+     "min": 211476773,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 399543013,
+     "mediana": 352800710.0,
+     "min": 309627693,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [],
+     "expandir": [],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 1,
+     "mediana": 1.0,
+     "min": 1,
+     "n": 4
+    }
+   },
+   "tamanho|L-lib+f": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 4,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 4,
+    "cumulativo_ate_T3": {
+     "max": 14738947,
+     "mediana": 14533838.5,
+     "min": 14308248,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 110571311,
+     "mediana": 109706606.0,
+     "min": 101089783,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [
+      "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))"
+     ],
+     "expandir": [
+      "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 3,
+     "mediana": 3.0,
+     "min": 3,
+     "n": 4
+    }
+   },
+   "tamanho|L-lib+f/controle": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 0,
+     "expandir": 0,
+     "pretasColuna1": 4,
+     "semLinha1": 4,
+     "vizPretos": 0
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 102261360,
+     "mediana": 101628068.5,
+     "min": 90784455,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 191362422,
+     "mediana": 182673506.5,
+     "min": 179144206,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [],
+     "expandir": [],
+     "pretasColuna1": [
+      "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))"
+     ],
+     "semLinha1": [
+      "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     ],
+     "vizPretos": []
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 2,
+     "mediana": 2.0,
+     "min": 2,
+     "n": 4
+    }
+   },
+   "tamanho|L-lib+f/lesao": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 0,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 150592183,
+     "mediana": 150314625.5,
+     "min": 103811128,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 289393627,
+     "mediana": 243358236.0,
+     "min": 201962048,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [],
+     "expandir": [
+      "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 2,
+     "mediana": 2.0,
+     "min": 2,
+     "n": 4
+    }
+   },
+   "unigrama|L-fix": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 4,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 272894356,
+     "mediana": 271603607.5,
+     "min": 268369379,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 713536294,
+     "mediana": 702617296.5,
+     "min": 689700151,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [
+      "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))"
+     ],
+     "expandir": [
+      "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 3,
+     "mediana": 3.0,
+     "min": 3,
+     "n": 4
+    }
+   },
+   "unigrama|L-lib": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 4,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 273328987,
+     "mediana": 271727188.0,
+     "min": 268830222,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 634405367,
+     "mediana": 629910647.0,
+     "min": 627954759,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [
+      "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))"
+     ],
+     "expandir": [
+      "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 3,
+     "mediana": 3.0,
+     "min": 3,
+     "n": 4
+    }
+   },
+   "unigrama|L-lib+f": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 4,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 4,
+    "cumulativo_ate_T3": {
+     "max": 28366527,
+     "mediana": 27606815.5,
+     "min": 27466397,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 417758774,
+     "mediana": 412412118.0,
+     "min": 403288649,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [
+      "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))"
+     ],
+     "expandir": [
+      "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 3,
+     "mediana": 3.0,
+     "min": 3,
+     "n": 4
+    }
+   },
+   "unigrama|L-lib+f/controle": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 0,
+     "expandir": 0,
+     "pretasColuna1": 4,
+     "semLinha1": 4,
+     "vizPretos": 0
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 341598133,
+     "mediana": 338686810.0,
+     "min": 275695429,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 665942009,
+     "mediana": 660826897.0,
+     "min": 545158386,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [],
+     "expandir": [],
+     "pretasColuna1": [
+      "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))"
+     ],
+     "semLinha1": [
+      "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     ],
+     "vizPretos": []
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 2,
+     "mediana": 2.0,
+     "min": 2,
+     "n": 4
+    }
+   },
+   "unigrama|L-lib+f/lesao": {
+    "aceitas_por_tarefa": {
+     "NenhumaIsolada": 0,
+     "ParAdjacente": 4,
+     "expandir": 4,
+     "pretasColuna1": 0,
+     "semLinha1": 0,
+     "vizPretos": 4
+    },
+    "com_reutilizacao": 0,
+    "cumulativo_ate_T3": {
+     "max": 101042627,
+     "mediana": 99316669.5,
+     "min": 99164991,
+     "n": 4
+    },
+    "cumulativo_final": {
+     "max": 542536501,
+     "mediana": 530270014.0,
+     "min": 519764516,
+     "n": 4
+    },
+    "falhas": 0,
+    "hipoteses_distintas_por_tarefa": {
+     "NenhumaIsolada": [],
+     "ParAdjacente": [
+      "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))"
+     ],
+     "expandir": [
+      "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)"
+     ],
+     "pretasColuna1": [],
+     "semLinha1": [],
+     "vizPretos": [
+      "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     ]
+    },
+    "sementes": 4,
+    "tarefas_aceitas": {
+     "max": 3,
+     "mediana": 3.0,
+     "min": 3,
+     "n": 4
+    }
+   }
+  },
+  "veredito_por_politica": {
+   "tamanho": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "unigrama": [
+    true,
+    true,
+    true,
+    true
+   ]
+  }
+ },
+ "execucoes": [
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": false,
+      "expandir": false
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 90920459,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": false,
+       "custo": 139614500,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6321260,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 10977683,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 14738947,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 109694632,
+      "fecha": true,
+      "soma_livro": 109694632
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321152
+       ],
+       [
+        "expandir",
+        false,
+        119074795
+       ],
+       [
+        "ParAdjacente",
+        false,
+        258689295
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        351594173
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321245
+       ],
+       [
+        "expandir",
+        false,
+        119074888
+       ],
+       [
+        "ParAdjacente",
+        false,
+        258689388
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        351594266
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321260
+       ],
+       [
+        "expandir",
+        true,
+        10977683
+       ],
+       [
+        "ParAdjacente",
+        true,
+        14738947
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        109694632
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6321159
+       ],
+       [
+        "semLinha1",
+        true,
+        11340901
+       ],
+       [
+        "ParAdjacente",
+        false,
+        102261360
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        179547649
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321260
+       ],
+       [
+        "expandir",
+        true,
+        10977683
+       ],
+       [
+        "ParAdjacente",
+        false,
+        150592183
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        243497061
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 258689295,
+     "cumulativo_final": 351594173,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 258689388,
+     "cumulativo_final": 351594266,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 14738947,
+     "cumulativo_final": 109694632,
+     "enumeracao_final": 25466,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 102261360,
+     "cumulativo_final": 179547649,
+     "enumeracao_final": 44093,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir"
+     ],
+     "cumulativo_ate_T3": 150592183,
+     "cumulativo_final": 243497061,
+     "enumeracao_final": 43731,
+     "falha": null,
+     "hipoteses": {
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 228.18119955062866,
+   "pasta": "runs/rep-1/s10003-tamanho",
+   "politica": "tamanho",
+   "semente": 10003
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": true,
+      "expandir": true
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 324126172,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": true,
+       "custo": 85844093,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6321260,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 15198534,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 28366527,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 408793773,
+      "fecha": true,
+      "soma_livro": 408793773
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321152
+       ],
+       [
+        "expandir",
+        true,
+        185134311
+       ],
+       [
+        "ParAdjacente",
+        true,
+        270978262
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        689700151
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321245
+       ],
+       [
+        "expandir",
+        true,
+        185134932
+       ],
+       [
+        "ParAdjacente",
+        true,
+        270747447
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        629489932
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321260
+       ],
+       [
+        "expandir",
+        true,
+        15198534
+       ],
+       [
+        "ParAdjacente",
+        true,
+        28366527
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        408793773
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6321159
+       ],
+       [
+        "semLinha1",
+        true,
+        17471961
+       ],
+       [
+        "ParAdjacente",
+        false,
+        341598133
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        665942009
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6321260
+       ],
+       [
+        "expandir",
+        true,
+        15198534
+       ],
+       [
+        "ParAdjacente",
+        true,
+        101042627
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        519764516
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 270978262,
+     "cumulativo_final": 689700151,
+     "enumeracao_final": 33432,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 270747447,
+     "cumulativo_final": 629489932,
+     "enumeracao_final": 33710,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 28366527,
+     "cumulativo_final": 408793773,
+     "enumeracao_final": 24103,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 341598133,
+     "cumulativo_final": 665942009,
+     "enumeracao_final": 42968,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 101042627,
+     "cumulativo_final": 519764516,
+     "enumeracao_final": 27107,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 548.1329247951508,
+   "pasta": "runs/rep-1/s10003-unigrama",
+   "politica": "unigrama",
+   "semente": 10003
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": false,
+      "expandir": false
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 90074260,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": false,
+       "custo": 139320713,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6001334,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 10754168,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 14308248,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 110571311,
+      "fecha": true,
+      "soma_livro": 110571311
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001226
+       ],
+       [
+        "expandir",
+        false,
+        120903461
+       ],
+       [
+        "ParAdjacente",
+        false,
+        260224174
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        399542920
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001319
+       ],
+       [
+        "expandir",
+        false,
+        120903554
+       ],
+       [
+        "ParAdjacente",
+        false,
+        260224267
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        399543013
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001334
+       ],
+       [
+        "expandir",
+        true,
+        10754168
+       ],
+       [
+        "ParAdjacente",
+        true,
+        14308248
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        110571311
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6308348
+       ],
+       [
+        "semLinha1",
+        true,
+        11214562
+       ],
+       [
+        "ParAdjacente",
+        false,
+        101288822
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        191362422
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001334
+       ],
+       [
+        "expandir",
+        true,
+        10754168
+       ],
+       [
+        "ParAdjacente",
+        false,
+        150074881
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        289393627
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 260224174,
+     "cumulativo_final": 399542920,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 260224267,
+     "cumulativo_final": 399543013,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 14308248,
+     "cumulativo_final": 110571311,
+     "enumeracao_final": 25466,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 101288822,
+     "cumulativo_final": 191362422,
+     "enumeracao_final": 44093,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir"
+     ],
+     "cumulativo_ate_T3": 150074881,
+     "cumulativo_final": 289393627,
+     "enumeracao_final": 43731,
+     "falha": null,
+     "hipoteses": {
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 320.2275331020355,
+   "pasta": "runs/rep-1/s10004-tamanho",
+   "politica": "tamanho",
+   "semente": 10004
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": true,
+      "expandir": true
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 320860827,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": true,
+       "custo": 84442770,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6001334,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 14722221,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 27563276,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 417758774,
+      "fecha": true,
+      "soma_livro": 417758774
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001226
+       ],
+       [
+        "expandir",
+        true,
+        187786325
+       ],
+       [
+        "ParAdjacente",
+        true,
+        272228953
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        713536294
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001319
+       ],
+       [
+        "expandir",
+        true,
+        187786946
+       ],
+       [
+        "ParAdjacente",
+        true,
+        272706929
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        634405367
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001334
+       ],
+       [
+        "expandir",
+        true,
+        14722221
+       ],
+       [
+        "ParAdjacente",
+        true,
+        27563276
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        417758774
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6308348
+       ],
+       [
+        "semLinha1",
+        true,
+        16847060
+       ],
+       [
+        "ParAdjacente",
+        false,
+        337707887
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        658494972
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6001334
+       ],
+       [
+        "expandir",
+        true,
+        14722221
+       ],
+       [
+        "ParAdjacente",
+        true,
+        99164991
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        540472332
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 272228953,
+     "cumulativo_final": 713536294,
+     "enumeracao_final": 33428,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 272706929,
+     "cumulativo_final": 634405367,
+     "enumeracao_final": 33702,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 27563276,
+     "cumulativo_final": 417758774,
+     "enumeracao_final": 24102,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 337707887,
+     "cumulativo_final": 658494972,
+     "enumeracao_final": 42968,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 99164991,
+     "cumulativo_final": 540472332,
+     "enumeracao_final": 27103,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 824.5868604183197,
+   "pasta": "runs/rep-1/s10004-unigrama",
+   "politica": "unigrama",
+   "semente": 10004
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": false,
+      "expandir": false
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 91195428,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": false,
+       "custo": 139519024,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6308599,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 11035346,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 14579424,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 101089783,
+      "fecha": true,
+      "soma_livro": 101089783
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308491
+       ],
+       [
+        "expandir",
+        false,
+        121822996
+       ],
+       [
+        "ParAdjacente",
+        false,
+        261342020
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        354007061
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308584
+       ],
+       [
+        "expandir",
+        false,
+        121823089
+       ],
+       [
+        "ParAdjacente",
+        false,
+        261342113
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        354007154
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308599
+       ],
+       [
+        "expandir",
+        true,
+        11035346
+       ],
+       [
+        "ParAdjacente",
+        true,
+        14579424
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        101089783
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6001544
+       ],
+       [
+        "semLinha1",
+        true,
+        10771887
+       ],
+       [
+        "ParAdjacente",
+        false,
+        101967315
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        179144206
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308599
+       ],
+       [
+        "expandir",
+        true,
+        11035346
+       ],
+       [
+        "ParAdjacente",
+        false,
+        150554370
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        243219411
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 261342020,
+     "cumulativo_final": 354007061,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 261342113,
+     "cumulativo_final": 354007154,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 14579424,
+     "cumulativo_final": 101089783,
+     "enumeracao_final": 25465,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 101967315,
+     "cumulativo_final": 179144206,
+     "enumeracao_final": 44093,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir"
+     ],
+     "cumulativo_ate_T3": 150554370,
+     "cumulativo_final": 243219411,
+     "enumeracao_final": 43731,
+     "falha": null,
+     "hipoteses": {
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 230.0707402229309,
+   "pasta": "runs/rep-1/s10005-tamanho",
+   "politica": "tamanho",
+   "semente": 10005
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": true,
+      "expandir": true
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 323427540,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": true,
+       "custo": 84363949,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6308599,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 15035303,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 27466397,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 403288649,
+      "fecha": true,
+      "soma_livro": 403288649
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308491
+       ],
+       [
+        "expandir",
+        true,
+        188530549
+       ],
+       [
+        "ParAdjacente",
+        true,
+        272894356
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        693562800
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308584
+       ],
+       [
+        "expandir",
+        true,
+        188531170
+       ],
+       [
+        "ParAdjacente",
+        true,
+        273328987
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        627954759
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308599
+       ],
+       [
+        "expandir",
+        true,
+        15035303
+       ],
+       [
+        "ParAdjacente",
+        true,
+        27466397
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        403288649
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6001544
+       ],
+       [
+        "semLinha1",
+        true,
+        16238193
+       ],
+       [
+        "ParAdjacente",
+        false,
+        339665733
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        663158822
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308599
+       ],
+       [
+        "expandir",
+        true,
+        15035303
+       ],
+       [
+        "ParAdjacente",
+        true,
+        99399252
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        520067696
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 272894356,
+     "cumulativo_final": 693562800,
+     "enumeracao_final": 33438,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 273328987,
+     "cumulativo_final": 627954759,
+     "enumeracao_final": 33715,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 27466397,
+     "cumulativo_final": 403288649,
+     "enumeracao_final": 24100,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 339665733,
+     "cumulativo_final": 663158822,
+     "enumeracao_final": 42968,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 99399252,
+     "cumulativo_final": 520067696,
+     "enumeracao_final": 27110,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 789.9689056873322,
+   "pasta": "runs/rep-1/s10005-unigrama",
+   "politica": "unigrama",
+   "semente": 10005
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": false,
+      "expandir": false
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 78864565,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": false,
+       "custo": 92884023,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6308433,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 10927105,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 14488253,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 109718580,
+      "fecha": true,
+      "soma_livro": 109718580
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308325
+       ],
+       [
+        "expandir",
+        false,
+        118592657
+       ],
+       [
+        "ParAdjacente",
+        false,
+        211476680
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        309627600
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308418
+       ],
+       [
+        "expandir",
+        false,
+        118592750
+       ],
+       [
+        "ParAdjacente",
+        false,
+        211476773
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        309627693
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308433
+       ],
+       [
+        "expandir",
+        true,
+        10927105
+       ],
+       [
+        "ParAdjacente",
+        true,
+        14488253
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        109718580
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6001347
+       ],
+       [
+        "semLinha1",
+        true,
+        11919890
+       ],
+       [
+        "ParAdjacente",
+        false,
+        90784455
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        185799364
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308433
+       ],
+       [
+        "expandir",
+        true,
+        10927105
+       ],
+       [
+        "ParAdjacente",
+        false,
+        103811128
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        201962048
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 211476680,
+     "cumulativo_final": 309627600,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos"
+     ],
+     "cumulativo_ate_T3": 211476773,
+     "cumulativo_final": 309627693,
+     "enumeracao_final": 61284,
+     "falha": null,
+     "hipoteses": {
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 1,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 14488253,
+     "cumulativo_final": 109718580,
+     "enumeracao_final": 25466,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. nao (vazia?@P (abs2 x0 (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 90784455,
+     "cumulativo_final": 185799364,
+     "enumeracao_final": 44100,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir"
+     ],
+     "cumulativo_ate_T3": 103811128,
+     "cumulativo_final": 201962048,
+     "enumeracao_final": 43731,
+     "falha": null,
+     "hipoteses": {
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 295.05419540405273,
+   "pasta": "runs/rep-1/s10006-tamanho",
+   "politica": "tamanho",
+   "semente": 10006
+  },
+  {
+   "analise": {
+    "criterio_central": {
+     "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+      "ParAdjacente": true,
+      "expandir": true
+     },
+     "braco": "L-lib+f",
+     "condicoes": {
+      "1_reuso_em_tarefa_inedita": true,
+      "2_procedencia": true,
+      "3_custo_total_verificavel": true,
+      "4_controles_piores": true,
+      "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+     },
+     "controles": {
+      "L-lib+f/controle:ParAdjacente": {
+       "aceita": false,
+       "custo": 258204027,
+       "pior_que_L-lib+f": true
+      },
+      "L-lib+f/lesao:ParAdjacente": {
+       "aceita": true,
+       "custo": 84404463,
+       "pior_que_L-lib+f": true
+      }
+     },
+     "custo_cumulativo_igual": [
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 1,
+       "custo_cumulativo": 6308433,
+       "tarefa": "vizPretos"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 2,
+       "custo_cumulativo": 14829624,
+       "tarefa": "expandir"
+      },
+      {
+       "aceitas_L-fix_ao_mesmo_custo": 1,
+       "aceitas_L-lib+f": 3,
+       "custo_cumulativo": 27650355,
+       "tarefa": "ParAdjacente"
+      }
+     ],
+     "fechamento": {
+      "cumulativo_curva": 416030463,
+      "fecha": true,
+      "soma_livro": 416030463
+     },
+     "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+     "tarefas_de_reuso": {
+      "ParAdjacente": [
+       "abs2"
+      ],
+      "expandir": [
+       "abs1"
+      ]
+     },
+     "veredito": true
+    },
+    "por_braco": {
+     "L-fix": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308325
+       ],
+       [
+        "expandir",
+        true,
+        183965058
+       ],
+       [
+        "ParAdjacente",
+        true,
+        268369379
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        711671793
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308418
+       ],
+       [
+        "expandir",
+        true,
+        183965679
+       ],
+       [
+        "ParAdjacente",
+        true,
+        268830222
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        630331362
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [
+       "abs1",
+       "abs2"
+      ],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {
+       "abs1": {
+        "ParAdjacente": 1
+       }
+      },
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308433
+       ],
+       [
+        "expandir",
+        true,
+        14829624
+       ],
+       [
+        "ParAdjacente",
+        true,
+        27650355
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        416030463
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "ParAdjacente": [
+        "abs2"
+       ],
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     },
+     "L-lib+f/controle": {
+      "abstracoes": 2,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "pretasColuna1",
+       "semLinha1"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "pretasColuna1",
+        true,
+        6001347
+       ],
+       [
+        "semLinha1",
+        true,
+        17491402
+       ],
+       [
+        "ParAdjacente",
+        false,
+        275695429
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        545158386
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {},
+      "testes_degenerados": []
+     },
+     "L-lib+f/lesao": {
+      "abstracoes": 0,
+      "abstracoes_reutilizadas": [],
+      "aceitas": [
+       "vizPretos",
+       "expandir",
+       "ParAdjacente"
+      ],
+      "cadeia_indireta": {},
+      "curva": [
+       [
+        "vizPretos",
+        true,
+        6308433
+       ],
+       [
+        "expandir",
+        true,
+        14829624
+       ],
+       [
+        "ParAdjacente",
+        true,
+        99234087
+       ],
+       [
+        "NenhumaIsolada",
+        false,
+        542536501
+       ]
+      ],
+      "reuso_em_solucoes_aceitas": {
+       "expandir": [
+        "abs1"
+       ]
+      },
+      "testes_degenerados": []
+     }
+    }
+   },
+   "bracos": {
+    "L-fix": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 268369379,
+     "cumulativo_final": 711671793,
+     "enumeracao_final": 33430,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 268830222,
+     "cumulativo_final": 630331362,
+     "enumeracao_final": 33708,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. filtrar@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) x1))",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    },
+    "L-lib+f": {
+     "abstracoes": 2,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 27650355,
+     "cumulativo_final": 416030463,
+     "enumeracao_final": 24104,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (abs2 x0 (pretas x0))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": [
+      [
+       "abs1",
+       {
+        "expandir": 1
+       },
+       {
+        "ParAdjacente": 1
+       }
+      ],
+      [
+       "abs2",
+       {
+        "ParAdjacente": 1
+       },
+       {}
+      ]
+     ]
+    },
+    "L-lib+f/controle": {
+     "abstracoes": 2,
+     "aceitas": [
+      "pretasColuna1",
+      "semLinha1"
+     ],
+     "cumulativo_ate_T3": 275695429,
+     "cumulativo_final": 545158386,
+     "enumeracao_final": 42974,
+     "falha": null,
+     "hipoteses": {
+      "pretasColuna1": "λx0 x1. filtrar@P (celula x0) (cabeca@LP (colunas x0))",
+      "semLinha1": "λx0 x1. diferenca x1 (cabeca@LP (linhas x0))"
+     },
+     "num_aceitas": 2,
+     "reutilizadas": []
+    },
+    "L-lib+f/lesao": {
+     "abstracoes": 0,
+     "aceitas": [
+      "vizPretos",
+      "expandir",
+      "ParAdjacente"
+     ],
+     "cumulativo_ate_T3": 99234087,
+     "cumulativo_final": 542536501,
+     "enumeracao_final": 27106,
+     "falha": null,
+     "hipoteses": {
+      "ParAdjacente": "λx0. algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))",
+      "expandir": "λx0 x1. juntar (mapear@P>LP (abs1 x0) x1)",
+      "vizPretos": "λx0 x1. filtrar@P (celula x0) (vizinhos x0 x1)"
+     },
+     "num_aceitas": 3,
+     "reutilizadas": []
+    }
+   },
+   "parede_s": 697.7553222179413,
+   "pasta": "runs/rep-1/s10006-unigrama",
+   "politica": "unigrama",
+   "semente": 10006
+  }
+ ],
+ "parede_total_s": 3934.300977706909,
+ "politicas": [
+  "tamanho",
+  "unigrama"
+ ],
+ "sementes": [
+  10003,
+  10004,
+  10005,
+  10006
+ ]
+}
