@@ -1,0 +1,29 @@
+{
+ "bracos": {
+  "zero/tamanho/L-fix": {
+   "cpu_s": 825.2711609309999,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 543816,
+   "tempo_parede_s": 1075.5513013259997
+  },
+  "zero/tamanho/L-lib+f": {
+   "cpu_s": 546.339806014,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 853792,
+   "tempo_parede_s": 806.7705093359991
+  },
+  "zero/unigrama/L-fix": {
+   "cpu_s": 916.566280835,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 521948,
+   "tempo_parede_s": 1163.4903948779993
+  },
+  "zero/unigrama/L-lib+f": {
+   "cpu_s": 841.43448204,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1277984,
+   "tempo_parede_s": 1099.5800035479997
+  }
+ },
+ "parede_total_s": 1172.7786815166473
+}
