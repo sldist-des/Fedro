@@ -93,9 +93,9 @@ REFERENCIAS_DSL = {
     "TopoCheio": {
         "E0": "(\\ (g Grade) (todos@P (celula g) (cabeca@LP (linhas g))))",
         "abs": "(\\ (g Grade) (todos@P (celula g) (cabeca@LP (linhas g))))"},
-    "LinhaOcupada": {
-        "E0": "(\\ (g Grade) (nao (vazia?@LP (filtrar@LP (todos@P (celula g)) (linhas g)))))",
-        "abs": "(\\ (g Grade) (nao (vazia?@LP (filtrar@LP (todos@P (celula g)) (linhas g)))))"},
+    "LinhaOcupada": {   # toda linha tem pelo menos uma preta (REGISTRO)
+        "E0": "(\\ (g Grade) (todos@LP (\\ (l LP) (algum@P (celula g) l)) (linhas g)))",
+        "abs": "(\\ (g Grade) (todos@LP (\\ (l LP) (algum@P (celula g) l)) (linhas g)))"},
     "pretasUltimaColuna": {
         "E0": "(\\ (g Grade) (filtrar@P (celula g) (cabeca@LP (reverter@LP (colunas g)))))",
         "abs": "(\\ (g Grade) (filtrar@P (celula g) (cabeca@LP (reverter@LP (colunas g)))))"},
@@ -136,7 +136,7 @@ def hash_especificacao() -> str:
 
 
 #: hash publicado no documento 06 ANTES da execução de avaliação (tests/test_validacao.py confere)
-HASH_CONGELADO = "f0085adea5414006ead424902cb66e9484abb74c77257dcbdb8d55e8ce9ec033"
+HASH_CONGELADO = "3b6646466e4545926d2c0cd990c792d7a3775e7da294ea059a4eb1e2a1d74aca"
 
 
 def verificar_referencias(ns=(1, 2, 3, 4)) -> Dict[str, Dict[str, int]]:
