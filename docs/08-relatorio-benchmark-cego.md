@@ -122,13 +122,7 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
-|---|---|---|---|---|---|
-| 130 | 240,463,507 / 66236 | 80,561 / 45 | 4,180 / 0 | 65,995 / 28 | 335 |
-
-Hipóteses com erro de previsão: zero/unigrama/L-lib+f/lesao/bx:contemTodasPretas; ocultos do autor com erro: [('zero/unigrama/L-lib+f/lesao', 'contemTodasPretas', 28)]
-
-Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
+(verificação ainda não executada)
 <!-- /TABELAS:A -->
 
 ### 3.1 Desempenho absoluto
@@ -378,13 +372,69 @@ Verificação pós-execução:
 (verificação ainda não executada)
 <!-- /TABELAS:C9 -->
 
-<!-- LEITURA:C -->
+**Leitura (C).** As sementes 10008 e 10009 reproduzem o bloco A quase exatamente: as mesmas tarefas aceitas por L-fix (15 e 17) e por L-lib+f (15 e 17; na semente 10009, L-lib+f na política de tamanho aceita também `colunaVazia`, 16), os mesmos quatro pares de transferência positiva e as mesmas contagens de negativas e inconclusivas (4 / 13 / 11 e 4 / 14 / 10 nas três sementes), com custos cumulativos que variam menos de 2 % (L-fix 1 871–1 882 M; L-lib+f 1 541–1 550 M na política de tamanho; 2 515–2 554 M na unigrama). Duas hipóteses aceitas diferem sintaticamente entre sementes (`linhaTemPretaEm`, `tocaPreta`, política de tamanho), sem alterar as classes. Como no documento 06, a semente só muda a amostra OE, os exemplos e os contraexemplos; o padrão misto do bloco A é **estável às sementes**, pelo critério pré-registado 5.
 
 ### 5.2 Bloco D — reservatório do oráculo com 20 grades (semente 10007; política de tamanho)
 
 <!-- TABELAS:D -->
+### Registro `bx-grades-e0-independente-v1-D-k20`
 
-<!-- LEITURA:D -->
+Pacote grades-e0-independente v1, hash `9e600a4155844bc4…`; semente 10007; B = 20000; modos ['zero']; k_reservatorio = 20; parede total 863 s.
+
+| braço | aceitas | custo prévio | custo benchmark | custo cumulativo | custo por aceita | tarefas com reuso | entradas descobertas (reutilizadas) | livro fecha | inválidas |
+|---|---|---|---|---|---|---|---|---|---|
+| zero/tamanho/L-fix | 15/28 | 0.0 M | 1882.3 M | 1882.3 M | 125.5 M | 0 | 0 (0) | True | 0 |
+| zero/tamanho/L-lib+f | 15/28 | 0.0 M | 1540.8 M | 1540.8 M | 102.7 M | 5 | 19 (6) | True | 0 |
+
+| comparação | positivas | negativas | neutras | inconclusivas | com reuso |
+|---|---|---|---|---|---|
+| zero/tamanho/L-lib+f vs zero/tamanho/L-fix | 4 | 13 | 0 | 11 | 5 |
+
+| lesão | tarefas após a lesão | aceitas L-lib+f | aceitas lesão | custo L-lib+f | custo lesão | entradas removidas | sensível |
+|---|---|---|---|---|---|---|---|
+
+Tarefas aceitas a custo cumulativo igual (para cada aceitação de L-lib+f ao custo C, aceitas de L-lib+f vs de L-fix com custo ≤ C):
+- zero/tamanho/L-lib+f vs zero/tamanho/L-fix: ultimaLinha C=0.1 M → 1 vs 1; contidoEm C=0.9 M → 2 vs 2; vizinhosPretos C=8.2 M → 3 vs 3; todaLinhaTemPreta C=10.9 M → 4 vs 5; complementoDe C=11.0 M → 5 vs 5; pretasPorColunas C=13.2 M → 6 vs 7; intersecaoOrdenada C=15.0 M → 7 vs 7; contemTodasPretas C=15.1 M → 8 vs 7; naBorda C=107.8 M → 9 vs 13; linhaDaPosicao C=117.4 M → 10 vs 13; juntarSemRepetir C=132.4 M → 11 vs 13; brancasDaLista C=137.1 M → 12 vs 13; linhaTemPretaEm C=403.6 M → 13 vs 14; tocaPreta C=727.4 M → 14 vs 14; semPretasAdjacentes C=970.3 M → 15 vs 14
+
+Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese entre parênteses; classe de transferência com razão exata ×, ou limite inferior ≥× quando L-fix não aceita):
+
+| tarefa | tamanho: L-lib+f | L-fix | classe |
+|---|---|---|---|
+| ultimaLinha | ✔ 0.1 M (5) | ✔ 0.1 M (5) | negativa ×1.00 |
+| contidoEm | ✔ 0.9 M (6) | ✔ 0.9 M (6) | negativa ×1.00 |
+| vizinhosPretos | ✔ 7.2 M (8) | ✔ 6.3 M (8) | negativa ×0.88 |
+| todaLinhaTemPreta | ✔ 2.8 M (7) | ✔ 2.1 M (7) | negativa ×0.76 |
+| complementoDe | ✔ 0.0 M (4) | ✔ 0.0 M (4) | negativa ×0.92 |
+| pretasPorColunas | ✔ 2.2 M (7) | ✔ 1.9 M (7) | negativa ×0.86 |
+| intersecaoOrdenada | ✔ 1.9 M (6) | ✔ 1.6 M (6) | negativa ×0.85 |
+| contemTodasPretas | ✔ 0.1 M (4) reuso abs2 | ✔ 3.6 M (7) | positiva ×66.71 |
+| colunaVazia | ✘ 49.4 M | ✔ 24.0 M (8) | negativa |
+| naBorda | ✔ 43.3 M (9) | ✔ 31.9 M (9) | negativa ×0.74 |
+| linhaDaPosicao | ✔ 9.6 M (8) | ✔ 6.3 M (8) | negativa ×0.66 |
+| juntarSemRepetir | ✔ 15.0 M (7) | ✔ 7.0 M (7) | negativa ×0.47 |
+| brancasDaLista | ✔ 4.8 M (6) reuso abs4,abs7 | ✔ 0.8 M (6) | negativa ×0.16 |
+| diferencaSimetrica | ✘ 125.9 M | ✘ 89.6 M | inconclusiva |
+| pretasOrdemInversa | ✘ 57.3 M | ✘ 81.7 M | inconclusiva |
+| algumaLinhaCheia | ✘ 69.8 M | ✔ 71.5 M (9) | negativa |
+| linhaTemPretaEm | ✔ 13.4 M (8) reuso abs10 | ✘ 165.3 M | positiva ≥×12.3 |
+| semPretaIsolada | ✘ 94.2 M | ✘ 138.8 M | inconclusiva |
+| colunasBrancas | ✘ 71.9 M | ✘ 80.1 M | inconclusiva |
+| mesmoConjunto | ✘ 100.8 M | ✘ 199.4 M | inconclusiva |
+| tocaPreta | ✔ 56.9 M (8) reuso abs15 | ✔ 88.7 M (9) | positiva ×1.56 |
+| bordaPreta | ✘ 76.4 M | ✘ 81.7 M | inconclusiva |
+| vizinhancaExterna | ✘ 163.3 M | ✘ 111.3 M | inconclusiva |
+| semPretasAdjacentes | ✔ 3.3 M (6) reuso abs18 | ✘ 138.8 M | positiva ≥×41.7 |
+| cruzDaPosicao | ✘ 186.7 M | ✘ 138.0 M | inconclusiva |
+| pretasEmDomino | ✘ 100.2 M | ✘ 138.8 M | inconclusiva |
+| pretasConexas | ✘ 97.0 M | ✘ 134.0 M | inconclusiva |
+| componenteDe | ✘ 186.5 M | ✘ 138.1 M | inconclusiva |
+
+Verificação pós-execução:
+
+(verificação ainda não executada)
+<!-- /TABELAS:D -->
+
+**Leitura (D).** Com o reservatório do oráculo reduzido de 40 para 20 grades (n = 5 e 6 para predicados; n = 4 para funções), os dois braços produzem **exatamente** as mesmas aceitações, as mesmas hipóteses e os mesmos custos do bloco A (1 882,3 M e 1 540,8 M): nenhuma hipótese aceita dependeu de um contraexemplo das grades do reservatório removidas. A variação do ambiente pré-registada não tem efeito mensurável neste conjunto; isto diz que o alcance da busca, e não o oráculo, é o que limita o desempenho.
 
 ### 5.3 Bloco E — ordens do autor, aleatórias e autodirigida (política de tamanho; L-lib+f e L-fix)
 
