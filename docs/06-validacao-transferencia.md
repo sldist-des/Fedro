@@ -1,6 +1,6 @@
 # 06 — Validação independente e aprendizagem autodirigida
 
-**Versão 0.1** (rascunho em construção: as secções 2–4 são preenchidas pelos registros `runs/rep-1`, `runs/ca-*` e `runs/tr-*` à medida que terminam).
+**Versão 0.1** — 2026-10-30. Código, testes (243) e registros em `fedro_piloto/` e `runs/`; comandos em §7.
 
 Pergunta decisiva deste documento: *Fedro consegue usar o que aprendeu para escolher o que aprender a seguir e transferir isso para problemas cuja estrutura não foi preparada pelo pesquisador?* A resposta é dada em quatro partes separadas (§6): o que foi demonstrado, o que falhou, o que permanece inconclusivo e qual a experiência mais informativa a seguir. O experimento confirmatório **não** foi executado; todas as sementes usadas estão no intervalo exploratório (10000–19999) e os buckets 50–99 continuam intocados.
 
@@ -270,3 +270,51 @@ Pré-requisito para avançar (documento 03, §D, mantido): o experimento sensór
 O ponto mais fraco da evidência é o item 1 de §6.3: as famílias de transferência foram desenhadas por quem conhecia as abstrações. O experimento mais informativo, e pequeno, é uma **família cega**: tarefas definidas a partir de uma descrição em linguagem natural das operações disponíveis na DSL base (sem mencionar vizPretos, expandir ou ParAdjacente), escritas antes de ler os documentos 05 e 06, congeladas por hash e avaliadas com o mesmo protocolo de §4.2 (fotografia após a cadeia; L-lib+f vs L-fix; duas políticas; uma semente nova do intervalo exploratório). Se metade ou mais das tarefas cegas que envolvem vizinhança mostrarem reutilização de abs1/abs2 com razão de custo < 0,5, a transferência estrutural deixa de depender da escolha do investigador; se nenhuma mostrar, o resultado de §4 é um artefacto de desenho. Custo estimado: ≈ 20 min de CPU por semente a B = 20 000. Em paralelo, e ainda mais barato (≈ 5 min), a ablação de §6.3.2 (biblioteca com prior desligado) separa as duas fontes de transferência negativa. Só depois destes dois resultados faz sentido o desenho do experimento sensório-motor (§5.2) e, mais tarde, o confirmatório — que continua por executar.
 
 ## 7. Comandos, registros e desvios
+
+### 7.1 Registros produzidos neste documento
+
+| registro | conteúdo | parede |
+|---|---|---|
+| `runs/em-s10002-{tamanho,unigrama}/verificacao.json` | verificação exaustiva e amostral das 25 hipóteses do documento 05 (§1.1); `analise_v2` em `deterministico.json` com o veredito de cinco condições (§1.2) | — |
+| `runs/rep-1/` | replicação: 8 subpastas `s<semente>-<política>` com os registros completos do experimento mínimo; `resumo.json`, `resumo.md` (§2) | 3 934 s |
+| `runs/tr-s10002/` | transferência estrutural: cadeia + 9 tarefas × 2 aprendizes × 2 políticas; `verificacao.json` (§4) | 1 198 s |
+| `runs/ca-s10002-tamanho/` | currículo autodirigido, política de tamanho: 10 braços; `verificacao.json` (§3.2) | 1 122 s |
+| `runs/ca-s10002-unigrama/` | currículo autodirigido, política unigrama (§3.3) | ver §3.3 |
+
+Verificação das hipóteses dos registros novos (regimes de §1.1):
+
+| registro | hipóteses aceitas | entradas exaustivas | erros | amostrais (natural) | erros | desenho | erros |
+|---|---|---|---|---|---|---|---|
+| `tr-s10002` | 29 | 14 171 770 | 0 | 14 200 | 0 | 1 484 | 0 |
+| `ca-s10002-tamanho` | 40 | 34 260 230 | 0 | 29 000 | 0 | 775 | 0 |
+| `ca-s10002-unigrama` | ver §3.3 | | | | | | |
+
+Todos os registros têm `hashes.json`/`fontes` com o hash das fontes do pacote no momento da execução, contadores determinísticos separados das medições de tempo e memória, e os certificados de procedência das entradas de biblioteca. Semente de dados única nos registros de transferência e currículo: 10002 (a do documento 05, para comparação direta); sementes da replicação: 10003–10006. Sementes exploratórias usadas até agora: 10001–10006. Buckets 50–99: intocados.
+
+### 7.2 Comandos
+
+```bash
+python3 -m unittest discover -s fedro_piloto/tests -v        # 243 testes, ≈ 8 min
+python3 -m fedro_piloto.verificacao --run runs/<id>            # verificacao.json (regimes de §1.1)
+python3 -m fedro_piloto.replicacao --id rep-1 --sementes 10003,10004,10005,10006 --politicas tamanho,unigrama --B 20000 --processos 4
+python3 -m fedro_piloto.curriculo_autodirigido --id ca-s10002-tamanho --semente 10002 --G 240000 --B-max 20000 --politica tamanho --seletores autodirigido,aleatorio,manual --aprendizes L-lib+f,L-fix --sementes-aleatorio 1,2,3 --processos 2
+python3 -m fedro_piloto.transferencia --id tr-s10002 --semente 10002 --B 20000 --politicas tamanho,unigrama --processos 2
+python3 -m fedro_piloto.familias_transferencia                 # hash da especificação, tamanhos, verificação das referências DSL
+```
+
+Re-análise dos registros do documento 05 com o veredito novo (gravada como `analise_v2`):
+
+```bash
+python3 -c "import json,io; from fedro_piloto import experimento_minimo as EM
+for r in ('em-s10002-tamanho','em-s10002-unigrama'):
+    d=json.load(io.open(f'runs/{r}/deterministico.json',encoding='utf-8'))
+    print(r, EM.analisar({k:{'deterministico':v} for k,v in d['bracos'].items()}, EM.ConfigEM())['criterio_central']['veredito'])"
+```
+
+### 7.3 Desvios e incidentes
+
+1. O programa de referência na DSL para LinhaOcupada foi corrigido **antes** do congelamento da família (§4.1); o hash anterior (`f0085ade…`) nunca foi usado numa execução de avaliação.
+2. A primeira execução do currículo autodirigido abortou porque a semente do seletor aleatório passava pela guarda de sementes de dados (`rng_derivado` exige o intervalo do piloto). A semente do seletor passou a ser própria (`random.Random("curriculo|<seletor>|<semente>")`), separada das sementes de dados; a execução foi relançada do zero e a falha de um braço passou a ser registada em vez de derrubar o Pool. Nenhum resultado da execução abortada foi usado.
+3. A condição 4 do veredito foi corrigida depois de se ter observado que a sua primeira versão avaliava tarefas anteriores à intervenção de controlo (§1.2). A correção é de aplicabilidade, não de limiar, e está registada aqui para que não seja confundida com um ajuste a posteriori do critério: a versão anterior dava veredito falso por artefacto; a atual exige os mesmos controlos, na tarefa certa.
+4. As execuções de replicação, currículo e transferência correram em paralelo na mesma máquina (4 núcleos); os tempos de parede não são comparáveis entre registros, e só os contadores determinísticos devem ser usados em comparações.
+5. A política unigrama do currículo autodirigido (§3.3) foi executada por completude; o seu custo (≈ 50 min de parede) é o maior gasto adicional deste documento. Nenhum orçamento por tarefa foi aumentado além do B = 20 000 do documento 05.
