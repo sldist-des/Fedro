@@ -122,7 +122,13 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 130 | 240,463,507 / 66236 | 80,561 / 45 | 4,180 / 0 | 65,995 / 28 | 335 |
+
+Hipóteses com erro de previsão: zero/unigrama/L-lib+f/lesao/bx:contemTodasPretas; ocultos do autor com erro: [('zero/unigrama/L-lib+f/lesao', 'contemTodasPretas', 28)]
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:A -->
 
 ### 3.1 Desempenho absoluto
@@ -311,6 +317,66 @@ Verificação pós-execução:
 <!-- /TABELAS:C8 -->
 
 <!-- TABELAS:C9 -->
+### Registro `bx-grades-e0-independente-v1-C-s10009`
+
+Pacote grades-e0-independente v1, hash `9e600a4155844bc4…`; semente 10009; B = 20000; modos ['zero']; k_reservatorio = 40; parede total 1173 s.
+
+| braço | aceitas | custo prévio | custo benchmark | custo cumulativo | custo por aceita | tarefas com reuso | entradas descobertas (reutilizadas) | livro fecha | inválidas |
+|---|---|---|---|---|---|---|---|---|---|
+| zero/tamanho/L-fix | 15/28 | 0.0 M | 1870.9 M | 1870.9 M | 124.7 M | 0 | 0 (0) | True | 0 |
+| zero/tamanho/L-lib+f | 16/28 | 0.0 M | 1548.6 M | 1548.6 M | 96.8 M | 5 | 19 (6) | True | 0 |
+| zero/unigrama/L-fix | 17/28 | 0.0 M | 1894.0 M | 1894.0 M | 111.4 M | 0 | 0 (0) | True | 0 |
+| zero/unigrama/L-lib+f | 17/28 | 0.0 M | 2554.2 M | 2554.2 M | 150.2 M | 6 | 21 (7) | True | 0 |
+
+| comparação | positivas | negativas | neutras | inconclusivas | com reuso |
+|---|---|---|---|---|---|
+| zero/tamanho/L-lib+f vs zero/tamanho/L-fix | 4 | 13 | 0 | 11 | 5 |
+| zero/unigrama/L-lib+f vs zero/unigrama/L-fix | 4 | 14 | 0 | 10 | 6 |
+
+| lesão | tarefas após a lesão | aceitas L-lib+f | aceitas lesão | custo L-lib+f | custo lesão | entradas removidas | sensível |
+|---|---|---|---|---|---|---|---|
+
+Tarefas aceitas a custo cumulativo igual (para cada aceitação de L-lib+f ao custo C, aceitas de L-lib+f vs de L-fix com custo ≤ C):
+- zero/tamanho/L-lib+f vs zero/tamanho/L-fix: ultimaLinha C=0.1 M → 1 vs 1; contidoEm C=0.9 M → 2 vs 2; vizinhosPretos C=7.7 M → 3 vs 3; todaLinhaTemPreta C=10.9 M → 4 vs 5; complementoDe C=11.0 M → 5 vs 5; pretasPorColunas C=13.2 M → 6 vs 7; intersecaoOrdenada C=15.0 M → 7 vs 7; contemTodasPretas C=15.1 M → 8 vs 7; colunaVazia C=50.6 M → 9 vs 9; naBorda C=93.6 M → 10 vs 13; linhaDaPosicao C=104.0 M → 11 vs 13; juntarSemRepetir C=119.1 M → 12 vs 13; brancasDaLista C=124.5 M → 13 vs 13; linhaTemPretaEm C=399.8 M → 14 vs 14; tocaPreta C=722.9 M → 15 vs 14; semPretasAdjacentes C=972.2 M → 16 vs 14
+- zero/unigrama/L-lib+f vs zero/unigrama/L-fix: ultimaLinha C=0.1 M → 1 vs 1; contidoEm C=2.6 M → 2 vs 2; vizinhosPretos C=34.2 M → 3 vs 3; todaLinhaTemPreta C=44.7 M → 4 vs 6; complementoDe C=44.8 M → 5 vs 6; pretasPorColunas C=58.5 M → 6 vs 8; intersecaoOrdenada C=60.3 M → 7 vs 8; contemTodasPretas C=60.4 M → 8 vs 8; colunaVazia C=139.9 M → 9 vs 9; naBorda C=303.8 M → 10 vs 14; linhaDaPosicao C=316.3 M → 11 vs 14; juntarSemRepetir C=350.9 M → 12 vs 14; brancasDaLista C=355.5 M → 13 vs 14; linhaTemPretaEm C=669.6 M → 14 vs 15; mesmoConjunto C=978.7 M → 15 vs 15; tocaPreta C=1057.8 M → 16 vs 17; semPretasAdjacentes C=1450.1 M → 17 vs 17
+
+Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese entre parênteses; classe de transferência com razão exata ×, ou limite inferior ≥× quando L-fix não aceita):
+
+| tarefa | tamanho: L-lib+f | L-fix | classe | unigrama: L-lib+f | L-fix | classe |
+|---|---|---|---|---|---|---|
+| ultimaLinha | ✔ 0.1 M (5) | ✔ 0.1 M (5) | negativa ×1.00 | ✔ 0.1 M (5) | ✔ 0.1 M (5) | negativa ×1.00 |
+| contidoEm | ✔ 0.9 M (6) | ✔ 0.9 M (6) | negativa ×1.00 | ✔ 2.5 M (6) | ✔ 2.5 M (6) | negativa ×1.00 |
+| vizinhosPretos | ✔ 6.8 M (8) | ✔ 6.0 M (8) | negativa ×0.88 | ✔ 31.6 M (8) | ✔ 23.9 M (8) | negativa ×0.76 |
+| todaLinhaTemPreta | ✔ 3.2 M (7) | ✔ 2.2 M (7) | negativa ×0.70 | ✔ 10.5 M (7) | ✔ 8.2 M (7) | negativa ×0.78 |
+| complementoDe | ✔ 0.0 M (4) | ✔ 0.0 M (4) | negativa ×0.92 | ✔ 0.1 M (4) | ✔ 0.0 M (4) | negativa ×0.92 |
+| pretasPorColunas | ✔ 2.2 M (7) | ✔ 1.9 M (7) | negativa ×0.86 | ✔ 13.7 M (7) | ✔ 9.5 M (7) | negativa ×0.69 |
+| intersecaoOrdenada | ✔ 1.9 M (6) | ✔ 1.6 M (6) | negativa ×0.85 | ✔ 1.9 M (6) | ✔ 1.7 M (6) | negativa ×0.88 |
+| contemTodasPretas | ✔ 0.1 M (4) reuso abs2 | ✔ 3.6 M (7) | positiva ×48.15 | ✔ 0.0 M (4) reuso abs2,abs5 | ✔ 5.3 M (7) | positiva ×137.54 |
+| colunaVazia | ✔ 35.5 M (8) | ✔ 13.0 M (8) | negativa ×0.37 | ✔ 79.6 M (8) | ✔ 21.7 M (8) | negativa ×0.27 |
+| naBorda | ✔ 43.0 M (9) | ✔ 31.1 M (9) | negativa ×0.72 | ✔ 163.8 M (9) | ✔ 106.3 M (9) | negativa ×0.65 |
+| linhaDaPosicao | ✔ 10.4 M (8) | ✔ 6.0 M (8) | negativa ×0.58 | ✔ 12.5 M (8) | ✔ 5.7 M (8) | negativa ×0.45 |
+| juntarSemRepetir | ✔ 15.1 M (7) | ✔ 7.0 M (7) | negativa ×0.46 | ✔ 34.6 M (7) | ✔ 14.6 M (7) | negativa ×0.42 |
+| brancasDaLista | ✔ 5.4 M (6) reuso abs4,abs7 | ✔ 0.8 M (6) | negativa ×0.15 | ✔ 4.6 M (6) reuso abs4,abs5,abs7 | ✔ 0.4 M (6) | negativa ×0.09 |
+| diferencaSimetrica | ✘ 118.8 M | ✘ 89.7 M | inconclusiva | ✘ 118.8 M | ✔ 97.3 M (9) | negativa |
+| pretasOrdemInversa | ✘ 63.1 M | ✘ 81.7 M | inconclusiva | ✘ 106.8 M | ✘ 129.6 M | inconclusiva |
+| algumaLinhaCheia | ✘ 79.6 M | ✔ 61.1 M (9) | negativa | ✘ 84.7 M | ✘ 134.5 M | inconclusiva |
+| linhaTemPretaEm | ✔ 13.8 M (8) reuso abs11 | ✘ 161.3 M | positiva ≥×11.7 | ✔ 3.8 M (8) reuso abs11 | ✔ 57.4 M (11) | positiva ×15.11 |
+| semPretaIsolada | ✘ 91.8 M | ✘ 139.3 M | inconclusiva | ✘ 100.4 M | ✘ 135.9 M | inconclusiva |
+| colunasBrancas | ✘ 72.7 M | ✘ 78.4 M | inconclusiva | ✘ 114.4 M | ✘ 121.3 M | inconclusiva |
+| mesmoConjunto | ✘ 100.7 M | ✘ 199.5 M | inconclusiva | ✔ 94.3 M (9) reuso abs2,abs7 | ✔ 135.9 M (10) | positiva ×1.44 |
+| tocaPreta | ✔ 58.0 M (8) reuso abs3 | ✔ 92.5 M (9) | positiva ×1.60 | ✔ 79.1 M (8) reuso abs3 | ✔ 35.1 M (9) | negativa ×0.44 |
+| bordaPreta | ✘ 82.9 M | ✘ 80.1 M | inconclusiva | ✘ 130.6 M | ✘ 124.1 M | inconclusiva |
+| vizinhancaExterna | ✘ 163.9 M | ✘ 116.7 M | inconclusiva | ✘ 257.9 M | ✘ 77.9 M | inconclusiva |
+| semPretasAdjacentes | ✔ 2.4 M (6) reuso abs18 | ✘ 139.2 M | positiva ≥×57.6 | ✔ 3.8 M (6) reuso abs20,abs5 | ✘ 135.9 M | positiva ≥×35.5 |
+| cruzDaPosicao | ✘ 185.0 M | ✘ 137.5 M | inconclusiva | ✘ 362.6 M | ✘ 117.2 M | inconclusiva |
+| pretasEmDomino | ✘ 94.9 M | ✘ 139.2 M | inconclusiva | ✘ 192.6 M | ✘ 135.9 M | inconclusiva |
+| pretasConexas | ✘ 108.0 M | ✘ 139.3 M | inconclusiva | ✘ 179.8 M | ✘ 135.9 M | inconclusiva |
+| componenteDe | ✘ 188.6 M | ✘ 141.2 M | inconclusiva | ✘ 369.2 M | ✘ 120.2 M | inconclusiva |
+
+Verificação pós-execução:
+
+(verificação ainda não executada)
+<!-- /TABELAS:C9 -->
 
 <!-- LEITURA:C -->
 
