@@ -1,0 +1,16 @@
+{
+ "algoritmo": "sha256 das linhas '<caminho>  <sha256 do ficheiro>' ordenadas, excluindo MANIFESTO.json",
+ "arquivos": {
+  "notas-do-autor.md": "b00e7c24db96065fc1d8ca6506b0af89630768fc1e4f8a9dd0e01aa8758820bb",
+  "referencias.py": "65fb13e7f573bf065b4dc10f48067cd2498eb705c4e02dc1425f850678c1c59d",
+  "tarefas.json": "e1e461182604c39e6fb6168994fcd5e6cf1ac55394683711fd66612676fdc214",
+  "testemunhas.json": "824bc6dd36d253d490641e2cb26864546b392ef7702a5788081db627370b099e",
+  "testes_ocultos.json": "a3a178cafa68b197a4c1bb62bdd9a4a848331a07391163d94f2d5a4084175d93"
+ },
+ "autor": "autor externo independente (benchmark construído só a partir do contrato público v1.0 e do kit)",
+ "congelado_em": "2026-10-30T17:29:27+00:00",
+ "hash_pacote": "9e600a4155844bc44f5c815d451a209954b5b6194bf8e4b21ecf66dd658729f8",
+ "nome": "grades-e0-independente",
+ "num_tarefas": 28,
+ "versao": "1"
+}
