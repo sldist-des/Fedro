@@ -1079,6 +1079,8 @@ class ContadorBusca:
     enumeracao_passos: int = 0
     refinamentos_oe: int = 0
     grades_extra_oe: int = 0
+    #: maior tamanho (custo) de termo carregado na busca: sinal legítimo para seleção de tarefas (documento 06)
+    tamanho_max_carregado: int = 0
 
     @property
     def custo(self) -> int:
@@ -1259,6 +1261,7 @@ class EstadoBusca:
             contador.enumeracao_passos += self.enumeracao_passos() - p0
             contador.refinamentos_oe = self.refinamentos
             contador.grades_extra_oe = len(self.grades_extra)
+            contador.tamanho_max_carregado = max(contador.tamanho_max_carregado, self.tamanho_carregado)
 
 
 def buscar(tabela: Tabela, tipo: Tipo, exemplos: Sequence[Tuple[object, object]], orcamento: Optional[int],

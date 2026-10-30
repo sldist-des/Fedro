@@ -18,9 +18,12 @@ da mesma semente; mesma política de busca; só a biblioteca muda):
   L-lib+f          L-lib + promoção das soluções de tarefas de função a entradas de biblioteca
   L-lib+f/lesao    L-lib+f até T2; LESÃO (remove as entradas descobertas); depois T3, T4
   L-lib+f/controle L-lib+f no currículo não relacionado U1, U2, depois T3, T4
-  L-fix/custo-igual L-fix só em T3, com orçamento = B + (custo cumulativo de L-lib+f antes de T3 −
-                   custo cumulativo de L-fix antes de T3), se positivo
-  L-fix/10x        L-fix só em T3 com 10·B (sonda de limite)
+  L-fix/orcamento-extra  SONDA: L-fix só em T3, com orçamento B + (enumeração cumulativa de L-lib+f
+                   antes de T3 − a de L-fix), se positivo. NÃO preserva o histórico: não é "custo igual".
+  L-fix/sonda-10x  SONDA: L-fix só em T3 com 10·B (limite de orçamento por tarefa).
+A comparação a CUSTO CUMULATIVO IGUAL, que preserva o histórico, é feita nas curvas (analisar):
+para cada ponto em que L-lib+f aceita uma tarefa, quantas tarefas L-fix tinha aceitado com o mesmo
+custo cumulativo total.
 
 Tudo determinístico por semente; medições de tempo e memória em bloco separado. Nenhum resultado
 aqui é evidência para H-B1: dados e hiperparâmetros expostos (documento 03, §0 e §11).
@@ -226,9 +229,39 @@ def _cum_antes(curva: List[dict], tid: str, campo: str = "cumulativo_enumeracao"
     return cum
 
 
+def custo_cumulativo_igual(curva_lib: List[dict], curva_fix: List[dict]) -> List[dict]:
+    """Comparação que PRESERVA o histórico: para cada tarefa aceita por L-lib+f, com custo cumulativo
+    total C, quantas tarefas L-fix tinha aceitado quando o seu custo cumulativo atingiu C (contando a
+    tarefa em curso como não aceita até o seu fim)."""
+    out = []
+    for x in curva_lib:
+        if not x["aceita"]:
+            continue
+        C = x["cumulativo"]
+        aceitas_fix = sum(1 for y in curva_fix if y["aceita"] and y["cumulativo"] <= C)
+        aceitas_lib = sum(1 for y in curva_lib if y["aceita"] and y["cumulativo"] <= C)
+        out.append({"tarefa": x["tarefa"], "custo_cumulativo": C, "aceitas_L-lib+f": aceitas_lib,
+                    "aceitas_L-fix_ao_mesmo_custo": aceitas_fix})
+    return out
+
+
+def _fechamento_livro(det_braco: dict) -> dict:
+    """Custo total verificável: recompõe o cumulativo final a partir das entradas do livro-razão."""
+    livro = det_braco.get("livro", {})
+    ent = livro.get("entradas", [])
+    soma = sum(e.get("total_aprendiz", 0) for e in ent)
+    curva = det_braco.get("curva", [])
+    final = curva[-1]["cumulativo"] if curva else 0
+    return {"soma_livro": soma, "cumulativo_curva": final, "fecha": soma == final}
+
+
 def analisar(bracos: Dict[str, dict], cfg: ConfigEM) -> dict:
-    """Critério central (documento 05): abstração encontrada pelo aprendiz, reutilizada numa tarefa
-    posterior inédita, com proveniência verificável, e economia em relação a L-fix a custo equivalente."""
+    """Critério central (documento 05, corrigido no documento 06): (1) abstração encontrada pelo aprendiz
+    e REUTILIZADA numa tarefa posterior inédita; (2) PROCEDÊNCIA: entrada com proveniência 'descoberta',
+    método registrado e tarefa de origem distinta da de reuso; (3) CUSTO TOTAL VERIFICÁVEL: o cumulativo
+    da curva fecha com o livro-razão; (4) CONTROLES: a lesão e o currículo não relacionado não resolvem a
+    tarefa de reuso, ou resolvem-na a custo maior; (5) comparação a custo cumulativo igual com L-fix,
+    preservando o histórico. O veredito é verdadeiro só com as cinco condições."""
     out: Dict[str, dict] = {}
     for nome, d in bracos.items():
         det = d["deterministico"]
@@ -246,21 +279,64 @@ def analisar(bracos: Dict[str, dict], cfg: ConfigEM) -> dict:
                                          if a.get("reutilizacoes_indiretas")},
                      "testes_degenerados": [x["tarefa"] for x in det["curva"] if x["aceita"] and x["teste"].get("degenerado")],
                      "curva": [(x["tarefa"], x["aceita"], x["cumulativo"]) for x in det["curva"]]}
-    crit = {"abstracao_descoberta_e_reutilizada_em_tarefa_inedita": False, "braco": None, "detalhe": ""}
+    crit: dict = {"veredito": False, "braco": None, "condicoes": {}}
     for nome in ("L-lib+f", "L-lib"):
-        if nome in out and out[nome]["reuso_em_solucoes_aceitas"]:
-            tarefas_reuso = out[nome]["reuso_em_solucoes_aceitas"]
-            # inédita = não é tarefa de origem de nenhuma entrada usada
-            abst = {a["nome"]: a for a in bracos[nome]["deterministico"]["abstracoes"]}
-            ineditas = {t: cs for t, cs in tarefas_reuso.items()
-                        if all(t not in abst[c]["tarefas_origem"] for c in cs if c in abst)}
-            if ineditas:
-                fix_ok = {t: any(x["tarefa"] == t and x["aceita"] for x in bracos.get("L-fix", {"deterministico": {"curva": []}})["deterministico"]["curva"])
-                          for t in ineditas}
-                crit = {"abstracao_descoberta_e_reutilizada_em_tarefa_inedita": True, "braco": nome,
-                        "tarefas": ineditas, "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": fix_ok,
-                        "detalhe": "verificar também L-fix/custo-igual e L-fix/10x abaixo"}
-                break
+        if nome not in out or not out[nome]["reuso_em_solucoes_aceitas"]:
+            continue
+        det = bracos[nome]["deterministico"]
+        abst = {a["nome"]: a for a in det["abstracoes"]}
+        tarefas_reuso = out[nome]["reuso_em_solucoes_aceitas"]
+        # (1) inédita = não é tarefa de origem de nenhuma entrada usada
+        ineditas = {t: cs for t, cs in tarefas_reuso.items()
+                    if all(t not in abst[c]["tarefas_origem"] for c in cs if c in abst)}
+        c1 = bool(ineditas)
+        # (2) procedência
+        c2 = all(abst[c]["proveniencia"] == "descoberta" and abst[c]["metodo"] and abst[c]["tarefas_origem"]
+                 for cs in ineditas.values() for c in cs if c in abst) and c1
+        # (3) custo total verificável
+        fech = _fechamento_livro(det)
+        c3 = fech["fecha"]
+        # (4) controles: lesão e currículo não relacionado na(s) tarefa(s) de reuso
+        def custo_em(braco_nome, t):
+            b = bracos.get(braco_nome)
+            if not b:
+                return None
+            for y in b["deterministico"]["curva"]:
+                if y["tarefa"] == t:
+                    return {"aceita": y["aceita"], "custo": y["custo_aprendiz"]}
+            return None
+        ctr = {}
+        for t in ineditas:
+            mine = custo_em(nome, t)
+            for cn in ("L-lib+f/lesao", "L-lib+f/controle"):
+                b = bracos.get(cn)
+                if not b:
+                    continue
+                dcn = b["deterministico"]
+                # o controle só se aplica a tarefas tentadas DEPOIS da sua intervenção: lesão antes de t
+                # (evento registrado), ou t no currículo do braço de controle não relacionado
+                aplicavel = (cn == "L-lib+f/controle" and t in dcn["curriculo"]) or \
+                            (cn == "L-lib+f/lesao" and any(ev.get("antes_de") == t and "lesao" in ev for ev in dcn.get("eventos", [])))
+                if not aplicavel:
+                    continue
+                r = custo_em(cn, t)
+                ctr[f"{cn}:{t}"] = None if r is None else {
+                    "aceita": r["aceita"], "custo": r["custo"],
+                    "pior_que_" + nome: (not r["aceita"]) or r["custo"] > mine["custo"]}
+        c4 = bool(ctr) and all(v is not None and v["pior_que_" + nome] for v in ctr.values())
+        # (5) custo cumulativo igual contra L-fix
+        cci = custo_cumulativo_igual(det["curva"], bracos.get("L-fix", {"deterministico": {"curva": []}})["deterministico"]["curva"])
+        c5 = bool(cci) and all(x["aceitas_L-lib+f"] > x["aceitas_L-fix_ao_mesmo_custo"] for x in cci if x["tarefa"] in ineditas)
+        crit = {"veredito": c1 and c2 and c3 and c4 and c5, "braco": nome,
+                "condicoes": {"1_reuso_em_tarefa_inedita": c1, "2_procedencia": c2, "3_custo_total_verificavel": c3,
+                              "4_controles_piores": c4, "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": c5},
+                "tarefas_de_reuso": ineditas, "fechamento": fech, "controles": ctr, "custo_cumulativo_igual": cci,
+                "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+                    t: any(x["tarefa"] == t and x["aceita"] for x in bracos.get("L-fix", {"deterministico": {"curva": []}})["deterministico"]["curva"])
+                    for t in ineditas},
+                "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico"}
+        if crit["veredito"]:
+            break
     return {"por_braco": out, "criterio_central": crit}
 
 
@@ -277,10 +353,11 @@ def executar(cfg: ConfigEM, pasta: str) -> dict:
         cf = _cum_antes(bracos["L-fix"]["deterministico"]["curva"], "ParAdjacente")
         cl = _cum_antes(bracos["L-lib+f"]["deterministico"]["curva"], "ParAdjacente")
         delta = cl - cf
-        plano = {"L-fix/custo-igual": {"ParAdjacente": cfg.B + max(0, delta)}, "L-fix/10x": {"ParAdjacente": 10 * cfg.B}}
+        plano = {"L-fix/orcamento-extra": {"ParAdjacente": cfg.B + max(0, delta)}, "L-fix/sonda-10x": {"ParAdjacente": 10 * cfg.B}}
         sondas["plano"] = {"cumulativo_enumeracao_antes_T3": {"L-fix": cf, "L-lib+f": cl}, "delta": delta,
                            "B_T3": {k: v["ParAdjacente"] for k, v in plano.items()},
-                           "nota": "delta <= 0 significa que L-fix já gastou mais que L-lib+f antes de T3; a sonda roda com B"}
+                           "nota": "SONDAS de orçamento numa única tarefa; não preservam o histórico de aprendizagem "
+                                   "e não são comparação a custo igual (ver analise.custo_cumulativo_igual)"}
         js = [(job_braco, (k, cfg, v, ["ParAdjacente"])) for k, v in plano.items()]
         rs = _executar(js, min(cfg.processos, 2))
         for (k, _), r in zip(plano.items(), rs):
@@ -337,7 +414,7 @@ def relatorio_md(det: dict, med: dict) -> str:
         for ev in b.get("eventos", []):
             L.append(f"- {nome}: evento {json.dumps(ev, ensure_ascii=False)[:300]}")
     L.append("")
-    L.append("## Sondas de custo igual")
+    L.append("## Sondas de orçamento (não são custo igual; não preservam o histórico)")
     L.append("```\n" + json.dumps(det.get("sondas"), ensure_ascii=False, indent=1) + "\n```")
     L.append("## Auditoria OE dos alvos (tabela base)")
     L.append("```\n" + json.dumps(det.get("auditoria_oe"), ensure_ascii=False, indent=1) + "\n```")

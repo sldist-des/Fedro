@@ -1,0 +1,212 @@
+"""Verificação das hipóteses aceitas de uma execução (documento 06, missão 1).
+
+Três regimes, sempre reportados separadamente:
+  1. EXAUSTIVO SOBRE GRADES, n = 1..4: todas as 2^(n²) grades. Para predicados é exaustivo no domínio.
+     Para tarefas de função, exaustivo sobre as grades e sobre a BATERIA DE ARGUMENTOS do ambiente
+     (entradas_da_grade): a bateria é uma amostra finita do domínio de listas, logo o regime chama-se
+     "exaustivo em grades, bateria finita de argumentos" e não "exaustivo".
+  2. AMOSTRAL EM DIMENSÕES NOVAS, n = 5..9, partição teste_ext (baldes 40–49, nunca usados no treino
+     nem no teste interno): distribuição natural (mistura de Bernoulli) e, para predicados, positivos
+     construtivos com negativos emparelhados em densidade (distribuição de desenho).
+  3. Para cada regime: acurácia, acurácia balanceada (quando há as duas classes), contagens por classe
+     e marca de conjunto degenerado.
+As constantes de biblioteca das hipóteses são expandidas pelos corpos registrados (inclusive os de
+entradas depois lesionadas). As referências usadas são as do AMBIENTE (Python), nunca programas manuais.
+Uso: python3 -m fedro_piloto.verificacao --run runs/em-s10002-tamanho [--ns-amostral 5,6,7,8,9] [--k 40]
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from typing import Dict, List, Optional, Sequence
+
+from . import aprendizes as A
+from . import geradores as G
+from .avaliador import Contador, Contexto, OrcamentoEsgotado, aplicar, compilar
+from .dsl import BASES, Termo, parse
+from .grade import Grade, todas_as_grades
+from .referencias import REGISTRO
+
+PARTICAO_NOVAS_DIMENSOES = "teste_ext"
+
+
+def expandir_entradas(t: Termo, corpos: Dict[str, Termo]) -> Termo:
+    """Substitui recursivamente as constantes de biblioteca pelos seus corpos (termos fechados)."""
+    if t[0] == "c" and t[1] in corpos:
+        return expandir_entradas(corpos[t[1]], corpos)
+    if t[0] == "ap":
+        return ("ap", expandir_entradas(t[1], corpos), expandir_entradas(t[2], corpos))
+    if t[0] == "lam":
+        return ("lam", t[1], t[2], expandir_entradas(t[3], corpos))
+    if t[0] == "fix":
+        return ("fix", t[1], expandir_entradas(t[2], corpos))
+    return t
+
+
+def corpos_do_braco(braco: dict) -> Dict[str, Termo]:
+    """Corpos das entradas de biblioteca do braço, incluindo entradas removidas por lesão (eventos)."""
+    corpos = {a["nome"]: parse(a["corpo"]) for a in braco.get("abstracoes", [])}
+    for ev in braco.get("eventos", []):
+        for a in ev.get("lesao", []) or []:
+            corpos.setdefault(a["nome"], parse(a["corpo"]))
+    return corpos
+
+
+def tarefa_por_id(tid: str) -> A.Tarefa:
+    from .experimento_minimo import TAREFAS
+    if tid in TAREFAS:
+        return TAREFAS[tid]
+    try:
+        from .familias_transferencia import TAREFAS as TT
+        if tid in TT:
+            return TT[tid]
+    except ImportError:
+        pass
+    return A.TAREFAS_POR_ID[tid]
+
+
+def _avaliar(ev, tabela, tarefa, args, orcamento_passos: int):
+    c = Contador(orcamento_passos)
+    try:
+        return aplicar(ev({}, Contexto(A.n_semantica(tarefa, args), c, tabela)), *args), c.passos, False
+    except OrcamentoEsgotado:
+        return None, c.passos, True
+
+
+def _resumo(pares: List[tuple]) -> dict:
+    """pares = [(esperado, obtido, indefinido)]. Acurácia, balanceada, contagens por classe."""
+    por: Dict[str, List[int]] = {}
+    indef = 0
+    for esperado, obtido, ind in pares:
+        k = str(esperado) if isinstance(esperado, bool) else "saida"
+        por.setdefault(k, [0, 0])
+        por[k][1] += 1
+        if ind:
+            indef += 1
+        elif obtido == esperado:
+            por[k][0] += 1
+    n = sum(t for _, t in por.values())
+    acertos = sum(a for a, _ in por.values())
+    classes = {k: {"acertos": a, "total": t} for k, (a, t) in sorted(por.items())}
+    degenerado = len(por) < 2
+    bal = None if degenerado or n == 0 else sum(a / t for a, t in por.values()) / len(por)
+    return {"n": n, "erros": n - acertos, "acuracia": (acertos / n) if n else None,
+            "acuracia_balanceada": bal, "por_classe": classes, "degenerado": degenerado,
+            "indefinidas_por_orcamento": indef}
+
+
+def verificar_exaustivo(termo: Termo, tarefa: A.Tarefa, ns: Sequence[int] = (1, 2, 3, 4),
+                        tabela=None, orcamento_passos: int = 2_000_000) -> dict:
+    """Regime 1. Grades exaustivas; para funções, toda a bateria de argumentos de cada grade."""
+    tabela = tabela or BASES["E0"].para_aprendiz()
+    ev = compilar(termo)
+    por_n = {}
+    for n in ns:
+        pares = []
+        grades = 0
+        for g in todas_as_grades(n):
+            grades += 1
+            for args in A.entradas_da_grade(tarefa, g):
+                esperado = A.saida_referencia(tarefa, args)
+                v, _, ind = _avaliar(ev, tabela, tarefa, args, orcamento_passos)
+                pares.append((esperado, v, ind))
+        r = _resumo(pares)
+        r["grades"] = grades
+        por_n[n] = r
+    total = sum(r["n"] for r in por_n.values())
+    erros = sum(r["erros"] for r in por_n.values())
+    return {"regime": ("exaustivo em grades (n ≤ 4)" if tarefa.natureza == "predicado"
+                       else "exaustivo em grades (n ≤ 4), bateria finita de argumentos do ambiente"),
+            "bateria_argumentos": tarefa.natureza == "funcao", "por_n": por_n,
+            "entradas": total, "erros": erros}
+
+
+def validar_amostral(termo: Termo, tarefa: A.Tarefa, ns: Sequence[int] = (5, 6, 7, 8, 9), k: int = 40,
+                     semente: int = 10_002, particao: str = PARTICAO_NOVAS_DIMENSOES, tabela=None,
+                     orcamento_passos: int = 5_000_000) -> dict:
+    """Regime 2. Por n: k grades naturais da partição (funções: até 4 entradas da bateria por grade) e,
+    para predicados, k/2 positivos construtivos com negativos emparelhados (desenho)."""
+    tabela = tabela or BASES["E0"].para_aprendiz()
+    ev = compilar(termo)
+    out = {}
+    for n in ns:
+        rng = G.rng_derivado(semente, "verificacao:amostral", tarefa.id, n)
+        cg = G.ContadorGeracao()
+        pares_nat = []
+        for _ in range(k):
+            g = G.amostra_natural(n, rng, particao=particao, contador=cg)
+            ents = A.entradas_da_grade(tarefa, g)
+            if tarefa.natureza != "predicado":
+                ents = [ents[i] for i in sorted(rng.sample(range(len(ents)), min(4, len(ents))))]
+            for args in ents:
+                v, _, ind = _avaliar(ev, tabela, tarefa, args, orcamento_passos)
+                pares_nat.append((A.saida_referencia(tarefa, args), v, ind))
+        r = {"natural": _resumo(pares_nat), "grades_naturais": k}
+        if tarefa.natureza == "predicado":
+            c = REGISTRO[tarefa.conceito]
+            pares_des = []
+            pos = neg = 0
+            for _ in range(k // 2):
+                g = G.gerar_positivo(c, n, particao, rng, cg, tentativas=300)
+                if g is None:
+                    continue
+                v, _, ind = _avaliar(ev, tabela, tarefa, (g,), orcamento_passos)
+                pares_des.append((True, v, ind)); pos += 1
+                par = G.negativo_emparelhado(g, c, rng, particao, "auto", cg)
+                if par is not None:
+                    v, _, ind = _avaliar(ev, tabela, tarefa, (par[0],), orcamento_passos)
+                    pares_des.append((False, v, ind)); neg += 1
+            r["desenho"] = _resumo(pares_des)
+            r["desenho"]["positivos_construtivos"] = pos
+            r["desenho"]["negativos_emparelhados"] = neg
+        out[n] = r
+    return {"regime": f"amostral em dimensões novas (n = {min(ns)}..{max(ns)}), partição {particao}",
+            "por_n": out}
+
+
+def verificar_execucao(pasta: str, ns_amostral: Sequence[int] = (5, 6, 7, 8, 9), k: int = 40,
+                       exaustivo: bool = True) -> dict:
+    with open(os.path.join(pasta, "deterministico.json"), encoding="utf-8") as f:
+        d = json.load(f)
+    semente = int(d.get("config", {}).get("semente", 10_002))
+    tabela = BASES[d.get("config", {}).get("base", "E0")].para_aprendiz()
+    res = {"execucao": pasta, "hipoteses": [], "parametros": {"ns_amostral": list(ns_amostral), "k": k,
+                                                                 "particao": PARTICAO_NOVAS_DIMENSOES,
+                                                                 "semente": semente}}
+    for nome, b in d["bracos"].items():
+        corpos = corpos_do_braco(b)
+        rel = b.get("relatorio", {})
+        for x in rel.get("resultados", []):
+            if not x.get("aceita"):
+                continue
+            t = expandir_entradas(parse(x["hipotese"]), corpos)
+            tarefa = tarefa_por_id(x["tarefa_id"])
+            item = {"braco": nome, "tarefa": x["tarefa_id"], "hipotese": x["hipotese"],
+                    "entradas_expandidas": sorted(c for c in corpos if c in x["hipotese"])}
+            if exaustivo:
+                item["exaustivo"] = verificar_exaustivo(t, tarefa, tabela=tabela)
+            item["amostral"] = validar_amostral(t, tarefa, ns_amostral, k, semente, tabela=tabela)
+            res["hipoteses"].append(item)
+            print(nome, x["tarefa_id"], "| exaustivo erros:", item.get("exaustivo", {}).get("erros"),
+                  "| amostral:", {n: (r["natural"]["erros"], r.get("desenho", {}).get("erros"))
+                                  for n, r in item["amostral"]["por_n"].items()}, flush=True)
+    caminho = os.path.join(pasta, "verificacao.json")
+    with open(caminho, "w", encoding="utf-8") as f:
+        json.dump(res, f, ensure_ascii=False, indent=1, sort_keys=True, default=str)
+    return res
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Verificação exaustiva (n ≤ 4) e amostral (n = 5..9) das hipóteses aceitas")
+    ap.add_argument("--run", required=True)
+    ap.add_argument("--ns-amostral", default="5,6,7,8,9")
+    ap.add_argument("--k", type=int, default=40)
+    ap.add_argument("--sem-exaustivo", action="store_true")
+    a = ap.parse_args(argv)
+    ns = tuple(int(x) for x in a.ns_amostral.split(",") if x)
+    verificar_execucao(a.run, ns, a.k, exaustivo=not a.sem_exaustivo)
+
+
+if __name__ == "__main__":
+    main()

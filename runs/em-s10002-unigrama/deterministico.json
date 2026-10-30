@@ -239,6 +239,290 @@
    }
   }
  },
+ "analise_v2": {
+  "criterio_central": {
+   "L-fix_resolveu_a_mesma_tarefa_no_orcamento_B": {
+    "ParAdjacente": true,
+    "expandir": true
+   },
+   "braco": "L-lib+f",
+   "condicoes": {
+    "1_reuso_em_tarefa_inedita": true,
+    "2_procedencia": true,
+    "3_custo_total_verificavel": true,
+    "4_controles_piores": true,
+    "5_mais_tarefas_que_L-fix_a_custo_cumulativo_igual": true
+   },
+   "controles": {
+    "L-lib+f/controle:ParAdjacente": {
+     "aceita": false,
+     "custo": 259557946,
+     "pior_que_L-lib+f": true
+    },
+    "L-lib+f/lesao:ParAdjacente": {
+     "aceita": true,
+     "custo": 84396518,
+     "pior_que_L-lib+f": true
+    }
+   },
+   "custo_cumulativo_igual": [
+    {
+     "aceitas_L-fix_ao_mesmo_custo": 1,
+     "aceitas_L-lib+f": 1,
+     "custo_cumulativo": 6307825,
+     "tarefa": "vizPretos"
+    },
+    {
+     "aceitas_L-fix_ao_mesmo_custo": 1,
+     "aceitas_L-lib+f": 2,
+     "custo_cumulativo": 14636213,
+     "tarefa": "expandir"
+    },
+    {
+     "aceitas_L-fix_ao_mesmo_custo": 1,
+     "aceitas_L-lib+f": 3,
+     "custo_cumulativo": 28326647,
+     "tarefa": "ParAdjacente"
+    }
+   ],
+   "fechamento": {
+    "cumulativo_curva": 439063707,
+    "fecha": true,
+    "soma_livro": 439063707
+   },
+   "nota": "as sondas L-fix/orcamento-extra e L-fix/sonda-10x não entram no veredito: não preservam o histórico",
+   "tarefas_de_reuso": {
+    "ParAdjacente": [
+     "abs2"
+    ],
+    "expandir": [
+     "abs1"
+    ]
+   },
+   "veredito": true
+  },
+  "por_braco": {
+   "L-fix": {
+    "abstracoes": 0,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [
+     "vizPretos",
+     "expandir",
+     "ParAdjacente"
+    ],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "vizPretos",
+      true,
+      6307717
+     ],
+     [
+      "expandir",
+      true,
+      179579625
+     ],
+     [
+      "ParAdjacente",
+      true,
+      263976001
+     ],
+     [
+      "NenhumaIsolada",
+      false,
+      708483203
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {},
+    "testes_degenerados": []
+   },
+   "L-fix/10x": {
+    "abstracoes": 0,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [
+     "ParAdjacente"
+    ],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "ParAdjacente",
+      true,
+      350840773
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {},
+    "testes_degenerados": []
+   },
+   "L-fix/custo-igual": {
+    "abstracoes": 0,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "ParAdjacente",
+      false,
+      91826937
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {},
+    "testes_degenerados": []
+   },
+   "L-lib": {
+    "abstracoes": 2,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [
+     "vizPretos",
+     "expandir",
+     "ParAdjacente"
+    ],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "vizPretos",
+      true,
+      6307810
+     ],
+     [
+      "expandir",
+      true,
+      179580246
+     ],
+     [
+      "ParAdjacente",
+      true,
+      264427345
+     ],
+     [
+      "NenhumaIsolada",
+      false,
+      633506764
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {},
+    "testes_degenerados": []
+   },
+   "L-lib+f": {
+    "abstracoes": 2,
+    "abstracoes_reutilizadas": [
+     "abs1",
+     "abs2"
+    ],
+    "aceitas": [
+     "vizPretos",
+     "expandir",
+     "ParAdjacente"
+    ],
+    "cadeia_indireta": {
+     "abs1": {
+      "ParAdjacente": 1
+     }
+    },
+    "curva": [
+     [
+      "vizPretos",
+      true,
+      6307825
+     ],
+     [
+      "expandir",
+      true,
+      14636213
+     ],
+     [
+      "ParAdjacente",
+      true,
+      28326647
+     ],
+     [
+      "NenhumaIsolada",
+      false,
+      439063707
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {
+     "ParAdjacente": [
+      "abs2"
+     ],
+     "expandir": [
+      "abs1"
+     ]
+    },
+    "testes_degenerados": []
+   },
+   "L-lib+f/controle": {
+    "abstracoes": 2,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [
+     "pretasColuna1",
+     "semLinha1"
+    ],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "pretasColuna1",
+      true,
+      6154228
+     ],
+     [
+      "semLinha1",
+      true,
+      17622032
+     ],
+     [
+      "ParAdjacente",
+      false,
+      277179978
+     ],
+     [
+      "NenhumaIsolada",
+      false,
+      555776097
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {},
+    "testes_degenerados": []
+   },
+   "L-lib+f/lesao": {
+    "abstracoes": 0,
+    "abstracoes_reutilizadas": [],
+    "aceitas": [
+     "vizPretos",
+     "expandir",
+     "ParAdjacente"
+    ],
+    "cadeia_indireta": {},
+    "curva": [
+     [
+      "vizPretos",
+      true,
+      6307825
+     ],
+     [
+      "expandir",
+      true,
+      14636213
+     ],
+     [
+      "ParAdjacente",
+      true,
+      99032731
+     ],
+     [
+      "NenhumaIsolada",
+      false,
+      543539933
+     ]
+    ],
+    "reuso_em_solucoes_aceitas": {
+     "expandir": [
+      "abs1"
+     ]
+    },
+    "testes_degenerados": []
+   }
+  }
+ },
  "auditoria_oe": {
   "base:ParAdjacente": {
    "ate_custo": 8,
