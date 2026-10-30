@@ -1,0 +1,32 @@
+{
+ "L-lib+f:vizPretos": {
+  "hipotese": "(\\ (x0 Grade) (x1 Pos) (filtrar@P (celula x0) (vizinhos x0 x1)))",
+  "entradas_exaustivas_n1a4": 264258,
+  "erros": 0
+ },
+ "L-lib+f:expandir": {
+  "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (juntar (mapear@P>LP (abs1 x0) x1)))",
+  "entradas_exaustivas_n1a4": 264260,
+  "erros": 0
+ },
+ "L-lib+f:ParAdjacente": {
+  "hipotese": "(\\ (x0 Grade) (nao (vazia?@P (abs2 x0 (pretas x0)))))",
+  "entradas_exaustivas_n1a4": 66066,
+  "erros": 0
+ },
+ "L-fix/10x:ParAdjacente": {
+  "hipotese": "(\\ (x0 Grade) (algum@P (celula x0) (juntar (mapear@P>LP (vizinhos x0) (pretas x0)))))",
+  "entradas_exaustivas_n1a4": 66066,
+  "erros": 0
+ },
+ "L-lib+f/controle:pretasColuna1": {
+  "hipotese": "(\\ (x0 Grade) (x1 Pos) (filtrar@P (celula x0) (cabeca@LP (colunas x0))))",
+  "entradas_exaustivas_n1a4": 264258,
+  "erros": 0
+ },
+ "L-lib+f/controle:semLinha1": {
+  "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (linhas x0))))",
+  "entradas_exaustivas_n1a4": 264260,
+  "erros": 0
+ }
+}
