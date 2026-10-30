@@ -41,6 +41,7 @@ PARTICAO_TREINO = "oraculo_treino"
 PARTICAO_TESTE = "teste_int"
 #: hiperparâmetros (documento 02, 2.9: K = 12; B e limiar reduzidos/fixados no piloto exploratório)
 K_RODADAS = 12
+POLITICAS_BUSCA = ("tamanho", "unigrama")
 B_TAREFA = 20_000
 LIMIAR_COMPRESSAO = 3
 ORCAMENTO_PASSOS = 100_000
@@ -122,6 +123,11 @@ REFERENCIAS_FUNCAO: Dict[str, Callable] = {
     "descartar": lambda A, B: tuple(B[len(A):]),
     "noMaximo": lambda A, B: len(A) <= len(B),
     "mesmoNumero": lambda A, B: len(A) == len(B),
+    # documento 05 (experimento mínimo): vizinhança preta de um conjunto (um passo, SEM incluir S)
+    "expandir": lambda g, S: frozenset(q for s in S for q in g.vizinhos(s) if g.celula(q)),
+    # controles de currículo NÃO relacionado (documento 05): sem vizinhança
+    "pretasColuna1": lambda g, p: _pretos(g, [(i, 1) for i in range(1, g.n + 1)]),
+    "semLinha1": lambda g, S: frozenset(S) - {(1, j) for j in range(1, g.n + 1)},
 }
 
 _GP, _GL, _LL = FUN(GRADE, POS, LP), FUN(GRADE, LP, LP), FUN(LP, LP, LP)
@@ -640,6 +646,11 @@ class ResultadoTarefa:
     inconclusivo_recurso: bool = False
     #: contador INDEPENDENTE da compressão desta tarefa (ContadorCompressao), para conciliação com o livro
     compressao_subtermos: int = 0
+    #: resumo do conjunto de teste (documento 05, missão 3): classes presentes, acurácia balanceada e
+    #: se o conjunto é DEGENERADO (uma só classe / uma só saída): nesse caso a acurácia não é evidência
+    teste_resumo: dict = field(default_factory=dict)
+    #: custos de folha em vigor na busca desta tarefa (política de busca "unigrama"); {} = tamanho
+    custos_folha: dict = field(default_factory=dict)
 
     def como_dict(self) -> dict:
         return asdict(self)
@@ -683,9 +694,16 @@ class AprendizBase:
 
     def __init__(self, tabela: Tabela, livro: LivroRazao, B: int = B_TAREFA, K: int = K_RODADAS,
                  orcamento_passos: int = ORCAMENTO_PASSOS, s_max: int = S_MAX, rotulo_base: Optional[str] = None,
-                 kw_enumerador: Optional[dict] = None):
+                 kw_enumerador: Optional[dict] = None, politica_busca: str = "tamanho"):
         if tabela.uso == "base":
             tabela = tabela.para_aprendiz(f"{tabela.nome}/{self.nome}")
+        if politica_busca not in POLITICAS_BUSCA:
+            raise ValueError(f"política de busca inválida: {politica_busca!r}")
+        #: "tamanho": enumeração por tamanho; "unigrama": custo de folha 1 para constantes já usadas em
+        #: soluções aceitas DESTE aprendiz (e entradas da sua biblioteca), 2 para as demais. Igual para
+        #: L-fix e L-lib: isola o efeito da biblioteca (documento 05, missão 4).
+        self.politica_busca = politica_busca
+        self._constantes_usadas: set = set()
         exigir_tabela_de_descoberta(tabela)
         self.tabela = tabela
         self.livro = livro
@@ -712,17 +730,42 @@ class AprendizBase:
         return Hipotese(compilar(termo), tarefa, tabela, self.orcamento_passos)
 
     def _avaliar_teste(self, termo: Termo, tarefa: Tarefa, teste, tabela: Tabela) -> Tuple[float, int]:
+        acc, passos, _ = self._avaliar_teste_resumo(termo, tarefa, teste, tabela)
+        return acc, passos
+
+    def _avaliar_teste_resumo(self, termo: Termo, tarefa: Tarefa, teste, tabela: Tabela) -> Tuple[float, int, dict]:
+        """Acurácia, passos e RESUMO: por classe (predicados) ou por saída distinta (funções). Um
+        conjunto com uma só classe (ou uma só saída) é marcado degenerado: a acurácia nele não informa
+        generalização, e a acurácia balanceada é indefinida (documento 05, missão 3)."""
         ev = compilar(termo)
         acertos = passos = 0
+        por_classe: Dict[str, List[int]] = {}
         for args, esperado in teste:
             c = Contador(self.orcamento_passos)
+            ok = 0
             try:
                 v = aplicar(ev({}, Contexto(n_semantica(tarefa, args), c, tabela)), *args)
-                acertos += int(v == esperado)
+                ok = int(v == esperado)
             except OrcamentoEsgotado:
                 pass
             passos += c.passos
-        return (acertos / len(teste) if teste else float("nan")), passos
+            acertos += ok
+            chave = str(esperado) if tarefa.natureza == "predicado" else repr(valor_json(esperado))
+            por_classe.setdefault(chave, [0, 0])
+            por_classe[chave][0] += ok
+            por_classe[chave][1] += 1
+        acc = acertos / len(teste) if teste else float("nan")
+        classes = {k: {"acertos": a, "total": t} for k, (a, t) in sorted(por_classe.items())}
+        degenerado = len(por_classe) < 2
+        bal = None if degenerado or not teste else sum(a / t for a, t in por_classe.values()) / len(por_classe)
+        resumo = {"num": len(teste), "classes": classes if tarefa.natureza == "predicado" else len(por_classe),
+                  "degenerado": degenerado, "acuracia": acc, "acuracia_balanceada": bal,
+                  "aviso": ("conjunto de teste DEGENERADO: acurácia sem valor como evidência de generalização"
+                            if degenerado else "")}
+        if tarefa.natureza == "predicado":
+            resumo["positivos"] = por_classe.get("True", [0, 0])[1]
+            resumo["negativos"] = por_classe.get("False", [0, 0])[1]
+        return acc, passos, resumo
 
     # ---------------------------------------------------------------- laço dialético
     def resolver(self, tarefa: Tarefa, ambiente: Ambiente) -> ResultadoTarefa:
@@ -748,6 +791,9 @@ class AprendizBase:
         if not tarefa.tem_grade:
             kw["n"] = N_SEM_LISTAS
         kw.update(self.kw_enumerador)
+        custos = self.custos_folha_correntes(tabela)
+        if custos:
+            kw["custos_folha"] = custos
         with livro.medir(tid, aid):
             for rodada in range(1, self.K + 1):
                 restante = max(0, self.B - cb.candidatos_avaliados)
@@ -789,9 +835,11 @@ class AprendizBase:
             livro.registrar(tid, aid, "enumeracao_passos", cb.enumeracao_passos, "enumeracao-oe")
             livro.registrar(tid, aid, "geracao_rotulos", _rotulos_oraculo(oraculo) - rot0, "oraculo:rotulos")
             acc = None
+            resumo_teste: dict = {}
             if aceita:
-                acc, passos_teste = self._avaliar_teste(termo, tarefa, prep.teste, tabela)
+                acc, passos_teste, resumo_teste = self._avaliar_teste_resumo(termo, tarefa, prep.teste, tabela)
                 livro.registrar(tid, aid, "avaliacao_passos", passos_teste, "teste_int")
+                self._constantes_usadas |= set(constantes(termo))
             usadas = sorted({c for c in constantes(termo) if c in tabela and not tabela[c].eh_fornecida}) \
                 if aceita else []
         e = livro.entrada(tid, aid)
@@ -799,7 +847,8 @@ class AprendizBase:
             tid, aid, aceita, motivo, len(hipoteses), imprimir(termo) if aceita else None,
             imprimir_legivel(termo) if aceita else None, tamanho(termo) if aceita else None, hipoteses,
             cb.como_dict(), e.total_aprendiz(), e.total_ambiente(), acc, usadas, {}, [],
-            oraculo.estado_deterministico(), len(exemplos), inconclusivo_recurso=inconclusivo)
+            oraculo.estado_deterministico(), len(exemplos), inconclusivo_recurso=inconclusivo,
+            teste_resumo=resumo_teste, custos_folha=dict(custos))
         self.resultados.append(res)
         cert = None
         if aceita:
@@ -816,6 +865,23 @@ class AprendizBase:
 
     def _apos_tarefa(self, tarefa: Tarefa, termo: Optional[Termo], certificado=None) -> Tuple[Dict[str, int], List[dict]]:
         return {}, []
+
+    def custos_folha_correntes(self, tabela: Tabela) -> Dict[str, int]:
+        """Custos de folha da política "unigrama" (vazio = tamanho). Só depende das soluções aceitas por
+        ESTE aprendiz e da sua biblioteca; antes da primeira aceitação todas as constantes custam 1."""
+        if self.politica_busca != "unigrama" or not self._constantes_usadas:
+            return {}
+        baratas = set(self._constantes_usadas)
+        # entradas de biblioteca (descobertas) custam 1 se o seu corpo só usa constantes baratas
+        mudou = True
+        while mudou:
+            mudou = False
+            for p in tabela:
+                if not p.eh_fornecida and p.nome not in baratas and p.corpo is not None and \
+                        set(constantes(p.corpo)) <= baratas:
+                    baratas.add(p.nome)
+                    mudou = True
+        return {p.nome: (1 if p.nome in baratas else 2) for p in tabela}
 
     def executar(self, tarefas: Sequence[Tarefa], ambiente: Ambiente) -> List[ResultadoTarefa]:
         return [self.resolver(t, ambiente) for t in tarefas]
@@ -896,11 +962,27 @@ class LLib(AprendizBase):
                          frozenset({"descoberta"}))
         return bib.adicionar(frag, "descoberta")
 
+    def lesionar(self) -> List[dict]:
+        """ABLAÇÃO (documento 05, missão 2): remove da tabela do aprendiz todas as entradas descobertas,
+        sem apagar o registro do que foi descoberto. A biblioteca passa a uma tabela nova só com as
+        primitivas fornecidas; as entradas removidas ficam listadas em `lesionadas`."""
+        bib = self.biblioteca
+        removidas = [_desc_entrada(bib, nome) for nome in bib.entradas]
+        base = Tabela(bib.tabela.nome + "/lesao", [p for p in bib.tabela if p.eh_fornecida], "base")
+        bib.tabela = base.para_aprendiz(bib.tabela.nome + "/lesao")
+        bib.lesionadas = removidas
+        bib.entradas = {}
+        bib.solucoes = []           # o corpus também é esquecido: nada do antes da lesão pode ser recomprimido
+        self._constantes_usadas = {c for c in self._constantes_usadas if c in bib.tabela}
+        return removidas
+
     def relatorio(self) -> dict:
         d = super().relatorio()
         d["limiar"] = self.limiar
         d["promover_funcoes"] = self.promover_funcoes
+        d["politica_busca"] = self.politica_busca
         d["biblioteca"] = self.biblioteca.relatorio()
+        d["lesionadas"] = list(getattr(self.biblioteca, "lesionadas", []))
         return d
 
 

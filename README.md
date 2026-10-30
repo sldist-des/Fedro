@@ -10,9 +10,11 @@ Programa independente de pesquisa sobre as condições que tornam possível o su
 
 - `docs/04-relatorio-piloto.md` (v0.2) — Relatório da execução exploratória do piloto (semente 10001, escala reduzida): módulos, 215 testes, desvios, métricas PM1–PM16, classificação das abstrações (fornecida / manual de referência / descoberta / descoberta e reutilizada), custos e a decisão **NO-GO a B = 10⁴**. Nenhuma abstração foi reutilizada; nenhuma evidência para H-B1.
 
+- `docs/05-diagnostico-redesenho.md` (v0.1) — Diagnóstico causal do NO-GO com evidências dos registros, experimento mínimo de aquisição e transferência (`fedro_piloto/experimento_minimo.py`, registros em `runs/em-*`), correções de integridade, avaliação da estratégia de busca e veredito pelo critério central (abstração descoberta pelo aprendiz e reutilizada em tarefa inédita, com proveniência verificável).
+
 ## Código do piloto
 
-- `fedro_piloto/` — implementação exploratória do Experimento 1 (grades, referências independentes, geradores com partição por instância e detecção de degeneração, DSL com Sem_n, avaliador, tradutores E0↔E0', enumerador com poda por equivalência observacional validada contra enumeração exaustiva, biblioteca com certificados de proveniência, oráculo de contraexemplos mínimos, aprendizes L-fix e L-lib, livro-razão com contadores determinísticos separados das medições de tempo e memória). Testes: `python3 -m unittest discover -s fedro_piloto/tests -v` (cerca de 8 minutos). Execução: `python3 -m fedro_piloto.piloto --id <id> --semente <s> --processos 4`.
+- `fedro_piloto/` — implementação exploratória do Experimento 1 (grades, referências independentes, geradores com partição por instância e detecção de degeneração, DSL com Sem_n, avaliador, tradutores E0↔E0', enumerador com poda por equivalência observacional validada contra enumeração exaustiva, biblioteca com certificados de proveniência, oráculo de contraexemplos mínimos, aprendizes L-fix e L-lib, livro-razão com contadores determinísticos separados das medições de tempo e memória). Testes: `python3 -m unittest discover -s fedro_piloto/tests -v` (cerca de 8 minutos). Execução do piloto: `python3 -m fedro_piloto.piloto --id <id> --semente <s> --processos 4`. Experimento mínimo: `python3 -m fedro_piloto.experimento_minimo --id <id> --B 20000 --politica tamanho|unigrama --processos 4`.
 - `runs/` — registros reproduzíveis das execuções (configuração com hash das fontes, contadores determinísticos, medições, hashes dos conjuntos, abstrações).
 
 ## Análises reproduzíveis

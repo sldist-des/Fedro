@@ -104,9 +104,17 @@ class Gramatica:
 
     def __init__(self, tabela: Tabela, contexto=None, tipo_alvo: Optional[Tipo] = None,
                  profundidade_lambda: int = 2, tipos: Optional[Iterable[Tipo]] = None, fix: bool = True,
-                 redexes_beta: bool = False):
+                 redexes_beta: bool = False, custos_folha: Optional[Dict[str, int]] = None):
         self.tabela = tabela
         self.beta = bool(redexes_beta)
+        # CUSTO PONDERADO (documento 05, missão 4): custo inteiro >= 1 por constante; omissão 1 = tamanho.
+        # Só o Enumerador (poda OE) usa custos; contar_termos e enumerar_sem_poda ficam em tamanho.
+        self.custos: Dict[str, int] = {}
+        for nome, c in (custos_folha or {}).items():
+            if not isinstance(c, int) or isinstance(c, bool) or c < 1:
+                raise ValueError(f"custo de folha inválido para {nome}: {c!r}")
+            self.custos[nome] = c
+        self.custo_max_folha = max([1] + list(self.custos.values()))
         self.gamma0 = _normalizar_contexto(contexto)
         self.D = int(profundidade_lambda)
         self.fix = bool(fix)
@@ -136,6 +144,17 @@ class Gramatica:
     def folhas(self, ctx: Tuple[Tipo, ...], tau: Tipo) -> List[Termo]:
         out = [C(c) for c in self._consts.get(tau, [])]
         out += [V(v) for v, t in self.variaveis(ctx) if t == tau]
+        return out
+
+    def custo_folha(self, nome: str) -> int:
+        return self.custos.get(nome, 1)
+
+    def folhas_de_custo(self, ctx: Tuple[Tipo, ...], tau: Tipo, s: int) -> List[Termo]:
+        """Folhas de tipo tau cujo CUSTO é exatamente s (variáveis custam 1; constantes custam
+        custo_folha). Sem custos (omissão) coincide com folhas() em s = 1 e [] nos demais."""
+        out = [C(c) for c in self._consts.get(tau, []) if self.custo_folha(c) == s]
+        if s == 1:
+            out += [V(v) for v, t in self.variaveis(ctx) if t == tau]
         return out
 
     def args_para(self, tau: Tipo) -> List[Tipo]:
@@ -614,7 +633,8 @@ class Enumerador(_GeradorR):
                  tipos: Optional[Iterable[Tipo]] = None, fix: bool = True, redexes_beta: bool = False,
                  orcamento_passos_mundo: Optional[int] = 10_000, poda_inexata: bool = True,
                  mundos_funcao: Sequence[Optional[int]] = (8, 3), auditoria: bool = False,
-                 permitir_fora_particao: bool = False, semente: int = 10_001):
+                 permitir_fora_particao: bool = False, semente: int = 10_001,
+                 custos_folha: Optional[Dict[str, int]] = None):
         from . import geradores as G
         if not auditoria:
             exigir_tabela_de_descoberta(tabela)
@@ -622,7 +642,8 @@ class Enumerador(_GeradorR):
             raise ErroProveniencia("mundos OE fora de oraculo_treino só em auditoria (validação)")
         self.auditoria = auditoria
         self.proveniencia = "descoberta" if tabela.uso == "descoberta" else f"auditoria:{tabela.uso}"
-        self.g = Gramatica(tabela, contexto, tipo_alvo, profundidade_lambda, tipos, fix, redexes_beta)
+        self.g = Gramatica(tabela, contexto, tipo_alvo, profundidade_lambda, tipos, fix, redexes_beta,
+                           custos_folha)
         self.tabela = tabela
         self.tipo_alvo = tipo_alvo
         self.n = n
@@ -839,9 +860,9 @@ class Enumerador(_GeradorR):
                 oferecer(termo, vals, None)
 
         mundos = C_.mundos
-        # folhas
-        if s == 1:
-            for t in g.folhas(C_.chave, tau):
+        # folhas (de CUSTO s: com custos_folha uma constante pode entrar numa camada s > 1)
+        if s <= g.custo_max_folha:
+            for t in g.folhas_de_custo(C_.chave, tau, s):
                 cont.candidatos_construidos += 1
                 self._novo_avaliado(raiz_alvo)
                 self._armar(len(mundos))
