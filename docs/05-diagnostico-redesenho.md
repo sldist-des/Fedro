@@ -209,13 +209,38 @@ Observação nova sobre custos (dos registros do piloto, `fases.6.*.contador_bus
 
 ### 4.2 Resultado medido: política por tamanho contra política unigrama
 
-(preenchido a partir de `runs/em-s10002-tamanho` e `runs/em-s10002-unigrama`)
+Mesmo experimento, mesma semente, mesmos exemplos e testes; só muda a ordem de enumeração (`runs/em-s10002-unigrama`). Todas as hipóteses aceitas verificadas exaustivamente em n ≤ 4: 15 hipóteses, 0 erros (`verificacao_exaustiva.json`). [C]
+
+| braço | tarefa | tamanho: aceita / custo | unigrama: aceita / custo | hipótese sob unigrama |
+|---|---|---|---|---|
+| L-fix | expandir | não / 109,7 M | **sim** / 173,3 M | `λg S. filtrar (celula g) (juntar (mapear (vizinhos g) S))` (10) |
+| L-fix | ParAdjacente | não / 91,8 M | **sim** / 84,4 M | `λg. algum (celula g) (juntar (mapear (vizinhos g) (pretas g)))` (10) |
+| L-fix | cumulativo até T3 | 207,8 M (1 de 3) | 264,0 M (3 de 3) | |
+| L-lib | expandir, ParAdjacente | não, não | sim, sim (como L-fix) | extrai depois `λg. filtrar (celula g)` e `λg S. juntar (mapear (vizinhos g) S)`, nenhuma reutilizada |
+| L-lib+f | expandir | sim / 4,6 M (7) | sim / 8,3 M (7, abs1) | `λg S. juntar (mapear (abs1 g) S)` |
+| L-lib+f | ParAdjacente | sim / 3,8 M (7) | sim / 13,7 M (8, abs2) | `λg. algum (celula g) (abs2 g (pretas g))` |
+| L-lib+f | cumulativo até T3 | 14,6 M (3 de 3) | 28,3 M (3 de 3) | |
+| L-lib+f/lesao | ParAdjacente | não | **sim** / 84,4 M (10, sem biblioteca) | o mesmo programa de L-fix |
+| L-lib+f/controle | ParAdjacente | não | **não** / 259,6 M | — |
+| todos | NenhumaIsolada | não | não | — |
+
+Leituras [C]:
+
+1. **A política unigrama amplia o alcance de L-fix** o bastante para resolver T2 e T3 a 2 × 10⁴: depois de T1, `filtrar`, `celula` e `vizinhos` custam 1 e os programas de tamanho 10 feitos só delas e de `juntar`, `mapear`, `algum` (custo 2) entram no orçamento. Com a mesma política, a biblioteca continua a dar economia, agora só de custo: 264,0 M contra 28,3 M (9,3 vezes) até T3, 13 431 contra 4 109 candidatos de enumeração. A diferença entre "possível" e "impossível" a este B é da política de busca; a diferença de custo é da biblioteca.
+2. **A lesão deixa de bloquear T3** sob unigrama, porque o aprendiz lesionado conserva as constantes usadas (custo 1) e encontra o programa de tamanho 10 de L-fix, ao custo de L-fix (84,4 M contra 13,7 M com abs2). A ablação continua a mostrar o que a biblioteca vale: 6 vezes em custo nessa tarefa.
+3. **Transferência negativa do prior de busca no controle:** o aprendiz treinado em `pretasColuna1` e `semLinha1` fica com `cabeca`, `colunas`, `diferenca`, `linhas` baratas e `vizinhos`, `juntar`, `mapear`, `algum` caras; o programa de tamanho 10 de ParAdjacente fica fora do alcance e o controle falha T3, com custo maior que o de L-fix por tamanho. A política unigrama transfere um viés, e um viés errado bloqueia. É um resultado negativo informativo: a reutilização de "o que já usei" não é neutra.
+4. **A compressão por recorrência passa a ter material** sob unigrama (duas soluções com `filtrar (celula g)` e duas com `juntar (mapear (vizinhos g) ·)`), mas as entradas surgem depois das tarefas em que ocorrem e não são reutilizadas, porque o currículo acaba. Com um currículo mais longo, poderiam ser; não há evidência disso aqui.
+5. **Custo da política para L-lib+f:** sob unigrama, `nao` e `vazia?` custam 2 (nunca usadas) e a solução de 7 nós de ParAdjacente fica atrás da de 8 nós com `algum`; L-lib+f gasta 1,9 vezes mais que por tamanho. O prior ajuda o aprendiz sem biblioteca e atrapalha o com biblioteca, nesta cadeia.
+
+**Decisão sobre a política.** Nenhuma das duas domina. Para o confirmatório, a política é um fator a cruzar com a biblioteca (2 × 2), nunca uma escolha prévia: é o único desenho que isola o efeito da biblioteca do efeito do prior, como os dois registros mostram.
 
 ## 5. Veredito pelo critério central e próxima intervenção
 
 **Veredito.** Pelo critério central deste documento, o mecanismo de reutilização está funcionalmente demonstrado na configuração do experimento mínimo: uma abstração encontrada pelo próprio aprendiz a partir de exemplos (`vizPretos`, depois `expandir`) foi consolidada com certificado de proveniência e utilizada em tarefas posteriores inéditas (`expandir`, depois `ParAdjacente`), com a lesão e o currículo não relacionado falhando na mesma tarefa, e com L-fix a precisar de 10 vezes o orçamento e 24 vezes o custo para resolvê-la por outro caminho. [C]
 
 **O que o veredito não é.** Não é a decisão GO do documento 03, que exige a escada inteira (14 degraus, incluindo `fecho` e `descartar`) e o confirmatório com instâncias não expostas; aqui são 3 degraus desenhados para caber no alcance, uma semente, e T4 fora do alcance. Não é evidência de H-B1. É a prova de que o bloqueio do piloto era de mecanismo e de currículo, não de impossibilidade, e de que a próxima pergunta tem objeto.
+
+**Sob a política unigrama** (seção 4.2), L-fix também resolve T2 e T3 a 2 × 10⁴ por programas de tamanho 10; a biblioteca passa a valer 9,3 vezes em custo cumulativo e a lesão custa 6 vezes em T3. O critério central continua satisfeito (abs1 reutilizada em `expandir`, abs2 em `ParAdjacente`, 15 hipóteses verificadas sem erro), e a afirmação correta é: a biblioteca converte custo, não possibilidade, quando a busca tem um prior adequado; e o prior aprendido de tarefas não relacionadas é prejudicial (controle falha T3 nas duas políticas).
 
 **Bloqueio exato que resta.** A fronteira de alcance a 2 × 10⁴ está em 7 a 8 nós com a biblioteca; o degrau seguinte (NenhumaIsolada com `expandir`, 9 nós) e os laços de recursão (`fecho` 16, `descartar` 13) continuam fora. Cada degrau novo exige ou uma abstração anterior que o traga para ≤ 8, ou mais alcance.
 
@@ -256,4 +281,5 @@ Suíte completa após as alterações: **229 testes, 0 falhas, 0 erros** (458 s)
 5. **Teste de ParAdjacente com 3 negativos** (distribuição natural): suprido pela verificação exaustiva em n ≤ 4, que é uma verificação do ambiente, não uma medida de generalização fora de n ≤ 4.
 6. **Política unigrama**: custos em {1, 2} aprendidos das próprias soluções; é a forma mais simples de proposta probabilística, escolhida pela facilidade de verificação (completude), não por ser a melhor.
 7. **Alcance medido só nesta máquina e em Python puro**: 56 a 2 899 candidatos/s (documento 04); a fronteira de 7 a 9 nós por 10⁴ a 10⁵ candidatos é uma propriedade do enumerador, não do problema.
-8. O registro do primeiro lançamento abortado não foi guardado (o `runs/em-s10002-tamanho` presente é o relançamento com a correção, com o mesmo código salvo pela correção, cujo hash está em `fontes`).
+8. Sob unigrama, o aprendiz lesionado e L-fix encontram ParAdjacente por um programa diferente do de L-lib+f: a economia da biblioteca não é "resolver ou não", é custo. A frase "L-fix não resolve T3" vale só para a política por tamanho a 2 × 10⁴.
+9. O registro do primeiro lançamento abortado não foi guardado (o `runs/em-s10002-tamanho` presente é o relançamento com a correção, com o mesmo código salvo pela correção, cujo hash está em `fontes`).

@@ -28,5 +28,25 @@
   "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (diferenca x1 (cabeca@LP (linhas x0))))",
   "entradas_exaustivas_n1a4": 264260,
   "erros": 0
+ },
+ "L-fix:vizPretos": {
+  "hipotese": "(\\ (x0 Grade) (x1 Pos) (filtrar@P (celula x0) (vizinhos x0 x1)))",
+  "entradas_exaustivas_n1a4": 264258,
+  "erros": 0
+ },
+ "L-lib:vizPretos": {
+  "hipotese": "(\\ (x0 Grade) (x1 Pos) (filtrar@P (celula x0) (vizinhos x0 x1)))",
+  "entradas_exaustivas_n1a4": 264258,
+  "erros": 0
+ },
+ "L-lib+f/lesao:vizPretos": {
+  "hipotese": "(\\ (x0 Grade) (x1 Pos) (filtrar@P (celula x0) (vizinhos x0 x1)))",
+  "entradas_exaustivas_n1a4": 264258,
+  "erros": 0
+ },
+ "L-lib+f/lesao:expandir": {
+  "hipotese": "(\\ (x0 Grade) (x1 (L Pos)) (juntar (mapear@P>LP (abs1 x0) x1)))",
+  "entradas_exaustivas_n1a4": 264260,
+  "erros": 0
  }
 }
