@@ -1,0 +1,65 @@
+{
+ "bracos": {
+  "aleatorio#1/L-fix": {
+   "cpu_s": 846.966746615,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 545864,
+   "tempo_parede_s": 1435.3364639190004
+  },
+  "aleatorio#1/L-lib+f": {
+   "cpu_s": 2127.255336851,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 855608,
+   "tempo_parede_s": 2362.6193024879994
+  },
+  "aleatorio#2/L-fix": {
+   "cpu_s": 834.851287271,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 541904,
+   "tempo_parede_s": 1469.7250306690003
+  },
+  "aleatorio#2/L-lib+f": {
+   "cpu_s": 1496.679398168,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 1209824,
+   "tempo_parede_s": 1517.872441939
+  },
+  "aleatorio#3/L-fix": {
+   "cpu_s": 823.87152336,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 565752,
+   "tempo_parede_s": 1325.9765730519994
+  },
+  "aleatorio#3/L-lib+f": {
+   "cpu_s": 1911.579659028,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 849116,
+   "tempo_parede_s": 2642.4540373239997
+  },
+  "autodirigido/L-fix": {
+   "cpu_s": 1728.789036425,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 563632,
+   "tempo_parede_s": 1750.979597849001
+  },
+  "autodirigido/L-lib+f": {
+   "cpu_s": 1884.373650436,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 830264,
+   "tempo_parede_s": 1908.5746702869992
+  },
+  "manual/L-fix": {
+   "cpu_s": 819.1760329809999,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 546376,
+   "tempo_parede_s": 907.1542298380009
+  },
+  "manual/L-lib+f": {
+   "cpu_s": 1193.8910210200002,
+   "memoria_escopo": "trecho",
+   "memoria_pico_kib": 860320,
+   "tempo_parede_s": 1338.738057921999
+  }
+ },
+ "parede_total_s": 4525.288000583649
+}
