@@ -1,6 +1,6 @@
 # 08 — Relatório do benchmark cego
 
-**Versão 0.1** — 2026-10-30 (em construção durante a execução dos blocos; a leitura final está em §7). Protocolo pré-registado: `benchmark/protocolo-avaliacao.md`. Contrato enviado ao autor: `benchmark/contrato-publico.md`. Registo de envio e receção: `benchmark/recebidos/REGISTO.md`.
+**Versão 0.1** — 2026-10-30. Blocos A–E executados e verificados; leitura final em §7. Protocolo pré-registado: `benchmark/protocolo-avaliacao.md`. Contrato enviado ao autor: `benchmark/contrato-publico.md`. Registo de envio e receção: `benchmark/recebidos/REGISTO.md`.
 
 Rótulos: **[E]** evidência dos registros, **[C]** procedimento, **[R]** requisito, **[A]** aberto, **[F]** falha.
 
@@ -122,7 +122,11 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 130 | 240,463,507 / 0 | 80,561 / 0 | 4,180 / 0 | 65,995 / 0 | 335 |
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:A -->
 
 ### 3.1 Desempenho absoluto
@@ -222,7 +226,11 @@ Tarefa a tarefa (✔ aceita / ✘ não; custo em passos; tamanho da hipótese en
 
 Verificação pós-execução:
 
-(verificação ainda não executada)
+| hipóteses aceitas verificadas | exaustivo n ≤ 4 (entradas / erros) | amostral n = 5..9 teste_ext (entradas / erros) | desenho (entradas / erros) | testes ocultos do autor (entradas / erros) | conjuntos amostrais degenerados |
+|---|---|---|---|---|---|
+| 118 | 197,494,538 / 0 | 72,773 / 0 | 4,236 / 0 | 50,646 / 0 | 334 |
+
+Testemunhas do autor (tamanho em E0 pela nossa contagem; tipo; erros em n ≤ 3): algumaLinhaCheia: 9; bordaPreta: 12; brancasDaLista: 6; colunaVazia: 8; colunasBrancas: 11; complementoDe: 6; componenteDe: 37; contemTodasPretas: 7; contidoEm: 6; cruzDaPosicao: 15; diferencaSimetrica: 9; intersecaoOrdenada: 7; juntarSemRepetir: 7; linhaDaPosicao: 8; linhaTemPretaEm: 11; mesmoConjunto: 11; naBorda: 9; pretasConexas: 37; pretasEmDomino: 22; pretasOrdemInversa: 10; pretasPorColunas: 7; semPretaIsolada: 11; semPretasAdjacentes: 12; tocaPreta: 11; todaLinhaTemPreta: 7; ultimaLinha: 5; vizinhancaExterna: 12; vizinhosPretos: 8
 <!-- /TABELAS:B -->
 
 ### 4.1 Desempenho absoluto e relativo
@@ -485,7 +493,22 @@ Parede total: 4525 s.
 
 ## 6. Verificação pós-execução **[E]**
 
-(preenchido por `verificacao.json` de cada registro)
+`python3 -m fedro_piloto.benchmark_externo verificar runs/<registro>`: para cada hipótese aceita, (i) regime exaustivo em todas as grades com n ≤ 4, com a bateria de argumentos; (ii) regime amostral em n = 5..9 em grades da partição `teste_ext` (baldes 40–49), nunca vistas, e, para predicados, conjunto de desenho (positivos construídos e negativos de igual densidade); (iii) os testes ocultos do autor (259 grades, com a bateria). As testemunhas do autor foram analisadas, tipadas e verificadas em n ≤ 3. Nos blocos C, D e E a verificação omitiu o regime exaustivo (§9.2).
+
+| registro | hipóteses aceitas | exaustivo n ≤ 4: entradas / erros | amostral n = 5..9: entradas / erros | desenho: entradas / erros | ocultos do autor: entradas / erros |
+|---|---|---|---|---|---|
+| A (zero, 10007) | 130 | 240 463 507 / **0** | 80 561 / **0** | 4 180 / **0** | 65 995 / **0** |
+| B (prévio, 10007) | 118 (inclui 16 da cadeia prévia) | 197 494 538 / **0** | 72 773 / **0** | 4 236 / **0** | 50 646 / **0** |
+| C (zero, 10008) | 64 | — | 40 400 / 0 | 1 776 / 0 | 32 611 / 0 |
+| C (zero, 10009) | 65 | — | 40 585 / 0 | 1 951 / 0 | 32 621 / 0 |
+| D (k = 20) | 30 | — | 18 594 / 0 | 900 / 0 | 13 742 / 0 |
+| E (ordens) | 158 | — | 96 361 / 0 | 5 430 / 0 | 73 689 / 0 |
+
+**Erros de previsão: nenhum.** Todas as hipóteses aceitas em todos os blocos coincidem com as referências do autor em todas as entradas verificadas, incluindo as 259 grades ocultas que o autor escolheu e as grades de n = 5..9 que nenhum aprendiz viu. O oráculo não produziu nenhuma aceitação indevida. (A primeira verificação do bloco A tinha reportado 66 236 erros numa hipótese do braço lesionado; era um defeito da ferramenta de verificação, não do oráculo: §9.4.)
+
+Conjuntos amostrais degenerados (uma só classe nas grades naturais de um n): 335 em A, sobretudo nos predicados com positivos raros em n grande (`semPretasAdjacentes`, `pretasEmDomino`, `semPretaIsolada`); nesses casos a acurácia natural não informa e vale o conjunto de desenho, que foi sempre de duas classes e sem erros.
+
+Testemunhas do autor: as 28 analisam, têm o tipo declarado e coincidem com as referências em n ≤ 3 (0 erros); os tamanhos pela nossa contagem são iguais aos do autor (5 a 37 folhas), o que confirma que ambos contam um ligador por parâmetro. As duas testemunhas com `fix` (37 folhas) avaliam dentro do orçamento de passos em n ≤ 3; o aviso do validador do kit sobre `->` era um falso positivo.
 
 ## 7. Leitura segundo os critérios pré-registados **[R]**
 
@@ -497,7 +520,7 @@ Protocolo §7, bloco A (modo zero, semente 10007), por política: V = 28 tarefas
 | r (aceitas com reutilização verificável) ≥ 2 | 5 ✔ | 6 ✔ | ✔ |
 | p⁺ ≥ 2 | 4 ✔ | 4 ✔ | ✔ |
 | p⁺ > p⁻ | 4 > 13 ✘ | 4 > 14 ✘ | ✘ |
-| hipóteses aceitas sem erro de previsão | ver §6 | ver §6 | — |
+| hipóteses aceitas sem erro de previsão | ✔ (0 erros em 240 M de entradas) | ✔ | ✔ |
 | lesão sensível | ✔ (custo) | ✔ (custo) | ✔ |
 
 - **Critério 1 (mecanismo robusto ao autor): não satisfeito**, por uma única condição: as transferências negativas excedem as positivas nas duas políticas (13 e 14 contra 4 e 4).
