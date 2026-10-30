@@ -1,8 +1,8 @@
 {
  "erros_previsao": {
-  "amostral": 45,
-  "exaustivo": 66236,
-  "ocultos_autor": 28
+  "amostral": 0,
+  "exaustivo": 0,
+  "ocultos_autor": 0
  },
  "execucao": "runs/bx-grades-e0-independente-v1-A-s10007",
  "hipoteses": [
@@ -23778,10 +23778,10 @@
      "5": {
       "grades_naturais": 40,
       "natural": {
-       "acuracia": 0.9125,
-       "acuracia_balanceada": 0.65,
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
        "degenerado": false,
-       "erros": 14,
+       "erros": 0,
        "indefinidas_por_orcamento": 0,
        "n": 160,
        "por_classe": {
@@ -23790,7 +23790,7 @@
          "total": 140
         },
         "True": {
-         "acertos": 6,
+         "acertos": 20,
          "total": 20
         }
        }
@@ -23799,10 +23799,10 @@
      "6": {
       "grades_naturais": 40,
       "natural": {
-       "acuracia": 0.95625,
-       "acuracia_balanceada": 0.78125,
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
        "degenerado": false,
-       "erros": 7,
+       "erros": 0,
        "indefinidas_por_orcamento": 0,
        "n": 160,
        "por_classe": {
@@ -23811,7 +23811,7 @@
          "total": 144
         },
         "True": {
-         "acertos": 9,
+         "acertos": 16,
          "total": 16
         }
        }
@@ -23820,10 +23820,10 @@
      "7": {
       "grades_naturais": 40,
       "natural": {
-       "acuracia": 0.9375,
-       "acuracia_balanceada": 0.7826086956521738,
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
        "degenerado": false,
-       "erros": 10,
+       "erros": 0,
        "indefinidas_por_orcamento": 0,
        "n": 160,
        "por_classe": {
@@ -23832,7 +23832,7 @@
          "total": 137
         },
         "True": {
-         "acertos": 13,
+         "acertos": 23,
          "total": 23
         }
        }
@@ -23841,10 +23841,10 @@
      "8": {
       "grades_naturais": 40,
       "natural": {
-       "acuracia": 0.94375,
-       "acuracia_balanceada": 0.775,
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
        "degenerado": false,
-       "erros": 9,
+       "erros": 0,
        "indefinidas_por_orcamento": 0,
        "n": 160,
        "por_classe": {
@@ -23853,7 +23853,7 @@
          "total": 140
         },
         "True": {
-         "acertos": 11,
+         "acertos": 20,
          "total": 20
         }
        }
@@ -23862,10 +23862,10 @@
      "9": {
       "grades_naturais": 40,
       "natural": {
-       "acuracia": 0.96875,
-       "acuracia_balanceada": 0.7222222222222222,
+       "acuracia": 1.0,
+       "acuracia_balanceada": 1.0,
        "degenerado": false,
-       "erros": 5,
+       "erros": 0,
        "indefinidas_por_orcamento": 0,
        "n": 160,
        "por_classe": {
@@ -23874,7 +23874,7 @@
          "total": 151
         },
         "True": {
-         "acertos": 4,
+         "acertos": 9,
          "total": 9
         }
        }
@@ -23891,13 +23891,13 @@
    "exaustivo": {
     "bateria_argumentos": true,
     "entradas": 857660,
-    "erros": 66236,
+    "erros": 0,
     "por_n": {
      "1": {
-      "acuracia": 0.75,
-      "acuracia_balanceada": 0.8333333333333333,
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
       "degenerado": false,
-      "erros": 1,
+      "erros": 0,
       "grades": 2,
       "indefinidas_por_orcamento": 0,
       "n": 4,
@@ -23907,16 +23907,16 @@
         "total": 1
        },
        "True": {
-        "acertos": 2,
+        "acertos": 3,
         "total": 3
        }
       }
      },
      "2": {
-      "acuracia": 0.7890625,
-      "acuracia_balanceada": 0.686046511627907,
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
       "degenerado": false,
-      "erros": 27,
+      "erros": 0,
       "grades": 16,
       "indefinidas_por_orcamento": 0,
       "n": 128,
@@ -23926,16 +23926,16 @@
         "total": 85
        },
        "True": {
-        "acertos": 16,
+        "acertos": 43,
         "total": 43
        }
       }
      },
      "3": {
-      "acuracia": 0.9013204853675946,
-      "acuracia_balanceada": 0.7403755868544601,
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
       "degenerado": false,
-      "erros": 553,
+      "erros": 0,
       "grades": 512,
       "indefinidas_por_orcamento": 0,
       "n": 5604,
@@ -23945,16 +23945,16 @@
         "total": 4539
        },
        "True": {
-        "acertos": 512,
+        "acertos": 1065,
         "total": 1065
        }
       }
      },
      "4": {
-      "acuracia": 0.9229332663477023,
-      "acuracia_balanceada": 0.7497732313954464,
+      "acuracia": 1.0,
+      "acuracia_balanceada": 1.0,
       "degenerado": false,
-      "erros": 65655,
+      "erros": 0,
       "grades": 65536,
       "indefinidas_por_orcamento": 0,
       "n": 851924,
@@ -23964,7 +23964,7 @@
         "total": 720733
        },
        "True": {
-        "acertos": 65536,
+        "acertos": 131191,
         "total": 131191
        }
       }
@@ -28278,11 +28278,11 @@
    "tarefa": "intersecaoOrdenada"
   },
   {
-   "acuracia": 0.8323353293413174,
-   "acuracia_balanceada": 0.6216216216216216,
+   "acuracia": 1.0,
+   "acuracia_balanceada": 1.0,
    "braco": "zero/unigrama/L-lib+f/lesao",
    "degenerado": false,
-   "erros": 28,
+   "erros": 0,
    "grades": 9,
    "indefinidas_por_orcamento": 0,
    "n": 167,
@@ -28292,7 +28292,7 @@
      "total": 130
     },
     "True": {
-     "acertos": 9,
+     "acertos": 37,
      "total": 37
     }
    },
