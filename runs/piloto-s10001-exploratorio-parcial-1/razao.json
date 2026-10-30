@@ -1,0 +1,5394 @@
+{
+ "deterministico": {
+  "campos": [
+   "busca_candidatos",
+   "busca_passos",
+   "compressao_subtermos",
+   "oraculo_consultas",
+   "oraculo_custo_ambiente",
+   "avaliacao_passos",
+   "geracao_grades"
+  ],
+  "diario": [
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 283,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 421,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 14182,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 224,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 58,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 60990,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 330,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 272,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 200,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1651,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 148,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 1281,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 2337,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 5666228,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1630,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 392,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 416,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 69,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3699,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 265,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 322,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 69,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4026,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 291,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 175,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 997,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 18842,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 32991979,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 258,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 201,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 998,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 30879,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 32991979,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 358,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 222,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 678,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 27239,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 30029078,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 256,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 401,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 70,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3853,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 211,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1754,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 91,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 74,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 34674,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1117,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 386,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 165,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 320,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4876,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 18719907,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 329,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 228,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 6,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 603,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 19839,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130292983,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 237,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 219,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 602,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 22241,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130292983,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 466,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 387,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 70,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3875,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 451,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 69,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3904,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 283,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 421,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 14182,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 224,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 58,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 60990,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 330,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 48,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 272,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 200,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1651,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 148,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 1281,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 2337,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 5666228,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1630,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 147,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 392,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 416,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 69,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3699,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 265,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 322,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 69,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4026,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 291,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 175,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 997,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 18842,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 32991979,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 258,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 201,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 998,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 30879,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 32991979,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 358,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 222,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 678,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 27239,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 30029078,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 256,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 401,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 70,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3853,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37186603,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 211,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1754,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 91,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 74,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 34674,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1117,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 373,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 386,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 165,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 320,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4876,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 18777159,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 329,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 228,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 6,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 603,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 19839,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130326182,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 237,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 219,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 602,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 22241,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130326182,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 466,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 387,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 81,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4254,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37505912,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 451,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 80,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4283,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 37505912,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 283,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 421,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 14182,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 224,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 58,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 60990,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 330,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 48,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 272,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 200,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1651,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 148,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 1281,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 2337,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 5666228,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1630,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 173,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 392,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 416,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4232,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 38436015,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 265,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 322,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4566,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 38436015,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 291,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 175,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1062,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 22500,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 34301145,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 258,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 201,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1063,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 37264,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 34301145,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 358,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 222,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 797,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 35475,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 26843014,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 256,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 401,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 79,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4371,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 38436015,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 211,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1754,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 91,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 74,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 34674,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1117,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 158,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 386,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 165,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 320,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4876,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 18794645,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 329,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 228,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 6,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 603,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 19839,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130362681,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 237,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 219,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 602,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 22241,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 130362681,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 466,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 387,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 89,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4886,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 28464219,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 451,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 88,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 4966,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 28464219,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 283,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 421,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 14182,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 228,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 58,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 82439,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 330,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 272,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 200,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1651,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 163,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 1578,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3352,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 8558440,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1630,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 392,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 416,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5524,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 265,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 322,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5863,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 291,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 175,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1425,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 107856,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 97163635,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 258,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 201,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1426,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 349671,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 97163635,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 358,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 222,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 793,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 26707,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 59595091,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 256,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 401,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 79,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5678,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 211,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1754,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 99,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 84,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 83272,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1117,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 386,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 165,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 489,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 17633,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 74557454,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 329,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 228,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 6,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 250,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 11282,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 80607954,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 237,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 219,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 247,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 10543,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 80607954,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 466,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 387,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 79,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5784,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 451,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5801,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 283,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 421,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 14182,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 228,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 58,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 82439,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 330,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 48,
+    "tarefa_id": "ExistePreta"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 272,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 200,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1651,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 163,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 1578,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 3352,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 8558440,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1630,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 147,
+    "tarefa_id": "vizPretos"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 392,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 416,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5524,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "ParAdjacente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 265,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 322,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 78,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5863,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "NenhumaIsolada"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 291,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 175,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1425,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 107856,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 97163635,
+    "tarefa_id": "passo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 258,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 201,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 1426,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 349671,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 97163635,
+    "tarefa_id": "fecho"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 358,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 222,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 793,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 26707,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 59595091,
+    "tarefa_id": "componenteDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 256,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 401,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 79,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 5678,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 41036988,
+    "tarefa_id": "UmComponente"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 211,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1754,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 5,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 99,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 84,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 83272,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "avaliacao_passos",
+    "nota": "teste_int",
+    "quantidade": 1117,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "compressao_subtermos",
+    "nota": "compressao",
+    "quantidade": 373,
+    "tarefa_id": "pretasDe"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 386,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 165,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 489,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 17633,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 74528028,
+    "tarefa_id": "descartar"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 329,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 228,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 2,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 5,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 6,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 250,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 11282,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 80636544,
+    "tarefa_id": "noMaximo"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 237,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 219,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo-funcao:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 247,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 10543,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 80636544,
+    "tarefa_id": "mesmoNumero"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 466,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 387,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_consultas",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "oraculo_custo_ambiente",
+    "nota": "oraculo:contraexemplo",
+    "quantidade": 1,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 90,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 6163,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 38265549,
+    "tarefa_id": "PrimeiraUltimaIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "exemplos+teste",
+    "quantidade": 298,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "geracao_grades",
+    "nota": "oraculo:reservatorios",
+    "quantidade": 451,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "exemplos",
+    "quantidade": 89,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_candidatos",
+    "nota": "enumeracao-oe",
+    "quantidade": 10001,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "exemplos",
+    "quantidade": 6180,
+    "tarefa_id": "LinhasIguais"
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "campo": "busca_passos",
+    "nota": "enumeracao-oe",
+    "quantidade": 38265549,
+    "tarefa_id": "LinhasIguais"
+   }
+  ],
+  "entradas": [
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 330,
+    "busca_candidatos": 229,
+    "busca_passos": 61048,
+    "compressao_subtermos": 0,
+    "geracao_grades": 704,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 14182,
+    "tarefa_id": "ExistePreta",
+    "total": 76494,
+    "total_ambiente": 14886,
+    "total_aprendiz": 61278,
+    "total_avaliacao": 330
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 1630,
+    "busca_candidatos": 1429,
+    "busca_passos": 5668565,
+    "compressao_subtermos": 0,
+    "geracao_grades": 472,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1651,
+    "tarefa_id": "vizPretos",
+    "total": 5673748,
+    "total_ambiente": 2123,
+    "total_aprendiz": 5669995,
+    "total_avaliacao": 1630
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10070,
+    "busca_passos": 37190302,
+    "compressao_subtermos": 0,
+    "geracao_grades": 808,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "ParAdjacente",
+    "total": 37201180,
+    "total_ambiente": 808,
+    "total_aprendiz": 37200372,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10070,
+    "busca_passos": 37190629,
+    "compressao_subtermos": 0,
+    "geracao_grades": 587,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "NenhumaIsolada",
+    "total": 37201286,
+    "total_ambiente": 587,
+    "total_aprendiz": 37200699,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10998,
+    "busca_passos": 33010821,
+    "compressao_subtermos": 0,
+    "geracao_grades": 466,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "passo",
+    "total": 33022285,
+    "total_ambiente": 466,
+    "total_aprendiz": 33021819,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10999,
+    "busca_passos": 33022858,
+    "compressao_subtermos": 0,
+    "geracao_grades": 459,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "fecho",
+    "total": 33034318,
+    "total_ambiente": 460,
+    "total_aprendiz": 33033858,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10679,
+    "busca_passos": 30056317,
+    "compressao_subtermos": 0,
+    "geracao_grades": 580,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "componenteDe",
+    "total": 30067576,
+    "total_ambiente": 580,
+    "total_aprendiz": 30066996,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10071,
+    "busca_passos": 37190456,
+    "compressao_subtermos": 0,
+    "geracao_grades": 657,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 2,
+    "tarefa_id": "UmComponente",
+    "total": 37201187,
+    "total_ambiente": 659,
+    "total_aprendiz": 37200528,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 1117,
+    "busca_candidatos": 96,
+    "busca_passos": 34748,
+    "compressao_subtermos": 0,
+    "geracao_grades": 509,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1754,
+    "tarefa_id": "pretasDe",
+    "total": 38225,
+    "total_ambiente": 2263,
+    "total_aprendiz": 34845,
+    "total_avaliacao": 1117
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10321,
+    "busca_passos": 18724783,
+    "compressao_subtermos": 0,
+    "geracao_grades": 551,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "descartar",
+    "total": 18735655,
+    "total_ambiente": 551,
+    "total_aprendiz": 18735104,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10604,
+    "busca_passos": 130312822,
+    "compressao_subtermos": 0,
+    "geracao_grades": 557,
+    "oraculo_consultas": 3,
+    "oraculo_custo_ambiente": 12,
+    "tarefa_id": "noMaximo",
+    "total": 130323998,
+    "total_ambiente": 569,
+    "total_aprendiz": 130323429,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10603,
+    "busca_passos": 130315224,
+    "compressao_subtermos": 0,
+    "geracao_grades": 456,
+    "oraculo_consultas": 2,
+    "oraculo_custo_ambiente": 6,
+    "tarefa_id": "mesmoNumero",
+    "total": 130326291,
+    "total_ambiente": 462,
+    "total_aprendiz": 130325829,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10071,
+    "busca_passos": 37190478,
+    "compressao_subtermos": 0,
+    "geracao_grades": 853,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "total": 37201404,
+    "total_ambiente": 854,
+    "total_aprendiz": 37200550,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10070,
+    "busca_passos": 37190507,
+    "compressao_subtermos": 0,
+    "geracao_grades": 749,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "LinhasIguais",
+    "total": 37201326,
+    "total_ambiente": 749,
+    "total_aprendiz": 37200577,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 330,
+    "busca_candidatos": 229,
+    "busca_passos": 61048,
+    "compressao_subtermos": 48,
+    "geracao_grades": 704,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 14182,
+    "tarefa_id": "ExistePreta",
+    "total": 76542,
+    "total_ambiente": 14886,
+    "total_aprendiz": 61326,
+    "total_avaliacao": 330
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 1630,
+    "busca_candidatos": 1429,
+    "busca_passos": 5668565,
+    "compressao_subtermos": 147,
+    "geracao_grades": 472,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1651,
+    "tarefa_id": "vizPretos",
+    "total": 5673895,
+    "total_ambiente": 2123,
+    "total_aprendiz": 5670142,
+    "total_avaliacao": 1630
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10070,
+    "busca_passos": 37190302,
+    "compressao_subtermos": 0,
+    "geracao_grades": 808,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "ParAdjacente",
+    "total": 37201180,
+    "total_ambiente": 808,
+    "total_aprendiz": 37200372,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10070,
+    "busca_passos": 37190629,
+    "compressao_subtermos": 0,
+    "geracao_grades": 587,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "NenhumaIsolada",
+    "total": 37201286,
+    "total_ambiente": 587,
+    "total_aprendiz": 37200699,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10998,
+    "busca_passos": 33010821,
+    "compressao_subtermos": 0,
+    "geracao_grades": 466,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "passo",
+    "total": 33022285,
+    "total_ambiente": 466,
+    "total_aprendiz": 33021819,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10999,
+    "busca_passos": 33022858,
+    "compressao_subtermos": 0,
+    "geracao_grades": 459,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "fecho",
+    "total": 33034318,
+    "total_ambiente": 460,
+    "total_aprendiz": 33033858,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10679,
+    "busca_passos": 30056317,
+    "compressao_subtermos": 0,
+    "geracao_grades": 580,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "componenteDe",
+    "total": 30067576,
+    "total_ambiente": 580,
+    "total_aprendiz": 30066996,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10071,
+    "busca_passos": 37190456,
+    "compressao_subtermos": 0,
+    "geracao_grades": 657,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 2,
+    "tarefa_id": "UmComponente",
+    "total": 37201187,
+    "total_ambiente": 659,
+    "total_aprendiz": 37200528,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 1117,
+    "busca_candidatos": 96,
+    "busca_passos": 34748,
+    "compressao_subtermos": 373,
+    "geracao_grades": 509,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1754,
+    "tarefa_id": "pretasDe",
+    "total": 38598,
+    "total_ambiente": 2263,
+    "total_aprendiz": 35218,
+    "total_avaliacao": 1117
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10321,
+    "busca_passos": 18782035,
+    "compressao_subtermos": 0,
+    "geracao_grades": 551,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "descartar",
+    "total": 18792907,
+    "total_ambiente": 551,
+    "total_aprendiz": 18792356,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10604,
+    "busca_passos": 130346021,
+    "compressao_subtermos": 0,
+    "geracao_grades": 557,
+    "oraculo_consultas": 3,
+    "oraculo_custo_ambiente": 12,
+    "tarefa_id": "noMaximo",
+    "total": 130357197,
+    "total_ambiente": 569,
+    "total_aprendiz": 130356628,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10603,
+    "busca_passos": 130348423,
+    "compressao_subtermos": 0,
+    "geracao_grades": 456,
+    "oraculo_consultas": 2,
+    "oraculo_custo_ambiente": 6,
+    "tarefa_id": "mesmoNumero",
+    "total": 130359490,
+    "total_ambiente": 462,
+    "total_aprendiz": 130359028,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10082,
+    "busca_passos": 37510166,
+    "compressao_subtermos": 0,
+    "geracao_grades": 853,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "total": 37521103,
+    "total_ambiente": 854,
+    "total_aprendiz": 37520249,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10081,
+    "busca_passos": 37510195,
+    "compressao_subtermos": 0,
+    "geracao_grades": 749,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "LinhasIguais",
+    "total": 37521025,
+    "total_ambiente": 749,
+    "total_aprendiz": 37520276,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 330,
+    "busca_candidatos": 229,
+    "busca_passos": 61048,
+    "compressao_subtermos": 48,
+    "geracao_grades": 704,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 14182,
+    "tarefa_id": "ExistePreta",
+    "total": 76542,
+    "total_ambiente": 14886,
+    "total_aprendiz": 61326,
+    "total_avaliacao": 330
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 1630,
+    "busca_candidatos": 1429,
+    "busca_passos": 5668565,
+    "compressao_subtermos": 173,
+    "geracao_grades": 472,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1651,
+    "tarefa_id": "vizPretos",
+    "total": 5673921,
+    "total_ambiente": 2123,
+    "total_aprendiz": 5670168,
+    "total_avaliacao": 1630
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 38440247,
+    "compressao_subtermos": 0,
+    "geracao_grades": 808,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "ParAdjacente",
+    "total": 38451134,
+    "total_ambiente": 808,
+    "total_aprendiz": 38450326,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 38440581,
+    "compressao_subtermos": 0,
+    "geracao_grades": 587,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "NenhumaIsolada",
+    "total": 38451247,
+    "total_ambiente": 587,
+    "total_aprendiz": 38450660,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11063,
+    "busca_passos": 34323645,
+    "compressao_subtermos": 0,
+    "geracao_grades": 466,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "passo",
+    "total": 34335174,
+    "total_ambiente": 466,
+    "total_aprendiz": 34334708,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11064,
+    "busca_passos": 34338409,
+    "compressao_subtermos": 0,
+    "geracao_grades": 459,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "fecho",
+    "total": 34349934,
+    "total_ambiente": 460,
+    "total_aprendiz": 34349474,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10798,
+    "busca_passos": 26878489,
+    "compressao_subtermos": 0,
+    "geracao_grades": 580,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "componenteDe",
+    "total": 26889867,
+    "total_ambiente": 580,
+    "total_aprendiz": 26889287,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10080,
+    "busca_passos": 38440386,
+    "compressao_subtermos": 0,
+    "geracao_grades": 657,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 2,
+    "tarefa_id": "UmComponente",
+    "total": 38451126,
+    "total_ambiente": 659,
+    "total_aprendiz": 38450467,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 1117,
+    "busca_candidatos": 96,
+    "busca_passos": 34748,
+    "compressao_subtermos": 158,
+    "geracao_grades": 509,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1754,
+    "tarefa_id": "pretasDe",
+    "total": 38383,
+    "total_ambiente": 2263,
+    "total_aprendiz": 35003,
+    "total_avaliacao": 1117
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10321,
+    "busca_passos": 18799521,
+    "compressao_subtermos": 0,
+    "geracao_grades": 551,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "descartar",
+    "total": 18810393,
+    "total_ambiente": 551,
+    "total_aprendiz": 18809842,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10604,
+    "busca_passos": 130382520,
+    "compressao_subtermos": 0,
+    "geracao_grades": 557,
+    "oraculo_consultas": 3,
+    "oraculo_custo_ambiente": 12,
+    "tarefa_id": "noMaximo",
+    "total": 130393696,
+    "total_ambiente": 569,
+    "total_aprendiz": 130393127,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10603,
+    "busca_passos": 130384922,
+    "compressao_subtermos": 0,
+    "geracao_grades": 456,
+    "oraculo_consultas": 2,
+    "oraculo_custo_ambiente": 6,
+    "tarefa_id": "mesmoNumero",
+    "total": 130395989,
+    "total_ambiente": 462,
+    "total_aprendiz": 130395527,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10090,
+    "busca_passos": 28469105,
+    "compressao_subtermos": 0,
+    "geracao_grades": 853,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "total": 28480050,
+    "total_ambiente": 854,
+    "total_aprendiz": 28479196,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10089,
+    "busca_passos": 28469185,
+    "compressao_subtermos": 0,
+    "geracao_grades": 749,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "LinhasIguais",
+    "total": 28480023,
+    "total_ambiente": 749,
+    "total_aprendiz": 28479274,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 330,
+    "busca_candidatos": 233,
+    "busca_passos": 82497,
+    "compressao_subtermos": 0,
+    "geracao_grades": 704,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 14182,
+    "tarefa_id": "ExistePreta",
+    "total": 97947,
+    "total_ambiente": 14886,
+    "total_aprendiz": 82731,
+    "total_avaliacao": 330
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 1630,
+    "busca_candidatos": 1741,
+    "busca_passos": 8561792,
+    "compressao_subtermos": 0,
+    "geracao_grades": 472,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1651,
+    "tarefa_id": "vizPretos",
+    "total": 8567287,
+    "total_ambiente": 2123,
+    "total_aprendiz": 8563534,
+    "total_avaliacao": 1630
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 41042512,
+    "compressao_subtermos": 0,
+    "geracao_grades": 808,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "ParAdjacente",
+    "total": 41053399,
+    "total_ambiente": 808,
+    "total_aprendiz": 41052591,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 41042851,
+    "compressao_subtermos": 0,
+    "geracao_grades": 587,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "NenhumaIsolada",
+    "total": 41053517,
+    "total_ambiente": 587,
+    "total_aprendiz": 41052930,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11426,
+    "busca_passos": 97271491,
+    "compressao_subtermos": 0,
+    "geracao_grades": 466,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "passo",
+    "total": 97283383,
+    "total_ambiente": 466,
+    "total_aprendiz": 97282917,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11427,
+    "busca_passos": 97513306,
+    "compressao_subtermos": 0,
+    "geracao_grades": 459,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "fecho",
+    "total": 97525194,
+    "total_ambiente": 460,
+    "total_aprendiz": 97524734,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10794,
+    "busca_passos": 59621798,
+    "compressao_subtermos": 0,
+    "geracao_grades": 580,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "componenteDe",
+    "total": 59633172,
+    "total_ambiente": 580,
+    "total_aprendiz": 59632592,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10080,
+    "busca_passos": 41042666,
+    "compressao_subtermos": 0,
+    "geracao_grades": 657,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 2,
+    "tarefa_id": "UmComponente",
+    "total": 41053406,
+    "total_ambiente": 659,
+    "total_aprendiz": 41052747,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 1117,
+    "busca_candidatos": 104,
+    "busca_passos": 83356,
+    "compressao_subtermos": 0,
+    "geracao_grades": 509,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1754,
+    "tarefa_id": "pretasDe",
+    "total": 86841,
+    "total_ambiente": 2263,
+    "total_aprendiz": 83461,
+    "total_avaliacao": 1117
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10490,
+    "busca_passos": 74575087,
+    "compressao_subtermos": 0,
+    "geracao_grades": 551,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "descartar",
+    "total": 74586128,
+    "total_ambiente": 551,
+    "total_aprendiz": 74585577,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10251,
+    "busca_passos": 80619236,
+    "compressao_subtermos": 0,
+    "geracao_grades": 557,
+    "oraculo_consultas": 4,
+    "oraculo_custo_ambiente": 14,
+    "tarefa_id": "noMaximo",
+    "total": 80630062,
+    "total_ambiente": 571,
+    "total_aprendiz": 80629491,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10248,
+    "busca_passos": 80618497,
+    "compressao_subtermos": 0,
+    "geracao_grades": 456,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "mesmoNumero",
+    "total": 80629203,
+    "total_ambiente": 457,
+    "total_aprendiz": 80628746,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10080,
+    "busca_passos": 41042772,
+    "compressao_subtermos": 0,
+    "geracao_grades": 853,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "total": 41053707,
+    "total_ambiente": 854,
+    "total_aprendiz": 41052853,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 41042789,
+    "compressao_subtermos": 0,
+    "geracao_grades": 749,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "LinhasIguais",
+    "total": 41053617,
+    "total_ambiente": 749,
+    "total_aprendiz": 41052868,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 330,
+    "busca_candidatos": 233,
+    "busca_passos": 82497,
+    "compressao_subtermos": 48,
+    "geracao_grades": 704,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 14182,
+    "tarefa_id": "ExistePreta",
+    "total": 97995,
+    "total_ambiente": 14886,
+    "total_aprendiz": 82779,
+    "total_avaliacao": 330
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 1630,
+    "busca_candidatos": 1741,
+    "busca_passos": 8561792,
+    "compressao_subtermos": 147,
+    "geracao_grades": 472,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1651,
+    "tarefa_id": "vizPretos",
+    "total": 8567434,
+    "total_ambiente": 2123,
+    "total_aprendiz": 8563681,
+    "total_avaliacao": 1630
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 41042512,
+    "compressao_subtermos": 0,
+    "geracao_grades": 808,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "ParAdjacente",
+    "total": 41053399,
+    "total_ambiente": 808,
+    "total_aprendiz": 41052591,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10079,
+    "busca_passos": 41042851,
+    "compressao_subtermos": 0,
+    "geracao_grades": 587,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "NenhumaIsolada",
+    "total": 41053517,
+    "total_ambiente": 587,
+    "total_aprendiz": 41052930,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11426,
+    "busca_passos": 97271491,
+    "compressao_subtermos": 0,
+    "geracao_grades": 466,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "passo",
+    "total": 97283383,
+    "total_ambiente": 466,
+    "total_aprendiz": 97282917,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 11427,
+    "busca_passos": 97513306,
+    "compressao_subtermos": 0,
+    "geracao_grades": 459,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "fecho",
+    "total": 97525194,
+    "total_ambiente": 460,
+    "total_aprendiz": 97524734,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10794,
+    "busca_passos": 59621798,
+    "compressao_subtermos": 0,
+    "geracao_grades": 580,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "componenteDe",
+    "total": 59633172,
+    "total_ambiente": 580,
+    "total_aprendiz": 59632592,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10080,
+    "busca_passos": 41042666,
+    "compressao_subtermos": 0,
+    "geracao_grades": 657,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 2,
+    "tarefa_id": "UmComponente",
+    "total": 41053406,
+    "total_ambiente": 659,
+    "total_aprendiz": 41052747,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 1117,
+    "busca_candidatos": 104,
+    "busca_passos": 83356,
+    "compressao_subtermos": 373,
+    "geracao_grades": 509,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1754,
+    "tarefa_id": "pretasDe",
+    "total": 87214,
+    "total_ambiente": 2263,
+    "total_aprendiz": 83834,
+    "total_avaliacao": 1117
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10490,
+    "busca_passos": 74545661,
+    "compressao_subtermos": 0,
+    "geracao_grades": 551,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "descartar",
+    "total": 74556702,
+    "total_ambiente": 551,
+    "total_aprendiz": 74556151,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10251,
+    "busca_passos": 80647826,
+    "compressao_subtermos": 0,
+    "geracao_grades": 557,
+    "oraculo_consultas": 4,
+    "oraculo_custo_ambiente": 14,
+    "tarefa_id": "noMaximo",
+    "total": 80658652,
+    "total_ambiente": 571,
+    "total_aprendiz": 80658081,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10248,
+    "busca_passos": 80647087,
+    "compressao_subtermos": 0,
+    "geracao_grades": 456,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "mesmoNumero",
+    "total": 80657793,
+    "total_ambiente": 457,
+    "total_aprendiz": 80657336,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10091,
+    "busca_passos": 38271712,
+    "compressao_subtermos": 0,
+    "geracao_grades": 853,
+    "oraculo_consultas": 1,
+    "oraculo_custo_ambiente": 1,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "total": 38282658,
+    "total_ambiente": 854,
+    "total_aprendiz": 38281804,
+    "total_avaliacao": 0
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "avaliacao_passos": 0,
+    "busca_candidatos": 10090,
+    "busca_passos": 38271729,
+    "compressao_subtermos": 0,
+    "geracao_grades": 749,
+    "oraculo_consultas": 0,
+    "oraculo_custo_ambiente": 0,
+    "tarefa_id": "LinhasIguais",
+    "total": 38282568,
+    "total_ambiente": 749,
+    "total_aprendiz": 38281819,
+    "total_avaliacao": 0
+   }
+  ],
+  "hash_diario": "f9da95bef71889611684f2ec5a249ecb84e74d586ca78447c9b193613b4d4465",
+  "metadados": {
+   "bracos": [
+    "L-fix@E0",
+    "L-lib@E0",
+    "L-lib+f@E0",
+    "L-fix@E0mais",
+    "L-lib@E0mais"
+   ],
+   "escala": "exploratoria-reduzida",
+   "tipo": "execucao autonoma do piloto"
+  },
+  "num_lancamentos": 554,
+  "semente": 10001,
+  "total": 3091750991,
+  "total_por_campo": {
+   "avaliacao_passos": 15385,
+   "busca_candidatos": 583510,
+   "busca_passos": 3091020447,
+   "compressao_subtermos": 1515,
+   "geracao_grades": 42040,
+   "oraculo_consultas": 55,
+   "oraculo_custo_ambiente": 88039
+  }
+ },
+ "medicoes": {
+  "aviso": "medições reais; não determinísticas; fora da comparação e do total",
+  "por_entrada": [
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 48576,
+    "tarefa_id": "ExistePreta",
+    "tempo_parede_s": 0.3298350509994634
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 66200,
+    "tarefa_id": "vizPretos",
+    "tempo_parede_s": 2.47682838000037
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 289040,
+    "tarefa_id": "ParAdjacente",
+    "tempo_parede_s": 20.967519117999473
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 396768,
+    "tarefa_id": "NenhumaIsolada",
+    "tempo_parede_s": 22.18662509999922
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 480724,
+    "tarefa_id": "passo",
+    "tempo_parede_s": 21.23367399200106
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 482120,
+    "tarefa_id": "fecho",
+    "tempo_parede_s": 18.50521673900039
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 488852,
+    "tarefa_id": "componenteDe",
+    "tempo_parede_s": 16.265895308000836
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 488852,
+    "tarefa_id": "UmComponente",
+    "tempo_parede_s": 22.714233279999462
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 488852,
+    "tarefa_id": "pretasDe",
+    "tempo_parede_s": 0.10250633900068351
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 579324,
+    "tarefa_id": "descartar",
+    "tempo_parede_s": 13.819496591000643
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 579324,
+    "tarefa_id": "noMaximo",
+    "tempo_parede_s": 57.06445970099958
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 579324,
+    "tarefa_id": "mesmoNumero",
+    "tempo_parede_s": 59.6614762370009
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 579324,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "tempo_parede_s": 21.445047829998657
+   },
+   {
+    "aprendiz_id": "L-fix@E0",
+    "memoria_pico_kb": 579324,
+    "tarefa_id": "LinhasIguais",
+    "tempo_parede_s": 21.836401210000986
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 48656,
+    "tarefa_id": "ExistePreta",
+    "tempo_parede_s": 0.3740344739999273
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 66252,
+    "tarefa_id": "vizPretos",
+    "tempo_parede_s": 2.7531144770000537
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 289124,
+    "tarefa_id": "ParAdjacente",
+    "tempo_parede_s": 21.24624117699932
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 396840,
+    "tarefa_id": "NenhumaIsolada",
+    "tempo_parede_s": 21.571106731000327
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 480932,
+    "tarefa_id": "passo",
+    "tempo_parede_s": 21.02229266299946
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 482212,
+    "tarefa_id": "fecho",
+    "tempo_parede_s": 19.782612410999718
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 488884,
+    "tarefa_id": "componenteDe",
+    "tempo_parede_s": 16.954451490000793
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 489008,
+    "tarefa_id": "UmComponente",
+    "tempo_parede_s": 22.91299482300019
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 489008,
+    "tarefa_id": "pretasDe",
+    "tempo_parede_s": 0.13213433400051144
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 578448,
+    "tarefa_id": "descartar",
+    "tempo_parede_s": 12.893254701000842
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 578448,
+    "tarefa_id": "noMaximo",
+    "tempo_parede_s": 60.38400579299923
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 578448,
+    "tarefa_id": "mesmoNumero",
+    "tempo_parede_s": 59.2887921599995
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 578448,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "tempo_parede_s": 21.788188225998965
+   },
+   {
+    "aprendiz_id": "L-lib@E0",
+    "memoria_pico_kb": 578448,
+    "tarefa_id": "LinhasIguais",
+    "tempo_parede_s": 20.234279492000496
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 48576,
+    "tarefa_id": "ExistePreta",
+    "tempo_parede_s": 0.3583942460008984
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 66172,
+    "tarefa_id": "vizPretos",
+    "tempo_parede_s": 2.4312369099989155
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 294248,
+    "tarefa_id": "ParAdjacente",
+    "tempo_parede_s": 20.829896393001036
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 402876,
+    "tarefa_id": "NenhumaIsolada",
+    "tempo_parede_s": 21.975059406000582
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 488864,
+    "tarefa_id": "passo",
+    "tempo_parede_s": 19.73819493499832
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 489228,
+    "tarefa_id": "fecho",
+    "tempo_parede_s": 19.1962392789992
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 489484,
+    "tarefa_id": "componenteDe",
+    "tempo_parede_s": 14.284340980999332
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 489484,
+    "tarefa_id": "UmComponente",
+    "tempo_parede_s": 23.06165021400011
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 489484,
+    "tarefa_id": "pretasDe",
+    "tempo_parede_s": 0.07365011299953039
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "descartar",
+    "tempo_parede_s": 13.054334219999873
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "noMaximo",
+    "tempo_parede_s": 59.242856974999086
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "mesmoNumero",
+    "tempo_parede_s": 57.02129383099964
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "tempo_parede_s": 15.910272106000775
+   },
+   {
+    "aprendiz_id": "L-lib+f@E0",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "LinhasIguais",
+    "tempo_parede_s": 16.46099813699948
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 48532,
+    "tarefa_id": "ExistePreta",
+    "tempo_parede_s": 0.3417180490014289
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 72688,
+    "tarefa_id": "vizPretos",
+    "tempo_parede_s": 5.0268031989999145
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 360484,
+    "tarefa_id": "ParAdjacente",
+    "tempo_parede_s": 27.542429646999153
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 468940,
+    "tarefa_id": "NenhumaIsolada",
+    "tempo_parede_s": 27.707795221000197
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 612924,
+    "tarefa_id": "passo",
+    "tempo_parede_s": 76.91788064900175
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 614032,
+    "tarefa_id": "fecho",
+    "tempo_parede_s": 75.61208845199872
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 614032,
+    "tarefa_id": "componenteDe",
+    "tempo_parede_s": 45.98716786499972
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 614032,
+    "tarefa_id": "UmComponente",
+    "tempo_parede_s": 28.73971382700074
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 614032,
+    "tarefa_id": "pretasDe",
+    "tempo_parede_s": 0.12890014100048575
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 625448,
+    "tarefa_id": "descartar",
+    "tempo_parede_s": 61.51429190900126
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 626084,
+    "tarefa_id": "noMaximo",
+    "tempo_parede_s": 62.43611689000136
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 626340,
+    "tarefa_id": "mesmoNumero",
+    "tempo_parede_s": 63.10326368799906
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 626340,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "tempo_parede_s": 25.720845888999975
+   },
+   {
+    "aprendiz_id": "L-fix@E0mais",
+    "memoria_pico_kb": 626460,
+    "tarefa_id": "LinhasIguais",
+    "tempo_parede_s": 26.312094655999317
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "ExistePreta",
+    "tempo_parede_s": 0.3485993169997528
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "vizPretos",
+    "tempo_parede_s": 5.850929361000453
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "ParAdjacente",
+    "tempo_parede_s": 24.490870568999526
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 572148,
+    "tarefa_id": "NenhumaIsolada",
+    "tempo_parede_s": 24.886153737999848
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 634760,
+    "tarefa_id": "passo",
+    "tempo_parede_s": 71.83190242899946
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "fecho",
+    "tempo_parede_s": 75.32214951599963
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "componenteDe",
+    "tempo_parede_s": 41.454788856999585
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "UmComponente",
+    "tempo_parede_s": 26.023448531999748
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "pretasDe",
+    "tempo_parede_s": 0.5403031440000632
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "descartar",
+    "tempo_parede_s": 60.40059023699905
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "noMaximo",
+    "tempo_parede_s": 58.839170204000766
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "mesmoNumero",
+    "tempo_parede_s": 59.50830642300025
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "PrimeiraUltimaIguais",
+    "tempo_parede_s": 24.2824963639996
+   },
+   {
+    "aprendiz_id": "L-lib@E0mais",
+    "memoria_pico_kb": 635136,
+    "tarefa_id": "LinhasIguais",
+    "tempo_parede_s": 25.23700638899936
+   }
+  ]
+ }
+}

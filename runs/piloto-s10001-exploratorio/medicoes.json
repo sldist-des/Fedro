@@ -1,0 +1,590 @@
+{
+ "execucao": {
+  "inicio": "2026-10-29T21:00:07",
+  "processos": 4
+ },
+ "fases": {
+  "1": {
+   "cpu_s": 73.00238399999999,
+   "memoria_pico_kib": 454408,
+   "tempo_parede_s": 18.732151055999566
+  },
+  "2": {
+   "cpu_s": 0.3537280000000038,
+   "memoria_pico_kib": 441472,
+   "reaproveitada": true,
+   "tempo_parede_s": 0.3546874260009645
+  },
+  "3": {
+   "cpu_s": 3255.9423530000004,
+   "memoria_pico_kib": 4007632,
+   "reaproveitada": true,
+   "tempo_parede_s": 1395.200518443
+  },
+  "4": {
+   "cpu_s": 31.685336999999436,
+   "memoria_pico_kib": 4007632,
+   "reaproveitada": true,
+   "tempo_parede_s": 15.834188025000913
+  },
+  "5": {
+   "cpu_s": 3.3296650000002046,
+   "memoria_pico_kib": 4007632,
+   "reaproveitada": true,
+   "tempo_parede_s": 3.4105191710004874
+  },
+  "6": {
+   "cpu_s": 1905.773872,
+   "memoria_pico_kib": 636556,
+   "reaproveitada": true,
+   "tempo_parede_s": 822.3621396770013
+  },
+  "7": {
+   "cpu_s": 0.0001850000000018781,
+   "memoria_pico_kib": 454408,
+   "tempo_parede_s": 0.00018982500114361756
+  }
+ },
+ "fases_detalhe": {
+  "1": {
+   "pm1": [
+    {
+     "cpu_s": 10.317892193,
+     "tempo_parede_s": 10.432108019000225
+    },
+    {
+     "cpu_s": 9.958650644,
+     "tempo_parede_s": 10.102368703001048
+    },
+    {
+     "cpu_s": 11.462113817,
+     "tempo_parede_s": 11.630637042000671
+    },
+    {
+     "cpu_s": 11.37520096,
+     "tempo_parede_s": 11.5538818240002
+    }
+   ],
+   "pm3": [
+    {
+     "conceito": "ExistePreta",
+     "n": 3
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 4
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 5
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 6
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 323012,
+     "n": 3,
+     "pares_por_segundo": 527.2367515566401,
+     "projecao_s_1000_pares": 1.8966811343244758,
+     "tempo_parede_s": 0.12707763599973987
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 323272,
+     "n": 4,
+     "pares_por_segundo": 1788.3610920723775,
+     "projecao_s_1000_pares": 0.5591711899978691,
+     "tempo_parede_s": 0.05591711899978691
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 347972,
+     "n": 5,
+     "pares_por_segundo": 141.52366843958265,
+     "projecao_s_1000_pares": 7.06595589999779,
+     "tempo_parede_s": 0.7065955899997789
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 345840,
+     "n": 6,
+     "pares_por_segundo": 52.49223791503384,
+     "projecao_s_1000_pares": 19.050435640001524,
+     "tempo_parede_s": 1.9050435640001524
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 291228,
+     "n": 3,
+     "pares_por_segundo": 140.9572521728767,
+     "projecao_s_1000_pares": 7.09434941859928,
+     "tempo_parede_s": 0.30505702499976906
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 349508,
+     "n": 4,
+     "pares_por_segundo": 577.2106288269147,
+     "projecao_s_1000_pares": 1.7324698300035377,
+     "tempo_parede_s": 0.1732469830003538
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 292896,
+     "n": 5,
+     "pares_por_segundo": 1751.7070823395443,
+     "projecao_s_1000_pares": 0.5708717000015895,
+     "tempo_parede_s": 0.05708717000015895
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 294688,
+     "n": 6,
+     "pares_por_segundo": 1481.858049052139,
+     "projecao_s_1000_pares": 0.6748284700006479,
+     "tempo_parede_s": 0.0674828470000648
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 294688,
+     "n": 3,
+     "pares_por_segundo": 105.6700039256788,
+     "projecao_s_1000_pares": 9.463423515185378,
+     "tempo_parede_s": 0.3122929760011175
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 314784,
+     "n": 4,
+     "pares_por_segundo": 573.5616373258603,
+     "projecao_s_1000_pares": 1.7434917799982939,
+     "tempo_parede_s": 0.1743491779998294
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 323912,
+     "n": 5,
+     "pares_por_segundo": 2928.371820334441,
+     "projecao_s_1000_pares": 0.34148668999478105,
+     "tempo_parede_s": 0.034148668999478105
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 350276,
+     "n": 6,
+     "pares_por_segundo": 1943.562520601355,
+     "projecao_s_1000_pares": 0.5145190799885313,
+     "tempo_parede_s": 0.05145190799885313
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 324168,
+     "n": 3,
+     "pares_por_segundo": 1151.8012911847018,
+     "projecao_s_1000_pares": 0.8682053125426137,
+     "tempo_parede_s": 0.027782570001363638
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 351428,
+     "n": 4,
+     "pares_por_segundo": 879.5489082131456,
+     "projecao_s_1000_pares": 1.1369464400013385,
+     "tempo_parede_s": 0.11369464400013385
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 324296,
+     "n": 5,
+     "pares_por_segundo": 3607.163321218122,
+     "projecao_s_1000_pares": 0.2772261500103923,
+     "tempo_parede_s": 0.02772261500103923
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 324296,
+     "n": 6,
+     "pares_por_segundo": 2902.17726856552,
+     "projecao_s_1000_pares": 0.3445688899955712,
+     "tempo_parede_s": 0.03445688899955712
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 324296,
+     "n": 3,
+     "pares_por_segundo": 717.9137425860857,
+     "projecao_s_1000_pares": 1.392925000150821,
+     "tempo_parede_s": 0.009750475001055747
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 325320,
+     "n": 4,
+     "pares_por_segundo": 653.7054183574261,
+     "projecao_s_1000_pares": 1.5297410300081538,
+     "tempo_parede_s": 0.15297410300081538
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 325320,
+     "n": 5,
+     "pares_por_segundo": 1624.5127274092624,
+     "projecao_s_1000_pares": 0.6155691999992996,
+     "tempo_parede_s": 0.06155691999992996
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 351556,
+     "n": 6,
+     "pares_por_segundo": 2606.3812082459567,
+     "projecao_s_1000_pares": 0.383673730011651,
+     "tempo_parede_s": 0.038367373001165106
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 351556,
+     "n": 3,
+     "pares_por_segundo": 105.86281451534173,
+     "projecao_s_1000_pares": 9.446187545439567,
+     "tempo_parede_s": 0.3117241889995057
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 325832,
+     "n": 4,
+     "pares_por_segundo": 1030.4933280694797,
+     "projecao_s_1000_pares": 0.9704090000013821,
+     "tempo_parede_s": 0.09704090000013821
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 346992,
+     "n": 5,
+     "pares_por_segundo": 1668.2148813181382,
+     "projecao_s_1000_pares": 0.5994431599901873,
+     "tempo_parede_s": 0.05994431599901873
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 315808,
+     "n": 6,
+     "pares_por_segundo": 1490.3472148516141,
+     "projecao_s_1000_pares": 0.6709845799923642,
+     "tempo_parede_s": 0.06709845799923642
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 347120,
+     "n": 3,
+     "pares_por_segundo": 51.123955505790576,
+     "projecao_s_1000_pares": 19.56030182145696,
+     "tempo_parede_s": 0.5476884510007949
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 316960,
+     "n": 4,
+     "pares_por_segundo": 863.234354224338,
+     "projecao_s_1000_pares": 1.1584339699948032,
+     "tempo_parede_s": 0.11584339699948032
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 352196,
+     "n": 5,
+     "pares_por_segundo": 2779.854097118137,
+     "projecao_s_1000_pares": 0.3597311100020306,
+     "tempo_parede_s": 0.03597311100020306
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 326728,
+     "n": 6,
+     "pares_por_segundo": 2182.303811875317,
+     "projecao_s_1000_pares": 0.458231339998747,
+     "tempo_parede_s": 0.0458231339998747
+    }
+   ]
+  },
+  "2": {
+   "tempo_parede_s": 0.3546764919992711
+  },
+  "3": {
+   "pm8_pm9": [
+    {
+     "base": "E0",
+     "bytes_estimados": 54558800,
+     "candidatos_avaliados_por_segundo": 271.47279359614987,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 368.36472147099994
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 6771320,
+     "candidatos_avaliados_por_segundo": 1006.2855471960131,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 9.93853089500044
+    },
+    {
+     "base": "E0",
+     "candidatos_avaliados_por_segundo": 184.9928387204724,
+     "classe": "contexto",
+     "memoria_pico_kib": 4007632,
+     "memoria_pico_trabalhador_kib": 4007632,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 284.4866880469999
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 4304592,
+     "candidatos_avaliados_por_segundo": 474.8982466556049,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 21.059248102999845
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 5080280,
+     "candidatos_avaliados_por_segundo": 570.4726424646826,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 17.531077313000424
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 5781240,
+     "candidatos_avaliados_por_segundo": 464.39224827015687,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 21.53567385599854
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 9294800,
+     "candidatos_avaliados_por_segundo": 842.9998620521847,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 11.86358438500065
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 12113608,
+     "candidatos_avaliados_por_segundo": 170.04541527111556,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 58.813699763999466
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 60906512,
+     "candidatos_avaliados_por_segundo": 90.39783047776442,
+     "classe": "contexto",
+     "memoria_pico_kib": 4007632,
+     "memoria_pico_trabalhador_kib": 4007632,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 1106.232300836
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 7918856,
+     "candidatos_avaliados_por_segundo": 295.7451801151458,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 33.81627384800049
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 13168624,
+     "candidatos_avaliados_por_segundo": 97.36542851499769,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 102.71612986800028
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 4387152,
+     "candidatos_avaliados_por_segundo": 108.5369563398402,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 92.14372999999978
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 4353768,
+     "candidatos_avaliados_por_segundo": 133.0753535177606,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 75.15290950300005
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 6044168,
+     "candidatos_avaliados_por_segundo": 141.49581572710687,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 70.68053531199985
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 8211344,
+     "candidatos_avaliados_por_segundo": 295.90344340623966,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 33.79818728999999
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 10567456,
+     "candidatos_avaliados_por_segundo": 53.821373750014516,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 185.81837108900072
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 53137072,
+     "candidatos_avaliados_por_segundo": 273.3463249528607,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062860,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 365.8399285859996
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 6197720,
+     "candidatos_avaliados_por_segundo": 514.6069355323734,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 19.43425031699917
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 11884272,
+     "candidatos_avaliados_por_segundo": 77.24871240544803,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 129.4649410790007
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 4102872,
+     "candidatos_avaliados_por_segundo": 380.81582304301645,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 26.262039008999636
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 3557056,
+     "candidatos_avaliados_por_segundo": 231.44918255977788,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 43.210349198001495
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 5584160,
+     "candidatos_avaliados_por_segundo": 139.45542550531923,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 71.71467129200028
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 8478936,
+     "candidatos_avaliados_por_segundo": 157.5408135344668,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 63.48196239199933
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 11239960,
+     "candidatos_avaliados_por_segundo": 153.84398105980424,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 65.00741810699947
+    }
+   ]
+  },
+  "4": {},
+  "5": {},
+  "6": {
+   "bracos": {
+    "L-fix@E0": {
+     "cpu_s": 297.059342006,
+     "memoria_pico_kib": 581836,
+     "tempo_parede_s": 325.95514097199884
+    },
+    "L-fix@E0mais": {
+     "cpu_s": 520.982051929,
+     "memoria_pico_kib": 622940,
+     "tempo_parede_s": 552.3924555970007
+    },
+    "L-lib+f@E0": {
+     "cpu_s": 286.36596262999996,
+     "memoria_pico_kib": 573944,
+     "tempo_parede_s": 316.6926303199998
+    },
+    "L-lib@E0": {
+     "cpu_s": 300.282207513,
+     "memoria_pico_kib": 580900,
+     "tempo_parede_s": 327.56240313300077
+    },
+    "L-lib@E0mais": {
+     "cpu_s": 500.868896739,
+     "memoria_pico_kib": 636556,
+     "tempo_parede_s": 505.60120836199894
+    }
+   }
+  },
+  "7": {}
+ }
+}

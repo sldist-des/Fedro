@@ -1,0 +1,9 @@
+# Comandos que produziram estes registros (diretório de trabalho: raiz do repositório)
+# 1) execução completa (fases 1-7); registros movidos para runs/piloto-s10001-exploratorio-parcial-1
+python3 -m fedro_piloto.piloto --id piloto-s10001-exploratorio --semente 10001 --processos 4
+# 2) após corrigir PM6 (viés da restrição de baldes em n <= 4) e registrar as grades-fonte das tarefas LP -> LP:
+#    fases 1, 6, 7 recalculadas, 2-5 reaproveitadas; registros movidos para runs/piloto-s10001-exploratorio-parcial-2
+python3 -m fedro_piloto.piloto --id piloto-s10001-exploratorio --semente 10001 --processos 4 --fases 1,6,7 --reaproveitar runs/piloto-s10001-exploratorio-parcial-1
+# 3) após corrigir a tolerância de arredondamento de PM6: fases 1, 7 recalculadas, 2-6 reaproveitadas
+python3 -m fedro_piloto.piloto --id piloto-s10001-exploratorio --semente 10001 --processos 4 --fases 1,7 --reaproveitar runs/piloto-s10001-exploratorio-parcial-2
+# A fase 6 das execuções 1 e 2 deu livros-razão determinísticos idênticos (comparar_deterministico == []).

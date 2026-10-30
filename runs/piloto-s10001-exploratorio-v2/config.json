@@ -1,0 +1,253 @@
+{
+ "B_tarefa": 10000,
+ "K": 12,
+ "alcance_B_unico": 10000,
+ "alcance_D_adequado_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ],
+ "alcance_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ],
+ "alcance_com_anteriores_bases": [
+  "E0",
+  "E0mais"
+ ],
+ "alcance_completos": [
+  [
+   "E0",
+   "{g} → Bool"
+  ],
+  [
+   "E0",
+   "{g, S: L Pos} → L Pos"
+  ],
+  [
+   "E0p",
+   "{g} → Bool"
+  ],
+  [
+   "E0mais",
+   "{g} → Bool"
+  ]
+ ],
+ "alcance_fechado_B": 10000,
+ "alcance_fechado_tipos": [
+  "Grade → Bool",
+  "Grade → Pos → L Pos",
+  "Grade → L Pos → L Pos",
+  "L Pos → L Pos → L Pos",
+  "L Pos → L Pos → Bool"
+ ],
+ "alcance_orcamentos": [
+  10000,
+  100000
+ ],
+ "alcance_orcamentos_reduzidos": [
+  10000
+ ],
+ "alcance_s_max": 30,
+ "alcance_sistematica_bases": [
+  "E0",
+  "E0mais"
+ ],
+ "auditoria_oe_max_entradas": 120,
+ "auditoria_oe_s_max": 8,
+ "auditoria_oe_s_max_reduzido": 7,
+ "auditoria_oe_tipos": [
+  "Grade → Bool",
+  "Grade → Pos → L Pos",
+  "Grade → L Pos → L Pos",
+  "L Pos → L Pos → L Pos",
+  "L Pos → L Pos → Bool"
+ ],
+ "aut_min_tarefas": 1,
+ "bracos": [
+  [
+   "L-fix",
+   "E0"
+  ],
+  [
+   "L-lib",
+   "E0"
+  ],
+  [
+   "L-lib+f",
+   "E0"
+  ],
+  [
+   "L-fix",
+   "E0mais"
+  ],
+  [
+   "L-lib",
+   "E0mais"
+  ]
+ ],
+ "contagem_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ],
+ "contagem_s_max": 10,
+ "custo_igual_max": 60000,
+ "degeneracao_conceitos": [
+  "ExistePreta",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "UmComponente",
+  "Igual_linha1_linhaN",
+  "LinhasIguais"
+ ],
+ "degeneracao_ns": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "degeneracao_tentativas": 200,
+ "escala": "exploratoria-reduzida",
+ "fases": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "fontes": {
+  "arquivos": {
+   "__init__.py": "8b4b24aee2c5e5fe872edbc32296c689504c1fc427d24c06bd6314f2194c6183",
+   "adaptadores.py": "49ce5042308e67eb69d8cb8bb0a510f81595c2292eb969493b839dd97403c438",
+   "aprendizes.py": "cf44d5d545462db6b5438fc4cf36b253917d94d1138b5042ebad82504666d7fe",
+   "avaliador.py": "44ae052c13317dfa1fba4f8bf7f8767ded0e190857d334dcb512c3800d70f7c5",
+   "biblioteca.py": "1ed0a69a01ee23667cfa06c141ed70928a9ad14bfa03db66bcb3c221edf45bb7",
+   "certificados.py": "8643758e8b4fc66a371a37e1a902c53875f087a001c5a1bb915f4b5398d30a79",
+   "dsl.py": "9b171a936e10da1e2c52452cfe3dfdc36079621c2e3a5691475c572cb3a6fc3c",
+   "enumerador.py": "7c1a2b0df66de1fdf4e8971411391fb0b9d61884ce3923927686461e3d428a26",
+   "geradores.py": "9b450da46a9b3298b0e3880fd2a81a09578d6aec1c3ce7e7dc945129243fb264",
+   "grade.py": "fadab8dc3d0961185a580e5fae6163fadbe8c7a3103e9261fa1c25af10d5cfa4",
+   "medidas.py": "bccb15fe592c26ac1227348d1710807fb7c55503fafed3ae071a989392a6d16d",
+   "oraculo.py": "533bcdbf7380ba26304bc764366aa939943a2b4b8963846a7378d7325d7f3627",
+   "piloto.py": "9bc0fd22f1fcae0526f904952293d8174a863046660ea6e2674a525fb4900d91",
+   "programas_referencia.py": "7a7de40276fc0f290f8d028dafcebe2530dc7cddc0d593b6fc719a011f8a905e",
+   "razao.py": "f0081c8c0ea1e39d35710b51562d75b86ef7ee2d3da66243fcdae6d76f249ac3",
+   "referencias.py": "e75e8276cca84f947af15d9f940f8bf506bae340ebf77ca4cfa344bda01b5672",
+   "tradutores.py": "4ac5302836b9dc1934b38249b1e631382b770724f0c72480919d879d348bfbad"
+  },
+  "python": "3.13.17",
+  "sha256_total": "9d0e41dedebb9e59edcb6111a306d170434ad06cea5d74c1ad98502810edd7a4"
+ },
+ "i3_limiar_s": 10.0,
+ "i6_limiar": 200.0,
+ "k_reservatorio": 40,
+ "limiar": 3,
+ "limiar_mecanismo": 5,
+ "memoria_trabalhador_gb": 4.0,
+ "ns_reservatorio": [
+  5,
+  6
+ ],
+ "num_teste": 30,
+ "orcamento_passos": 100000,
+ "pm11_grades_aleatorias_por_n": 10,
+ "pm12_pares": 50,
+ "pm13_limiar_s": 2.0,
+ "pm16_B": 1000000,
+ "pm16_bases": 2,
+ "pm16_bracos": 10,
+ "pm16_limiar_h": 2000.0,
+ "pm16_sementes": 5,
+ "pm16_tarefas": 60,
+ "pm1_amostras_por_n": 300,
+ "pm1_ns_amostra": [
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "pm1_ns_exaustivo": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "pm2_conceitos": [
+  "ExistePreta",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "UmComponente",
+  "Igual_linha1_linhaN",
+  "LinhasIguais",
+  "TodosMesmoTamanho",
+  "DoisSeparados"
+ ],
+ "pm2_k_pares": 100,
+ "pm2_ns": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "pm6_amostras": 1000,
+ "pm6_conceitos": [
+  "TopoCheio",
+  "LinhaOcupada",
+  "LinhasIguais",
+  "MetadesIguais",
+  "PrimeiraUltimaIguais",
+  "CantoSupEsq",
+  "Diagonal",
+  "ColunaDoisVazia",
+  "DoisSeparados",
+  "MaiorTocaBorda",
+  "NenhumaIsolada",
+  "PeloMenosDois",
+  "TodosMesmoTamanho",
+  "TresComponentes",
+  "UmComponente",
+  "ComponentesIgualLinha1"
+ ],
+ "pm6_ns": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "pm9_limiar": 2000.0,
+ "pm9_s_max": 8,
+ "semente": 10001,
+ "tarefas": [
+  "ExistePreta",
+  "vizPretos",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "passo",
+  "fecho",
+  "componenteDe",
+  "UmComponente",
+  "pretasDe",
+  "descartar",
+  "noMaximo",
+  "mesmoNumero",
+  "PrimeiraUltimaIguais",
+  "LinhasIguais"
+ ],
+ "verif_aleatorias_por_n": 10,
+ "verif_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ]
+}

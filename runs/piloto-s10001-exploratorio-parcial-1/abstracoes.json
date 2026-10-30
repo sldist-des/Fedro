@@ -1,0 +1,326 @@
+{
+ "L-fix@E0": {
+  "abstracoes": [],
+  "proveniencia": "descoberta (execução autônoma)"
+ },
+ "L-fix@E0mais": {
+  "abstracoes": [],
+  "proveniencia": "descoberta (execução autônoma)"
+ },
+ "L-lib+f@E0": {
+  "abstracoes": [
+   {
+    "categoria": "descoberta",
+    "corpo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+    "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+    "metodo": "promocao-solucao",
+    "nome": "abs1",
+    "num_buracos": 0,
+    "num_parametros": 2,
+    "ocorrencias": 1,
+    "pontuacao": 0,
+    "proveniencia": "descoberta",
+    "reutilizacoes": {},
+    "reutilizacoes_indiretas": {},
+    "reutilizada": false,
+    "tamanho": 8,
+    "tarefas_origem": [
+     "vizPretos"
+    ],
+    "tipo": "Grade → Pos → L Pos",
+    "usos_em_origem_posteriores": {},
+    "usos_na_origem": 1
+   },
+   {
+    "categoria": "descoberta",
+    "corpo": "(\\ (g1 Grade) (filtrar@P (celula g1)))",
+    "legivel": "λg1. filtrar@P (celula g1)",
+    "metodo": "promocao-solucao",
+    "nome": "abs2",
+    "num_buracos": 0,
+    "num_parametros": 1,
+    "ocorrencias": 1,
+    "pontuacao": 0,
+    "proveniencia": "descoberta",
+    "reutilizacoes": {},
+    "reutilizacoes_indiretas": {},
+    "reutilizada": false,
+    "tamanho": 4,
+    "tarefas_origem": [
+     "pretasDe"
+    ],
+    "tipo": "Grade → L Pos → L Pos",
+    "usos_em_origem_posteriores": {},
+    "usos_na_origem": 1
+   }
+  ],
+  "proveniencia": "descoberta (execução autônoma)"
+ },
+ "L-lib@E0": {
+  "abstracoes": [
+   {
+    "categoria": "descoberta",
+    "corpo": "(\\ (g1 Grade) (filtrar@P (celula g1)))",
+    "legivel": "λg1. filtrar@P (celula g1)",
+    "metodo": "fechamento",
+    "nome": "abs1",
+    "num_buracos": 0,
+    "num_parametros": 1,
+    "ocorrencias": 2,
+    "pontuacao": 3,
+    "proveniencia": "descoberta",
+    "reutilizacoes": {},
+    "reutilizacoes_indiretas": {},
+    "reutilizada": false,
+    "tamanho": 4,
+    "tarefas_origem": [
+     "vizPretos",
+     "pretasDe"
+    ],
+    "tipo": "Grade → L Pos → L Pos",
+    "usos_em_origem_posteriores": {},
+    "usos_na_origem": 2
+   }
+  ],
+  "proveniencia": "descoberta (execução autônoma)"
+ },
+ "L-lib@E0mais": {
+  "abstracoes": [
+   {
+    "categoria": "descoberta",
+    "corpo": "(\\ (g1 Grade) (filtrar@P (celula g1)))",
+    "legivel": "λg1. filtrar@P (celula g1)",
+    "metodo": "fechamento",
+    "nome": "abs1",
+    "num_buracos": 0,
+    "num_parametros": 1,
+    "ocorrencias": 2,
+    "pontuacao": 3,
+    "proveniencia": "descoberta",
+    "reutilizacoes": {},
+    "reutilizacoes_indiretas": {},
+    "reutilizada": false,
+    "tamanho": 4,
+    "tarefas_origem": [
+     "vizPretos",
+     "pretasDe"
+    ],
+    "tipo": "Grade → L Pos → L Pos",
+    "usos_em_origem_posteriores": {},
+    "usos_na_origem": 2
+   }
+  ],
+  "proveniencia": "descoberta (execução autônoma)"
+ },
+ "MECANISMO (mecanismo-teste, NÃO descoberta)": [
+  {
+   "alvo": "vizPretos",
+   "entradas_compressao_gulosa": [
+    {
+     "legivel": "λf1 g2. f1 (λp3. nao (vazia?@P (filtrar@P (celula g2) (vizinhos g2 p3)))) (pretas g2)",
+     "nome": "abs1",
+     "proveniencia": "manual-teste",
+     "tipo": "((Pos → Bool) → L Pos → Bool) → Grade → Bool"
+    }
+   ],
+   "extraido": true,
+   "fragmento_igual": {
+    "legivel": "λg1 p2. filtrar@P (celula g1) (vizinhos g1 p2)",
+    "metodo": "fechamento",
+    "num_buracos": 0,
+    "num_parametros": 2,
+    "ocorrencias": 2,
+    "origem_ids": [
+     "ParAdjacente",
+     "NenhumaIsolada"
+    ],
+    "pontuacao": 7,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 8,
+    "termo": "(\\ (g1 Grade) (p2 Pos) (filtrar@P (celula g1) (vizinhos g1 p2)))",
+    "tipo": "Grade → Pos → L Pos"
+   },
+   "fragmentos": 5,
+   "fragmentos_do_tipo": 1,
+   "grades_comparacao": 144,
+   "gulosa_contem_alvo": [],
+   "igual_sem_permutar": true,
+   "melhor_fragmento": {
+    "legivel": "λf1 g2. f1 (λp3. nao (vazia?@P (filtrar@P (celula g2) (vizinhos g2 p3)))) (pretas g2)",
+    "metodo": "antiunificacao",
+    "num_buracos": 1,
+    "num_parametros": 1,
+    "ocorrencias": 2,
+    "origem_ids": [
+     "ParAdjacente",
+     "NenhumaIsolada"
+    ],
+    "pontuacao": 13,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 14,
+    "termo": "(\\ (f1 (-> (-> Pos Bool) (L Pos) Bool)) (g2 Grade) (f1 (\\ (p3 Pos) (nao (vazia?@P (filtrar@P (celula g2) (vizinhos g2 p3))))) (pretas g2)))",
+    "tipo": "((Pos → Bool) → L Pos → Bool) → Grade → Bool"
+   },
+   "modo": "mecanismo-teste",
+   "permutacao_argumentos": [
+    0,
+    1
+   ],
+   "posicao_no_ranking": 4,
+   "proveniencia": "manual-teste",
+   "solucoes_fonte": [
+    "ParAdjacente",
+    "NenhumaIsolada"
+   ]
+  },
+  {
+   "alvo": "passo",
+   "entradas_compressao_gulosa": [
+    {
+     "legivel": "λl1 g2. uniao l1 (juntar (mapear@P>LP (λp3. filtrar@P (celula g2) (vizinhos g2 p3)) l1))",
+     "nome": "abs1",
+     "proveniencia": "manual-teste",
+     "tipo": "L Pos → Grade → L Pos"
+    }
+   ],
+   "extraido": true,
+   "fragmento_igual": {
+    "legivel": "λl1 g2. uniao l1 (juntar (mapear@P>LP (λp3. filtrar@P (celula g2) (vizinhos g2 p3)) l1))",
+    "metodo": "fechamento",
+    "num_buracos": 0,
+    "num_parametros": 2,
+    "ocorrencias": 2,
+    "origem_ids": [
+     "fecho"
+    ],
+    "pontuacao": 13,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 14,
+    "termo": "(\\ (l1 (L Pos)) (g2 Grade) (uniao l1 (juntar (mapear@P>LP (\\ (p3 Pos) (filtrar@P (celula g2) (vizinhos g2 p3))) l1))))",
+    "tipo": "L Pos → Grade → L Pos"
+   },
+   "fragmentos": 5,
+   "fragmentos_do_tipo": 3,
+   "grades_comparacao": 144,
+   "gulosa_contem_alvo": [
+    {
+     "nome": "abs1",
+     "permutacao_argumentos": [
+      1,
+      0
+     ]
+    }
+   ],
+   "igual_sem_permutar": false,
+   "melhor_fragmento": {
+    "legivel": "λl1 g2. uniao l1 (juntar (mapear@P>LP (λp3. filtrar@P (celula g2) (vizinhos g2 p3)) l1))",
+    "metodo": "fechamento",
+    "num_buracos": 0,
+    "num_parametros": 2,
+    "ocorrencias": 2,
+    "origem_ids": [
+     "fecho"
+    ],
+    "pontuacao": 13,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 14,
+    "termo": "(\\ (l1 (L Pos)) (g2 Grade) (uniao l1 (juntar (mapear@P>LP (\\ (p3 Pos) (filtrar@P (celula g2) (vizinhos g2 p3))) l1))))",
+    "tipo": "L Pos → Grade → L Pos"
+   },
+   "modo": "mecanismo-teste",
+   "permutacao_argumentos": [
+    1,
+    0
+   ],
+   "posicao_no_ranking": 1,
+   "proveniencia": "manual-teste",
+   "solucoes_fonte": [
+    "fecho"
+   ]
+  },
+  {
+   "alvo": "pretasDe",
+   "entradas_compressao_gulosa": [
+    {
+     "legivel": "λl1 l2. vazia?@P ((fix (λf3 l4 l5. se@LP (vazia?@P l4) l5 (f3 (cauda@P l4) (cauda@P l5)))) l1 l2)",
+     "nome": "abs1",
+     "proveniencia": "manual-teste",
+     "tipo": "L Pos → L Pos → Bool"
+    },
+    {
+     "legivel": "λg1 l2. filtrar@P (celula g1) (cabeca@LP l2)",
+     "nome": "abs2",
+     "proveniencia": "manual-teste",
+     "tipo": "Grade → L (L Pos) → L Pos"
+    },
+    {
+     "legivel": "λl1 l2. e (abs1 l2 l1) (abs1 l1 l2)",
+     "nome": "abs3",
+     "proveniencia": "manual-teste",
+     "tipo": "L Pos → L Pos → Bool"
+    }
+   ],
+   "extraido": true,
+   "fragmento_igual": {
+    "legivel": "λg1. filtrar@P (celula g1)",
+    "metodo": "fechamento",
+    "num_buracos": 0,
+    "num_parametros": 1,
+    "ocorrencias": 5,
+    "origem_ids": [
+     "PrimeiraUltimaIguais",
+     "LinhasIguais"
+    ],
+    "pontuacao": 12,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 4,
+    "termo": "(\\ (g1 Grade) (filtrar@P (celula g1)))",
+    "tipo": "Grade → L Pos → L Pos"
+   },
+   "fragmentos": 14,
+   "fragmentos_do_tipo": 1,
+   "grades_comparacao": 144,
+   "gulosa_contem_alvo": [],
+   "igual_sem_permutar": true,
+   "melhor_fragmento": {
+    "legivel": "λl1 l2. vazia?@P ((fix (λf3 l4 l5. se@LP (vazia?@P l4) l5 (f3 (cauda@P l4) (cauda@P l5)))) l1 l2)",
+    "metodo": "fechamento",
+    "num_buracos": 0,
+    "num_parametros": 2,
+    "ocorrencias": 4,
+    "origem_ids": [
+     "PrimeiraUltimaIguais",
+     "LinhasIguais"
+    ],
+    "pontuacao": 51,
+    "proveniencias_origem": [
+     "manual-teste"
+    ],
+    "tamanho": 18,
+    "termo": "(\\ (l1 (L Pos)) (l2 (L Pos)) (vazia?@P ((fix (\\ (f3 (-> (L Pos) (L Pos) (L Pos))) (l4 (L Pos)) (l5 (L Pos)) (se@LP (vazia?@P l4) l5 (f3 (cauda@P l4) (cauda@P l5))))) l1 l2)))",
+    "tipo": "L Pos → L Pos → Bool"
+   },
+   "modo": "mecanismo-teste",
+   "permutacao_argumentos": [
+    0,
+    1
+   ],
+   "posicao_no_ranking": 11,
+   "proveniencia": "manual-teste",
+   "solucoes_fonte": [
+    "PrimeiraUltimaIguais",
+    "LinhasIguais"
+   ]
+  }
+ ]
+}

@@ -7,14 +7,19 @@ Estes programas são REFERÊNCIAS DO AMBIENTE. Nunca entram na biblioteca do apr
 from __future__ import annotations
 from collections import Counter, deque
 from dataclasses import dataclass, field
-from typing import Callable, Dict, FrozenSet, List, Optional
+from functools import lru_cache
+from typing import Callable, Dict, FrozenSet, List, Optional, Tuple
 from .grade import Grade, Pos
 
 Comp = FrozenSet[Pos]
 
 
 # ---------------- componentes ----------------
-def componentes_a(g: Grade) -> List[Comp]:
+# Memoização por grade (só desempenho): cada implementação tem o seu próprio cache,
+# de modo que ref_a continua a depender apenas de componentes_a e ref_b de componentes_b.
+# Devolve tuplas (imutáveis) para que o valor em cache não possa ser alterado por quem chama.
+@lru_cache(maxsize=1 << 17)
+def componentes_a(g: Grade) -> Tuple[Comp, ...]:
     vistos = set()
     comps = []
     for p in g.pretas():
@@ -27,10 +32,11 @@ def componentes_a(g: Grade) -> List[Comp]:
                 if g.celula(r) and r not in vistos:
                     vistos.add(r); fila.append(r)
         comps.append(frozenset(cel))
-    return comps
+    return tuple(comps)
 
 
-def componentes_b(g: Grade) -> List[Comp]:
+@lru_cache(maxsize=1 << 17)
+def componentes_b(g: Grade) -> Tuple[Comp, ...]:
     pai: Dict[Pos, Pos] = {p: p for p in g.pretas()}
 
     def raiz(x):
@@ -48,7 +54,7 @@ def componentes_b(g: Grade) -> List[Comp]:
     grupos: Dict[Pos, set] = {}
     for p in pai:
         grupos.setdefault(raiz(p), set()).add(p)
-    return [frozenset(s) for s in grupos.values()]
+    return tuple(frozenset(s) for s in grupos.values())
 
 
 # ---------------- regiões ----------------

@@ -1,0 +1,185 @@
+{
+ "B_tarefa": 10000,
+ "K": 12,
+ "alcance_bases": [
+  "E0",
+  "E0p",
+  "E0mais"
+ ],
+ "alcance_completos": [
+  [
+   "E0",
+   "{g} → Bool"
+  ],
+  [
+   "E0",
+   "{g, S: L Pos} → L Pos"
+  ],
+  [
+   "E0p",
+   "{g} → Bool"
+  ],
+  [
+   "E0mais",
+   "{g} → Bool"
+  ]
+ ],
+ "alcance_fechado_B": 10000,
+ "alcance_fechado_tipos": [
+  "Grade → Bool",
+  "Grade → Pos → L Pos",
+  "Grade → L Pos → L Pos",
+  "L Pos → L Pos → L Pos",
+  "L Pos → L Pos → Bool"
+ ],
+ "alcance_orcamentos": [
+  10000,
+  100000
+ ],
+ "alcance_orcamentos_reduzidos": [
+  10000
+ ],
+ "alcance_s_max": 30,
+ "bracos": [
+  [
+   "L-fix",
+   "E0"
+  ],
+  [
+   "L-lib",
+   "E0"
+  ],
+  [
+   "L-lib+f",
+   "E0"
+  ],
+  [
+   "L-fix",
+   "E0mais"
+  ],
+  [
+   "L-lib",
+   "E0mais"
+  ]
+ ],
+ "contagem_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ],
+ "contagem_s_max": 10,
+ "custo_igual_max": 60000,
+ "degeneracao_conceitos": [
+  "ExistePreta",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "UmComponente",
+  "Igual_linha1_linhaN",
+  "LinhasIguais"
+ ],
+ "degeneracao_ns": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "degeneracao_tentativas": 200,
+ "escala": "exploratoria-reduzida",
+ "fases": [
+  1,
+  7
+ ],
+ "k_reservatorio": 40,
+ "limiar": 3,
+ "limiar_mecanismo": 5,
+ "ns_reservatorio": [
+  5,
+  6
+ ],
+ "num_teste": 30,
+ "orcamento_passos": 100000,
+ "pm11_grades_aleatorias_por_n": 10,
+ "pm1_amostras_por_n": 300,
+ "pm1_ns_amostra": [
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "pm1_ns_exaustivo": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "pm2_conceitos": [
+  "ExistePreta",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "UmComponente",
+  "Igual_linha1_linhaN",
+  "LinhasIguais",
+  "TodosMesmoTamanho",
+  "DoisSeparados"
+ ],
+ "pm2_k_pares": 100,
+ "pm2_ns": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "pm6_amostras": 1000,
+ "pm6_conceitos": [
+  "TopoCheio",
+  "LinhaOcupada",
+  "LinhasIguais",
+  "MetadesIguais",
+  "PrimeiraUltimaIguais",
+  "CantoSupEsq",
+  "Diagonal",
+  "ColunaDoisVazia",
+  "DoisSeparados",
+  "MaiorTocaBorda",
+  "NenhumaIsolada",
+  "PeloMenosDois",
+  "TodosMesmoTamanho",
+  "TresComponentes",
+  "UmComponente",
+  "ComponentesIgualLinha1"
+ ],
+ "pm6_ns": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "semente": 10001,
+ "tarefas": [
+  "ExistePreta",
+  "vizPretos",
+  "ParAdjacente",
+  "NenhumaIsolada",
+  "passo",
+  "fecho",
+  "componenteDe",
+  "UmComponente",
+  "pretasDe",
+  "descartar",
+  "noMaximo",
+  "mesmoNumero",
+  "PrimeiraUltimaIguais",
+  "LinhasIguais"
+ ],
+ "verif_aleatorias_por_n": 10,
+ "verif_bases": [
+  "E0",
+  "E0p",
+  "E0mais",
+  "E0pmais"
+ ]
+}

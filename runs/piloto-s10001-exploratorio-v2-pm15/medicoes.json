@@ -1,0 +1,6087 @@
+{
+ "decisao_custo": {
+  "I3_latencia": {
+   "disparada": false,
+   "limiar_s": 10.0
+  },
+  "I6": {
+   "abaixo": 21,
+   "de": 84,
+   "disparada": true,
+   "limiar": 200.0,
+   "nota": "I6 exige vazão abaixo do limiar 'após otimização'; nenhuma otimização foi tentada"
+  },
+  "PM13": {
+   "latencia_max_s": 0.40517075000025216,
+   "limiar_s": 2.0,
+   "ok": true
+  },
+  "PM16": {
+   "K_medio_observado": 1.4042553191489362,
+   "candidatos_protocolo": 24851,
+   "candidatos_total": 583504,
+   "horas_cpu_projetadas": 7440.020684948904,
+   "limiar_h": 2000.0,
+   "modelo": "tarefas × B × K × s/candidato × sementes × bases × braços (documento 03, 8)",
+   "nota": "candidato = candidato do protocolo + candidato interno do enumerador (o custo de CPU inclui ambos); B aplicado como no piloto",
+   "ok": false,
+   "parametros": {
+    "B": 1000000,
+    "bases": 2,
+    "bracos": 10,
+    "sementes": 5,
+    "tarefas": 60
+   },
+   "s_por_candidato": 0.003178917929023623,
+   "segundos_cpu_fase6": 1854.911327257
+  },
+  "PM9": {
+   "abaixo_do_limiar": 83,
+   "limiar": 2000.0,
+   "max": 2898.8220145760397,
+   "mediana": 423.37838348410213,
+   "medicoes": 84,
+   "min": 56.23028686734086,
+   "ok": false,
+   "por_job": [
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 18758,
+     "candidatos_por_segundo": 717.4114696829962,
+     "rotulo": "{g} → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 6881,
+     "candidatos_por_segundo": 1399.4090923223473,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 14088,
+     "candidatos_por_segundo": 360.2616029073277,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4101,
+     "candidatos_por_segundo": 949.0417601718786,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 1281,
+     "candidatos_por_segundo": 563.469668866645,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 6954,
+     "candidatos_por_segundo": 541.5826952361846,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4472,
+     "candidatos_por_segundo": 1079.062071063192,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 2976,
+     "candidatos_por_segundo": 273.7089404020467,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 8511,
+     "candidatos_por_segundo": 423.37838348410213,
+     "rotulo": "{g} → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 6601,
+     "candidatos_por_segundo": 477.6565697067869,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 3979,
+     "candidatos_por_segundo": 112.71140656158792,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 1838,
+     "candidatos_por_segundo": 424.9043509498626,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 512,
+     "candidatos_por_segundo": 431.2896747056029,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 1788,
+     "candidatos_por_segundo": 360.56237208388336,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 5760,
+     "candidatos_por_segundo": 521.7618824192942,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "candidatos": 1004,
+     "candidatos_por_segundo": 157.1510581048696,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 21870,
+     "candidatos_por_segundo": 527.8281372655423,
+     "rotulo": "{g} → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 8493,
+     "candidatos_por_segundo": 505.66742876170485,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4714,
+     "candidatos_por_segundo": 89.96025517281802,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4704,
+     "candidatos_por_segundo": 648.2297197342888,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 1578,
+     "candidatos_por_segundo": 326.5782168252588,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 9389,
+     "candidatos_por_segundo": 203.19843532093194,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 6400,
+     "candidatos_por_segundo": 136.61689410430736,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 3601,
+     "candidatos_por_segundo": 150.2862421464658,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 8963,
+     "candidatos_por_segundo": 351.2387941841856,
+     "rotulo": "{g} → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 7513,
+     "candidatos_por_segundo": 239.2495724875478,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 4597,
+     "candidatos_por_segundo": 56.23028686734086,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 1920,
+     "candidatos_por_segundo": 388.7820817328309,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 572,
+     "candidatos_por_segundo": 270.7686212993413,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 2125,
+     "candidatos_por_segundo": 134.51553567978212,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 6504,
+     "candidatos_por_segundo": 145.1948544902674,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "candidatos": 1043,
+     "candidatos_por_segundo": 152.60862336063767,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 9579,
+     "candidatos_por_segundo": 1712.8837080505793,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 3321,
+     "candidatos_por_segundo": 2898.8220145760397,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 6,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 6042,
+     "candidatos_por_segundo": 638.1327278402412,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 6067,
+     "candidatos_por_segundo": 1178.0352539767007,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 2051,
+     "candidatos_por_segundo": 677.3585242696498,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 3569,
+     "candidatos_por_segundo": 1106.4792404056564,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 6612,
+     "candidatos_por_segundo": 1082.3156338825918,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4403,
+     "candidatos_por_segundo": 353.3023542894449,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 3268,
+     "candidatos_por_segundo": 1436.8948878041444,
+     "rotulo": "{g} → Bool",
+     "s_ate": 6,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4062,
+     "candidatos_por_segundo": 765.5116243772096,
+     "rotulo": "{g} → L Pos",
+     "s_ate": 6,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 7746,
+     "candidatos_por_segundo": 86.12198745161403,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 7657,
+     "candidatos_por_segundo": 433.4653475967996,
+     "rotulo": "fechado Grade → Bool",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 2724,
+     "candidatos_por_segundo": 301.91140064533784,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4783,
+     "candidatos_por_segundo": 327.1770616625973,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 9942,
+     "candidatos_por_segundo": 129.56089519499724,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 5620,
+     "candidatos_por_segundo": 146.33365966193975,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "sistematica"
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "candidatos": 1718,
+     "candidatos_por_segundo": 690.2719257099598,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "candidatos": 4645,
+     "candidatos_por_segundo": 132.52405840143504,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "candidatos": 5615,
+     "candidatos_por_segundo": 697.0625361027531,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "candidatos": 4823,
+     "candidatos_por_segundo": 1068.4116978143613,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "candidatos": 4210,
+     "candidatos_por_segundo": 690.2955939387662,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0mais",
+     "candidatos": 9939,
+     "candidatos_por_segundo": 181.72246644808394,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "candidatos": 1872,
+     "candidatos_por_segundo": 520.886157865748,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "candidatos": 5229,
+     "candidatos_por_segundo": 63.49102528803308,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "candidatos": 4915,
+     "candidatos_por_segundo": 970.8347409186213,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "candidatos": 4669,
+     "candidatos_por_segundo": 312.3648767680698,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "curada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 1283,
+     "candidatos_por_segundo": 590.2459946612339,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "anteriores:vizPretos"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 7344,
+     "candidatos_por_segundo": 1440.8308876204035,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:ParAdjacente"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 7617,
+     "candidatos_por_segundo": 1416.8282403931357,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:NenhumaIsolada"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4072,
+     "candidatos_por_segundo": 427.5778492544584,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "anteriores:passo"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 8427,
+     "candidatos_por_segundo": 566.9157227225996,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "anteriores:fecho"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 1630,
+     "candidatos_por_segundo": 424.284511230626,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "anteriores:componenteDe"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 8564,
+     "candidatos_por_segundo": 847.3579688622491,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:UmComponente"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4617,
+     "candidatos_por_segundo": 177.89387225809025,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "anteriores:pretasDe"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 4892,
+     "candidatos_por_segundo": 481.67903574316404,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "anteriores:descartar"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 3512,
+     "candidatos_por_segundo": 209.95991000368798,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "anteriores:noMaximo"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 5897,
+     "candidatos_por_segundo": 141.75441407164863,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "anteriores:mesmoNumero"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 3501,
+     "candidatos_por_segundo": 327.41937013708554,
+     "rotulo": "{g} → Bool",
+     "s_ate": 6,
+     "tabela": "anteriores:PrimeiraUltimaIguais"
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos": 3822,
+     "candidatos_por_segundo": 319.5013620787368,
+     "rotulo": "{g} → Bool",
+     "s_ate": 6,
+     "tabela": "anteriores:LinhasIguais"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 1580,
+     "candidatos_por_segundo": 303.22562767342333,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "anteriores:vizPretos"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 8060,
+     "candidatos_por_segundo": 974.8750474739907,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:ParAdjacente"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 8359,
+     "candidatos_por_segundo": 969.5585192418235,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:NenhumaIsolada"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4953,
+     "candidatos_por_segundo": 90.66489352440435,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "anteriores:passo"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 3517,
+     "candidatos_por_segundo": 305.2407430806835,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "s_ate": 7,
+     "tabela": "anteriores:fecho"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 1956,
+     "candidatos_por_segundo": 311.25462064455843,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "s_ate": 8,
+     "tabela": "anteriores:componenteDe"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 9360,
+     "candidatos_por_segundo": 634.6283314480452,
+     "rotulo": "{g} → Bool",
+     "s_ate": 7,
+     "tabela": "anteriores:UmComponente"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 5585,
+     "candidatos_por_segundo": 72.78641090714831,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "s_ate": 6,
+     "tabela": "anteriores:pretasDe"
+    },
+    {
+     "D": 4,
+     "base": "E0mais",
+     "candidatos": 3075,
+     "candidatos_por_segundo": 315.01973206761613,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "s_ate": 6,
+     "tabela": "anteriores:descartar"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4227,
+     "candidatos_por_segundo": 149.48545078276737,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "anteriores:noMaximo"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 7318,
+     "candidatos_por_segundo": 135.09631509178823,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "s_ate": 8,
+     "tabela": "anteriores:mesmoNumero"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 3781,
+     "candidatos_por_segundo": 407.43273861905584,
+     "rotulo": "{g} → Bool",
+     "s_ate": 6,
+     "tabela": "anteriores:PrimeiraUltimaIguais"
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "candidatos": 4106,
+     "candidatos_por_segundo": 423.8759343987176,
+     "rotulo": "{g} → Bool",
+     "s_ate": 6,
+     "tabela": "anteriores:LinhasIguais"
+    }
+   ],
+   "s_max": 8
+  }
+ },
+ "execucao": {
+  "inicio": "2026-10-29T23:49:23",
+  "processos": 4
+ },
+ "fases": {
+  "1": {
+   "cpu_s": 124.93137200000001,
+   "memoria_pico_processo_principal_kib": 26952,
+   "tempo_parede_s": 32.590318825001305
+  },
+  "2": {
+   "cpu_s": 0.3261019999999917,
+   "memoria_pico_processo_principal_kib": 29128,
+   "tempo_parede_s": 0.3291658899979666
+  },
+  "3": {
+   "cpu_s": 6238.585196,
+   "memoria_pico_processo_principal_kib": 44844,
+   "reaproveitada": true,
+   "tempo_parede_s": 2116.687348665
+  },
+  "4": {
+   "cpu_s": 28.066960999999992,
+   "memoria_pico_processo_principal_kib": 29128,
+   "tempo_parede_s": 14.211738295001851
+  },
+  "5": {
+   "cpu_s": 2.8760059999999896,
+   "memoria_pico_processo_principal_kib": 34248,
+   "tempo_parede_s": 2.889930353001546
+  },
+  "6": {
+   "cpu_s": 1867.797307,
+   "memoria_pico_processo_principal_kib": 34376,
+   "tempo_parede_s": 789.5811990619986
+  },
+  "7": {
+   "cpu_s": 0.00027100000011159864,
+   "memoria_pico_processo_principal_kib": 34376,
+   "tempo_parede_s": 0.0002709300024434924
+  }
+ },
+ "fases_detalhe": {
+  "1": {
+   "pm1": [
+    {
+     "cpu_s": 9.440542679,
+     "tempo_parede_s": 9.693054708001
+    },
+    {
+     "cpu_s": 9.415015588000001,
+     "tempo_parede_s": 9.529775405997498
+    },
+    {
+     "cpu_s": 11.514696391,
+     "tempo_parede_s": 11.647255077001319
+    },
+    {
+     "cpu_s": 10.015590421,
+     "tempo_parede_s": 10.275479763997282
+    }
+   ],
+   "pm3": [
+    {
+     "conceito": "ExistePreta",
+     "n": 3
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 4
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 5
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 6
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 22908,
+     "n": 3,
+     "pares_por_segundo": 630.5306656270452,
+     "projecao_s_1000_pares": 1.585965686546788,
+     "tempo_parede_s": 0.1062597009986348
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 143628,
+     "n": 4,
+     "pares_por_segundo": 1509.8592754229046,
+     "projecao_s_1000_pares": 0.6623133799803327,
+     "tempo_parede_s": 0.06623133799803327
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 47900,
+     "n": 5,
+     "pares_por_segundo": 154.54642270831098,
+     "projecao_s_1000_pares": 6.470547700009774,
+     "tempo_parede_s": 0.6470547700009774
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 79056,
+     "n": 6,
+     "pares_por_segundo": 72.32881528278568,
+     "projecao_s_1000_pares": 13.825748369999927,
+     "tempo_parede_s": 1.3825748369999928
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 22928,
+     "n": 3,
+     "pares_por_segundo": 144.24831578682688,
+     "projecao_s_1000_pares": 6.93248995348979,
+     "tempo_parede_s": 0.29809706800006097
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 250300,
+     "n": 4,
+     "pares_por_segundo": 555.6543292924933,
+     "projecao_s_1000_pares": 1.7996800299806637,
+     "tempo_parede_s": 0.17996800299806637
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 23204,
+     "n": 5,
+     "pares_por_segundo": 1674.0134933647591,
+     "projecao_s_1000_pares": 0.5973667500074953,
+     "tempo_parede_s": 0.05973667500074953
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 23716,
+     "n": 6,
+     "pares_por_segundo": 1448.1869973105404,
+     "projecao_s_1000_pares": 0.6905185600044206,
+     "tempo_parede_s": 0.06905185600044206
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 23004,
+     "n": 3,
+     "pares_por_segundo": 81.76452381580336,
+     "projecao_s_1000_pares": 12.230243060581747,
+     "tempo_parede_s": 0.4035980209991976
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 250228,
+     "n": 4,
+     "pares_por_segundo": 603.1072192486702,
+     "projecao_s_1000_pares": 1.6580799700022908,
+     "tempo_parede_s": 0.16580799700022908
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 22792,
+     "n": 5,
+     "pares_por_segundo": 1655.3474833097723,
+     "projecao_s_1000_pares": 0.6041027700121049,
+     "tempo_parede_s": 0.06041027700121049
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 22952,
+     "n": 6,
+     "pares_por_segundo": 1688.8283447399813,
+     "projecao_s_1000_pares": 0.5921264900098322,
+     "tempo_parede_s": 0.05921264900098322
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 22184,
+     "n": 3,
+     "pares_por_segundo": 1125.565640716834,
+     "projecao_s_1000_pares": 0.888442187488181,
+     "tempo_parede_s": 0.02843014999962179
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 42604,
+     "n": 4,
+     "pares_por_segundo": 861.7835071650778,
+     "projecao_s_1000_pares": 1.160384239992709,
+     "tempo_parede_s": 0.11603842399927089
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 22080,
+     "n": 5,
+     "pares_por_segundo": 3691.904649955763,
+     "projecao_s_1000_pares": 0.2708628999971552,
+     "tempo_parede_s": 0.027086289999715518
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 22404,
+     "n": 6,
+     "pares_por_segundo": 2709.657735030706,
+     "projecao_s_1000_pares": 0.3690502999961609,
+     "tempo_parede_s": 0.03690502999961609
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 22148,
+     "n": 3,
+     "pares_por_segundo": 804.8064882961193,
+     "projecao_s_1000_pares": 1.2425347142977574,
+     "tempo_parede_s": 0.008697743000084301
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 42752,
+     "n": 4,
+     "pares_por_segundo": 713.4206306281279,
+     "projecao_s_1000_pares": 1.401697619985498,
+     "tempo_parede_s": 0.1401697619985498
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 21984,
+     "n": 5,
+     "pares_por_segundo": 2415.324810782894,
+     "projecao_s_1000_pares": 0.41402299000765197,
+     "tempo_parede_s": 0.0414022990007652
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 22524,
+     "n": 6,
+     "pares_por_segundo": 2872.061493377777,
+     "projecao_s_1000_pares": 0.34818195999832824,
+     "tempo_parede_s": 0.034818195999832824
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 23248,
+     "n": 3,
+     "pares_por_segundo": 106.5508612502665,
+     "projecao_s_1000_pares": 9.38518927267234,
+     "tempo_parede_s": 0.3097112459981872
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 250452,
+     "n": 4,
+     "pares_por_segundo": 912.2375730816593,
+     "projecao_s_1000_pares": 1.096205670000927,
+     "tempo_parede_s": 0.1096205670000927
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 23408,
+     "n": 5,
+     "pares_por_segundo": 1447.5385678059083,
+     "projecao_s_1000_pares": 0.6908278799892287,
+     "tempo_parede_s": 0.06908278799892287
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 23396,
+     "n": 6,
+     "pares_por_segundo": 1635.3478207428166,
+     "projecao_s_1000_pares": 0.6114907099981792,
+     "tempo_parede_s": 0.06114907099981792
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 23332,
+     "n": 3,
+     "pares_por_segundo": 54.18363715111656,
+     "projecao_s_1000_pares": 18.455756250010122,
+     "tempo_parede_s": 0.5167611750002834
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 250560,
+     "n": 4,
+     "pares_por_segundo": 1119.9963407328698,
+     "projecao_s_1000_pares": 0.8928600600120263,
+     "tempo_parede_s": 0.08928600600120262
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 22900,
+     "n": 5,
+     "pares_por_segundo": 1761.556737018835,
+     "projecao_s_1000_pares": 0.5676796999978251,
+     "tempo_parede_s": 0.05676796999978251
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 23400,
+     "n": 6,
+     "pares_por_segundo": 1928.247630324593,
+     "projecao_s_1000_pares": 0.5186055900048814,
+     "tempo_parede_s": 0.05186055900048814
+    }
+   ]
+  },
+  "2": {
+   "tempo_parede_s": 0.3291558239980077
+  },
+  "3": {
+   "auditoria_oe": [
+    {
+     "tempo_parede_s": 102.16249113500089,
+     "tipo": "Grade → Bool"
+    },
+    {
+     "tempo_parede_s": 22.1519672430004,
+     "tipo": "Grade → Pos → L Pos"
+    },
+    {
+     "tempo_parede_s": 123.37390420700103,
+     "tipo": "Grade → L Pos → L Pos"
+    },
+    {
+     "tempo_parede_s": 19.055160628999147,
+     "tipo": "L Pos → L Pos → L Pos"
+    },
+    {
+     "tempo_parede_s": 30.02814381599819,
+     "tipo": "L Pos → L Pos → Bool"
+    }
+   ],
+   "pm8_pm9": [
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 54352808,
+     "candidatos_avaliados_por_segundo": 298.4155147210863,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 1699748,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 335.1065714309989,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00013657800082000904
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0008190039989131037
+      },
+      {
+       "candidatos": 77,
+       "s": 3,
+       "t_s": 0.010238337999908254
+      },
+      {
+       "candidatos": 217,
+       "s": 4,
+       "t_s": 0.03249262100143824
+      },
+      {
+       "candidatos": 833,
+       "s": 5,
+       "t_s": 0.13191440000082366
+      },
+      {
+       "candidatos": 2309,
+       "s": 6,
+       "t_s": 0.8134393469990755
+      },
+      {
+       "candidatos": 7018,
+       "s": 7,
+       "t_s": 4.408820922999439
+      },
+      {
+       "candidatos": 18758,
+       "s": 8,
+       "t_s": 26.146780185001262
+      },
+      {
+       "candidatos": 53697,
+       "s": 9,
+       "t_s": 127.81984585800092
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 6771320,
+     "candidatos_avaliados_por_segundo": 1201.9548222585709,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 224292,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 8.320612234998407,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.0001675549974606838
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.0017674800001259428
+      },
+      {
+       "candidatos": 50,
+       "s": 3,
+       "t_s": 0.017594130997167667
+      },
+      {
+       "candidatos": 197,
+       "s": 4,
+       "t_s": 0.055544636998092756
+      },
+      {
+       "candidatos": 649,
+       "s": 5,
+       "t_s": 0.23885215999689535
+      },
+      {
+       "candidatos": 2251,
+       "s": 6,
+       "t_s": 1.1487999099990702
+      },
+      {
+       "candidatos": 6881,
+       "s": 7,
+       "t_s": 4.917075383997144
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "candidatos_avaliados_por_segundo": 193.3148100362912,
+     "classe": "contexto",
+     "dependente_de_recurso": {
+      "candidatos_ao_parar": 52726,
+      "contadores_ao_parar": {
+       "assinaturas_incompletas": 0,
+       "candidatos_avaliados": 52726,
+       "candidatos_avaliados_alvo": 17844,
+       "candidatos_construidos": 52726,
+       "candidatos_fix": 234,
+       "candidatos_lambda": 10382,
+       "candidatos_lambda_reagrupados": 1099,
+       "classes_alvo": 2186,
+       "classes_distintas": 27509,
+       "colisoes_rapidas": 6983,
+       "contextos": 122,
+       "descartados_equivalentes": 18871,
+       "descartados_orcamento_passos": 82,
+       "descartados_recursao": 0,
+       "mundos_total": 9315,
+       "passos_assinatura": 476727855,
+       "termos_rec_construidos": 349
+      },
+      "limitado_por_memoria": true,
+      "limite_memoria_gb": 4.0,
+      "s_completo_ao_parar": 7
+     },
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 4026792,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 272.7468215709996,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00035255500188213773
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.002731989003223134
+      },
+      {
+       "candidatos": 73,
+       "s": 3,
+       "t_s": 0.02607918100329698
+      },
+      {
+       "candidatos": 271,
+       "s": 4,
+       "t_s": 0.18769215600332245
+      },
+      {
+       "candidatos": 1032,
+       "s": 5,
+       "t_s": 1.156945987000654
+      },
+      {
+       "candidatos": 3854,
+       "s": 6,
+       "t_s": 7.074635054003011
+      },
+      {
+       "candidatos": 14088,
+       "s": 7,
+       "t_s": 39.10491677800019
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 4301744,
+     "candidatos_avaliados_por_segundo": 541.7263460850205,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 130100,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 18.461350592002418,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.32000007701572e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.00030275699828052893
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.0008889370001270436
+      },
+      {
+       "candidatos": 80,
+       "s": 4,
+       "t_s": 0.015393230998597573
+      },
+      {
+       "candidatos": 224,
+       "s": 5,
+       "t_s": 0.04782470099962666
+      },
+      {
+       "candidatos": 699,
+       "s": 6,
+       "t_s": 0.15412503900006413
+      },
+      {
+       "candidatos": 1647,
+       "s": 7,
+       "t_s": 0.9362892919998558
+      },
+      {
+       "candidatos": 4101,
+       "s": 8,
+       "t_s": 4.321200785998371
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5079760,
+     "candidatos_avaliados_por_segundo": 714.8242907428795,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 217504,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 13.990850800000771,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00023337500169873238
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.0003815099989878945
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.004277456999261631
+      },
+      {
+       "candidatos": 24,
+       "s": 4,
+       "t_s": 0.007714813000347931
+      },
+      {
+       "candidatos": 73,
+       "s": 5,
+       "t_s": 0.014994809000199893
+      },
+      {
+       "candidatos": 179,
+       "s": 6,
+       "t_s": 0.14534158500100602
+      },
+      {
+       "candidatos": 445,
+       "s": 7,
+       "t_s": 0.5196589740007767
+      },
+      {
+       "candidatos": 1281,
+       "s": 8,
+       "t_s": 2.273414294999384
+      },
+      {
+       "candidatos": 3807,
+       "s": 9,
+       "t_s": 11.184508674999961
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5774224,
+     "candidatos_avaliados_por_segundo": 570.4575708801574,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 213156,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 17.531540486997983,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.845499956398271e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0006552199993166141
+      },
+      {
+       "candidatos": 18,
+       "s": 3,
+       "t_s": 0.00911387999803992
+      },
+      {
+       "candidatos": 91,
+       "s": 4,
+       "t_s": 0.031513643996731844
+      },
+      {
+       "candidatos": 296,
+       "s": 5,
+       "t_s": 0.1152482819998113
+      },
+      {
+       "candidatos": 922,
+       "s": 6,
+       "t_s": 0.4389979449988459
+      },
+      {
+       "candidatos": 2366,
+       "s": 7,
+       "t_s": 2.1393541369980085
+      },
+      {
+       "candidatos": 6954,
+       "s": 8,
+       "t_s": 12.840144378998957
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 9294800,
+     "candidatos_avaliados_por_segundo": 915.7886520301629,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 304364,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 10.920641982000234,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0018575870017230045
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.006220433999260422
+      },
+      {
+       "candidatos": 57,
+       "s": 3,
+       "t_s": 0.058465205001994036
+      },
+      {
+       "candidatos": 195,
+       "s": 4,
+       "t_s": 0.0910971140001493
+      },
+      {
+       "candidatos": 625,
+       "s": 5,
+       "t_s": 0.3366578989989648
+      },
+      {
+       "candidatos": 1789,
+       "s": 6,
+       "t_s": 1.1247892520004825
+      },
+      {
+       "candidatos": 4472,
+       "s": 7,
+       "t_s": 4.144339903999935
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 12119224,
+     "candidatos_avaliados_por_segundo": 193.07022782278895,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 233256,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 51.79980420999709,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.078300041030161e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0009549280002829619
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.005136571002367418
+      },
+      {
+       "candidatos": 54,
+       "s": 4,
+       "t_s": 0.02209656600098242
+      },
+      {
+       "candidatos": 152,
+       "s": 5,
+       "t_s": 0.06982159400286037
+      },
+      {
+       "candidatos": 443,
+       "s": 6,
+       "t_s": 0.4384869030000118
+      },
+      {
+       "candidatos": 1091,
+       "s": 7,
+       "t_s": 1.5814782320012455
+      },
+      {
+       "candidatos": 2976,
+       "s": 8,
+       "t_s": 10.87286369100184
+      },
+      {
+       "candidatos": 9209,
+       "s": 9,
+       "t_s": 51.369926249000855
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 60858304,
+     "candidatos_avaliados_por_segundo": 101.5457508302516,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 1904556,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 984.7876369260011,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00013074899834464304
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0007259619997057598
+      },
+      {
+       "candidatos": 61,
+       "s": 3,
+       "t_s": 0.005840868998348014
+      },
+      {
+       "candidatos": 163,
+       "s": 4,
+       "t_s": 0.01862613499906729
+      },
+      {
+       "candidatos": 590,
+       "s": 5,
+       "t_s": 0.0900603609989048
+      },
+      {
+       "candidatos": 1501,
+       "s": 6,
+       "t_s": 0.7731292069984192
+      },
+      {
+       "candidatos": 3916,
+       "s": 7,
+       "t_s": 4.245824294997874
+      },
+      {
+       "candidatos": 8511,
+       "s": 8,
+       "t_s": 20.1025851389968
+      },
+      {
+       "candidatos": 19988,
+       "s": 9,
+       "t_s": 82.24102161099654
+      },
+      {
+       "candidatos": 47534,
+       "s": 10,
+       "t_s": 374.5949506559991
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 7924472,
+     "candidatos_avaliados_por_segundo": 337.88796791092824,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 276780,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 29.59856801600108,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.0001264080019609537
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.003020331001607701
+      },
+      {
+       "candidatos": 32,
+       "s": 3,
+       "t_s": 0.005692007001925958
+      },
+      {
+       "candidatos": 124,
+       "s": 4,
+       "t_s": 0.03505800399943837
+      },
+      {
+       "candidatos": 330,
+       "s": 5,
+       "t_s": 0.20115254300253582
+      },
+      {
+       "candidatos": 1097,
+       "s": 6,
+       "t_s": 1.0654690730007133
+      },
+      {
+       "candidatos": 2496,
+       "s": 7,
+       "t_s": 4.162858543000766
+      },
+      {
+       "candidatos": 6601,
+       "s": 8,
+       "t_s": 13.81955241200194
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 13158912,
+     "candidatos_avaliados_por_segundo": 113.40737062951149,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 645916,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 88.18650802399861,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0002894509998441208
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.0023892760000308044
+      },
+      {
+       "candidatos": 43,
+       "s": 3,
+       "t_s": 0.008717287000763463
+      },
+      {
+       "candidatos": 160,
+       "s": 4,
+       "t_s": 0.11273334299767157
+      },
+      {
+       "candidatos": 471,
+       "s": 5,
+       "t_s": 0.7646436770010041
+      },
+      {
+       "candidatos": 1568,
+       "s": 6,
+       "t_s": 5.363377743000456
+      },
+      {
+       "candidatos": 3979,
+       "s": 7,
+       "t_s": 35.30254941699968
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 4397040,
+     "candidatos_avaliados_por_segundo": 131.26775623235937,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 210932,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 76.18778812899836,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.108200250309892e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.00028821800151490606
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.0027903520021936856
+      },
+      {
+       "candidatos": 64,
+       "s": 4,
+       "t_s": 0.005743482000980293
+      },
+      {
+       "candidatos": 170,
+       "s": 5,
+       "t_s": 0.02567266100231791
+      },
+      {
+       "candidatos": 454,
+       "s": 6,
+       "t_s": 0.09596330900239991
+      },
+      {
+       "candidatos": 889,
+       "s": 7,
+       "t_s": 0.9618537980022666
+      },
+      {
+       "candidatos": 1838,
+       "s": 8,
+       "t_s": 4.325679405003029
+      },
+      {
+       "candidatos": 3834,
+       "s": 9,
+       "t_s": 19.43345696000324
+      },
+      {
+       "candidatos": 8687,
+       "s": 10,
+       "t_s": 69.63270399700195
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 4381928,
+     "candidatos_avaliados_por_segundo": 150.6358531818465,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 172452,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 66.3918966750025,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.00237887300318107
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.0025409629997739103
+      },
+      {
+       "candidatos": 16,
+       "s": 3,
+       "t_s": 0.008936124002502766
+      },
+      {
+       "candidatos": 30,
+       "s": 4,
+       "t_s": 0.010276552002324024
+      },
+      {
+       "candidatos": 67,
+       "s": 5,
+       "t_s": 0.020734323999931803
+      },
+      {
+       "candidatos": 122,
+       "s": 6,
+       "t_s": 0.11678164200202445
+      },
+      {
+       "candidatos": 238,
+       "s": 7,
+       "t_s": 0.4750899950013263
+      },
+      {
+       "candidatos": 512,
+       "s": 8,
+       "t_s": 1.1871371610031929
+      },
+      {
+       "candidatos": 1148,
+       "s": 9,
+       "t_s": 4.481869051000103
+      },
+      {
+       "candidatos": 2650,
+       "s": 10,
+       "t_s": 17.466890105002676
+      },
+      {
+       "candidatos": 6415,
+       "s": 11,
+       "t_s": 56.22676769100144
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 6080752,
+     "candidatos_avaliados_por_segundo": 160.66714220015646,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 240356,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 62.24670373199842,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.231800216482952e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0027965709996351507
+      },
+      {
+       "candidatos": 9,
+       "s": 3,
+       "t_s": 0.0038868240008014254
+      },
+      {
+       "candidatos": 51,
+       "s": 4,
+       "t_s": 0.027352917000825983
+      },
+      {
+       "candidatos": 106,
+       "s": 5,
+       "t_s": 0.05377868300274713
+      },
+      {
+       "candidatos": 351,
+       "s": 6,
+       "t_s": 0.36987876200146275
+      },
+      {
+       "candidatos": 828,
+       "s": 7,
+       "t_s": 1.859932387000299
+      },
+      {
+       "candidatos": 1788,
+       "s": 8,
+       "t_s": 4.958920116001536
+      },
+      {
+       "candidatos": 3957,
+       "s": 9,
+       "t_s": 16.363528563000727
+      },
+      {
+       "candidatos": 9330,
+       "s": 10,
+       "t_s": 61.890428062000865
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 8209560,
+     "candidatos_avaliados_por_segundo": 350.6943204162599,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 224932,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 28.517713056000503,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.559000005130656e-05
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.008644623001600849
+      },
+      {
+       "candidatos": 32,
+       "s": 3,
+       "t_s": 0.025224419001460774
+      },
+      {
+       "candidatos": 163,
+       "s": 4,
+       "t_s": 0.14238146000207053
+      },
+      {
+       "candidatos": 348,
+       "s": 5,
+       "t_s": 0.2277579470028286
+      },
+      {
+       "candidatos": 1181,
+       "s": 6,
+       "t_s": 1.116950239000289
+      },
+      {
+       "candidatos": 2729,
+       "s": 7,
+       "t_s": 5.003272101002949
+      },
+      {
+       "candidatos": 5760,
+       "s": 8,
+       "t_s": 11.03951858900109
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0p",
+     "bytes_estimados": 10567456,
+     "candidatos_avaliados_por_segundo": 61.16867175009402,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 224724,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 163.49872759799837,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 9.0105997514911e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.003232262999517843
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.004035367997857975
+      },
+      {
+       "candidatos": 32,
+       "s": 4,
+       "t_s": 0.008789487998001277
+      },
+      {
+       "candidatos": 77,
+       "s": 5,
+       "t_s": 0.02315012899998692
+      },
+      {
+       "candidatos": 183,
+       "s": 6,
+       "t_s": 0.2952386569995724
+      },
+      {
+       "candidatos": 452,
+       "s": 7,
+       "t_s": 1.0947431749991665
+      },
+      {
+       "candidatos": 1004,
+       "s": 8,
+       "t_s": 6.388757492997684
+      },
+      {
+       "candidatos": 2361,
+       "s": 9,
+       "t_s": 30.67798146199857
+      },
+      {
+       "candidatos": 6128,
+       "s": 10,
+       "t_s": 152.24921005799843
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 52998136,
+     "candidatos_avaliados_por_segundo": 298.24084445665784,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 2047492,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 335.30283279000287,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00017011100135277957
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0011149439997097943
+      },
+      {
+       "candidatos": 77,
+       "s": 3,
+       "t_s": 0.01728889900186914
+      },
+      {
+       "candidatos": 221,
+       "s": 4,
+       "t_s": 0.08281699300277978
+      },
+      {
+       "candidatos": 865,
+       "s": 5,
+       "t_s": 0.241827595000359
+      },
+      {
+       "candidatos": 2461,
+       "s": 6,
+       "t_s": 1.468877858002088
+      },
+      {
+       "candidatos": 7712,
+       "s": 7,
+       "t_s": 7.507517221001763
+      },
+      {
+       "candidatos": 21870,
+       "s": 8,
+       "t_s": 41.43394119400182
+      },
+      {
+       "candidatos": 66191,
+       "s": 9,
+       "t_s": 204.93703526300305
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 6197720,
+     "candidatos_avaliados_por_segundo": 554.2467080412856,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 237196,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 18.044311053003184,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.0001315729969064705
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.004153693997068331
+      },
+      {
+       "candidatos": 52,
+       "s": 3,
+       "t_s": 0.024692284998309333
+      },
+      {
+       "candidatos": 213,
+       "s": 4,
+       "t_s": 0.11105154899996705
+      },
+      {
+       "candidatos": 724,
+       "s": 5,
+       "t_s": 0.5945699179974326
+      },
+      {
+       "candidatos": 2612,
+       "s": 6,
+       "t_s": 3.0922017519988003
+      },
+      {
+       "candidatos": 8493,
+       "s": 7,
+       "t_s": 16.795623994999914
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 11889128,
+     "candidatos_avaliados_por_segundo": 81.05050130170432,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 699152,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 123.39220411200222,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0003100120011367835
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.0027250009989074897
+      },
+      {
+       "candidatos": 75,
+       "s": 3,
+       "t_s": 0.07722174499940593
+      },
+      {
+       "candidatos": 304,
+       "s": 4,
+       "t_s": 0.6045864580009948
+      },
+      {
+       "candidatos": 1186,
+       "s": 5,
+       "t_s": 9.45444004700039
+      },
+      {
+       "candidatos": 4714,
+       "s": 6,
+       "t_s": 52.400918505001755
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 4101288,
+     "candidatos_avaliados_por_segundo": 414.73237191403416,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 201980,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 24.114346207999915,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 9.530999886919744e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.0022592619970964734
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.002852838999388041
+      },
+      {
+       "candidatos": 80,
+       "s": 4,
+       "t_s": 0.010130266000487609
+      },
+      {
+       "candidatos": 228,
+       "s": 5,
+       "t_s": 0.04939615100010997
+      },
+      {
+       "candidatos": 731,
+       "s": 6,
+       "t_s": 0.20531658499749028
+      },
+      {
+       "candidatos": 1808,
+       "s": 7,
+       "t_s": 1.3461026009972556
+      },
+      {
+       "candidatos": 4704,
+       "s": 8,
+       "t_s": 7.256686721997539
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 3562208,
+     "candidatos_avaliados_por_segundo": 256.4086379564055,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 176980,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 39.00414619300136,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.0003640950017143041
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.0032047519998741336
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.0056957800006784964
+      },
+      {
+       "candidatos": 24,
+       "s": 4,
+       "t_s": 0.007034518002910772
+      },
+      {
+       "candidatos": 75,
+       "s": 5,
+       "t_s": 0.02094715600105701
+      },
+      {
+       "candidatos": 199,
+       "s": 6,
+       "t_s": 0.16665121100231772
+      },
+      {
+       "candidatos": 525,
+       "s": 7,
+       "t_s": 0.7448118370011798
+      },
+      {
+       "candidatos": 1578,
+       "s": 8,
+       "t_s": 4.831920559001446
+      },
+      {
+       "candidatos": 4962,
+       "s": 9,
+       "t_s": 27.027864401999977
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5581664,
+     "candidatos_avaliados_por_segundo": 150.676685798886,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 344148,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 66.37390480799877,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.433700036723167e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.002672713999345433
+      },
+      {
+       "candidatos": 20,
+       "s": 3,
+       "t_s": 0.01758468499974697
+      },
+      {
+       "candidatos": 99,
+       "s": 4,
+       "t_s": 0.0620215239978279
+      },
+      {
+       "candidatos": 336,
+       "s": 5,
+       "t_s": 0.34924080799828516
+      },
+      {
+       "candidatos": 1108,
+       "s": 6,
+       "t_s": 1.3783505319988762
+      },
+      {
+       "candidatos": 3050,
+       "s": 7,
+       "t_s": 8.54191324599742
+      },
+      {
+       "candidatos": 9389,
+       "s": 8,
+       "t_s": 46.20606445699741
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 8478624,
+     "candidatos_avaliados_por_segundo": 172.4854433594195,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 323408,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 57.98170445699725,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.003871406999678584
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.008346579998033121
+      },
+      {
+       "candidatos": 65,
+       "s": 3,
+       "t_s": 0.06400462400051765
+      },
+      {
+       "candidatos": 252,
+       "s": 4,
+       "t_s": 0.23142101499979617
+      },
+      {
+       "candidatos": 787,
+       "s": 5,
+       "t_s": 2.112341918000311
+      },
+      {
+       "candidatos": 2496,
+       "s": 6,
+       "t_s": 7.90679455999998
+      },
+      {
+       "candidatos": 6400,
+       "s": 7,
+       "t_s": 46.84632923299796
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 11239960,
+     "candidatos_avaliados_por_segundo": 172.0587254174224,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 259024,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 58.125503229999595,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.402799772331491e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.004214494998450391
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.005596500999672571
+      },
+      {
+       "candidatos": 55,
+       "s": 4,
+       "t_s": 0.02243551399806165
+      },
+      {
+       "candidatos": 161,
+       "s": 5,
+       "t_s": 0.061151014000643045
+      },
+      {
+       "candidatos": 486,
+       "s": 6,
+       "t_s": 0.45363765699949
+      },
+      {
+       "candidatos": 1297,
+       "s": 7,
+       "t_s": 2.3465578889990866
+      },
+      {
+       "candidatos": 3601,
+       "s": 8,
+       "t_s": 23.96094245600034
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 7139496,
+     "candidatos_avaliados_por_segundo": 367.8951320921695,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 218896,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 27.18437708899728,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0001831540030252654
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0010674210025172215
+      },
+      {
+       "candidatos": 61,
+       "s": 3,
+       "t_s": 0.008169707001798088
+      },
+      {
+       "candidatos": 166,
+       "s": 4,
+       "t_s": 0.04272022800068953
+      },
+      {
+       "candidatos": 597,
+       "s": 5,
+       "t_s": 0.17544619200270972
+      },
+      {
+       "candidatos": 1537,
+       "s": 6,
+       "t_s": 1.3145768089998455
+      },
+      {
+       "candidatos": 4008,
+       "s": 7,
+       "t_s": 5.313088537001022
+      },
+      {
+       "candidatos": 8963,
+       "s": 8,
+       "t_s": 25.518251823003084
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 7570656,
+     "candidatos_avaliados_por_segundo": 251.76963487764885,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 300624,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 39.722820446000696,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00022094199812272564
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0010752979978860822
+      },
+      {
+       "candidatos": 35,
+       "s": 3,
+       "t_s": 0.018676666000828845
+      },
+      {
+       "candidatos": 131,
+       "s": 4,
+       "t_s": 0.052696464998007286
+      },
+      {
+       "candidatos": 362,
+       "s": 5,
+       "t_s": 0.40084523399855243
+      },
+      {
+       "candidatos": 1176,
+       "s": 6,
+       "t_s": 1.648431913999957
+      },
+      {
+       "candidatos": 2860,
+       "s": 7,
+       "t_s": 7.858080344998598
+      },
+      {
+       "candidatos": 7513,
+       "s": 8,
+       "t_s": 31.402354963000107
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 12212680,
+     "candidatos_avaliados_por_segundo": 47.09758357223155,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 697660,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 212.34635073499885,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0005765790010627825
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.0059120090008946136
+      },
+      {
+       "candidatos": 47,
+       "s": 3,
+       "t_s": 0.07508198499999708
+      },
+      {
+       "candidatos": 170,
+       "s": 4,
+       "t_s": 0.2335331150025013
+      },
+      {
+       "candidatos": 519,
+       "s": 5,
+       "t_s": 2.4561857570006396
+      },
+      {
+       "candidatos": 1707,
+       "s": 6,
+       "t_s": 16.246383391000563
+      },
+      {
+       "candidatos": 4597,
+       "s": 7,
+       "t_s": 81.7530952820016
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 4197656,
+     "candidatos_avaliados_por_segundo": 123.29747823265136,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 183428,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 81.11277005300144,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.678899808321148e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.00029149200054234825
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.0008988090012280736
+      },
+      {
+       "candidatos": 64,
+       "s": 4,
+       "t_s": 0.005919033999816747
+      },
+      {
+       "candidatos": 173,
+       "s": 5,
+       "t_s": 0.0360810220008716
+      },
+      {
+       "candidatos": 461,
+       "s": 6,
+       "t_s": 0.11605444399901899
+      },
+      {
+       "candidatos": 930,
+       "s": 7,
+       "t_s": 1.2321315990011499
+      },
+      {
+       "candidatos": 1920,
+       "s": 8,
+       "t_s": 4.938499200998194
+      },
+      {
+       "candidatos": 4061,
+       "s": 9,
+       "t_s": 21.944604692998837
+      },
+      {
+       "candidatos": 9385,
+       "s": 10,
+       "t_s": 80.54777234799985
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 5105840,
+     "candidatos_avaliados_por_segundo": 73.19881388731783,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 218716,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 136.62789694100138,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0004036860009364318
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.0005993220001982991
+      },
+      {
+       "candidatos": 16,
+       "s": 3,
+       "t_s": 0.010974074000841938
+      },
+      {
+       "candidatos": 30,
+       "s": 4,
+       "t_s": 0.012524639001640026
+      },
+      {
+       "candidatos": 70,
+       "s": 5,
+       "t_s": 0.024115661002724664
+      },
+      {
+       "candidatos": 131,
+       "s": 6,
+       "t_s": 0.1554896860034205
+      },
+      {
+       "candidatos": 262,
+       "s": 7,
+       "t_s": 0.6654006590033532
+      },
+      {
+       "candidatos": 572,
+       "s": 8,
+       "t_s": 2.1125047550012823
+      },
+      {
+       "candidatos": 1332,
+       "s": 9,
+       "t_s": 9.890206816002319
+      },
+      {
+       "candidatos": 3187,
+       "s": 10,
+       "t_s": 39.33338168300179
+      },
+      {
+       "candidatos": 7936,
+       "s": 11,
+       "t_s": 124.60765359700235
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 5587960,
+     "candidatos_avaliados_por_segundo": 102.83378528137438,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 322044,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 97.25402962299995,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 9.809199764276855e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0008551999999326654
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.015246414997818647
+      },
+      {
+       "candidatos": 55,
+       "s": 4,
+       "t_s": 0.046171022000635276
+      },
+      {
+       "candidatos": 133,
+       "s": 5,
+       "t_s": 0.272694118997606
+      },
+      {
+       "candidatos": 395,
+       "s": 6,
+       "t_s": 0.8778497719977167
+      },
+      {
+       "candidatos": 942,
+       "s": 7,
+       "t_s": 4.699722502999066
+      },
+      {
+       "candidatos": 2125,
+       "s": 8,
+       "t_s": 15.797431792998395
+      },
+      {
+       "candidatos": 4840,
+       "s": 9,
+       "t_s": 46.87283187899811
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 8045896,
+     "candidatos_avaliados_por_segundo": 149.68770841009447,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 278156,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 66.81243307299883,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.585599814774469e-05
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.007357869999395916
+      },
+      {
+       "candidatos": 34,
+       "s": 3,
+       "t_s": 0.024361617000977276
+      },
+      {
+       "candidatos": 170,
+       "s": 4,
+       "t_s": 0.1472537689987803
+      },
+      {
+       "candidatos": 398,
+       "s": 5,
+       "t_s": 0.3616054369995254
+      },
+      {
+       "candidatos": 1284,
+       "s": 6,
+       "t_s": 3.239657032998366
+      },
+      {
+       "candidatos": 3021,
+       "s": 7,
+       "t_s": 13.848895931998413
+      },
+      {
+       "candidatos": 6504,
+       "s": 8,
+       "t_s": 44.79497584699857
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0pmais",
+     "bytes_estimados": 8769696,
+     "candidatos_avaliados_por_segundo": 57.09414250784325,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 229584,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 175.16683079400173,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.302399899344891e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0011110870000266004
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.005563235998124583
+      },
+      {
+       "candidatos": 32,
+       "s": 4,
+       "t_s": 0.012641105997317936
+      },
+      {
+       "candidatos": 77,
+       "s": 5,
+       "t_s": 0.02459379499850911
+      },
+      {
+       "candidatos": 188,
+       "s": 6,
+       "t_s": 0.2918254260002868
+      },
+      {
+       "candidatos": 457,
+       "s": 7,
+       "t_s": 1.0529693989992666
+      },
+      {
+       "candidatos": 1043,
+       "s": 8,
+       "t_s": 6.834476171999995
+      },
+      {
+       "candidatos": 2484,
+       "s": 9,
+       "t_s": 33.04640447099882
+      },
+      {
+       "candidatos": 6457,
+       "s": 10,
+       "t_s": 159.38289879199874
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5558584,
+     "candidatos_avaliados_por_segundo": 1782.4981562481703,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 142348,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 5.61066498999935,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0001761919993441552
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0010985849985445384
+      },
+      {
+       "candidatos": 82,
+       "s": 3,
+       "t_s": 0.012805270998796914
+      },
+      {
+       "candidatos": 243,
+       "s": 4,
+       "t_s": 0.040130376000888646
+      },
+      {
+       "candidatos": 967,
+       "s": 5,
+       "t_s": 0.17197580200081575
+      },
+      {
+       "candidatos": 2894,
+       "s": 6,
+       "t_s": 1.0348320299999614
+      },
+      {
+       "candidatos": 9579,
+       "s": 7,
+       "t_s": 5.592323608998413
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5911592,
+     "candidatos_avaliados_por_segundo": 2133.3753776732383,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 182656,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 4.687876359999791,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00012333300037425943
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.00357051800165209
+      },
+      {
+       "candidatos": 59,
+       "s": 3,
+       "t_s": 0.01347830400118255
+      },
+      {
+       "candidatos": 252,
+       "s": 4,
+       "t_s": 0.04972329700103728
+      },
+      {
+       "candidatos": 874,
+       "s": 5,
+       "t_s": 0.2145504489999439
+      },
+      {
+       "candidatos": 3321,
+       "s": 6,
+       "t_s": 1.1456377739996242
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 13902088,
+     "candidatos_avaliados_por_segundo": 525.4256038477599,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 681052,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 19.034093365000444,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00030641400007880293
+      },
+      {
+       "candidatos": 18,
+       "s": 2,
+       "t_s": 0.005821590002597077
+      },
+      {
+       "candidatos": 86,
+       "s": 3,
+       "t_s": 0.027292360002320493
+      },
+      {
+       "candidatos": 360,
+       "s": 4,
+       "t_s": 0.20306248999986565
+      },
+      {
+       "candidatos": 1461,
+       "s": 5,
+       "t_s": 1.3099130880000303
+      },
+      {
+       "candidatos": 6042,
+       "s": 6,
+       "t_s": 9.46824968600049
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 4057696,
+     "candidatos_avaliados_por_segundo": 1147.4891877945768,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 155956,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 8.71555053100019,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.321199882426299e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.00034666999999899417
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.0009714240004541352
+      },
+      {
+       "candidatos": 85,
+       "s": 4,
+       "t_s": 0.011692711999785388
+      },
+      {
+       "candidatos": 250,
+       "s": 5,
+       "t_s": 0.05322447800062946
+      },
+      {
+       "candidatos": 833,
+       "s": 6,
+       "t_s": 0.21731043199906708
+      },
+      {
+       "candidatos": 2204,
+       "s": 7,
+       "t_s": 1.0662132590005058
+      },
+      {
+       "candidatos": 6067,
+       "s": 8,
+       "t_s": 5.150100541999564
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5129656,
+     "candidatos_avaliados_por_segundo": 564.5664703104142,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 233580,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 17.714477436999005,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00023973399947863072
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.0003467249989625998
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.0042605349990481045
+      },
+      {
+       "candidatos": 26,
+       "s": 4,
+       "t_s": 0.008125275999191217
+      },
+      {
+       "candidatos": 86,
+       "s": 5,
+       "t_s": 0.016696930997568415
+      },
+      {
+       "candidatos": 228,
+       "s": 6,
+       "t_s": 0.12144823899870971
+      },
+      {
+       "candidatos": 647,
+       "s": 7,
+       "t_s": 0.6483214869986114
+      },
+      {
+       "candidatos": 2051,
+       "s": 8,
+       "t_s": 3.027938568000536
+      },
+      {
+       "candidatos": 6873,
+       "s": 9,
+       "t_s": 16.9555972249982
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5672104,
+     "candidatos_avaliados_por_segundo": 1543.8136159690396,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 205788,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 6.478113612000016,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.044299854896963e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.0010409219976281747
+      },
+      {
+       "candidatos": 21,
+       "s": 3,
+       "t_s": 0.009103438998863567
+      },
+      {
+       "candidatos": 115,
+       "s": 4,
+       "t_s": 0.03750294400015264
+      },
+      {
+       "candidatos": 381,
+       "s": 5,
+       "t_s": 0.13838678899992374
+      },
+      {
+       "candidatos": 1213,
+       "s": 6,
+       "t_s": 0.5501602389995242
+      },
+      {
+       "candidatos": 3569,
+       "s": 7,
+       "t_s": 3.2255462819994136
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 8976896,
+     "candidatos_avaliados_por_segundo": 1149.0384888893045,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 263328,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 8.703798956001265,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.001862917997641489
+      },
+      {
+       "candidatos": 12,
+       "s": 2,
+       "t_s": 0.006818254998506745
+      },
+      {
+       "candidatos": 60,
+       "s": 3,
+       "t_s": 0.06195657199714333
+      },
+      {
+       "candidatos": 240,
+       "s": 4,
+       "t_s": 0.10685624599864241
+      },
+      {
+       "candidatos": 767,
+       "s": 5,
+       "t_s": 0.42281381099746795
+      },
+      {
+       "candidatos": 2349,
+       "s": 6,
+       "t_s": 1.377037501999439
+      },
+      {
+       "candidatos": 6612,
+       "s": 7,
+       "t_s": 6.109123616999568
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 10151800,
+     "candidatos_avaliados_por_segundo": 461.5868796741953,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 305596,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 21.66656038200017,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.725899947923608e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0010008529970946256
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.004501968000113266
+      },
+      {
+       "candidatos": 54,
+       "s": 4,
+       "t_s": 0.01955360299689346
+      },
+      {
+       "candidatos": 168,
+       "s": 5,
+       "t_s": 0.06386225599999307
+      },
+      {
+       "candidatos": 512,
+       "s": 6,
+       "t_s": 0.39792218699949444
+      },
+      {
+       "candidatos": 1444,
+       "s": 7,
+       "t_s": 1.8262344929971732
+      },
+      {
+       "candidatos": 4403,
+       "s": 8,
+       "t_s": 12.462413415996707
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5449184,
+     "candidatos_avaliados_por_segundo": 607.6739178664573,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 201060,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 16.457839815000625,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00018000199997914024
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0032001450017560273
+      },
+      {
+       "candidatos": 82,
+       "s": 3,
+       "t_s": 0.013649026001075981
+      },
+      {
+       "candidatos": 254,
+       "s": 4,
+       "t_s": 0.0800893410014396
+      },
+      {
+       "candidatos": 1034,
+       "s": 5,
+       "t_s": 0.5061691520022578
+      },
+      {
+       "candidatos": 3268,
+       "s": 6,
+       "t_s": 2.2743486860017583
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 4857536,
+     "candidatos_avaliados_por_segundo": 452.5947928546075,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 220612,
+     "rotulo": "{g} → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 22.097028419000708,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00013008799942326732
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.0033664639995549805
+      },
+      {
+       "candidatos": 63,
+       "s": 3,
+       "t_s": 0.024043499997787876
+      },
+      {
+       "candidatos": 278,
+       "s": 4,
+       "t_s": 0.136430331000156
+      },
+      {
+       "candidatos": 1023,
+       "s": 5,
+       "t_s": 0.904739948000497
+      },
+      {
+       "candidatos": 4062,
+       "s": 6,
+       "t_s": 5.306255150997458
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 14444976,
+     "candidatos_avaliados_por_segundo": 63.21946934791114,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 1028812,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 158.19493746399894,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00033771399830584414
+      },
+      {
+       "candidatos": 18,
+       "s": 2,
+       "t_s": 0.0050839919967984315
+      },
+      {
+       "candidatos": 91,
+       "s": 3,
+       "t_s": 0.19310143099937704
+      },
+      {
+       "candidatos": 408,
+       "s": 4,
+       "t_s": 1.7930732079985319
+      },
+      {
+       "candidatos": 1760,
+       "s": 5,
+       "t_s": 17.639999944996816
+      },
+      {
+       "candidatos": 7746,
+       "s": 6,
+       "t_s": 89.94218815899876
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 3479584,
+     "candidatos_avaliados_por_segundo": 333.5609718590504,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 273104,
+     "rotulo": "fechado Grade → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 29.982524466999166,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 0.0022834939991298597
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.002554629998485325
+      },
+      {
+       "candidatos": 13,
+       "s": 3,
+       "t_s": 0.003128823998849839
+      },
+      {
+       "candidatos": 85,
+       "s": 4,
+       "t_s": 0.01193905000036466
+      },
+      {
+       "candidatos": 261,
+       "s": 5,
+       "t_s": 0.06202939699869603
+      },
+      {
+       "candidatos": 900,
+       "s": 6,
+       "t_s": 0.5160500759993738
+      },
+      {
+       "candidatos": 2588,
+       "s": 7,
+       "t_s": 2.3087698759991326
+      },
+      {
+       "candidatos": 7657,
+       "s": 8,
+       "t_s": 17.66461850399719
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5840984,
+     "candidatos_avaliados_por_segundo": 204.16180696452415,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 290416,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 48.985655783002585,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.0002660899990587495
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.00039124199975049123
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.002270553999551339
+      },
+      {
+       "candidatos": 26,
+       "s": 4,
+       "t_s": 0.016367023999919184
+      },
+      {
+       "candidatos": 90,
+       "s": 5,
+       "t_s": 0.04125378800017643
+      },
+      {
+       "candidatos": 262,
+       "s": 6,
+       "t_s": 0.5103999019993353
+      },
+      {
+       "candidatos": 802,
+       "s": 7,
+       "t_s": 2.2508054059981077
+      },
+      {
+       "candidatos": 2724,
+       "s": 8,
+       "t_s": 9.022514532996865
+      },
+      {
+       "candidatos": 9766,
+       "s": 9,
+       "t_s": 48.94985460599855
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 4513608,
+     "candidatos_avaliados_por_segundo": 226.33982726981472,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 279028,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 44.18577198999992,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.0706999647663906e-05
+      },
+      {
+       "candidatos": 4,
+       "s": 2,
+       "t_s": 0.0007646309968549758
+      },
+      {
+       "candidatos": 25,
+       "s": 3,
+       "t_s": 0.021235395997791784
+      },
+      {
+       "candidatos": 126,
+       "s": 4,
+       "t_s": 0.1392276509977819
+      },
+      {
+       "candidatos": 444,
+       "s": 5,
+       "t_s": 0.5484963599992625
+      },
+      {
+       "candidatos": 1503,
+       "s": 6,
+       "t_s": 2.7902969409988145
+      },
+      {
+       "candidatos": 4783,
+       "s": 7,
+       "t_s": 14.618995523997
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 9721576,
+     "candidatos_avaliados_por_segundo": 128.02410811997615,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 397508,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 78.11809937100043,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0018469790011295117
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.007202609998785192
+      },
+      {
+       "candidatos": 73,
+       "s": 3,
+       "t_s": 0.08772523399966303
+      },
+      {
+       "candidatos": 307,
+       "s": 4,
+       "t_s": 0.6736068630016234
+      },
+      {
+       "candidatos": 1027,
+       "s": 5,
+       "t_s": 3.45140115599861
+      },
+      {
+       "candidatos": 3378,
+       "s": 6,
+       "t_s": 16.9823308849991
+      },
+      {
+       "candidatos": 9942,
+       "s": 7,
+       "t_s": 76.73611690500184
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 11168952,
+     "candidatos_avaliados_por_segundo": 127.21956921979859,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 338888,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "sistematica",
+     "tempo_parede_s": 78.61211967100098,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.993700299062766e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0009644720012147445
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.002289773001393769
+      },
+      {
+       "candidatos": 55,
+       "s": 4,
+       "t_s": 0.01450526299959165
+      },
+      {
+       "candidatos": 177,
+       "s": 5,
+       "t_s": 0.07257910900079878
+      },
+      {
+       "candidatos": 578,
+       "s": 6,
+       "t_s": 0.5504904940025881
+      },
+      {
+       "candidatos": 1743,
+       "s": 7,
+       "t_s": 5.563219433002814
+      },
+      {
+       "candidatos": 5620,
+       "s": 8,
+       "t_s": 38.40538132500296
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "bytes_estimados": 16156000,
+     "candidatos_avaliados_por_segundo": 355.6459530574288,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 391336,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 28.120663019002677,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0003835019997495692
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.0004986109997844324
+      },
+      {
+       "candidatos": 16,
+       "s": 3,
+       "t_s": 0.006988123001065105
+      },
+      {
+       "candidatos": 30,
+       "s": 4,
+       "t_s": 0.008573896000598324
+      },
+      {
+       "candidatos": 80,
+       "s": 5,
+       "t_s": 0.020683726001152536
+      },
+      {
+       "candidatos": 216,
+       "s": 6,
+       "t_s": 0.1294083530010539
+      },
+      {
+       "candidatos": 581,
+       "s": 7,
+       "t_s": 0.6207600769994315
+      },
+      {
+       "candidatos": 1718,
+       "s": 8,
+       "t_s": 2.4888742190014455
+      },
+      {
+       "candidatos": 4249,
+       "s": 9,
+       "t_s": 10.961942893001833
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "bytes_estimados": 16528448,
+     "candidatos_avaliados_por_segundo": 127.30915787646272,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 504096,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 78.5567995800011,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0003378650035301689
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.00502998100273544
+      },
+      {
+       "candidatos": 43,
+       "s": 3,
+       "t_s": 0.008996096003102139
+      },
+      {
+       "candidatos": 160,
+       "s": 4,
+       "t_s": 0.1143233330003568
+      },
+      {
+       "candidatos": 471,
+       "s": 5,
+       "t_s": 0.7232008650025818
+      },
+      {
+       "candidatos": 1568,
+       "s": 6,
+       "t_s": 5.358848592000868
+      },
+      {
+       "candidatos": 4645,
+       "s": 7,
+       "t_s": 35.050239602001966
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "bytes_estimados": 15988184,
+     "candidatos_avaliados_por_segundo": 645.2576879261959,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 351408,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 15.499234162001812,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.390600148937665e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0006332299999485258
+      },
+      {
+       "candidatos": 9,
+       "s": 3,
+       "t_s": 0.0018747040012385696
+      },
+      {
+       "candidatos": 51,
+       "s": 4,
+       "t_s": 0.026404498999909265
+      },
+      {
+       "candidatos": 151,
+       "s": 5,
+       "t_s": 0.06620559400107595
+      },
+      {
+       "candidatos": 591,
+       "s": 6,
+       "t_s": 0.4324968450018787
+      },
+      {
+       "candidatos": 1633,
+       "s": 7,
+       "t_s": 2.12547529999938
+      },
+      {
+       "candidatos": 5615,
+       "s": 8,
+       "t_s": 8.055231359001482
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "bytes_estimados": 13985968,
+     "candidatos_avaliados_por_segundo": 671.3390568122271,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 201264,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 14.89709245800259,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00013611699978355318
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0007397919980576262
+      },
+      {
+       "candidatos": 61,
+       "s": 3,
+       "t_s": 0.004157647999818437
+      },
+      {
+       "candidatos": 163,
+       "s": 4,
+       "t_s": 0.018593611999676796
+      },
+      {
+       "candidatos": 590,
+       "s": 5,
+       "t_s": 0.09359041999778128
+      },
+      {
+       "candidatos": 1501,
+       "s": 6,
+       "t_s": 0.8089036779965681
+      },
+      {
+       "candidatos": 4823,
+       "s": 7,
+       "t_s": 4.514177455999743
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0p",
+     "bytes_estimados": 36145296,
+     "candidatos_avaliados_por_segundo": 681.6333918088075,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 516852,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 14.672109846997046,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 7.844700303394347e-05
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.00826325900197844
+      },
+      {
+       "candidatos": 32,
+       "s": 3,
+       "t_s": 0.027308669999911217
+      },
+      {
+       "candidatos": 163,
+       "s": 4,
+       "t_s": 0.15732663000017055
+      },
+      {
+       "candidatos": 434,
+       "s": 5,
+       "t_s": 0.29038108500026283
+      },
+      {
+       "candidatos": 1554,
+       "s": 6,
+       "t_s": 1.2603215270028159
+      },
+      {
+       "candidatos": 4210,
+       "s": 7,
+       "t_s": 6.098836552002467
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0mais",
+     "bytes_estimados": 29269904,
+     "candidatos_avaliados_por_segundo": 180.94653343943725,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 558240,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 55.270470286999625,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.001959727000212297
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.009112250001635402
+      },
+      {
+       "candidatos": 65,
+       "s": 3,
+       "t_s": 0.06638756000029389
+      },
+      {
+       "candidatos": 252,
+       "s": 4,
+       "t_s": 0.23823716799961403
+      },
+      {
+       "candidatos": 857,
+       "s": 5,
+       "t_s": 2.2092637970017677
+      },
+      {
+       "candidatos": 2948,
+       "s": 6,
+       "t_s": 8.345711799000128
+      },
+      {
+       "candidatos": 9939,
+       "s": 7,
+       "t_s": 54.69329243800166
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "bytes_estimados": 14908216,
+     "candidatos_avaliados_por_segundo": 185.96776614617974,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 393180,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 53.778136970999185,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0004254469968145713
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.0005376989975047763
+      },
+      {
+       "candidatos": 16,
+       "s": 3,
+       "t_s": 0.009597338997991756
+      },
+      {
+       "candidatos": 30,
+       "s": 4,
+       "t_s": 0.010904977996688103
+      },
+      {
+       "candidatos": 83,
+       "s": 5,
+       "t_s": 0.03098593699905905
+      },
+      {
+       "candidatos": 227,
+       "s": 6,
+       "t_s": 0.1599551799990877
+      },
+      {
+       "candidatos": 632,
+       "s": 7,
+       "t_s": 0.7870074649981689
+      },
+      {
+       "candidatos": 1872,
+       "s": 8,
+       "t_s": 3.593875497997942
+      },
+      {
+       "candidatos": 4885,
+       "s": 9,
+       "t_s": 20.191123250999226
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "bytes_estimados": 15482920,
+     "candidatos_avaliados_por_segundo": 50.88103221641613,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 612060,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 196.55654699499792,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00029790899861836806
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.004547414999251487
+      },
+      {
+       "candidatos": 47,
+       "s": 3,
+       "t_s": 0.05231903899766621
+      },
+      {
+       "candidatos": 170,
+       "s": 4,
+       "t_s": 0.20246382400000584
+      },
+      {
+       "candidatos": 519,
+       "s": 5,
+       "t_s": 2.2831045120001363
+      },
+      {
+       "candidatos": 1707,
+       "s": 6,
+       "t_s": 15.255882318000658
+      },
+      {
+       "candidatos": 5229,
+       "s": 7,
+       "t_s": 82.35809669599985
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "bytes_estimados": 13170032,
+     "candidatos_avaliados_por_segundo": 586.6143066893109,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 224288,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 17.048680685002182,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0001477309997426346
+      },
+      {
+       "candidatos": 11,
+       "s": 2,
+       "t_s": 0.0007651900014025159
+      },
+      {
+       "candidatos": 61,
+       "s": 3,
+       "t_s": 0.006232043000636622
+      },
+      {
+       "candidatos": 166,
+       "s": 4,
+       "t_s": 0.028791081000235863
+      },
+      {
+       "candidatos": 597,
+       "s": 5,
+       "t_s": 0.1055936990014743
+      },
+      {
+       "candidatos": 1537,
+       "s": 6,
+       "t_s": 1.0731310000010126
+      },
+      {
+       "candidatos": 4915,
+       "s": 7,
+       "t_s": 5.062653603999934
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0pmais",
+     "bytes_estimados": 33521032,
+     "candidatos_avaliados_por_segundo": 401.0827523626135,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 517564,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "curada",
+     "tempo_parede_s": 24.935003914000845,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 0.00013853400014340878
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.008781287000601878
+      },
+      {
+       "candidatos": 34,
+       "s": 3,
+       "t_s": 0.027540139002667274
+      },
+      {
+       "candidatos": 170,
+       "s": 4,
+       "t_s": 0.16669681600251351
+      },
+      {
+       "candidatos": 475,
+       "s": 5,
+       "t_s": 0.44792018400039524
+      },
+      {
+       "candidatos": 1660,
+       "s": 6,
+       "t_s": 3.3497298330003105
+      },
+      {
+       "candidatos": 4669,
+       "s": 7,
+       "t_s": 14.947263112000655
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5080632,
+     "candidatos_avaliados_por_segundo": 741.5388067810609,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 217744,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "anteriores:vizPretos",
+     "tempo_parede_s": 13.486819447000016,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00024304999897140078
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.00035701199885807
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.004041209998831619
+      },
+      {
+       "candidatos": 24,
+       "s": 4,
+       "t_s": 0.0070835529986652546
+      },
+      {
+       "candidatos": 73,
+       "s": 5,
+       "t_s": 0.014558195998688461
+      },
+      {
+       "candidatos": 179,
+       "s": 6,
+       "t_s": 0.11381703199731419
+      },
+      {
+       "candidatos": 447,
+       "s": 7,
+       "t_s": 0.4853010810002161
+      },
+      {
+       "candidatos": 1283,
+       "s": 8,
+       "t_s": 2.173669980998966
+      },
+      {
+       "candidatos": 3809,
+       "s": 9,
+       "t_s": 10.835142716998234
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 6208496,
+     "candidatos_avaliados_por_segundo": 1230.2506814649262,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 185328,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:ParAdjacente",
+     "tempo_parede_s": 8.129237520999595,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00021384800129453652
+      },
+      {
+       "candidatos": 14,
+       "s": 2,
+       "t_s": 0.0011043630001950078
+      },
+      {
+       "candidatos": 80,
+       "s": 3,
+       "t_s": 0.010432113998831483
+      },
+      {
+       "candidatos": 249,
+       "s": 4,
+       "t_s": 0.04079347500010044
+      },
+      {
+       "candidatos": 871,
+       "s": 5,
+       "t_s": 0.15419549099897267
+      },
+      {
+       "candidatos": 2493,
+       "s": 6,
+       "t_s": 0.9645940299997164
+      },
+      {
+       "candidatos": 7344,
+       "s": 7,
+       "t_s": 5.097058970000944
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 6142600,
+     "candidatos_avaliados_por_segundo": 1194.7162673559774,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 186468,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:NenhumaIsolada",
+     "tempo_parede_s": 8.371025215998088,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0001277049996133428
+      },
+      {
+       "candidatos": 16,
+       "s": 2,
+       "t_s": 0.004758685998240253
+      },
+      {
+       "candidatos": 83,
+       "s": 3,
+       "t_s": 0.012315454998315545
+      },
+      {
+       "candidatos": 271,
+       "s": 4,
+       "t_s": 0.04518148100032704
+      },
+      {
+       "candidatos": 917,
+       "s": 5,
+       "t_s": 0.18870710500050336
+      },
+      {
+       "candidatos": 2631,
+       "s": 6,
+       "t_s": 1.073435640999378
+      },
+      {
+       "candidatos": 7617,
+       "s": 7,
+       "t_s": 5.376092727998184
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 11136440,
+     "candidatos_avaliados_por_segundo": 380.3587756982827,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 581884,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "anteriores:passo",
+     "tempo_parede_s": 26.29359604399724,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0003347450001456309
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.005359888000384672
+      },
+      {
+       "candidatos": 75,
+       "s": 3,
+       "t_s": 0.031097658997168764
+      },
+      {
+       "candidatos": 275,
+       "s": 4,
+       "t_s": 0.1933301159988332
+      },
+      {
+       "candidatos": 1090,
+       "s": 5,
+       "t_s": 2.0143342049996136
+      },
+      {
+       "candidatos": 4072,
+       "s": 6,
+       "t_s": 9.523411951999151
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 6230904,
+     "candidatos_avaliados_por_segundo": 546.264521625664,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 228604,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "anteriores:fecho",
+     "tempo_parede_s": 18.307980116002,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.004957725999702234
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.005245747001026757
+      },
+      {
+       "candidatos": 23,
+       "s": 3,
+       "t_s": 0.11924774300132412
+      },
+      {
+       "candidatos": 95,
+       "s": 4,
+       "t_s": 0.14607048100151587
+      },
+      {
+       "candidatos": 350,
+       "s": 5,
+       "t_s": 0.5130949270023848
+      },
+      {
+       "candidatos": 1018,
+       "s": 6,
+       "t_s": 0.8822138230025303
+      },
+      {
+       "candidatos": 2777,
+       "s": 7,
+       "t_s": 3.0325334670014854
+      },
+      {
+       "candidatos": 8427,
+       "s": 8,
+       "t_s": 14.864643300999887
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 3793176,
+     "candidatos_avaliados_por_segundo": 529.6279647087994,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 178224,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "anteriores:componenteDe",
+     "tempo_parede_s": 18.883066352998867,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0005178800020075869
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0006386940003721975
+      },
+      {
+       "candidatos": 12,
+       "s": 3,
+       "t_s": 0.011220501000934746
+      },
+      {
+       "candidatos": 28,
+       "s": 4,
+       "t_s": 0.012743512001179624
+      },
+      {
+       "candidatos": 90,
+       "s": 5,
+       "t_s": 0.13800564100165502
+      },
+      {
+       "candidatos": 206,
+       "s": 6,
+       "t_s": 0.2611569270011387
+      },
+      {
+       "candidatos": 543,
+       "s": 7,
+       "t_s": 0.9031390300006024
+      },
+      {
+       "candidatos": 1630,
+       "s": 8,
+       "t_s": 3.8417617350023647
+      },
+      {
+       "candidatos": 5188,
+       "s": 9,
+       "t_s": 16.349393177999445
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 6039136,
+     "candidatos_avaliados_por_segundo": 793.7016141964101,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 158048,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:UmComponente",
+     "tempo_parede_s": 12.600453144001222,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00013941699944552965
+      },
+      {
+       "candidatos": 18,
+       "s": 2,
+       "t_s": 0.005692376998922555
+      },
+      {
+       "candidatos": 86,
+       "s": 3,
+       "t_s": 0.012846844998421147
+      },
+      {
+       "candidatos": 307,
+       "s": 4,
+       "t_s": 0.09256967200053623
+      },
+      {
+       "candidatos": 1000,
+       "s": 5,
+       "t_s": 0.2462635970005067
+      },
+      {
+       "candidatos": 3019,
+       "s": 6,
+       "t_s": 3.0371740859991405
+      },
+      {
+       "candidatos": 8564,
+       "s": 7,
+       "t_s": 10.106708515999344
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 11989928,
+     "candidatos_avaliados_por_segundo": 193.49393498724064,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 612676,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "anteriores:pretasDe",
+     "tempo_parede_s": 51.68637456600118,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00031578500056639314
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.004924091997963842
+      },
+      {
+       "candidatos": 85,
+       "s": 3,
+       "t_s": 2.0699055810000573
+      },
+      {
+       "candidatos": 295,
+       "s": 4,
+       "t_s": 2.379694578998169
+      },
+      {
+       "candidatos": 1251,
+       "s": 5,
+       "t_s": 14.291888214997016
+      },
+      {
+       "candidatos": 4617,
+       "s": 6,
+       "t_s": 25.95367643300051
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 8823848,
+     "candidatos_avaliados_por_segundo": 644.0994530745561,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 266132,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "anteriores:descartar",
+     "tempo_parede_s": 15.527105250999739,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.00362424699778785
+      },
+      {
+       "candidatos": 10,
+       "s": 2,
+       "t_s": 0.005495155997778056
+      },
+      {
+       "candidatos": 64,
+       "s": 3,
+       "t_s": 0.2487706829997478
+      },
+      {
+       "candidatos": 202,
+       "s": 4,
+       "t_s": 0.2832961489984882
+      },
+      {
+       "candidatos": 706,
+       "s": 5,
+       "t_s": 1.861900167998101
+      },
+      {
+       "candidatos": 1874,
+       "s": 6,
+       "t_s": 2.5568169779980963
+      },
+      {
+       "candidatos": 4892,
+       "s": 7,
+       "t_s": 10.156140576997132
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 13357480,
+     "candidatos_avaliados_por_segundo": 326.90244609067366,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 233920,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "anteriores:noMaximo",
+     "tempo_parede_s": 30.593224735999684,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 5.891399996471591e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0028583530001924373
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.004232701001456007
+      },
+      {
+       "candidatos": 58,
+       "s": 4,
+       "t_s": 0.06863074099965161
+      },
+      {
+       "candidatos": 160,
+       "s": 5,
+       "t_s": 0.15622664100010297
+      },
+      {
+       "candidatos": 482,
+       "s": 6,
+       "t_s": 0.8170987810008228
+      },
+      {
+       "candidatos": 1181,
+       "s": 7,
+       "t_s": 2.26608769700033
+      },
+      {
+       "candidatos": 3512,
+       "s": 8,
+       "t_s": 16.72700278800039
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 11085672,
+     "candidatos_avaliados_por_segundo": 150.56117043448754,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 271688,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "anteriores:mesmoNumero",
+     "tempo_parede_s": 66.42482899899915,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.007904186997620855
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.00841115399816772
+      },
+      {
+       "candidatos": 18,
+       "s": 3,
+       "t_s": 0.10749660099827452
+      },
+      {
+       "candidatos": 75,
+       "s": 4,
+       "t_s": 0.1723642109973298
+      },
+      {
+       "candidatos": 265,
+       "s": 5,
+       "t_s": 0.7472688219968404
+      },
+      {
+       "candidatos": 712,
+       "s": 6,
+       "t_s": 2.1756911689990375
+      },
+      {
+       "candidatos": 2018,
+       "s": 7,
+       "t_s": 10.155352177996974
+      },
+      {
+       "candidatos": 5897,
+       "s": 8,
+       "t_s": 41.60011551400021
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5777560,
+     "candidatos_avaliados_por_segundo": 332.0403859875949,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 144220,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:PrimeiraUltimaIguais",
+     "tempo_parede_s": 30.119830063002155,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00014939799802959897
+      },
+      {
+       "candidatos": 20,
+       "s": 2,
+       "t_s": 0.11022309100007988
+      },
+      {
+       "candidatos": 93,
+       "s": 3,
+       "t_s": 0.20665168799678213
+      },
+      {
+       "candidatos": 343,
+       "s": 4,
+       "t_s": 1.0386576609998883
+      },
+      {
+       "candidatos": 1127,
+       "s": 5,
+       "t_s": 2.031770934998349
+      },
+      {
+       "candidatos": 3501,
+       "s": 6,
+       "t_s": 10.692708859998675
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0",
+     "bytes_estimados": 5810448,
+     "candidatos_avaliados_por_segundo": 306.2016208490844,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 144236,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:LinhasIguais",
+     "tempo_parede_s": 32.661486154996965,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00015414400331792422
+      },
+      {
+       "candidatos": 22,
+       "s": 2,
+       "t_s": 0.11392308799986495
+      },
+      {
+       "candidatos": 96,
+       "s": 3,
+       "t_s": 0.19705765900289407
+      },
+      {
+       "candidatos": 371,
+       "s": 4,
+       "t_s": 1.1308861910001724
+      },
+      {
+       "candidatos": 1202,
+       "s": 5,
+       "t_s": 2.1722099160033395
+      },
+      {
+       "candidatos": 3822,
+       "s": 6,
+       "t_s": 11.962390317003155
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 3563080,
+     "candidatos_avaliados_por_segundo": 246.1351769423755,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 177160,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "anteriores:vizPretos",
+     "tempo_parede_s": 40.63214419100041,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.00034939900069730356
+      },
+      {
+       "candidatos": 1,
+       "s": 2,
+       "t_s": 0.0005498579994309694
+      },
+      {
+       "candidatos": 8,
+       "s": 3,
+       "t_s": 0.0065310120007779915
+      },
+      {
+       "candidatos": 24,
+       "s": 4,
+       "t_s": 0.012104477002139902
+      },
+      {
+       "candidatos": 75,
+       "s": 5,
+       "t_s": 0.029496746999939205
+      },
+      {
+       "candidatos": 199,
+       "s": 6,
+       "t_s": 0.22784729599879938
+      },
+      {
+       "candidatos": 527,
+       "s": 7,
+       "t_s": 0.8336189280016697
+      },
+      {
+       "candidatos": 1580,
+       "s": 8,
+       "t_s": 5.210641370002122
+      },
+      {
+       "candidatos": 4964,
+       "s": 9,
+       "t_s": 28.555768680002075
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 6003024,
+     "candidatos_avaliados_por_segundo": 820.7322731185116,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 235084,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:ParAdjacente",
+     "tempo_parede_s": 12.18545965299927,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00012659999993047677
+      },
+      {
+       "candidatos": 14,
+       "s": 2,
+       "t_s": 0.0010324840004614089
+      },
+      {
+       "candidatos": 80,
+       "s": 3,
+       "t_s": 0.010768473999632988
+      },
+      {
+       "candidatos": 253,
+       "s": 4,
+       "t_s": 0.04586101400127518
+      },
+      {
+       "candidatos": 903,
+       "s": 5,
+       "t_s": 0.2085842189990217
+      },
+      {
+       "candidatos": 2649,
+       "s": 6,
+       "t_s": 1.5087155239998538
+      },
+      {
+       "candidatos": 8060,
+       "s": 7,
+       "t_s": 8.26772622900171
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5842960,
+     "candidatos_avaliados_por_segundo": 959.2833233175056,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 198064,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:NenhumaIsolada",
+     "tempo_parede_s": 10.42549136100206,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00016597300054854713
+      },
+      {
+       "candidatos": 16,
+       "s": 2,
+       "t_s": 0.0026178570005868096
+      },
+      {
+       "candidatos": 83,
+       "s": 3,
+       "t_s": 0.014105878999544075
+      },
+      {
+       "candidatos": 275,
+       "s": 4,
+       "t_s": 0.06219699699795456
+      },
+      {
+       "candidatos": 949,
+       "s": 5,
+       "t_s": 0.2397086210003181
+      },
+      {
+       "candidatos": 2791,
+       "s": 6,
+       "t_s": 1.6297203359972627
+      },
+      {
+       "candidatos": 8359,
+       "s": 7,
+       "t_s": 8.621449694997864
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 12773104,
+     "candidatos_avaliados_por_segundo": 78.95593961664625,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 720152,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "anteriores:passo",
+     "tempo_parede_s": 126.66558144400187,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00031297299938159995
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.005810622998978943
+      },
+      {
+       "candidatos": 77,
+       "s": 3,
+       "t_s": 0.07165047899979982
+      },
+      {
+       "candidatos": 308,
+       "s": 4,
+       "t_s": 0.5677911210004822
+      },
+      {
+       "candidatos": 1244,
+       "s": 5,
+       "t_s": 10.569999244002247
+      },
+      {
+       "candidatos": 4953,
+       "s": 6,
+       "t_s": 54.62974484900042
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5916544,
+     "candidatos_avaliados_por_segundo": 196.1896205267131,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 289100,
+     "rotulo": "fechado Grade → L Pos → L Pos",
+     "tabela_espec": "anteriores:fecho",
+     "tempo_parede_s": 50.97619320099693,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.003246787000534823
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.0035371390004002023
+      },
+      {
+       "candidatos": 25,
+       "s": 3,
+       "t_s": 0.15808940100032487
+      },
+      {
+       "candidatos": 105,
+       "s": 4,
+       "t_s": 0.20758121600010782
+      },
+      {
+       "candidatos": 393,
+       "s": 5,
+       "t_s": 1.1633980380029243
+      },
+      {
+       "candidatos": 1225,
+       "s": 6,
+       "t_s": 2.7651803090011526
+      },
+      {
+       "candidatos": 3517,
+       "s": 7,
+       "t_s": 11.522052936001273
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 4816488,
+     "candidatos_avaliados_por_segundo": 238.3248754450746,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 224044,
+     "rotulo": "fechado Grade → Pos → L Pos",
+     "tabela_espec": "anteriores:componenteDe",
+     "tempo_parede_s": 41.963726956000755,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0005166780028957874
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0006435350005631335
+      },
+      {
+       "candidatos": 12,
+       "s": 3,
+       "t_s": 0.009413874002348166
+      },
+      {
+       "candidatos": 28,
+       "s": 4,
+       "t_s": 0.01380080100352643
+      },
+      {
+       "candidatos": 92,
+       "s": 5,
+       "t_s": 0.11314361400218331
+      },
+      {
+       "candidatos": 228,
+       "s": 6,
+       "t_s": 0.4142165120028949
+      },
+      {
+       "candidatos": 625,
+       "s": 7,
+       "t_s": 1.2396269320015563
+      },
+      {
+       "candidatos": 1956,
+       "s": 8,
+       "t_s": 6.28424405700207
+      },
+      {
+       "candidatos": 6485,
+       "s": 9,
+       "t_s": 33.3101688980023
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5671200,
+     "candidatos_avaliados_por_segundo": 668.6755892231914,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 174028,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:UmComponente",
+     "tempo_parede_s": 14.95643053400272,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00013194399798521772
+      },
+      {
+       "candidatos": 18,
+       "s": 2,
+       "t_s": 0.0039970430007088
+      },
+      {
+       "candidatos": 86,
+       "s": 3,
+       "t_s": 0.015163898999162484
+      },
+      {
+       "candidatos": 311,
+       "s": 4,
+       "t_s": 0.1020750349998707
+      },
+      {
+       "candidatos": 1034,
+       "s": 5,
+       "t_s": 0.536437847000343
+      },
+      {
+       "candidatos": 3185,
+       "s": 6,
+       "t_s": 3.588305384000705
+      },
+      {
+       "candidatos": 9360,
+       "s": 7,
+       "t_s": 14.748790017998544
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 14598288,
+     "candidatos_avaliados_por_segundo": 63.18709126579094,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 772388,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tabela_espec": "anteriores:pretasDe",
+     "tempo_parede_s": 158.27599909499986,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00029646399707417004
+      },
+      {
+       "candidatos": 15,
+       "s": 2,
+       "t_s": 0.00530207299743779
+      },
+      {
+       "candidatos": 87,
+       "s": 3,
+       "t_s": 1.900757829000213
+      },
+      {
+       "candidatos": 330,
+       "s": 4,
+       "t_s": 3.5313109909984632
+      },
+      {
+       "candidatos": 1411,
+       "s": 5,
+       "t_s": 22.21825783299937
+      },
+      {
+       "candidatos": 5585,
+       "s": 6,
+       "t_s": 76.73135589999947
+      }
+     ]
+    },
+    {
+     "D": 4,
+     "base": "E0mais",
+     "bytes_estimados": 28237000,
+     "candidatos_avaliados_por_segundo": 154.69509909473615,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 557864,
+     "rotulo": "fechado L Pos → L Pos → L Pos",
+     "tabela_espec": "anteriores:descartar",
+     "tempo_parede_s": 64.64975334399787,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 3,
+       "s": 1,
+       "t_s": 0.0031205120030790567
+      },
+      {
+       "candidatos": 13,
+       "s": 2,
+       "t_s": 0.013369292002607835
+      },
+      {
+       "candidatos": 72,
+       "s": 3,
+       "t_s": 0.1491367939997872
+      },
+      {
+       "candidatos": 262,
+       "s": 4,
+       "t_s": 0.3669246900026337
+      },
+      {
+       "candidatos": 941,
+       "s": 5,
+       "t_s": 3.1203432780021103
+      },
+      {
+       "candidatos": 3075,
+       "s": 6,
+       "t_s": 9.761293300001853
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 10427392,
+     "candidatos_avaliados_por_segundo": 144.56605924501966,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 296968,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "anteriores:noMaximo",
+     "tempo_parede_s": 69.17944676799743,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 0,
+       "s": 1,
+       "t_s": 6.960199971217662e-05
+      },
+      {
+       "candidatos": 2,
+       "s": 2,
+       "t_s": 0.0009169129989459179
+      },
+      {
+       "candidatos": 11,
+       "s": 3,
+       "t_s": 0.004401678997965064
+      },
+      {
+       "candidatos": 59,
+       "s": 4,
+       "t_s": 0.04792085299777682
+      },
+      {
+       "candidatos": 169,
+       "s": 5,
+       "t_s": 0.11637949899886735
+      },
+      {
+       "candidatos": 529,
+       "s": 6,
+       "t_s": 0.699963476999983
+      },
+      {
+       "candidatos": 1417,
+       "s": 7,
+       "t_s": 3.154121874998964
+      },
+      {
+       "candidatos": 4227,
+       "s": 8,
+       "t_s": 28.27699938599835
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 11436760,
+     "candidatos_avaliados_por_segundo": 99.27165695054036,
+     "classe": "fechado",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 290900,
+     "rotulo": "fechado L Pos → L Pos → Bool",
+     "tabela_espec": "anteriores:mesmoNumero",
+     "tempo_parede_s": 100.7437601749989,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 1,
+       "s": 1,
+       "t_s": 0.005247002001851797
+      },
+      {
+       "candidatos": 3,
+       "s": 2,
+       "t_s": 0.006078419002733426
+      },
+      {
+       "candidatos": 18,
+       "s": 3,
+       "t_s": 0.09835844000190264
+      },
+      {
+       "candidatos": 76,
+       "s": 4,
+       "t_s": 0.14878390700323507
+      },
+      {
+       "candidatos": 276,
+       "s": 5,
+       "t_s": 0.4593771230029233
+      },
+      {
+       "candidatos": 801,
+       "s": 6,
+       "t_s": 1.7892997590024606
+      },
+      {
+       "candidatos": 2345,
+       "s": 7,
+       "t_s": 10.216746254001919
+      },
+      {
+       "candidatos": 7318,
+       "s": 8,
+       "t_s": 54.168760969001596
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5603824,
+     "candidatos_avaliados_por_segundo": 372.84728217104214,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 179172,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:PrimeiraUltimaIguais",
+     "tempo_parede_s": 26.823314740999194,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.0001372480001009535
+      },
+      {
+       "candidatos": 20,
+       "s": 2,
+       "t_s": 0.07882613800029503
+      },
+      {
+       "candidatos": 94,
+       "s": 3,
+       "t_s": 0.1360873130033724
+      },
+      {
+       "candidatos": 353,
+       "s": 4,
+       "t_s": 0.7569175680000626
+      },
+      {
+       "candidatos": 1190,
+       "s": 5,
+       "t_s": 1.8973094430002675
+      },
+      {
+       "candidatos": 3781,
+       "s": 6,
+       "t_s": 9.280059361000895
+      }
+     ]
+    },
+    {
+     "D": 2,
+     "base": "E0mais",
+     "bytes_estimados": 5644784,
+     "candidatos_avaliados_por_segundo": 368.4071474996235,
+     "classe": "contexto",
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 176916,
+     "rotulo": "{g} → Bool",
+     "tabela_espec": "anteriores:LinhasIguais",
+     "tempo_parede_s": 27.14659600899904,
+     "tempos_por_tamanho": [
+      {
+       "candidatos": 2,
+       "s": 1,
+       "t_s": 0.00016855799913173541
+      },
+      {
+       "candidatos": 22,
+       "s": 2,
+       "t_s": 0.06050228299864102
+      },
+      {
+       "candidatos": 97,
+       "s": 3,
+       "t_s": 0.1405055959985475
+      },
+      {
+       "candidatos": 381,
+       "s": 4,
+       "t_s": 0.6538854270002048
+      },
+      {
+       "candidatos": 1265,
+       "s": 5,
+       "t_s": 1.8451216619978368
+      },
+      {
+       "candidatos": 4106,
+       "s": 6,
+       "t_s": 9.686796694000805
+      }
+     ]
+    }
+   ]
+  },
+  "4": {},
+  "5": {},
+  "6": {
+   "bracos": {
+    "L-fix@E0": {
+     "cpu_s": 283.71977389299997,
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 584092,
+     "oraculo_consultas": 13,
+     "oraculo_latencia_max_s": 0.40517075000025216,
+     "oraculo_latencia_media_s": 0.03553063584639368,
+     "oraculo_latencias_por_tarefa": [
+      {
+       "latencias_s": [
+        0.40517075000025216
+       ],
+       "tarefa_id": "ExistePreta"
+      },
+      {
+       "latencias_s": [
+        0.029681186002562754
+       ],
+       "tarefa_id": "vizPretos"
+      },
+      {
+       "latencias_s": [
+        0.00012502100071287714,
+        0.0003490720009722281
+       ],
+       "tarefa_id": "ParAdjacente"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "NenhumaIsolada"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "passo"
+      },
+      {
+       "latencias_s": [
+        9.685400073067285e-05
+       ],
+       "tarefa_id": "fecho"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "componenteDe"
+      },
+      {
+       "latencias_s": [
+        4.694800009019673e-05
+       ],
+       "tarefa_id": "UmComponente"
+      },
+      {
+       "latencias_s": [
+        0.02584987600130262
+       ],
+       "tarefa_id": "pretasDe"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "descartar"
+      },
+      {
+       "latencias_s": [
+        4.6558998292312026e-05,
+        0.00010190900138695724,
+        0.00011673200060613453
+       ],
+       "tarefa_id": "noMaximo"
+      },
+      {
+       "latencias_s": [
+        7.252399882418104e-05,
+        0.00018517100033932365
+       ],
+       "tarefa_id": "mesmoNumero"
+      },
+      {
+       "latencias_s": [
+        5.56639970454853e-05
+       ],
+       "tarefa_id": "PrimeiraUltimaIguais"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "LinhasIguais"
+      }
+     ],
+     "tempo_parede_s": 286.67064284200023
+    },
+    "L-fix@E0mais": {
+     "cpu_s": 506.420271182,
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 664936,
+     "oraculo_consultas": 13,
+     "oraculo_latencia_max_s": 0.3420463779984857,
+     "oraculo_latencia_media_s": 0.03249614861488226,
+     "oraculo_latencias_por_tarefa": [
+      {
+       "latencias_s": [
+        0.3420463779984857
+       ],
+       "tarefa_id": "ExistePreta"
+      },
+      {
+       "latencias_s": [
+        0.051807592000841396
+       ],
+       "tarefa_id": "vizPretos"
+      },
+      {
+       "latencias_s": [
+        0.00013301299986778758,
+        0.00028341600045678206
+       ],
+       "tarefa_id": "ParAdjacente"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "NenhumaIsolada"
+      },
+      {
+       "latencias_s": [
+        0.0001084100003936328
+       ],
+       "tarefa_id": "passo"
+      },
+      {
+       "latencias_s": [
+        0.0001014299996313639
+       ],
+       "tarefa_id": "fecho"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "componenteDe"
+      },
+      {
+       "latencias_s": [
+        4.695799725595862e-05
+       ],
+       "tarefa_id": "UmComponente"
+      },
+      {
+       "latencias_s": [
+        0.027527722999366233
+       ],
+       "tarefa_id": "pretasDe"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "descartar"
+      },
+      {
+       "latencias_s": [
+        4.4874999730382115e-05,
+        0.00012131699986639433
+       ],
+       "tarefa_id": "noMaximo"
+      },
+      {
+       "latencias_s": [
+        7.688600089750253e-05,
+        9.56839976424817e-05
+       ],
+       "tarefa_id": "mesmoNumero"
+      },
+      {
+       "latencias_s": [
+        5.624999903375283e-05
+       ],
+       "tarefa_id": "PrimeiraUltimaIguais"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "LinhasIguais"
+      }
+     ],
+     "tempo_parede_s": 510.56701001799956
+    },
+    "L-lib+f@E0": {
+     "cpu_s": 266.033734107,
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 574252,
+     "oraculo_consultas": 14,
+     "oraculo_latencia_max_s": 0.3264612439998018,
+     "oraculo_latencia_media_s": 0.027455444643367497,
+     "oraculo_latencias_por_tarefa": [
+      {
+       "latencias_s": [
+        0.3264612439998018
+       ],
+       "tarefa_id": "ExistePreta"
+      },
+      {
+       "latencias_s": [
+        0.03000971200162894
+       ],
+       "tarefa_id": "vizPretos"
+      },
+      {
+       "latencias_s": [
+        0.00012681900261668488,
+        0.00028273099815123715,
+        0.0003349620019434951
+       ],
+       "tarefa_id": "ParAdjacente"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "NenhumaIsolada"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "passo"
+      },
+      {
+       "latencias_s": [
+        9.564199717715383e-05
+       ],
+       "tarefa_id": "fecho"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "componenteDe"
+      },
+      {
+       "latencias_s": [
+        5.023400080972351e-05
+       ],
+       "tarefa_id": "UmComponente"
+      },
+      {
+       "latencias_s": [
+        0.026474127000255976
+       ],
+       "tarefa_id": "pretasDe"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "descartar"
+      },
+      {
+       "latencias_s": [
+        5.186100315768272e-05,
+        0.00011323500075377524,
+        0.00010916099927271716
+       ],
+       "tarefa_id": "noMaximo"
+      },
+      {
+       "latencias_s": [
+        7.892299981904216e-05,
+        0.00013296700126375072
+       ],
+       "tarefa_id": "mesmoNumero"
+      },
+      {
+       "latencias_s": [
+        5.460700049297884e-05
+       ],
+       "tarefa_id": "PrimeiraUltimaIguais"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "LinhasIguais"
+      }
+     ],
+     "tempo_parede_s": 269.9081817699989
+    },
+    "L-lib@E0": {
+     "cpu_s": 283.627958717,
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 582816,
+     "oraculo_consultas": 13,
+     "oraculo_latencia_max_s": 0.31803340400074376,
+     "oraculo_latencia_media_s": 0.029214706077394882,
+     "oraculo_latencias_por_tarefa": [
+      {
+       "latencias_s": [
+        0.31803340400074376
+       ],
+       "tarefa_id": "ExistePreta"
+      },
+      {
+       "latencias_s": [
+        0.035072778999165166
+       ],
+       "tarefa_id": "vizPretos"
+      },
+      {
+       "latencias_s": [
+        0.00012147199959144928,
+        0.0002621160019771196
+       ],
+       "tarefa_id": "ParAdjacente"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "NenhumaIsolada"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "passo"
+      },
+      {
+       "latencias_s": [
+        9.301400132244453e-05
+       ],
+       "tarefa_id": "fecho"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "componenteDe"
+      },
+      {
+       "latencias_s": [
+        6.204099918249995e-05
+       ],
+       "tarefa_id": "UmComponente"
+      },
+      {
+       "latencias_s": [
+        0.02565483200305607
+       ],
+       "tarefa_id": "pretasDe"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "descartar"
+      },
+      {
+       "latencias_s": [
+        4.967600034433417e-05,
+        0.00010577300054137595,
+        0.00010831399777089246
+       ],
+       "tarefa_id": "noMaximo"
+      },
+      {
+       "latencias_s": [
+        7.883500074967742e-05,
+        9.226900147041306e-05
+       ],
+       "tarefa_id": "mesmoNumero"
+      },
+      {
+       "latencias_s": [
+        5.665400021825917e-05
+       ],
+       "tarefa_id": "PrimeiraUltimaIguais"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "LinhasIguais"
+      }
+     ],
+     "tempo_parede_s": 286.12746446200254
+    },
+    "L-lib@E0mais": {
+     "cpu_s": 515.109589358,
+     "memoria_escopo": "trecho",
+     "memoria_pico_kib": 667108,
+     "oraculo_consultas": 13,
+     "oraculo_latencia_max_s": 0.31877673900089576,
+     "oraculo_latencia_media_s": 0.030206279846214993,
+     "oraculo_latencias_por_tarefa": [
+      {
+       "latencias_s": [
+        0.31877673900089576
+       ],
+       "tarefa_id": "ExistePreta"
+      },
+      {
+       "latencias_s": [
+        0.04598827000154415
+       ],
+       "tarefa_id": "vizPretos"
+      },
+      {
+       "latencias_s": [
+        0.0001208829999086447,
+        0.00025373099924763665
+       ],
+       "tarefa_id": "ParAdjacente"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "NenhumaIsolada"
+      },
+      {
+       "latencias_s": [
+        0.00016443700224044733
+       ],
+       "tarefa_id": "passo"
+      },
+      {
+       "latencias_s": [
+        9.622200013836846e-05
+       ],
+       "tarefa_id": "fecho"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "componenteDe"
+      },
+      {
+       "latencias_s": [
+        4.774899935000576e-05
+       ],
+       "tarefa_id": "UmComponente"
+      },
+      {
+       "latencias_s": [
+        0.026821671999641694
+       ],
+       "tarefa_id": "pretasDe"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "descartar"
+      },
+      {
+       "latencias_s": [
+        4.7464000090258196e-05,
+        0.00012287200297578238
+       ],
+       "tarefa_id": "noMaximo"
+      },
+      {
+       "latencias_s": [
+        8.310900011565536e-05,
+        0.00010095099787577055
+       ],
+       "tarefa_id": "mesmoNumero"
+      },
+      {
+       "latencias_s": [
+        5.753899677074514e-05
+       ],
+       "tarefa_id": "PrimeiraUltimaIguais"
+      },
+      {
+       "latencias_s": [],
+       "tarefa_id": "LinhasIguais"
+      }
+     ],
+     "tempo_parede_s": 519.4616579930007
+    }
+   },
+   "pm12": {
+    "latencia_max_s": 0.0016828440020617563,
+    "latencias_s": [
+     0.0002528219993109815,
+     9.747799776960164e-05,
+     8.083400098257698e-05,
+     5.59049985895399e-05,
+     0.0001423030007572379,
+     3.35020013153553e-05,
+     7.019400072749704e-05,
+     0.00019522299771779217,
+     3.331400148454122e-05,
+     9.181999848806299e-05,
+     0.0002592650016595144,
+     0.00035175700031686574,
+     3.0019000405445695e-05,
+     7.237699901452288e-05,
+     7.542700041085482e-05,
+     6.096099968999624e-05,
+     5.865400089533068e-05,
+     0.0016828440020617563,
+     7.638800161657855e-05,
+     0.00039551300142193213,
+     7.302899757632986e-05,
+     4.004700167570263e-05,
+     2.371200025663711e-05,
+     3.388199911569245e-05,
+     4.6922999899834394e-05,
+     6.169200059957802e-05,
+     3.270399975008331e-05,
+     2.60519991570618e-05,
+     9.666000187280588e-05,
+     4.142900070291944e-05,
+     4.8484998842468485e-05,
+     9.200000204145908e-05,
+     2.6265999622410163e-05,
+     2.8629001462832093e-05,
+     0.00011024100240319967,
+     4.670699854614213e-05,
+     0.0003470089977781754,
+     8.344100206159055e-05,
+     5.3739997383672744e-05,
+     4.467300095711835e-05,
+     4.184499994153157e-05,
+     1.827900268835947e-05,
+     3.092800034210086e-05,
+     6.982999911997467e-05,
+     1.7827998817665502e-05,
+     0.0001478040030633565,
+     0.00010671999916667119,
+     0.0001325939992966596,
+     3.2515999919269234e-05,
+     2.3022999812383205e-05
+    ]
+   }
+  },
+  "7": {}
+ }
+}

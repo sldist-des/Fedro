@@ -1,0 +1,9 @@
+# Comandos que produziram estes registros (diretório de trabalho: raiz do repositório)
+# Código: SHA-256 das fontes em config.json ("fontes") e em deterministico.json ("fontes").
+# Execução única, todas as fases calculadas (nenhuma fase reaproveitada), após as correções dos achados de revisão:
+python3 -m fedro_piloto.piloto --id piloto-s10001-exploratorio-v2 --semente 10001 --processos 4
+# PM15 (determinismo): segunda execução com o mesmo código e a mesma semente, fases 1,2,4,5,6,7 recalculadas
+# (fase 3 reaproveitada, com verificação do hash das fontes), comparada a esta; resultado em
+# runs/piloto-s10001-exploratorio-v2-pm15/pm15.json
+python3 -m fedro_piloto.piloto --id piloto-s10001-exploratorio-v2-pm15 --semente 10001 --processos 4 --fases 1,2,4,5,6,7 --reaproveitar runs/piloto-s10001-exploratorio-v2 --comparar-com runs/piloto-s10001-exploratorio-v2
+# Os registros anteriores (runs/piloto-s10001-exploratorio*, código anterior às correções) foram mantidos sem alteração.

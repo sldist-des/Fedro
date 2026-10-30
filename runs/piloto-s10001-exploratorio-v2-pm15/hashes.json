@@ -1,0 +1,897 @@
+{
+ "baldes": {
+  "oraculo_treino": [
+   0,
+   20
+  ],
+  "reservado_confirmatorio": [
+   50,
+   100
+  ],
+  "teste_ext": [
+   40,
+   50
+  ],
+  "teste_int": [
+   30,
+   40
+  ],
+  "validacao": [
+   20,
+   30
+  ]
+ },
+ "conjuntos": {
+  "auditoria_oe:Grade → Bool": {
+   "grades": 120,
+   "hash": "faf2cacc4a7c38f7e0fdec8e4dd96989e8d15dd76954c23596550e33757adb87",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 120
+   },
+   "reaproveitado": true
+  },
+  "auditoria_oe:Grade → L Pos → L Pos": {
+   "grades": 24,
+   "hash": "7fceb54250450dbf60322131a79c9c66e832ee396a7dd7ae07b0e12958d1d7ba",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 24
+   },
+   "reaproveitado": true
+  },
+  "auditoria_oe:Grade → Pos → L Pos": {
+   "grades": 24,
+   "hash": "57b179c9684ba73ca680a2e0e349b2db67785334c30d7c33df2c4125eaefd791",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 24
+   },
+   "reaproveitado": true
+  },
+  "auditoria_oe:L Pos → L Pos → Bool": {
+   "grades": 24,
+   "hash": "49966e3c3363e8e1dc3f2122d8d5845e1eeec7352c4b9f9fdb047915ff43c8a3",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 24
+   },
+   "reaproveitado": true
+  },
+  "auditoria_oe:L Pos → L Pos → L Pos": {
+   "grades": 24,
+   "hash": "bb8ae7ff3b7b1a304fd1b7073ce017496979ee044d82bfdb20af5794f07f44e5",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 24
+   },
+   "reaproveitado": true
+  },
+  "contraexemplos:L-fix@E0": {
+   "grades": 5,
+   "hash": "3c9b9f4d21568e00d64fc71de2cd970576dca46b319516635269b9b4dbc88612",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 5
+   }
+  },
+  "contraexemplos:L-fix@E0mais": {
+   "grades": 6,
+   "hash": "bb921b294085d67c339a939b06bcf15d7a31b7362ebe4e1346e305009905c7c1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 6
+   }
+  },
+  "contraexemplos:L-lib+f@E0": {
+   "grades": 6,
+   "hash": "e8fee0ea5bcbfb2e1e10b38279394df3e75cc67f590f33d26155f60b5f8f9a29",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 6
+   }
+  },
+  "contraexemplos:L-lib@E0": {
+   "grades": 5,
+   "hash": "3c9b9f4d21568e00d64fc71de2cd970576dca46b319516635269b9b4dbc88612",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 5
+   }
+  },
+  "contraexemplos:L-lib@E0mais": {
+   "grades": 6,
+   "hash": "bb921b294085d67c339a939b06bcf15d7a31b7362ebe4e1346e305009905c7c1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 6
+   }
+  },
+  "desenho:DoisSeparados:n=3": {
+   "grades": 56,
+   "hash": "3039417d6b0138344fbd364e94f578df1fc80d04a285d490739b96723aa628d6",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 56
+   }
+  },
+  "desenho:DoisSeparados:n=4": {
+   "grades": 200,
+   "hash": "b8361eec7efdcf2d833c154c6d92cb3238763441ec1d68b032805a320373d0d6",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:DoisSeparados:n=5": {
+   "grades": 200,
+   "hash": "66525d01d6317cc35bee3d4912debd558e1162a39103a117fa993d83631ce3b8",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:DoisSeparados:n=6": {
+   "grades": 200,
+   "hash": "3a4207b8ef48a9ff5577aaa856ac6466794f22fece021c7e87c75a7d9d5e0872",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:Igual_linha1_linhaN:n=3": {
+   "grades": 64,
+   "hash": "ca8cf71a52869b1b76b6b1168418c25bab8b45f8123cdff184e29fafe0ffe80d",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 64
+   }
+  },
+  "desenho:Igual_linha1_linhaN:n=4": {
+   "grades": 200,
+   "hash": "944595ce96c138816d6bed08c27cd50ffc91655f209a1be9eb205c2aea89051f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:Igual_linha1_linhaN:n=5": {
+   "grades": 200,
+   "hash": "65eda473021f752cb075ba143da20f06462075d04e0aa840c634ed81e92fa535",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:Igual_linha1_linhaN:n=6": {
+   "grades": 200,
+   "hash": "af68545e0918ecbc8d0b68ef517b935e3f4d41a368a89e67cc5baa1423d9fd59",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:LinhasIguais:n=3": {
+   "grades": 14,
+   "hash": "63701ab75e948a635cdb7bb9f302dfe9d3ebb2f488032b7063d780fd95174b0a",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 14
+   }
+  },
+  "desenho:LinhasIguais:n=4": {
+   "grades": 200,
+   "hash": "33e302512c2987700a4390129f5689cfb91f0d534e1cdb4b79021a2d41edb236",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:LinhasIguais:n=5": {
+   "grades": 200,
+   "hash": "1aca6946dbee516983d2c9880bf5ab0663e31ffb36ec05771069d9b7ba1b0bfe",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:LinhasIguais:n=6": {
+   "grades": 200,
+   "hash": "7d64738bf8edcf603c1fd33fa80900dfa7fcb052f231d3bd30ca7e12bcd08851",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:NenhumaIsolada:n=3": {
+   "grades": 86,
+   "hash": "5aab312c3ff18394750a65b0fde9b0556ccfee57b56fdb20a47765070bf6bc87",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 86
+   }
+  },
+  "desenho:NenhumaIsolada:n=4": {
+   "grades": 200,
+   "hash": "6f1d7cbf46bfbafbc9f901ee2a79c496a76170591dee71cc26a9ce0c8b4e98e7",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:NenhumaIsolada:n=5": {
+   "grades": 200,
+   "hash": "ae4f85085da297746875ae109242e4d21c86518ec1260d19325b603a3eaf1873",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:NenhumaIsolada:n=6": {
+   "grades": 200,
+   "hash": "0ca057faadc2f6148c50535524bed4e448d3f36e4912cae33ce91a955b50741a",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:ParAdjacente:n=3": {
+   "grades": 134,
+   "hash": "804c9725daaff7702987910d622c8746737999b9ffeb63dda261b6a01717c6db",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 134
+   }
+  },
+  "desenho:ParAdjacente:n=4": {
+   "grades": 200,
+   "hash": "3791acc4d03c407fd83721e51dff81d0f258f0d0af272efc2b11469f4dbe7426",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:ParAdjacente:n=5": {
+   "grades": 200,
+   "hash": "1ac8ded753bdab98542a54b98ca354a5beb5e5f7992c982838bf4748b1b30a0b",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:ParAdjacente:n=6": {
+   "grades": 200,
+   "hash": "31de86a8a412102a16b0bd0d297f7507c110de4e8627be1f747e2a8811cc930d",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:TodosMesmoTamanho:n=3": {
+   "grades": 66,
+   "hash": "d5fd99b772ceb205a2e55d01f85770c8c5261808fb1c9eb01532cfa2a3069009",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 66
+   }
+  },
+  "desenho:TodosMesmoTamanho:n=4": {
+   "grades": 200,
+   "hash": "9fe253fd140f51a3a991065294060bcb79818fd46f94f740c1bf75ec44dfc5c1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:TodosMesmoTamanho:n=5": {
+   "grades": 200,
+   "hash": "0083282807906593dc40f318b836f27a2df1b7f4ff284fc8af2c1385f143ed56",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:TodosMesmoTamanho:n=6": {
+   "grades": 200,
+   "hash": "c5cb4a3d8fcc78a2bd39bb2d6e3377f584d9ca06f134b556ac823e22c15bc552",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:UmComponente:n=3": {
+   "grades": 66,
+   "hash": "3cd561720ffdc42a9e34832682dd4a2e50a92398ef3abbe977269cf62e7165a0",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 66
+   }
+  },
+  "desenho:UmComponente:n=4": {
+   "grades": 200,
+   "hash": "f6e6d45e9c2ac51af02bb563c94a2ac40c47b59390134219a51789fdec60c3ef",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:UmComponente:n=5": {
+   "grades": 200,
+   "hash": "ad29874aab68e77f36a6d19dacb7353da3edb25d80eeedb1144ba5e9d02e51cd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "desenho:UmComponente:n=6": {
+   "grades": 200,
+   "hash": "4e6368cacbf38f80993871cc938b00eb2cade28c27c4bd83fa57d83372bb1f8a",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 200
+   }
+  },
+  "oe:grades_amostra_oe": {
+   "grades": 36,
+   "hash": "bd3ff55fee8ae23fa86951ba183b39dca8175a8af57787d53c2dfa8f5db70c83",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 36
+   }
+  },
+  "pm11:grades": {
+   "grades": 144,
+   "hash": "11e13c0b1dcf1da797f6a16df7b4c66e444a0dc897341d44e023580092dafdff",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 144
+   }
+  },
+  "tarefa:ExistePreta:exemplos": {
+   "grades": 3,
+   "hash": "60f2efe29f6e57c57562afe59399a8386b6049805049840bc89412dcc034c7a1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 3
+   }
+  },
+  "tarefa:ExistePreta:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:ExistePreta:reservatorio_oraculo": {
+   "grades": 80,
+   "hash": "fc17666eb5a8f364fa8d13ef98ee95cf0baa3e43b8bf9edcd3c1e4dcd5bed492",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 80
+   }
+  },
+  "tarefa:ExistePreta:teste": {
+   "grades": 29,
+   "hash": "b3e06bb6e149ecdf24c1808f561cf52536db562c87e64d9921bc9042bf399389",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 29
+   }
+  },
+  "tarefa:ExistePreta:teste_fonte": {
+   "grades": 29,
+   "hash": "b3e06bb6e149ecdf24c1808f561cf52536db562c87e64d9921bc9042bf399389",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 29
+   }
+  },
+  "tarefa:LinhasIguais:exemplos": {
+   "grades": 4,
+   "hash": "e4b8b5407a6423728b49b5c7c88446c3f60d90a02238591f302d951c3ab5e70f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:LinhasIguais:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:LinhasIguais:reservatorio_oraculo": {
+   "grades": 196,
+   "hash": "9f9c14711b6d57ee06e57e0251b8bb7c8e0a668ac23c42a045dd28d249891237",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 196
+   }
+  },
+  "tarefa:LinhasIguais:teste": {
+   "grades": 29,
+   "hash": "aed4fd4bfd2581511fe7efc7c530e96750b7259eec53171fdf0854fed0f5917b",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 29
+   }
+  },
+  "tarefa:LinhasIguais:teste_fonte": {
+   "grades": 29,
+   "hash": "aed4fd4bfd2581511fe7efc7c530e96750b7259eec53171fdf0854fed0f5917b",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 29
+   }
+  },
+  "tarefa:NenhumaIsolada:exemplos": {
+   "grades": 4,
+   "hash": "d09f0665dbc22ad5fc5704fcc558feebdf1a189719fc3049d47fe4084fc187cf",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:NenhumaIsolada:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:NenhumaIsolada:reservatorio_oraculo": {
+   "grades": 240,
+   "hash": "6ee3f95262902cecb9e761e0e59ebeace4df92041e56aa6c3b00992ceae0b444",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 240
+   }
+  },
+  "tarefa:NenhumaIsolada:teste": {
+   "grades": 30,
+   "hash": "ca0316831b56c7a6ac06f418da5d04d186ebea7cc88f583ce3217052932c30f1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:NenhumaIsolada:teste_fonte": {
+   "grades": 30,
+   "hash": "ca0316831b56c7a6ac06f418da5d04d186ebea7cc88f583ce3217052932c30f1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:ParAdjacente:exemplos": {
+   "grades": 4,
+   "hash": "71118402afa6283955adb9f47646dc8b0178bad58c89f2d19759b2a776b861cd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:ParAdjacente:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:ParAdjacente:reservatorio_oraculo": {
+   "grades": 149,
+   "hash": "229d01d7dde86ace7a3ea37d488e22cdd2cf45255ab7bbd117bec0c9d8f6bf3b",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 149
+   }
+  },
+  "tarefa:ParAdjacente:teste": {
+   "grades": 30,
+   "hash": "58b5d31c5fd1c36c17f41cb11e74ebb51ac57401eb0567278993f7d132055bbd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:ParAdjacente:teste_fonte": {
+   "grades": 30,
+   "hash": "58b5d31c5fd1c36c17f41cb11e74ebb51ac57401eb0567278993f7d132055bbd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:PrimeiraUltimaIguais:exemplos": {
+   "grades": 4,
+   "hash": "224c8c56da42714afc7b9a2e98f603ed67a5928d69a2236874bbb305e9c50bef",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:PrimeiraUltimaIguais:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:PrimeiraUltimaIguais:reservatorio_oraculo": {
+   "grades": 240,
+   "hash": "7fc1b5f1a8377da5bc77cb2a05d1c10d5ac982b5eaa793193554d94242166e8f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 240
+   }
+  },
+  "tarefa:PrimeiraUltimaIguais:teste": {
+   "grades": 30,
+   "hash": "40f9e198c784f220098dd884eb48d2488985fff808a61ef77d7c8c3cf5a218d0",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:PrimeiraUltimaIguais:teste_fonte": {
+   "grades": 30,
+   "hash": "40f9e198c784f220098dd884eb48d2488985fff808a61ef77d7c8c3cf5a218d0",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:UmComponente:exemplos": {
+   "grades": 4,
+   "hash": "149bab05a73305b9404b655e7e820a46f8c4649ebce3b86c122aba4922817bd5",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:UmComponente:exemplos_fonte": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:UmComponente:reservatorio_oraculo": {
+   "grades": 229,
+   "hash": "df9fb753493815fa1798220362176514f8fec002a46e1c4dd2939d39819fe784",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 229
+   }
+  },
+  "tarefa:UmComponente:teste": {
+   "grades": 30,
+   "hash": "3ddd85cd786fba9dbf982db6cccd4f197492d8ba75b621df4a515deb07451f39",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:UmComponente:teste_fonte": {
+   "grades": 30,
+   "hash": "3ddd85cd786fba9dbf982db6cccd4f197492d8ba75b621df4a515deb07451f39",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:componenteDe:exemplos": {
+   "grades": 4,
+   "hash": "d4b4fc8d12e38ddd1cfa6dfe400acfe0c7e83628f2c55a585bd5f155d3c1d93f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:componenteDe:exemplos_fonte": {
+   "grades": 4,
+   "hash": "d4b4fc8d12e38ddd1cfa6dfe400acfe0c7e83628f2c55a585bd5f155d3c1d93f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:componenteDe:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "52c553c3cb66283f375324a246ea445afae24a18a4f279e41c12d004b7d265b8",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:componenteDe:teste": {
+   "grades": 30,
+   "hash": "a47e577d3c2095177ba7f101c70782e871e12dcb0d952d004eb4f8937241d181",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:componenteDe:teste_fonte": {
+   "grades": 30,
+   "hash": "a47e577d3c2095177ba7f101c70782e871e12dcb0d952d004eb4f8937241d181",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:descartar:exemplos": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:descartar:exemplos_fonte": {
+   "grades": 4,
+   "hash": "b187347588f7452877d76a392d5e0128e020211c1b365e1b1b944586fd32a3f1",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:descartar:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "792545e2598a702b824ce8737421c69f89a5a73bf5b1215d929aa4f5b326ac1e",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:descartar:teste": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:descartar:teste_fonte": {
+   "grades": 30,
+   "hash": "687ad9cea673d1ff5fe321f01048f33ff9fa330b56a2abd1df6f6d41b8c2c7fa",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:fecho:exemplos": {
+   "grades": 4,
+   "hash": "1c9aeee4d86de5e3871ad5f2a9b61e31c8b60ccf98da68adcc56b54fcba8cdac",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:fecho:exemplos_fonte": {
+   "grades": 4,
+   "hash": "1c9aeee4d86de5e3871ad5f2a9b61e31c8b60ccf98da68adcc56b54fcba8cdac",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:fecho:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "d50a33eae8f43e4ea937d3f83088bbbdaaff6939011949f8b6ccee149c3b94fc",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:fecho:teste": {
+   "grades": 30,
+   "hash": "4a993b50eb3cca40e1bacb78dabb3bf1eee4c5d7ca6e87b11bd9148096ff2431",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:fecho:teste_fonte": {
+   "grades": 30,
+   "hash": "4a993b50eb3cca40e1bacb78dabb3bf1eee4c5d7ca6e87b11bd9148096ff2431",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:mesmoNumero:exemplos": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:mesmoNumero:exemplos_fonte": {
+   "grades": 4,
+   "hash": "ac55da9b86dbc54e2c43d58f6768652952196eef99bd3ec642dd81a3620c8c7c",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:mesmoNumero:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "f38851ba102b1dcd8350450bc2c85b78e0157c76a773773266f3d8688827f7f8",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:mesmoNumero:teste": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:mesmoNumero:teste_fonte": {
+   "grades": 30,
+   "hash": "a9755800eff52afbcd22511765bef119d11311928c759ba3fe37597426a5ce06",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:noMaximo:exemplos": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:noMaximo:exemplos_fonte": {
+   "grades": 4,
+   "hash": "befdc88f2d96d65087f1ba09182c360399d487c0c09b8da4573bc66c752145b4",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:noMaximo:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "8d48e54fe3e8bc67ff342a32f13ffcd66c702544c8e61c4295070e9dbf2948bf",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:noMaximo:teste": {
+   "grades": 0,
+   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "no_confirmatorio": 0,
+   "particoes": {}
+  },
+  "tarefa:noMaximo:teste_fonte": {
+   "grades": 30,
+   "hash": "066193db63243899c4bfda7200923c4f0f32ef9e18b98ea75478b50859f89d73",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:passo:exemplos": {
+   "grades": 4,
+   "hash": "b160b1bd6e8af919abdf12cb938fedfb4fa7fece1626bc7e7da0b36f37cc48ff",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:passo:exemplos_fonte": {
+   "grades": 4,
+   "hash": "b160b1bd6e8af919abdf12cb938fedfb4fa7fece1626bc7e7da0b36f37cc48ff",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:passo:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "ab250c06ab10991990fbadad89a6a3d258d7ed10a2d1f0781d8c80a41e867b98",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:passo:teste": {
+   "grades": 30,
+   "hash": "95ff58d8724bc022636eb1c7e7ec6e42f8dd0dd0a071b114a9d53d00855532dd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:passo:teste_fonte": {
+   "grades": 30,
+   "hash": "95ff58d8724bc022636eb1c7e7ec6e42f8dd0dd0a071b114a9d53d00855532dd",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:pretasDe:exemplos": {
+   "grades": 4,
+   "hash": "145f661dafb22c77002f43f2cce98d9dee0c9871887963209b2492dd1df7dc15",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:pretasDe:exemplos_fonte": {
+   "grades": 4,
+   "hash": "145f661dafb22c77002f43f2cce98d9dee0c9871887963209b2492dd1df7dc15",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:pretasDe:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "f9b13631a13a34815eb6d4d93f8c62c9543e7cdf3059ea8420c15349e2b9015f",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:pretasDe:teste": {
+   "grades": 30,
+   "hash": "e860f840d591a203e3ff0a0ae4725635f23d6fff333aa5d3ad9b8f7104a64aa4",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:pretasDe:teste_fonte": {
+   "grades": 30,
+   "hash": "e860f840d591a203e3ff0a0ae4725635f23d6fff333aa5d3ad9b8f7104a64aa4",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:vizPretos:exemplos": {
+   "grades": 4,
+   "hash": "3454bac3ad93b7a6301a1c8325983b0fefc0ed5cc89201207d17fbfde8d23383",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:vizPretos:exemplos_fonte": {
+   "grades": 4,
+   "hash": "3454bac3ad93b7a6301a1c8325983b0fefc0ed5cc89201207d17fbfde8d23383",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 4
+   }
+  },
+  "tarefa:vizPretos:reservatorio_oraculo": {
+   "grades": 40,
+   "hash": "b7a6a14756af575140ae55dcecb419c2ac7da5536281a0251fb6d93776593e23",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "oraculo_treino": 40
+   }
+  },
+  "tarefa:vizPretos:teste": {
+   "grades": 30,
+   "hash": "cb4c12f4d51996e940fd68fbbe6a7745aa680a63fcf10ea6043f26b634fed1ab",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  },
+  "tarefa:vizPretos:teste_fonte": {
+   "grades": 30,
+   "hash": "cb4c12f4d51996e940fd68fbbe6a7745aa680a63fcf10ea6043f26b634fed1ab",
+   "no_confirmatorio": 0,
+   "particoes": {
+    "teste_int": 30
+   }
+  }
+ },
+ "grades_no_confirmatorio": 0,
+ "intervalo_sementes_piloto": [
+  10000,
+  20000
+ ],
+ "nota": "PM1 exaustivo (n <= 4) audita as referências em TODO o domínio, inclusive baldes do confirmatório; é auditoria de implementação, nenhuma dessas grades é dado do aprendiz e não entra nestes conjuntos.",
+ "particoes_disjuntas": true,
+ "semente": 10001,
+ "semente_min_confirmatorio": 20000,
+ "semente_no_intervalo_piloto": true
+}

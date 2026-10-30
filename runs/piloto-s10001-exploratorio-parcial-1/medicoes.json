@@ -1,0 +1,585 @@
+{
+ "execucao": {
+  "inicio": "2026-10-29T20:04:56",
+  "processos": 4
+ },
+ "fases": {
+  "1": {
+   "cpu_s": 72.022166,
+   "memoria_pico_kib": 441472,
+   "tempo_parede_s": 18.62991781599885
+  },
+  "2": {
+   "cpu_s": 0.3537280000000038,
+   "memoria_pico_kib": 441472,
+   "tempo_parede_s": 0.3546874260009645
+  },
+  "3": {
+   "cpu_s": 3255.9423530000004,
+   "memoria_pico_kib": 4007632,
+   "tempo_parede_s": 1395.200518443
+  },
+  "4": {
+   "cpu_s": 31.685336999999436,
+   "memoria_pico_kib": 4007632,
+   "tempo_parede_s": 15.834188025000913
+  },
+  "5": {
+   "cpu_s": 3.3296650000002046,
+   "memoria_pico_kib": 4007632,
+   "tempo_parede_s": 3.4105191710004874
+  },
+  "6": {
+   "cpu_s": 1929.905650000001,
+   "memoria_pico_kib": 4007632,
+   "tempo_parede_s": 795.2642871320004
+  },
+  "7": {
+   "cpu_s": 0.00024699999994481914,
+   "memoria_pico_kib": 4007632,
+   "tempo_parede_s": 0.00024489699899277184
+  }
+ },
+ "fases_detalhe": {
+  "1": {
+   "pm1": [
+    {
+     "cpu_s": 10.327038797,
+     "tempo_parede_s": 10.439807161999852
+    },
+    {
+     "cpu_s": 10.162230213,
+     "tempo_parede_s": 10.328620746000524
+    },
+    {
+     "cpu_s": 13.274630795,
+     "tempo_parede_s": 13.574290704000305
+    },
+    {
+     "cpu_s": 11.840657122,
+     "tempo_parede_s": 12.007344093999563
+    }
+   ],
+   "pm3": [
+    {
+     "conceito": "ExistePreta",
+     "n": 3
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 4
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 5
+    },
+    {
+     "conceito": "ExistePreta",
+     "n": 6
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 301292,
+     "n": 3,
+     "pares_por_segundo": 708.2395832043645,
+     "projecao_s_1000_pares": 1.4119515820841197,
+     "tempo_parede_s": 0.09460075599963602
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 321388,
+     "n": 4,
+     "pares_por_segundo": 1597.8146242107525,
+     "projecao_s_1000_pares": 0.6258548299956601,
+     "tempo_parede_s": 0.06258548299956601
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 345600,
+     "n": 5,
+     "pares_por_segundo": 124.14050622237164,
+     "projecao_s_1000_pares": 8.055388449993188,
+     "tempo_parede_s": 0.8055388449993188
+    },
+    {
+     "conceito": "ParAdjacente",
+     "memoria_pico_kb": 341636,
+     "n": 6,
+     "pares_por_segundo": 59.022177403146614,
+     "projecao_s_1000_pares": 16.942783949998557,
+     "tempo_parede_s": 1.6942783949998557
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 345728,
+     "n": 3,
+     "pares_por_segundo": 120.87216870627162,
+     "projecao_s_1000_pares": 8.273203093013699,
+     "tempo_parede_s": 0.35574773299958906
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 322412,
+     "n": 4,
+     "pares_por_segundo": 554.6053563596461,
+     "projecao_s_1000_pares": 1.8030839200037008,
+     "tempo_parede_s": 0.18030839200037008
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 347136,
+     "n": 5,
+     "pares_por_segundo": 1877.0950257552395,
+     "projecao_s_1000_pares": 0.5327380800008541,
+     "tempo_parede_s": 0.05327380800008541
+    },
+    {
+     "conceito": "NenhumaIsolada",
+     "memoria_pico_kb": 348928,
+     "n": 6,
+     "pares_por_segundo": 1699.0016122519125,
+     "projecao_s_1000_pares": 0.5885809600113134,
+     "tempo_parede_s": 0.058858096001131344
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 349056,
+     "n": 3,
+     "pares_por_segundo": 126.4204782109451,
+     "projecao_s_1000_pares": 7.910110878803993,
+     "tempo_parede_s": 0.26103365900053177
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 322924,
+     "n": 4,
+     "pares_por_segundo": 586.9786798021738,
+     "projecao_s_1000_pares": 1.7036393899979885,
+     "tempo_parede_s": 0.17036393899979885
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 349696,
+     "n": 5,
+     "pares_por_segundo": 2394.5532725634866,
+     "projecao_s_1000_pares": 0.41761442998904386,
+     "tempo_parede_s": 0.041761442998904386
+    },
+    {
+     "conceito": "UmComponente",
+     "memoria_pico_kb": 350464,
+     "n": 6,
+     "pares_por_segundo": 2166.3609678946577,
+     "projecao_s_1000_pares": 0.4616035899925918,
+     "tempo_parede_s": 0.04616035899925919
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 350720,
+     "n": 3,
+     "pares_por_segundo": 1127.7295769530706,
+     "projecao_s_1000_pares": 0.886737406233351,
+     "tempo_parede_s": 0.028375596999467234
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 352256,
+     "n": 4,
+     "pares_por_segundo": 831.2005143764616,
+     "projecao_s_1000_pares": 1.2030791399956797,
+     "tempo_parede_s": 0.12030791399956797
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 322924,
+     "n": 5,
+     "pares_por_segundo": 3638.4714357144726,
+     "projecao_s_1000_pares": 0.2748406900172995,
+     "tempo_parede_s": 0.02748406900172995
+    },
+    {
+     "conceito": "Igual_linha1_linhaN",
+     "memoria_pico_kb": 323052,
+     "n": 6,
+     "pares_por_segundo": 2626.8692472382113,
+     "projecao_s_1000_pares": 0.3806813000119291,
+     "tempo_parede_s": 0.03806813000119291
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 323052,
+     "n": 3,
+     "pares_por_segundo": 793.2024814006776,
+     "projecao_s_1000_pares": 1.2607121427988333,
+     "tempo_parede_s": 0.008824984999591834
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 323564,
+     "n": 4,
+     "pares_por_segundo": 883.7108460689724,
+     "projecao_s_1000_pares": 1.1315918599939323,
+     "tempo_parede_s": 0.11315918599939323
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 288956,
+     "n": 5,
+     "pares_por_segundo": 1491.2167631077612,
+     "projecao_s_1000_pares": 0.6705933199918945,
+     "tempo_parede_s": 0.06705933199918945
+    },
+    {
+     "conceito": "LinhasIguais",
+     "memoria_pico_kb": 289264,
+     "n": 6,
+     "pares_por_segundo": 1617.8328407527374,
+     "projecao_s_1000_pares": 0.6181108300006599,
+     "tempo_parede_s": 0.06181108300006599
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 341764,
+     "n": 3,
+     "pares_por_segundo": 102.87595210867171,
+     "projecao_s_1000_pares": 9.72044466663757,
+     "tempo_parede_s": 0.3207746739990398
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 309232,
+     "n": 4,
+     "pares_por_segundo": 895.2537451197247,
+     "projecao_s_1000_pares": 1.1170017500080576,
+     "tempo_parede_s": 0.11170017500080576
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 353280,
+     "n": 5,
+     "pares_por_segundo": 1547.6942969101522,
+     "projecao_s_1000_pares": 0.646122429989191,
+     "tempo_parede_s": 0.0646122429989191
+    },
+    {
+     "conceito": "TodosMesmoTamanho",
+     "memoria_pico_kb": 354432,
+     "n": 6,
+     "pares_por_segundo": 1573.206506042699,
+     "projecao_s_1000_pares": 0.6356444599987299,
+     "tempo_parede_s": 0.06356444599987299
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 341764,
+     "n": 3,
+     "pares_por_segundo": 44.22932592093429,
+     "projecao_s_1000_pares": 22.6094334285725,
+     "tempo_parede_s": 0.63306413600003
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 355456,
+     "n": 4,
+     "pares_por_segundo": 1203.1593520781828,
+     "projecao_s_1000_pares": 0.8311451000008674,
+     "tempo_parede_s": 0.08311451000008674
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 324076,
+     "n": 5,
+     "pares_por_segundo": 2623.6713400511103,
+     "projecao_s_1000_pares": 0.3811452999980247,
+     "tempo_parede_s": 0.03811452999980247
+    },
+    {
+     "conceito": "DoisSeparados",
+     "memoria_pico_kb": 325100,
+     "n": 6,
+     "pares_por_segundo": 1907.934090535363,
+     "projecao_s_1000_pares": 0.5241271199884068,
+     "tempo_parede_s": 0.05241271199884068
+    }
+   ]
+  },
+  "2": {
+   "tempo_parede_s": 0.3546764919992711
+  },
+  "3": {
+   "pm8_pm9": [
+    {
+     "base": "E0",
+     "bytes_estimados": 54558800,
+     "candidatos_avaliados_por_segundo": 271.47279359614987,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 368.36472147099994
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 6771320,
+     "candidatos_avaliados_por_segundo": 1006.2855471960131,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 9.93853089500044
+    },
+    {
+     "base": "E0",
+     "candidatos_avaliados_por_segundo": 184.9928387204724,
+     "classe": "contexto",
+     "memoria_pico_kib": 4007632,
+     "memoria_pico_trabalhador_kib": 4007632,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 284.4866880469999
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 4304592,
+     "candidatos_avaliados_por_segundo": 474.8982466556049,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 21.059248102999845
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 5080280,
+     "candidatos_avaliados_por_segundo": 570.4726424646826,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 17.531077313000424
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 5781240,
+     "candidatos_avaliados_por_segundo": 464.39224827015687,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 21.53567385599854
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 9294800,
+     "candidatos_avaliados_por_segundo": 842.9998620521847,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 11.86358438500065
+    },
+    {
+     "base": "E0",
+     "bytes_estimados": 12113608,
+     "candidatos_avaliados_por_segundo": 170.04541527111556,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 58.813699763999466
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 60906512,
+     "candidatos_avaliados_por_segundo": 90.39783047776442,
+     "classe": "contexto",
+     "memoria_pico_kib": 4007632,
+     "memoria_pico_trabalhador_kib": 4007632,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 1106.232300836
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 7918856,
+     "candidatos_avaliados_por_segundo": 295.7451801151458,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 33.81627384800049
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 13168624,
+     "candidatos_avaliados_por_segundo": 97.36542851499769,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 102.71612986800028
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 4387152,
+     "candidatos_avaliados_por_segundo": 108.5369563398402,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 92.14372999999978
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 4353768,
+     "candidatos_avaliados_por_segundo": 133.0753535177606,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 75.15290950300005
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 6044168,
+     "candidatos_avaliados_por_segundo": 141.49581572710687,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 70.68053531199985
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 8211344,
+     "candidatos_avaliados_por_segundo": 295.90344340623966,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 33.79818728999999
+    },
+    {
+     "base": "E0p",
+     "bytes_estimados": 10567456,
+     "candidatos_avaliados_por_segundo": 53.821373750014516,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 185.81837108900072
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 53137072,
+     "candidatos_avaliados_por_segundo": 273.3463249528607,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062860,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → Bool",
+     "tempo_parede_s": 365.8399285859996
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 6197720,
+     "candidatos_avaliados_por_segundo": 514.6069355323734,
+     "classe": "contexto",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "{g} → L Pos",
+     "tempo_parede_s": 19.43425031699917
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 11884272,
+     "candidatos_avaliados_por_segundo": 77.24871240544803,
+     "classe": "contexto",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "{g, S: L Pos} → L Pos",
+     "tempo_parede_s": 129.4649410790007
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 4102872,
+     "candidatos_avaliados_por_segundo": 380.81582304301645,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Bool",
+     "tempo_parede_s": 26.262039008999636
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 3557056,
+     "candidatos_avaliados_por_segundo": 231.44918255977788,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → Pos → L Pos",
+     "tempo_parede_s": 43.210349198001495
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 5584160,
+     "candidatos_avaliados_por_segundo": 139.45542550531923,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "Grade → L Pos → L Pos",
+     "tempo_parede_s": 71.71467129200028
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 8478936,
+     "candidatos_avaliados_por_segundo": 157.5408135344668,
+     "classe": "fechado",
+     "memoria_pico_kib": 1710888,
+     "memoria_pico_trabalhador_kib": 1710888,
+     "rotulo": "L Pos → L Pos → L Pos",
+     "tempo_parede_s": 63.48196239199933
+    },
+    {
+     "base": "E0mais",
+     "bytes_estimados": 11239960,
+     "candidatos_avaliados_por_segundo": 153.84398105980424,
+     "classe": "fechado",
+     "memoria_pico_kib": 2062988,
+     "memoria_pico_trabalhador_kib": 2062988,
+     "rotulo": "L Pos → L Pos → Bool",
+     "tempo_parede_s": 65.00741810699947
+    }
+   ]
+  },
+  "4": {},
+  "5": {},
+  "6": {
+   "bracos": {
+    "L-fix@E0": {
+     "cpu_s": 304.473284021,
+     "memoria_pico_kib": 579324,
+     "tempo_parede_s": 307.72825108899997
+    },
+    "L-fix@E0mais": {
+     "cpu_s": 530.092022244,
+     "memoria_pico_kib": 626460,
+     "tempo_parede_s": 536.8196551059991
+    },
+    "L-lib+f@E0": {
+     "cpu_s": 289.63721947700003,
+     "memoria_pico_kib": 572148,
+     "tempo_parede_s": 292.4826709549998
+    },
+    "L-lib@E0": {
+     "cpu_s": 307.20816832,
+     "memoria_pico_kib": 578448,
+     "tempo_parede_s": 310.5964472250016
+    },
+    "L-lib@E0mais": {
+     "cpu_s": 498.15835588100003,
+     "memoria_pico_kib": 635136,
+     "tempo_parede_s": 502.6801615730001
+    }
+   }
+  },
+  "7": {}
+ }
+}
